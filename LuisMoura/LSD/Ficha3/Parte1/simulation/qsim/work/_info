@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/simulation/qsim
+vAdder4
+Z1 !s110 1488044125
+!i10b 1
+!s100 4:mZXdLOHIFF<]NKcU3>]0
+IOFT@H9^Gf[mi<?5PjCoYW3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488044124
+Z3 8AdderDemo.vo
+Z4 FAdderDemo.vo
+Z5 L0 32
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1488044125.000000
+Z8 !s107 AdderDemo.vo|
+Z9 !s90 -work|work|AdderDemo.vo|
+!i113 1
+Z10 o-work work
+n@adder4
+vAdder4_vlg_vec_tst
+R1
+!i10b 1
+!s100 [AR92Kz8jMlcBWdPDZjVj0
+IAJneJLXHN[RkO9Jmb6XJ61
+R2
+R0
+w1488044118
+8Adder4.vwf.vt
+FAdder4.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Adder4.vwf.vt|
+!s90 -work|work|Adder4.vwf.vt|
+!i113 1
+R10
+n@adder4_vlg_vec_tst
+vAddSub4
+Z12 !s110 1488045687
+!i10b 1
+!s100 V7[?me7b5QNTZ_L:L[dTI2
+IQO;_]Q1CEUbBIIX?YHN?72
+R2
+R0
+w1488045686
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1488045687.000000
+R8
+R9
+!i113 1
+R10
+n@add@sub4
+vAddSub4_vlg_vec_tst
+R12
+!i10b 1
+!s100 ^nOk=W:5QXeo^H8j^028T3
+IDRk>1V?XDBRznT=PAFiZP0
+R2
+R0
+w1488045681
+8AddSub4.vwf.vt
+FAddSub4.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R13
+!s107 AddSub4.vwf.vt|
+!s90 -work|work|AddSub4.vwf.vt|
+!i113 1
+R10
+n@add@sub4_vlg_vec_tst

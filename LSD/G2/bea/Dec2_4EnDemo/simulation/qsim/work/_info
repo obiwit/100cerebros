@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula2/Dec2_4EnDemo/simulation/qsim
+vDec2_4En
+Z1 !s110 1487608208
+!i10b 1
+!s100 ]NhFX[e4=K;UeUl0@oO@Z3
+I9c6[mkXdDQUM`O6CagCA50
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487608207
+8Dec2_4EnDemo.vo
+FDec2_4EnDemo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1487608208.000000
+!s107 Dec2_4EnDemo.vo|
+!s90 -work|work|Dec2_4EnDemo.vo|
+!i113 1
+Z5 o-work work
+n@dec2_4@en
+vDec2_4En_vlg_vec_tst
+R1
+!i10b 1
+!s100 VYYi8c0jRVZ1W`i3GcbE<1
+IbHoOBb8f6MMW1dH7;_79L3
+R2
+R0
+w1487608202
+8Dec2_4En_2.vwf.vt
+FDec2_4En_2.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Dec2_4En_2.vwf.vt|
+!s90 -work|work|Dec2_4En_2.vwf.vt|
+!i113 1
+R5
+n@dec2_4@en_vlg_vec_tst

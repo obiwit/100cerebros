@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/VHDLDemo/simulation/qsim
+vAND2Gate
+Z1 !s110 1487008289
+!i10b 1
+!s100 XgZ;mhdDNn3im?9]<@]RI3
+IUoXod;@jLFLTWdnb<:I852
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487008284
+8AND2Gate.vo
+FAND2Gate.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1487008289.000000
+!s107 AND2Gate.vo|
+!s90 -work|work|AND2Gate.vo|
+!i113 1
+Z5 o-work work
+n@a@n@d2@gate
+vAND2Gate_vlg_vec_tst
+R1
+!i10b 1
+!s100 nj[0@AUK55]PD8z7GD45X3
+IFcong@TXOCkIB@=gof[AC2
+R2
+R0
+w1487008279
+8AND2Gate.vwf.vt
+FAND2Gate.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 AND2Gate.vwf.vt|
+!s90 -work|work|AND2Gate.vwf.vt|
+!i113 1
+R5
+n@a@n@d2@gate_vlg_vec_tst

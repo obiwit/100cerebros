@@ -1,0 +1,210 @@
+$comment
+	File created using the following command:
+		vcd file Mux2_1Demo.msim.vcd -direction
+$end
+$date
+	Mon Feb 20 17:02:46 2017
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Mux2_1_vlg_vec_tst $end
+$var reg 2 ! inputs [1:0] $end
+$var reg 1 " sel $end
+$var wire 1 # muxOut $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * muxOut~output_o $end
+$var wire 1 + inputs[0]~input_o $end
+$var wire 1 , sel~input_o $end
+$var wire 1 - inputs[1]~input_o $end
+$var wire 1 . muxOut~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+0+
+0,
+0-
+0.
+$end
+#40000
+b1 !
+1+
+1.
+1*
+1#
+#80000
+b11 !
+b10 !
+0+
+1-
+0.
+0*
+0#
+#120000
+b11 !
+1+
+1.
+1*
+1#
+#160000
+b1 !
+b0 !
+0+
+0-
+0.
+0*
+0#
+#200000
+1"
+b1 !
+1,
+1+
+#240000
+b11 !
+b10 !
+0+
+1-
+1.
+1*
+1#
+#280000
+b11 !
+1+
+#320000
+b1 !
+b0 !
+0+
+0-
+0.
+0*
+0#
+#360000
+b1 !
+1+
+#400000
+0"
+b11 !
+b10 !
+0,
+0+
+1-
+#440000
+b11 !
+1+
+1.
+1*
+1#
+#480000
+b1 !
+b0 !
+0+
+0-
+0.
+0*
+0#
+#520000
+b1 !
+1+
+1.
+1*
+1#
+#560000
+b11 !
+b10 !
+0+
+1-
+0.
+0*
+0#
+#600000
+1"
+b11 !
+1,
+1+
+1.
+1*
+1#
+#640000
+b1 !
+b0 !
+0+
+0-
+0.
+0*
+0#
+#680000
+b1 !
+1+
+#720000
+b11 !
+b10 !
+0+
+1-
+1.
+1*
+1#
+#760000
+b11 !
+1+
+#800000
+0"
+b1 !
+b0 !
+0,
+0+
+0-
+0.
+0*
+0#
+#840000
+b1 !
+1+
+1.
+1*
+1#
+#880000
+b11 !
+b10 !
+0+
+1-
+0.
+0*
+0#
+#920000
+b11 !
+1+
+1.
+1*
+1#
+#960000
+b1 !
+b0 !
+0+
+0-
+0.
+0*
+0#
+#1000000

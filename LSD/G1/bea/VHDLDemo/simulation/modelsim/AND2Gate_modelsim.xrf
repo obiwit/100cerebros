@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/AND2Gate.vhd
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/AND2Gate.vwf
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/GateDemo.vhd
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/NAND2Gate.vhd
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/NOTGate.vhd
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/GateDiagram.bdf
+source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/bea/Desktop/lsdig/VHDLDemo/db/AND2Gate.cbx.xml
+design_name = GateDemo
+instance = comp, \LEDR[0]~output\, LEDR[0]~output, GateDemo, 1
+instance = comp, \SW[1]~input\, SW[1]~input, GateDemo, 1
+instance = comp, \SW[0]~input\, SW[0]~input, GateDemo, 1
+instance = comp, \system_core|and_gate|outPort\, system_core|and_gate|outPort, GateDemo, 1

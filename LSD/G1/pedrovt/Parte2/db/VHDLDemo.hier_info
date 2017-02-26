@@ -1,0 +1,17 @@
+|NAND2Gate_1
+LEDG[0] <= NOTGate:inst1.outPort
+KEY[0] => AND2Gate:inst.inPort0
+KEY[1] => AND2Gate:inst.inPort1
+
+
+|NAND2Gate_1|NOTGate:inst1
+inPort => outPort.DATAIN
+outPort <= inPort.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|NAND2Gate_1|AND2Gate:inst
+inPort0 => outPort.IN0
+inPort1 => outPort.IN1
+outPort <= outPort.DB_MAX_OUTPUT_PORT_TYPE
+
+

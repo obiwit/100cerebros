@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula1/Parte1/simulation/qsim
+vGateDemo
+Z1 !s110 1487091671
+!i10b 1
+!s100 07HK<XFQcd14S[_=_oTIB1
+If;VFfWhB6dPm]21AoTC;W3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487091658
+8GateDemo.vo
+FGateDemo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1487091671.000000
+!s107 GateDemo.vo|
+!s90 -work|work|GateDemo.vo|
+!i113 1
+Z5 o-work work
+n@gate@demo
+vGateDemo_vlg_vec_tst
+R1
+!i10b 1
+!s100 _RY4cf<1PdSoH;Yi85:S21
+I[S2=G0<oO[_aD[fK]72nA3
+R2
+R0
+w1487091653
+8GateDemo.vwf.vt
+FGateDemo.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 GateDemo.vwf.vt|
+!s90 -work|work|GateDemo.vwf.vt|
+!i113 1
+R5
+n@gate@demo_vlg_vec_tst

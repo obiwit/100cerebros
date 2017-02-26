@@ -25,7 +25,7 @@ public class Data {
 	
 	// metodos
 	public void writeDate() {
-		System.out.printf("%2d-%2d-%4d", day, month, year);
+		System.out.printf("%02d-%02d-%04d", day, month, year);
 	}
 	public int getDay() { 
 		return day; 

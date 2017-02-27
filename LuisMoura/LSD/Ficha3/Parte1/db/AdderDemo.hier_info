@@ -1,0 +1,98 @@
+|AddSub4
+a[0] => adder4:addSub.a[0]
+a[1] => adder4:addSub.a[1]
+a[2] => adder4:addSub.a[2]
+a[3] => adder4:addSub.a[3]
+b[0] => s_b[0].DATAB
+b[0] => s_b[0].DATAA
+b[1] => s_b[1].DATAB
+b[1] => s_b[1].DATAA
+b[2] => s_b[2].DATAB
+b[2] => s_b[2].DATAA
+b[3] => s_b[3].DATAB
+b[3] => s_b[3].DATAA
+sub => adder4:addSub.cin
+sub => s_b[3].OUTPUTSELECT
+sub => s_b[2].OUTPUTSELECT
+sub => s_b[1].OUTPUTSELECT
+sub => s_b[0].OUTPUTSELECT
+s[0] << adder4:addSub.s[0]
+s[1] << adder4:addSub.s[1]
+s[2] << adder4:addSub.s[2]
+s[3] << adder4:addSub.s[3]
+cout << adder4:addSub.cout
+
+
+|AddSub4|Adder4:addSub
+a[0] => fulladder:bit0.a
+a[1] => fulladder:bit1.a
+a[2] => fulladder:bit2.a
+a[3] => fulladder:bit3.a
+b[0] => fulladder:bit0.b
+b[1] => fulladder:bit1.b
+b[2] => fulladder:bit2.b
+b[3] => fulladder:bit3.b
+cin => fulladder:bit0.cin
+s[0] <= fulladder:bit0.s
+s[1] <= fulladder:bit1.s
+s[2] <= fulladder:bit2.s
+s[3] <= fulladder:bit3.s
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub4|Adder4:addSub|FullAdder:bit0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub4|Adder4:addSub|FullAdder:bit1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub4|Adder4:addSub|FullAdder:bit2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub4|Adder4:addSub|FullAdder:bit3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

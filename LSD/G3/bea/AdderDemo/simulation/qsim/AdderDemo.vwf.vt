@@ -1,0 +1,208 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/26/2017 20:17:25"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          AdderDemo
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module AdderDemo_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [0:0] KEY;
+reg [17:0] SW;
+// wires                                               
+wire [14:0] LEDR;
+
+// assign statements (if any)                          
+AdderDemo i1 (
+// port map - connection between master ports and signals/registers   
+	.KEY(KEY),
+	.LEDR(LEDR),
+	.SW(SW)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// KEY
+initial
+begin
+	KEY = 1'b0;
+end 
+
+// KEY[0]
+initial
+begin
+	KEY[0] = 1'b0;
+	KEY[0] = #230000 1'b1;
+	KEY[0] = #250000 1'b0;
+	KEY[0] = #130000 1'b1;
+	KEY[0] = #50000 1'b0;
+	KEY[0] = #120000 1'b1;
+	KEY[0] = #60000 1'b0;
+end 
+// SW[ 17 ]
+initial
+begin
+	SW[17] = 1'b0;
+end 
+// SW[ 16 ]
+initial
+begin
+	SW[16] = 1'b0;
+	SW[16] = #10000 1'b1;
+	SW[16] = #90000 1'b0;
+	SW[16] = #240000 1'b1;
+	SW[16] = #30000 1'b0;
+end 
+// SW[ 15 ]
+initial
+begin
+	SW[15] = 1'b0;
+	SW[15] = #10000 1'b1;
+	SW[15] = #90000 1'b0;
+	SW[15] = #130000 1'b1;
+	SW[15] = #40000 1'b0;
+end 
+// SW[ 14 ]
+initial
+begin
+	SW[14] = 1'b0;
+	SW[14] = #10000 1'b1;
+	SW[14] = #90000 1'b0;
+	SW[14] = #130000 1'b1;
+	SW[14] = #140000 1'b0;
+end 
+// SW[ 13 ]
+initial
+begin
+	SW[13] = 1'b0;
+	SW[13] = #230000 1'b1;
+	SW[13] = #110000 1'b0;
+end 
+// SW[ 12 ]
+initial
+begin
+	SW[12] = 1'b0;
+	SW[12] = #300000 1'b1;
+	SW[12] = #40000 1'b0;
+end 
+// SW[ 11 ]
+initial
+begin
+	SW[11] = 1'b0;
+	SW[11] = #90000 1'b1;
+	SW[11] = #130000 1'b0;
+	SW[11] = #80000 1'b1;
+	SW[11] = #40000 1'b0;
+end 
+// SW[ 10 ]
+initial
+begin
+	SW[10] = 1'b0;
+	SW[10] = #90000 1'b1;
+	SW[10] = #130000 1'b0;
+	SW[10] = #130000 1'b1;
+	SW[10] = #120000 1'b0;
+end 
+// SW[ 9 ]
+initial
+begin
+	SW[9] = 1'b0;
+	SW[9] = #90000 1'b1;
+	SW[9] = #130000 1'b0;
+	SW[9] = #130000 1'b1;
+	SW[9] = #120000 1'b0;
+end 
+// SW[ 8 ]
+initial
+begin
+	SW[8] = 1'b0;
+end 
+// SW[ 7 ]
+initial
+begin
+	SW[7] = 1'b0;
+	SW[7] = #610000 1'b1;
+	SW[7] = #100000 1'b0;
+end 
+// SW[ 6 ]
+initial
+begin
+	SW[6] = 1'b0;
+	SW[6] = #610000 1'b1;
+	SW[6] = #100000 1'b0;
+end 
+// SW[ 5 ]
+initial
+begin
+	SW[5] = 1'b0;
+	SW[5] = #610000 1'b1;
+	SW[5] = #100000 1'b0;
+	SW[5] = #20000 1'b1;
+	SW[5] = #80000 1'b0;
+end 
+// SW[ 4 ]
+initial
+begin
+	SW[4] = 1'b0;
+	SW[4] = #610000 1'b1;
+	SW[4] = #100000 1'b0;
+	SW[4] = #20000 1'b1;
+	SW[4] = #80000 1'b0;
+end 
+// SW[ 3 ]
+initial
+begin
+	SW[3] = 1'b0;
+	SW[3] = #490000 1'b1;
+	SW[3] = #120000 1'b0;
+end 
+// SW[ 2 ]
+initial
+begin
+	SW[2] = 1'b0;
+	SW[2] = #490000 1'b1;
+	SW[2] = #120000 1'b0;
+	SW[2] = #110000 1'b1;
+	SW[2] = #100000 1'b0;
+end 
+// SW[ 1 ]
+initial
+begin
+	SW[1] = 1'b0;
+	SW[1] = #490000 1'b1;
+	SW[1] = #120000 1'b0;
+end 
+// SW[ 0 ]
+initial
+begin
+	SW[0] = 1'b0;
+	SW[0] = #490000 1'b1;
+	SW[0] = #120000 1'b0;
+end 
+endmodule
+

@@ -1,0 +1,22 @@
+|Bin2BCD
+bin[0] => Add0.IN8
+bin[0] => bcd.DATAA
+bin[1] => bcd.DATAA
+bin[1] => bcd.IN0
+bin[1] => Add0.IN7
+bin[2] => bcd.DATAA
+bin[2] => bcd.IN1
+bin[2] => Add0.IN6
+bin[3] => bcd.DATAA
+bin[3] => bcd.IN1
+bin[3] => Add0.IN5
+bcd[0] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= <GND>
+bcd[6] <= <GND>
+bcd[7] <= <GND>
+
+

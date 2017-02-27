@@ -1,0 +1,32 @@
+# do ALUDemo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:35:49 on Feb 27,2017
+# vlog -work work ALUDemo.vo 
+# -- Compiling module Bin2BCD
+# 
+# Top level modules:
+# 	Bin2BCD
+# End time: 15:35:49 on Feb 27,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:35:49 on Feb 27,2017
+# vlog -work work Bin2BCD.vwf.vt 
+# -- Compiling module Bin2BCD_vlg_vec_tst
+# 
+# Top level modules:
+# 	Bin2BCD_vlg_vec_tst
+# End time: 15:35:49 on Feb 27,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Bin2BCD_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 15:35:49 on Feb 27,2017
+# Loading work.Bin2BCD_vlg_vec_tst
+# Loading work.Bin2BCD
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# ** Note: $finish    : Bin2BCD.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /Bin2BCD_vlg_vec_tst
+# End time: 15:35:50 on Feb 27,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

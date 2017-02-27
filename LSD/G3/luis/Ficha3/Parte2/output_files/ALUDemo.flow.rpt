@@ -1,5 +1,5 @@
 Flow report for ALUDemo
-Sat Feb 25 18:52:56 2017
+Mon Feb 27 14:25:46 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Sat Feb 25 18:52:56 2017      ;
+; Flow Status                        ; Successful - Mon Feb 27 14:25:46 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; ALUDemo                                     ;
-; Top-level Entity Name              ; ALU4                                        ;
+; Top-level Entity Name              ; ALUDemo                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 97 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 97 / 114,480 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 19 / 529 ( 4 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/25/2017 18:52:45 ;
+; Start date & time ; 02/27/2017 14:24:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALUDemo             ;
 +-------------------+---------------------+
@@ -76,43 +76,54 @@ agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 74889883247194.148804876508332 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 74889883247194.148820548913164 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                           ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; ALU4        ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; ALU4        ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; ALU4        ; Top            ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; ALU4                           ; ALUDemo       ; --          ; --             ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 844 MB              ; 00:00:28                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:28                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 866 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 1794 MB             ; 00:00:18                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 750 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 931 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 717 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:55                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; WINDOWS-4LF08DG  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ALUDemo -c ALUDemo
+quartus_fit --read_settings_files=off --write_settings_files=off ALUDemo -c ALUDemo
+quartus_asm --read_settings_files=off --write_settings_files=off ALUDemo -c ALUDemo
+quartus_sta ALUDemo -c ALUDemo
+quartus_eda --read_settings_files=off --write_settings_files=off ALUDemo -c ALUDemo
 
 
 

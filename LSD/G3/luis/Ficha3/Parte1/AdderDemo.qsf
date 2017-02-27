@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY AddSub4
+set_global_assignment -name TOP_LEVEL_ENTITY AdderDemo
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:36:28  FEBRUARY 25, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
@@ -574,8 +574,15 @@ set_location_assignment PIN_F14 -to EX_IO[4]
 set_location_assignment PIN_E10 -to EX_IO[5]
 set_location_assignment PIN_D9 -to EX_IO[6]
 set_global_assignment -name VHDL_FILE AddSub4.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE AddSub4.vwf
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE AddSub4.vwf
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name CDF_FILE output_files/Chain5.cdf

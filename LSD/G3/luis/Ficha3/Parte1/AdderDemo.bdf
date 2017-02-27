@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 312 288 480 304)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "SW[7..4]" (rect 5 0 72 14)(font "Arial" ))
+	(text "SW[7..4]" (rect 5 0 71 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -41,7 +41,7 @@ agreement for further details.
 	(input)
 	(rect 312 304 480 320)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "SW[3..0]" (rect 5 0 72 14)(font "Arial" ))
+	(text "SW[3..0]" (rect 5 0 71 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -58,7 +58,7 @@ agreement for further details.
 	(input)
 	(rect 304 504 480 520)
 	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
-	(text "SW[17..14]" (rect 5 0 88 14)(font "Arial" ))
+	(text "SW[17..14]" (rect 5 0 87 14)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -69,12 +69,13 @@ agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 208 520 304 552))
 )
 (pin
 	(input)
 	(rect 304 520 480 536)
 	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
-	(text "SW[13..10]" (rect 5 0 88 14)(font "Arial" ))
+	(text "SW[13..10]" (rect 5 0 87 14)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -85,12 +86,13 @@ agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 208 536 304 568))
 )
 (pin
 	(input)
 	(rect 312 536 480 552)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "KEY[0]" (rect 5 0 55 14)(font "Arial" ))
+	(text "KEY[0]" (rect 5 0 54 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -101,12 +103,13 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 224 552 312 584))
 )
 (pin
 	(input)
 	(rect 296 640 464 656)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "SW[9..8]" (rect 5 0 72 14)(font "Arial" ))
+	(text "SW[9..8]" (rect 5 0 71 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -117,6 +120,7 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 200 656 296 688))
 )
 (pin
 	(output)
@@ -167,6 +171,7 @@ agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 808 536 896 568))
 )
 (pin
 	(output)
@@ -183,6 +188,7 @@ agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 827 520 915 552))
 )
 (pin
 	(output)
@@ -199,11 +205,46 @@ agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 738 656 826 688))
+)
+(symbol
+	(rect 440 352 472 384)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 36 35)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 520 664 552 696)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 21 44 35)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
 )
 (symbol
 	(rect 480 264 632 376)
 	(text "Adder4" (rect 5 0 54 14)(font "Arial" ))
-	(text "inst" (rect 8 96 41 110)(font "Arial" ))
+	(text "Adder" (rect 8 96 49 110)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -244,26 +285,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 440 352 472 384)
-	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 21 36 35)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
 	(rect 480 480 632 592)
 	(text "AddSub4" (rect 5 0 62 14)(font "Arial" ))
-	(text "inst4" (rect 8 96 49 110)(font "Arial" ))
+	(text "AddSub" (rect 8 96 57 110)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -303,23 +327,6 @@ agreement for further details.
 		(rectangle (rect 16 16 136 96))
 	)
 )
-(symbol
-	(rect 520 664 552 696)
-	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 44 35)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
 (connector
 	(pt 456 352)
 	(pt 456 328)
@@ -331,8 +338,10 @@ agreement for further details.
 (connector
 	(pt 536 664)
 	(pt 536 648)
+	(bus)
 )
 (connector
 	(pt 536 648)
 	(pt 560 648)
+	(bus)
 )

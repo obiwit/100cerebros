@@ -1,5 +1,5 @@
 EDA Netlist Writer report for AdderDemo
-Sat Feb 25 18:08:51 2017
+Mon Feb 27 17:22:38 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Feb 25 18:08:51 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon Feb 27 17:22:38 2017 ;
 ; Revision Name             ; AdderDemo                             ;
-; Top-level Entity Name     ; AddSub4                               ;
+; Top-level Entity Name     ; AdderDemo                             ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sat Feb 25 18:08:50 2017
+    Info: Processing started: Mon Feb 27 17:22:37 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
 Info (204019): Generated file AdderDemo_7_1200mv_85c_slow.vho in folder "C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file AdderDemo_7_1200mv_0c_slow.vho in folder "C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/simulation/modelsim/" for EDA simulation tool
@@ -100,8 +100,8 @@ Info (204019): Generated file AdderDemo_7_1200mv_0c_vhd_slow.sdo in folder "C:/U
 Info (204019): Generated file AdderDemo_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file AdderDemo_vhd.sdo in folder "C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 724 megabytes
-    Info: Processing ended: Sat Feb 25 18:08:51 2017
+    Info: Peak virtual memory: 728 megabytes
+    Info: Processing ended: Mon Feb 27 17:22:38 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AdderDemo
-Sat Feb 25 18:12:08 2017
+Mon Feb 27 17:21:58 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "Adder4:Adder|FullAdder:bit3"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +44,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Feb 25 18:12:08 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 27 17:21:58 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; AdderDemo                                   ;
-; Top-level Entity Name              ; AddSub4                                     ;
+; Top-level Entity Name              ; AdderDemo                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 16                                          ;
+;     Total combinational functions  ; 16                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 34                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -60,8 +67,10 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; AddSub4            ; AdderDemo          ;
+; Top-level entity name                                                      ; AdderDemo          ; AdderDemo          ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
+; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -70,7 +79,6 @@ agreement for further details.
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
 ; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
 ; Safe State Machine                                                         ; Off                ; Off                ;
 ; Extract Verilog State Machines                                             ; On                 ; On                 ;
@@ -157,13 +165,128 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; FullAdder.vhd                    ; yes             ; User VHDL File                     ; C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/FullAdder.vhd ;         ;
+; Adder4.vhd                       ; yes             ; User VHDL File                     ; C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/Adder4.vhd    ;         ;
+; AdderDemo.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AdderDemo.bdf ;         ;
+; AddSub4.vhd                      ; yes             ; User VHDL File                     ; C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AddSub4.vhd   ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 16           ;
+;                                             ;              ;
+; Total combinational functions               ; 16           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 3            ;
+;     -- 3 input functions                    ; 5            ;
+;     -- <=2 input functions                  ; 8            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 11           ;
+;     -- arithmetic mode                      ; 5            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 34           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 6            ;
+; Total fan-out                               ; 85           ;
+; Average fan-out                             ; 1.01         ;
++---------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; |AdderDemo                 ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |AdderDemo                             ; work         ;
+;    |AddSub4:AddSub|        ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|AddSub4:AddSub              ; work         ;
+;    |Adder4:Adder|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|Adder4:Adder                ; work         ;
+;       |FullAdder:bit0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|Adder4:Adder|FullAdder:bit0 ; work         ;
+;       |FullAdder:bit1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|Adder4:Adder|FullAdder:bit1 ; work         ;
+;       |FullAdder:bit2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|Adder4:Adder|FullAdder:bit2 ; work         ;
+;       |FullAdder:bit3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderDemo|Adder4:Adder|FullAdder:bit3 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Adder4:Adder|FullAdder:bit3"                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 34                          ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     arith             ; 5                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;     normal            ; 12                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 3                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.09                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sat Feb 25 18:11:56 2017
+    Info: Processing started: Mon Feb 27 17:21:46 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AdderDemo -c AdderDemo
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
@@ -174,13 +297,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file adder4.
     Info (12023): Found entity 1: Adder4 File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/Adder4.vhd Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file adderdemo.bdf
     Info (12023): Found entity 1: AdderDemo
-Error (10995): VHDL error at AddSub4.vhd(11): block comments are not supported in VHDL_1993 File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AddSub4.vhd Line: 11
-Error (10500): VHDL syntax error at AddSub4.vhd(26) near text "*";  expecting "entity", or "architecture", or "use", or "library", or "package", or "configuration" File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AddSub4.vhd Line: 26
-Info (12021): Found 0 design units, including 0 entities, in source file addsub4.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
-    Error: Peak virtual memory: 845 megabytes
-    Error: Processing ended: Sat Feb 25 18:12:08 2017
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:27
+Info (12021): Found 2 design units, including 1 entities, in source file addsub4.vhd
+    Info (12022): Found design unit 1: AddSub4-Behavioral File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AddSub4.vhd Line: 29
+    Info (12023): Found entity 1: AddSub4 File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/AddSub4.vhd Line: 5
+Info (12127): Elaborating entity "AdderDemo" for the top level hierarchy
+Info (12128): Elaborating entity "Adder4" for hierarchy "Adder4:Adder"
+Warning (10541): VHDL Signal Declaration warning at Adder4.vhd(8): used implicit default value for signal "cout" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/Adder4.vhd Line: 8
+Info (12129): Elaborating entity "FullAdder" using architecture "A:behavioral" for hierarchy "Adder4:Adder|FullAdder:bit0" File: C:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha3/Parte1/Adder4.vhd Line: 18
+Info (12128): Elaborating entity "AddSub4" for hierarchy "AddSub4:AddSub"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 858 megabytes
+    Info: Processing ended: Mon Feb 27 17:21:58 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 

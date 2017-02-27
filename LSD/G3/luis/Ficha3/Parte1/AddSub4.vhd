@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
 
 entity AddSub4 is
 	port(	a, b : in std_logic_vector(3 downto 0);
@@ -8,22 +9,22 @@ entity AddSub4 is
 			cout : out std_logic);
 end AddSub4;
 
-architecture Structural of AddSub4 is
+--architecture Structural of AddSub4 is
 
-	signal s_b : std_logic_vector(3 downto 0);
+--	signal s_b : std_logic_vector(3 downto 0);
 
-begin	
+--begin	
 	
-	s_b <= b when (sub = '0') else not b;
+--	s_b <= b when (sub = '0') else not b;
 	
-	addSub: entity work.Adder4(Structural)
-		port map(a => a,
-					b => s_b,
-					cin => sub,
-					cout => cout,
-					s => s);
+--	addSub: entity work.Adder4(Structural)
+--		port map(a => a,
+--					b => s_b,
+--					cin => sub,
+--					cout => cout,
+--					s => s);
 
-end Structural;
+--end Structural;
 
 architecture Behavioral of AddSub4 is
 	

@@ -1,0 +1,154 @@
+$comment
+	File created using the following command:
+		vcd file LogicDemo.msim.vcd -direction
+$end
+$date
+	Mon Feb 20 14:12:02 2017
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module LogicTop_vlg_vec_tst $end
+$var reg 2 ! SW [1:0] $end
+$var wire 1 " LEDG [5] $end
+$var wire 1 # LEDG [4] $end
+$var wire 1 $ LEDG [3] $end
+$var wire 1 % LEDG [2] $end
+$var wire 1 & LEDG [1] $end
+$var wire 1 ' LEDG [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . LEDG[5]~output_o $end
+$var wire 1 / LEDG[4]~output_o $end
+$var wire 1 0 LEDG[3]~output_o $end
+$var wire 1 1 LEDG[2]~output_o $end
+$var wire 1 2 LEDG[1]~output_o $end
+$var wire 1 3 LEDG[0]~output_o $end
+$var wire 1 4 SW[1]~input_o $end
+$var wire 1 5 SW[0]~input_o $end
+$var wire 1 6 inst|norOut~0_combout $end
+$var wire 1 7 inst|nandOut~0_combout $end
+$var wire 1 8 inst|xorOut~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1'
+0&
+0%
+0$
+1#
+1"
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+$end
+#160000
+b1 !
+15
+03
+0'
+18
+16
+0.
+11
+10
+1$
+1%
+0"
+#240000
+b0 !
+05
+13
+1'
+08
+06
+1.
+01
+00
+0$
+0%
+1"
+#280000
+b10 !
+14
+18
+16
+0.
+11
+10
+1$
+1%
+0"
+#380000
+b0 !
+04
+08
+06
+1.
+01
+00
+0$
+0%
+1"
+#460000
+b1 !
+b11 !
+15
+14
+03
+0'
+17
+16
+0.
+0/
+11
+12
+1&
+1%
+0#
+0"
+#560000
+b10 !
+b0 !
+05
+04
+13
+1'
+07
+06
+1.
+1/
+01
+02
+0&
+0%
+1#
+1"
+#1000000

@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula2/Parte2/simulation/qsim
+vMux2_1
+!s110 1487699694
+!i10b 1
+!s100 ?NkG]c7<`j@>TAN=3<T4C3
+IzJ@4f_>lA35MPl`6NgK3Y3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487699692
+8Mux2_1Demo.vo
+FMux2_1Demo.vo
+L0 32
+OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1487699694.000000
+!s107 Mux2_1Demo.vo|
+!s90 -work|work|Mux2_1Demo.vo|
+!i113 1
+o-work work
+n@mux2_1

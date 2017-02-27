@@ -1,0 +1,22 @@
+# do Mux2_1Demo.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:54:54 on Feb 21,2017
+# vlog -work work Mux2_1Demo.vo 
+# -- Compiling module Mux2_1
+# 
+# Top level modules:
+# 	Mux2_1
+# End time: 17:54:54 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:54:54 on Feb 21,2017
+# vlog -work work Mux2_1.vwf.vt 
+# -- Compiling module Mux2_1_vlg_vec_tst
+# ** Error: (vlog-13069) Mux2_1.vwf.vt(37): near "output": syntax error, unexpected output, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# 
+# ** Error: (vlog-13069) Mux2_1.vwf.vt(44): near "output": syntax error, unexpected output, expecting ')'.
+# 
+# End time: 17:54:54 on Feb 21,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: c:/altera_lite/15.1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./Mux2_1Demo.do line 4

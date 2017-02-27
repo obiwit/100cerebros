@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula1/Parte3/simulation/qsim
+vLogicTop
+!s110 1487599918
+!i10b 1
+!s100 zbk@2bkkl>EKY:4`d=inU0
+I2Fa>F5L3d1Ae7JQIVE3Rk0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1487599908
+8LogicTop.vo
+FLogicTop.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1487599918.000000
+!s107 LogicTop.vo|
+!s90 -work|work|LogicTop.vo|
+!i113 1
+Z3 o-work work
+n@logic@top
+vLogicTop_vlg_vec_tst
+!s110 1487599919
+!i10b 1
+!s100 dKVLD[0CPb:ke=Di]L;QL0
+Ib_T2JITmabRdQ>?WWCA251
+R1
+R0
+w1487599893
+8LogicDemo.vwf.vt
+FLogicDemo.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1487599919.000000
+!s107 LogicDemo.vwf.vt|
+!s90 -work|work|LogicDemo.vwf.vt|
+!i113 1
+R3
+n@logic@top_vlg_vec_tst

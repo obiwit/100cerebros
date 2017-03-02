@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Feb 28 01:13:56 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : ALUDemo
+Top-level Entity Name : ALUDemo_2
+Family : Cyclone IV E
+Total logic elements : 121
+    Total combinational functions : 121
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 47
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

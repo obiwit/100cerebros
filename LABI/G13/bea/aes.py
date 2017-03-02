@@ -19,7 +19,6 @@ else:
 
 
 cipher = AES.new(key)
-#print(cipher.block_size)
 
 # encryption
 if (sys.argv[3] == "encrypt"):

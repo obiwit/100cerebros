@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha4/Parte1/simulation/qsim
+vFlipFlopD
+Z1 !s110 1488564879
+!i10b 1
+!s100 >e>M`UYVOXNlM6;neVW_o0
+I?1`f:[j7OI:YT5O@e<j0T2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488564878
+8FlipFlopD_Demo.vo
+FFlipFlopD_Demo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1488564879.000000
+!s107 FlipFlopD_Demo.vo|
+!s90 -work|work|FlipFlopD_Demo.vo|
+!i113 1
+Z5 o-work work
+n@flip@flop@d
+vFlipFlopD_vlg_vec_tst
+R1
+!i10b 1
+!s100 BlE_ER:4mJgLUGL_E?blC2
+IZKJ:hgLc;oUdZ:<jX2:lN2
+R2
+R0
+w1488564873
+8FlipFlopRS.vwf.vt
+FFlipFlopRS.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 FlipFlopRS.vwf.vt|
+!s90 -work|work|FlipFlopRS.vwf.vt|
+!i113 1
+R5
+n@flip@flop@d_vlg_vec_tst

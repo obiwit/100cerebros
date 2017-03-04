@@ -1,0 +1,1020 @@
+$comment
+	File created using the following command:
+		vcd file FreqDivider_Demo.msim.vcd -direction
+$end
+$date
+	Fri Mar 03 21:05:14 2017
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module FreqDivider_vlg_vec_tst $end
+$var reg 1 ! clkIn $end
+$var reg 32 " k [31:0] $end
+$var wire 1 # clkOut $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * k[0]~input_o $end
+$var wire 1 + clkOut~output_o $end
+$var wire 1 , clkIn~input_o $end
+$var wire 1 - s_counter[0]~90_combout $end
+$var wire 1 . s_counter[1]~30_combout $end
+$var wire 1 / s_counter[1]~31 $end
+$var wire 1 0 s_counter[2]~32_combout $end
+$var wire 1 1 s_counter[2]~33 $end
+$var wire 1 2 s_counter[3]~34_combout $end
+$var wire 1 3 s_counter[3]~35 $end
+$var wire 1 4 s_counter[4]~36_combout $end
+$var wire 1 5 s_counter[4]~37 $end
+$var wire 1 6 s_counter[5]~38_combout $end
+$var wire 1 7 s_counter[5]~39 $end
+$var wire 1 8 s_counter[6]~40_combout $end
+$var wire 1 9 s_counter[6]~41 $end
+$var wire 1 : s_counter[7]~42_combout $end
+$var wire 1 ; s_counter[7]~43 $end
+$var wire 1 < s_counter[8]~44_combout $end
+$var wire 1 = s_counter[8]~45 $end
+$var wire 1 > s_counter[9]~46_combout $end
+$var wire 1 ? s_counter[9]~47 $end
+$var wire 1 @ s_counter[10]~48_combout $end
+$var wire 1 A s_counter[10]~49 $end
+$var wire 1 B s_counter[11]~50_combout $end
+$var wire 1 C s_counter[11]~51 $end
+$var wire 1 D s_counter[12]~52_combout $end
+$var wire 1 E s_counter[12]~53 $end
+$var wire 1 F s_counter[13]~54_combout $end
+$var wire 1 G s_counter[13]~55 $end
+$var wire 1 H s_counter[14]~56_combout $end
+$var wire 1 I s_counter[14]~57 $end
+$var wire 1 J s_counter[15]~58_combout $end
+$var wire 1 K s_counter[15]~59 $end
+$var wire 1 L s_counter[16]~60_combout $end
+$var wire 1 M s_counter[16]~61 $end
+$var wire 1 N s_counter[17]~62_combout $end
+$var wire 1 O s_counter[17]~63 $end
+$var wire 1 P s_counter[18]~64_combout $end
+$var wire 1 Q s_counter[18]~65 $end
+$var wire 1 R s_counter[19]~66_combout $end
+$var wire 1 S s_counter[19]~67 $end
+$var wire 1 T s_counter[20]~68_combout $end
+$var wire 1 U s_counter[20]~69 $end
+$var wire 1 V s_counter[21]~70_combout $end
+$var wire 1 W s_counter[21]~71 $end
+$var wire 1 X s_counter[22]~72_combout $end
+$var wire 1 Y s_counter[22]~73 $end
+$var wire 1 Z s_counter[23]~74_combout $end
+$var wire 1 [ s_counter[23]~75 $end
+$var wire 1 \ s_counter[24]~76_combout $end
+$var wire 1 ] s_counter[24]~77 $end
+$var wire 1 ^ s_counter[25]~78_combout $end
+$var wire 1 _ s_counter[25]~79 $end
+$var wire 1 ` s_counter[26]~80_combout $end
+$var wire 1 a s_counter[26]~81 $end
+$var wire 1 b s_counter[27]~82_combout $end
+$var wire 1 c s_counter[27]~83 $end
+$var wire 1 d s_counter[28]~84_combout $end
+$var wire 1 e s_counter[28]~85 $end
+$var wire 1 f s_counter[29]~86_combout $end
+$var wire 1 g s_counter[29]~87 $end
+$var wire 1 h s_counter[30]~88_combout $end
+$var wire 1 i k[31]~input_o $end
+$var wire 1 j k[30]~input_o $end
+$var wire 1 k k[29]~input_o $end
+$var wire 1 l k[28]~input_o $end
+$var wire 1 m k[27]~input_o $end
+$var wire 1 n k[26]~input_o $end
+$var wire 1 o k[25]~input_o $end
+$var wire 1 p k[24]~input_o $end
+$var wire 1 q k[23]~input_o $end
+$var wire 1 r k[22]~input_o $end
+$var wire 1 s k[21]~input_o $end
+$var wire 1 t k[20]~input_o $end
+$var wire 1 u k[19]~input_o $end
+$var wire 1 v k[18]~input_o $end
+$var wire 1 w k[17]~input_o $end
+$var wire 1 x k[16]~input_o $end
+$var wire 1 y k[15]~input_o $end
+$var wire 1 z k[14]~input_o $end
+$var wire 1 { k[13]~input_o $end
+$var wire 1 | k[12]~input_o $end
+$var wire 1 } k[11]~input_o $end
+$var wire 1 ~ k[10]~input_o $end
+$var wire 1 !! k[9]~input_o $end
+$var wire 1 "! k[8]~input_o $end
+$var wire 1 #! k[7]~input_o $end
+$var wire 1 $! k[6]~input_o $end
+$var wire 1 %! k[5]~input_o $end
+$var wire 1 &! k[4]~input_o $end
+$var wire 1 '! k[3]~input_o $end
+$var wire 1 (! k[2]~input_o $end
+$var wire 1 )! k[1]~input_o $end
+$var wire 1 *! LessThan1~1_cout $end
+$var wire 1 +! LessThan1~3_cout $end
+$var wire 1 ,! LessThan1~5_cout $end
+$var wire 1 -! LessThan1~7_cout $end
+$var wire 1 .! LessThan1~9_cout $end
+$var wire 1 /! LessThan1~11_cout $end
+$var wire 1 0! LessThan1~13_cout $end
+$var wire 1 1! LessThan1~15_cout $end
+$var wire 1 2! LessThan1~17_cout $end
+$var wire 1 3! LessThan1~19_cout $end
+$var wire 1 4! LessThan1~21_cout $end
+$var wire 1 5! LessThan1~23_cout $end
+$var wire 1 6! LessThan1~25_cout $end
+$var wire 1 7! LessThan1~27_cout $end
+$var wire 1 8! LessThan1~29_cout $end
+$var wire 1 9! LessThan1~31_cout $end
+$var wire 1 :! LessThan1~33_cout $end
+$var wire 1 ;! LessThan1~35_cout $end
+$var wire 1 <! LessThan1~37_cout $end
+$var wire 1 =! LessThan1~39_cout $end
+$var wire 1 >! LessThan1~41_cout $end
+$var wire 1 ?! LessThan1~43_cout $end
+$var wire 1 @! LessThan1~45_cout $end
+$var wire 1 A! LessThan1~47_cout $end
+$var wire 1 B! LessThan1~49_cout $end
+$var wire 1 C! LessThan1~51_cout $end
+$var wire 1 D! LessThan1~53_cout $end
+$var wire 1 E! LessThan1~55_cout $end
+$var wire 1 F! LessThan1~57_cout $end
+$var wire 1 G! LessThan1~59_cout $end
+$var wire 1 H! LessThan1~60_combout $end
+$var wire 1 I! clkOut~reg0_q $end
+$var wire 1 J! s_counter [30] $end
+$var wire 1 K! s_counter [29] $end
+$var wire 1 L! s_counter [28] $end
+$var wire 1 M! s_counter [27] $end
+$var wire 1 N! s_counter [26] $end
+$var wire 1 O! s_counter [25] $end
+$var wire 1 P! s_counter [24] $end
+$var wire 1 Q! s_counter [23] $end
+$var wire 1 R! s_counter [22] $end
+$var wire 1 S! s_counter [21] $end
+$var wire 1 T! s_counter [20] $end
+$var wire 1 U! s_counter [19] $end
+$var wire 1 V! s_counter [18] $end
+$var wire 1 W! s_counter [17] $end
+$var wire 1 X! s_counter [16] $end
+$var wire 1 Y! s_counter [15] $end
+$var wire 1 Z! s_counter [14] $end
+$var wire 1 [! s_counter [13] $end
+$var wire 1 \! s_counter [12] $end
+$var wire 1 ]! s_counter [11] $end
+$var wire 1 ^! s_counter [10] $end
+$var wire 1 _! s_counter [9] $end
+$var wire 1 `! s_counter [8] $end
+$var wire 1 a! s_counter [7] $end
+$var wire 1 b! s_counter [6] $end
+$var wire 1 c! s_counter [5] $end
+$var wire 1 d! s_counter [4] $end
+$var wire 1 e! s_counter [3] $end
+$var wire 1 f! s_counter [2] $end
+$var wire 1 g! s_counter [1] $end
+$var wire 1 h! s_counter [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b10010000 "
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+0+
+0,
+1-
+0.
+0/
+00
+11
+02
+03
+04
+15
+06
+07
+08
+19
+0:
+0;
+0<
+1=
+0>
+0?
+0@
+1A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+1I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+1Q
+0R
+0S
+0T
+1U
+0V
+0W
+0X
+1Y
+0Z
+0[
+0\
+1]
+0^
+0_
+0`
+1a
+0b
+0c
+0d
+1e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+1#!
+0$!
+0%!
+1&!
+0'!
+0(!
+0)!
+0*!
+1+!
+0,!
+0-!
+1.!
+0/!
+10!
+01!
+12!
+03!
+14!
+05!
+16!
+07!
+18!
+09!
+1:!
+0;!
+1<!
+0=!
+1>!
+0?!
+1@!
+0A!
+1B!
+0C!
+1D!
+0E!
+1F!
+0G!
+1H!
+0I!
+0h!
+0g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+$end
+#10000
+1!
+1,
+1h!
+1I!
+1+
+1#
+1.
+0-
+#20000
+0!
+0,
+#30000
+1!
+1,
+1g!
+0h!
+1-
+#40000
+0!
+0,
+#50000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#60000
+0!
+0,
+#70000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+11
+12
+10
+02
+#80000
+0!
+0,
+#90000
+1!
+1,
+1h!
+1.
+0-
+#100000
+0!
+0,
+#110000
+1!
+1,
+1g!
+0h!
+1-
+#120000
+0!
+0,
+#130000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+12
+#140000
+0!
+0,
+#150000
+1!
+1,
+1e!
+0f!
+0g!
+0h!
+1-!
+13
+11
+0/
+02
+10
+1-
+0.!
+03
+14
+12
+00
+1/!
+04
+#160000
+0!
+0,
+#170000
+1!
+1,
+1h!
+1.
+0-
+#180000
+0!
+0,
+#190000
+1!
+1,
+1g!
+0h!
+1-
+#200000
+0!
+0,
+#210000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#220000
+0!
+0,
+#230000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+13
+11
+02
+10
+03
+14
+12
+04
+#240000
+0!
+0,
+#250000
+1!
+1,
+1h!
+1.
+0-
+#260000
+0!
+0,
+#270000
+1!
+1,
+1g!
+0h!
+1-
+#280000
+0!
+0,
+#290000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+13
+02
+14
+#300000
+0!
+0,
+#310000
+1!
+1,
+1d!
+0e!
+0f!
+0g!
+0h!
+05
+0-!
+03
+11
+0/
+04
+12
+10
+1-
+15
+16
+14
+02
+00
+06
+#320000
+0!
+0,
+#330000
+1!
+1,
+1h!
+1.
+0-
+#340000
+0!
+0,
+#350000
+1!
+1,
+1g!
+0h!
+1-
+#360000
+0!
+0,
+#370000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#380000
+0!
+0,
+#390000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+11
+12
+10
+02
+#400000
+0!
+0,
+#410000
+1!
+1,
+1h!
+1.
+0-
+#420000
+0!
+0,
+#430000
+1!
+1,
+1g!
+0h!
+1-
+#440000
+0!
+0,
+#450000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+12
+#460000
+0!
+0,
+#470000
+1!
+1,
+1e!
+0f!
+0g!
+0h!
+1-!
+13
+11
+0/
+02
+10
+1-
+05
+03
+04
+12
+00
+15
+16
+14
+06
+#480000
+0!
+0,
+#490000
+1!
+1,
+1h!
+1.
+0-
+#500000
+0!
+0,
+#510000
+1!
+1,
+1g!
+0h!
+1-
+#520000
+0!
+0,
+#530000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#540000
+0!
+0,
+#550000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+13
+11
+02
+10
+05
+03
+04
+12
+15
+16
+14
+06
+#560000
+0!
+0,
+#570000
+1!
+1,
+1h!
+1.
+0-
+#580000
+0!
+0,
+#590000
+1!
+1,
+1g!
+0h!
+1-
+#600000
+0!
+0,
+#610000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+13
+02
+05
+04
+16
+#620000
+0!
+0,
+#630000
+1!
+1,
+1c!
+0d!
+0e!
+0f!
+0g!
+0h!
+17
+15
+0-!
+03
+11
+0/
+06
+14
+12
+10
+1-
+07
+1.!
+18
+16
+04
+02
+00
+08
+#640000
+0!
+0,
+#650000
+1!
+1,
+1h!
+1.
+0-
+#660000
+0!
+0,
+#670000
+1!
+1,
+1g!
+0h!
+1-
+#680000
+0!
+0,
+#690000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#700000
+0!
+0,
+#710000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+11
+12
+10
+02
+#720000
+0!
+0,
+#730000
+1!
+1,
+1h!
+1.
+0-
+#740000
+0!
+0,
+#750000
+1!
+1,
+1g!
+0h!
+1-
+#760000
+0!
+0,
+#770000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+12
+#780000
+0!
+0,
+#790000
+1!
+1,
+1e!
+0f!
+0g!
+0h!
+1-!
+13
+11
+0/
+02
+10
+1-
+0.!
+03
+14
+12
+00
+04
+#800000
+0!
+0,
+#810000
+1!
+1,
+1h!
+1.
+0-
+#820000
+0!
+0,
+#830000
+1!
+1,
+1g!
+0h!
+1-
+#840000
+0!
+0,
+#850000
+1!
+1,
+1h!
+1/
+0.
+0-
+10
+#860000
+0!
+0,
+#870000
+1!
+1,
+1f!
+0g!
+0h!
+01
+0/
+00
+1-
+13
+11
+02
+10
+03
+14
+12
+04
+#880000
+0!
+0,
+#890000
+1!
+1,
+1h!
+1.
+0-
+#900000
+0!
+0,
+#910000
+1!
+1,
+1g!
+0h!
+1-
+#920000
+0!
+0,
+#930000
+1!
+1,
+1h!
+1/
+0.
+0-
+01
+00
+13
+02
+14
+#940000
+0!
+0,
+#950000
+1!
+1,
+1d!
+0e!
+0f!
+0g!
+0h!
+05
+0-!
+03
+11
+0/
+04
+12
+10
+1-
+17
+15
+06
+14
+02
+00
+07
+18
+16
+08
+#960000
+0!
+0,
+#970000
+1!
+1,
+1h!
+1.
+0-
+#980000
+0!
+0,
+#990000
+1!
+1,
+1g!
+0h!
+1-
+#1000000

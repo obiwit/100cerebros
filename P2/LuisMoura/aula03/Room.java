@@ -6,10 +6,10 @@ public class Room {
 	private String roomType;
 
 //--- Contructors ---------------------------------	
-	public Room(Point p1, Point p2, String s) {
+	public Room(Point p1, Point p2, String type) {
 		this.bottomLeft = p1;
 		this.upperRight = p2;
-		this.roomType = s;
+		this.roomType = type;
 	}
 
 //--- Getters -------------------------------------	

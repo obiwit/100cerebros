@@ -27,6 +27,5 @@ begin
 					s_a xor s_b     when "111";
 
 		 r <= std_logic_vector(s_r);
-		 m <= std_logic_vector(s_m(7 downto 4)) when (op = "010") else
-         (others => '0');
+		 m <= std_logic_vector(s_m(7 downto 4)) when (op = "010") else (others => '0');
 end Behavioral;

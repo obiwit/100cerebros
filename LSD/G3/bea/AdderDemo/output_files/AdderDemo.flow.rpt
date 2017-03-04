@@ -1,5 +1,5 @@
 Flow report for AdderDemo
-Sun Feb 26 20:17:31 2017
+Mon Feb 27 16:29:48 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Feb 26 20:17:31 2017       ;
+; Flow Status                        ; Successful - Mon Feb 27 16:29:48 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; AdderDemo                                   ;
 ; Top-level Entity Name              ; AdderDemo                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 17 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 17 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 15 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 15 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 34 / 529 ( 6 % )                            ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/26/2017 19:46:40 ;
+; Start date & time ; 02/27/2017 16:28:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AdderDemo           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373748038.148813840001492 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121373748038.148821292304700 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
@@ -94,18 +94,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 849 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:20     ; 1.0                     ; 1291 MB             ; 00:00:21                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 737 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 860 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 702 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 692 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 696 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 692 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 696 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 692 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 696 MB              ; 00:00:01                           ;
-; Total                     ; 00:01:01     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 856 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:14     ; 1.0                     ; 1293 MB             ; 00:00:16                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 739 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 857 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 701 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:40     ; --                      ; --                  ; 00:00:52                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,12 +113,6 @@ agreement for further details.
 ; Assembler                 ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -136,12 +124,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off AdderDemo -c Ad
 quartus_asm --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
 quartus_sta AdderDemo -c AdderDemo
 quartus_eda --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off AdderDemo -c AdderDemo --vector_source=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/AdderDemo.vwf --testbench_file=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/AdderDemo.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/ AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off AdderDemo -c AdderDemo --vector_source=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/Adder4.vwf --testbench_file=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/Adder4.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/ AdderDemo -c AdderDemo
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off AdderDemo -c AdderDemo --vector_source=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/AdderDemo.vwf --testbench_file=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/AdderDemo.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/bea/Desktop/lsdig/aula3/AdderDemo/simulation/qsim/ AdderDemo -c AdderDemo
 
 
 

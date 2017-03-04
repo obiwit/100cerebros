@@ -58,7 +58,7 @@ agreement for further details.
 	(input)
 	(rect 208 616 432 632)
 	(text "INPUT" (rect 181 0 263 21)(font "Arial" (font_size 6)))
-	(text "SW[17..14]" (rect 5 0 135 18)(font "Arial" (font_size 5)))
+	(text "SW[17..14]" (rect 5 0 134 18)(font "Arial" (font_size 5)))
 	(pt 224 8)
 	(drawing
 		(line (pt 140 12)(pt 165 12))
@@ -75,7 +75,7 @@ agreement for further details.
 	(input)
 	(rect 208 640 432 656)
 	(text "INPUT" (rect 181 0 263 21)(font "Arial" (font_size 6)))
-	(text "SW[13..10]" (rect 5 0 135 18)(font "Arial" (font_size 5)))
+	(text "SW[13..10]" (rect 5 0 134 18)(font "Arial" (font_size 5)))
 	(pt 224 8)
 	(drawing
 		(line (pt 140 12)(pt 165 12))
@@ -92,7 +92,7 @@ agreement for further details.
 	(input)
 	(rect 208 664 392 680)
 	(text "INPUT" (rect 141 0 223 21)(font "Arial" (font_size 6)))
-	(text "KEY[0]" (rect 5 0 83 18)(font "Arial" (font_size 5)))
+	(text "KEY[0]" (rect 5 0 82 18)(font "Arial" (font_size 5)))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -109,7 +109,7 @@ agreement for further details.
 	(input)
 	(rect 136 784 384 800)
 	(text "INPUT" (rect 205 0 287 21)(font "Arial" (font_size 6)))
-	(text "SW[9..8]" (rect 5 0 157 25)(font "Arial" ))
+	(text "SW[9..8]" (rect 5 0 156 25)(font "Arial" ))
 	(pt 248 8)
 	(drawing
 		(line (pt 164 12)(pt 189 12))
@@ -287,7 +287,7 @@ agreement for further details.
 (symbol
 	(rect 552 600 704 712)
 	(text "AddSub4" (rect 5 0 137 25)(font "Arial" ))
-	(text "inst6" (rect 8 96 72 114)(font "Arial" (font_size 5)))
+	(text "inst1" (rect 8 96 72 114)(font "Arial" (font_size 5)))
 	(port
 		(pt 0 32)
 		(input)

@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 216 232 464 248)
 	(text "INPUT" (rect 205 0 287 21)(font "Arial" (font_size 6)))
-	(text "SW[7..4]" (rect 5 0 157 25)(font "Arial" ))
+	(text "SW[7..4]" (rect 5 0 156 25)(font "Arial" ))
 	(pt 248 8)
 	(drawing
 		(line (pt 164 12)(pt 189 12))
@@ -35,12 +35,13 @@ agreement for further details.
 		(line (pt 189 12)(pt 193 8))
 	)
 	(text "VCC" (rect 208 7 257 28)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 56 248 216 288))
 )
 (pin
 	(input)
 	(rect 216 264 424 280)
 	(text "INPUT" (rect 165 0 247 21)(font "Arial" (font_size 6)))
-	(text "SW[3..0]" (rect 5 0 109 18)(font "Arial" (font_size 5)))
+	(text "SW[3..0]" (rect 5 0 108 18)(font "Arial" (font_size 5)))
 	(pt 208 8)
 	(drawing
 		(line (pt 124 12)(pt 149 12))
@@ -51,12 +52,13 @@ agreement for further details.
 		(line (pt 149 12)(pt 153 8))
 	)
 	(text "VCC" (rect 168 7 217 28)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 56 280 216 320))
 )
 (pin
 	(input)
 	(rect 216 304 432 320)
 	(text "INPUT" (rect 173 0 255 21)(font "Arial" (font_size 6)))
-	(text "SW[10..8]" (rect 5 0 122 18)(font "Arial" (font_size 5)))
+	(text "SW[10..8]" (rect 5 0 121 18)(font "Arial" (font_size 5)))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12))
@@ -67,6 +69,7 @@ agreement for further details.
 		(line (pt 157 12)(pt 161 8))
 	)
 	(text "VCC" (rect 176 7 225 28)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 56 320 216 360))
 )
 (pin
 	(output)
@@ -83,6 +86,7 @@ agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1041 320 1185 360))
 )
 (pin
 	(output)
@@ -99,6 +103,7 @@ agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1273 400 1417 440))
 )
 (pin
 	(output)
@@ -180,7 +185,7 @@ agreement for further details.
 (symbol
 	(rect 832 208 1040 288)
 	(text "Bin7SegDecoder" (rect 5 0 269 25)(font "Arial" ))
-	(text "inst3" (rect 8 64 72 82)(font "Arial" (font_size 5)))
+	(text "inst1" (rect 8 64 72 82)(font "Arial" (font_size 5)))
 	(port
 		(pt 0 32)
 		(input)
@@ -202,7 +207,7 @@ agreement for further details.
 (symbol
 	(rect 840 456 1048 536)
 	(text "Bin7SegDecoder" (rect 5 0 269 25)(font "Arial" ))
-	(text "inst4" (rect 8 64 72 82)(font "Arial" (font_size 5)))
+	(text "inst2" (rect 8 64 72 82)(font "Arial" (font_size 5)))
 	(port
 		(pt 0 32)
 		(input)
@@ -222,28 +227,13 @@ agreement for further details.
 	)
 )
 (connector
-	(pt 584 304)
-	(pt 432 304)
-	(bus)
-)
-(connector
 	(pt 432 304)
 	(pt 432 312)
 	(bus)
 )
 (connector
-	(pt 584 272)
-	(pt 464 272)
-	(bus)
-)
-(connector
 	(pt 464 272)
 	(pt 464 240)
-	(bus)
-)
-(connector
-	(pt 584 288)
-	(pt 424 288)
 	(bus)
 )
 (connector
@@ -259,11 +249,6 @@ agreement for further details.
 (connector
 	(pt 1048 488)
 	(pt 1088 488)
-	(bus)
-)
-(connector
-	(pt 792 288)
-	(pt 744 288)
 	(bus)
 )
 (connector
@@ -287,16 +272,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 744 272)
-	(pt 792 272)
-	(bus)
-)
-(connector
-	(pt 792 272)
-	(pt 816 272)
-	(bus)
-)
-(connector
 	(pt 792 392)
 	(pt 1048 392)
 	(bus)
@@ -311,5 +286,65 @@ agreement for further details.
 	(pt 792 488)
 	(bus)
 )
+(connector
+	(pt 792 272)
+	(pt 816 272)
+	(bus)
+)
+(connector
+	(pt 464 272)
+	(pt 584 272)
+	(bus)
+)
+(connector
+	(pt 584 272)
+	(pt 592 272)
+	(bus)
+)
+(connector
+	(pt 424 288)
+	(pt 584 288)
+	(bus)
+)
+(connector
+	(pt 584 288)
+	(pt 592 288)
+	(bus)
+)
+(connector
+	(pt 432 304)
+	(pt 584 304)
+	(bus)
+)
+(connector
+	(pt 584 304)
+	(pt 592 304)
+	(bus)
+)
+(connector
+	(pt 736 272)
+	(pt 744 272)
+	(bus)
+)
+(connector
+	(pt 744 272)
+	(pt 792 272)
+	(bus)
+)
+(connector
+	(pt 736 288)
+	(pt 744 288)
+	(bus)
+)
+(connector
+	(pt 744 288)
+	(pt 792 288)
+	(bus)
+)
 (junction (pt 792 272))
 (junction (pt 792 392))
+(junction (pt 584 272))
+(junction (pt 584 288))
+(junction (pt 584 304))
+(junction (pt 744 272))
+(junction (pt 744 288))

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for AdderDemo
-Sun Feb 26 19:47:53 2017
+Mon Feb 27 16:29:41 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -270,13 +270,13 @@ No synchronizer chains to report.
 ; SW[8]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; KEY[0]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[13]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[17]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[12]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[16]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[11]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[10]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[14]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[10]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[16]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[17]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[3]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -392,9 +392,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 17    ; 17   ;
-; Unconstrained Input Port Paths  ; 61    ; 61   ;
+; Unconstrained Input Port Paths  ; 60    ; 60   ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
-; Unconstrained Output Port Paths ; 61    ; 61   ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
 +---------------------------------+-------+------+
 
 
@@ -490,7 +490,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Feb 26 19:47:49 2017
+    Info: Processing started: Mon Feb 27 16:29:39 2017
 Info: Command: quartus_sta AdderDemo -c AdderDemo
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -537,9 +537,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 860 megabytes
-    Info: Processing ended: Sun Feb 26 19:47:53 2017
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 857 megabytes
+    Info: Processing ended: Mon Feb 27 16:29:41 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

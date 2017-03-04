@@ -8,7 +8,7 @@ end Bin7SegDecoder;
 
 architecture Behavioral of Bin7SegDecoder is begin
 	decOut_n <= "1111001" when (binInput = "0001") else --1
-					"0010010" when (binInput = "0010") else --2
+					"0100100" when (binInput = "0010") else --2
 					"0110000" when (binInput = "0011") else --3 
 					"0011001" when (binInput = "0100") else --4 
 					"0010010" when (binInput = "0101") else --5 

@@ -5,15 +5,16 @@ from Crypto.Cipher import AES
 
 
 # validation
-key = sys.argv[1][:16]
+key = ""
 if (len(sys.argv) > 2):
+    key = sys.argv[1][:16]
     # file validation
-    if ((os.path.exists(sys.argv[2])) & (os.path.isfile(sys.argv[2]))):
+    if (not (os.path.exists(sys.argv[2])) | not (os.path.isfile(sys.argv[2]))):
+        sys.exit("Invalid file.\nUsage: python aes.py key file <encryp/decrypt>t\n");
+    else:
         # key validation
         if (len(key) < 16):
             key = str(hashlib.sha1(key.encode()).hexdigest())[:16]
-    else:
-        sys.exit("Invalid file.\nUsage: python aes.py key file <encryp/decrypt>t\n");
 else:
     sys.exit("Usage: python aes.py key file <encryp/decrypt>\n");
 
@@ -24,7 +25,7 @@ cipher = AES.new(key)
 if (sys.argv[3] == "encrypt"):
     f = open(sys.argv[2], "rb")
     buffer = f.read(cipher.block_size)
-    # make surre everything has the right size - if not, fill with 0's
+    # make sure everything has the right size - if not, fill with 0's
     lenBuf = len(buffer)
     if (lenBuf < cipher.block_size):
         buffer = buffer + bytes(cipher.block_size - lenBuf)
@@ -35,6 +36,7 @@ if (sys.argv[3] == "encrypt"):
         if (lenBuf < cipher.block_size):
             buffer = buffer + bytes(cipher.block_size - lenBuf)
         sys.stdout.buffer.write(cipher.encrypt(buffer))
+    f.close()
 
 # decryption
 else:
@@ -49,8 +51,9 @@ else:
     sys.stdout.buffer.write(cipher.decrypt(buffer))
     while (len(buffer) > 0):
         buffer = f.read(cipher.block_size)
-        blockCounter++;
+        blockCounter += 1
         # remove excess - HOW?
         #if (blockCounter == blockNum):
         #    buffer =
         sys.stdout.buffer.write(cipher.decrypt(buffer))
+    f.close()

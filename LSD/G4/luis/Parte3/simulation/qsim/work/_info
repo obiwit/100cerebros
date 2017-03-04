@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LuisMoura/Dropbox/UNIVERSIDADE_DE_AVEIRO/LSD_Laboratorio_de_Sistemas_Digitais/Pratica/Projetos_Quartus/Ficha4/Parte3/simulation/qsim
+vCounterDown4
+Z1 !s110 1488569498
+!i10b 1
+!s100 [P@KVn5=Jk3nlMKb>k6[B1
+IEREf6YjP0V_@<iHf@BBk73
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488569497
+Z3 8Counter_Demo.vo
+Z4 FCounter_Demo.vo
+Z5 L0 32
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1488569498.000000
+Z8 !s107 Counter_Demo.vo|
+Z9 !s90 -work|work|Counter_Demo.vo|
+!i113 1
+Z10 o-work work
+n@counter@down4
+vCounterDown4_vlg_vec_tst
+R1
+!i10b 1
+!s100 7zezUUne4Ge:Ul`U0V;1c1
+IA:OJAi_HT9nM<HJnEk:R<2
+R2
+R0
+w1488569492
+8CounterDown4.vwf.vt
+FCounterDown4.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 CounterDown4.vwf.vt|
+!s90 -work|work|CounterDown4.vwf.vt|
+!i113 1
+R10
+n@counter@down4_vlg_vec_tst
+vCounterLoadUpDown4
+Z12 !s110 1488572390
+!i10b 1
+!s100 kakQil>7QU6^WH78C]_9n1
+I_@a0`Ki>EaHJIoh^bk4K=1
+R2
+R0
+w1488572389
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1488572390.000000
+R8
+R9
+!i113 1
+R10
+n@counter@load@up@down4
+vCounterLoadUpDown4_vlg_vec_tst
+R12
+!i10b 1
+!s100 n7Q[ZbgkdU_DiSmMNP?Yi1
+IkQVd6dTC:NLSD?ZIJHE2W3
+R2
+R0
+w1488572384
+8CounterLoadUpDown4.vwf.vt
+FCounterLoadUpDown4.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R13
+!s107 CounterLoadUpDown4.vwf.vt|
+!s90 -work|work|CounterLoadUpDown4.vwf.vt|
+!i113 1
+R10
+n@counter@load@up@down4_vlg_vec_tst
+vCounterUpDown4
+Z14 !s110 1488570071
+!i10b 1
+!s100 <zGIA=BmCC=XXQM3^EJ8U1
+I2]]Eh<?z>CkJdQJTiJkA:3
+R2
+R0
+w1488570070
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z15 !s108 1488570071.000000
+R8
+R9
+!i113 1
+R10
+n@counter@up@down4
+vCounterUpDown4_vlg_vec_tst
+R14
+!i10b 1
+!s100 L5bA4dog`6:51X0ZU9=Y[0
+I@gc1H1RkeLl1[V6W=G3GN2
+R2
+R0
+w1488570066
+8CounterUpDown4.vwf.vt
+FCounterUpDown4.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R15
+!s107 CounterUpDown4.vwf.vt|
+!s90 -work|work|CounterUpDown4.vwf.vt|
+!i113 1
+R10
+n@counter@up@down4_vlg_vec_tst

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Mar 05 22:50:31 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : FreqDivider_Demo
+Top-level Entity Name : FreqDivider_CounterDisplay_Demo
+Family : Cyclone IV E
+Total logic elements : 58
+    Total combinational functions : 58
+    Dedicated logic registers : 36
+Total registers : 36
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

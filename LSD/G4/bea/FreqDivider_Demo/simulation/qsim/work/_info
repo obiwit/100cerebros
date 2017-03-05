@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula4/FreqDivider_Demo/simulation/qsim
+vFreqDivider
+Z1 !s110 1488750111
+!i10b 1
+!s100 [8=kedf?ZomOgT[iYPo_:3
+I4HML628oKD:zKQfLVM6@E3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488750106
+8FreqDivider_Demo.vo
+FFreqDivider_Demo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1488750111.000000
+!s107 FreqDivider_Demo.vo|
+!s90 -work|work|FreqDivider_Demo.vo|
+!i113 1
+Z5 o-work work
+n@freq@divider
+vFreqDivider_vlg_vec_tst
+R1
+!i10b 1
+!s100 L^a[RT<A335FNcXYC0XJi3
+InOgSFFhzaAOgN>E7IPa783
+R2
+R0
+w1488750099
+8FreqDivider.vwf.vt
+FFreqDivider.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 FreqDivider.vwf.vt|
+!s90 -work|work|FreqDivider.vwf.vt|
+!i113 1
+R5
+n@freq@divider_vlg_vec_tst

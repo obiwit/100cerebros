@@ -1,0 +1,167 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 176 216 384 232)
+	(text "INPUT" (rect 165 0 247 21)(font "Arial" (font_size 6)))
+	(text "KEY[0]" (rect 5 0 119 25)(font "Arial" ))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 217 28)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 200 248 368 264)
+	(text "INPUT" (rect 125 0 207 21)(font "Arial" (font_size 6)))
+	(text "SW[8]" (rect 5 0 70 18)(font "Arial" (font_size 5)))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 177 28)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 176 272 384 288)
+	(text "INPUT" (rect 165 0 247 21)(font "Arial" (font_size 6)))
+	(text "SW[7..0]" (rect 5 0 109 18)(font "Arial" (font_size 5)))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 217 28)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 784 240 1009 256)
+	(text "OUTPUT" (rect 1 0 100 21)(font "Arial" (font_size 6)))
+	(text "LEDG[7..0]" (rect 90 0 219 18)(font "Arial" (font_size 5)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 560 216 712 328)
+	(text "Register8" (rect 5 0 174 25)(font "Arial" ))
+	(text "inst" (rect 8 96 83 121)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 56 25)(font "Arial" ))
+		(text "clk" (rect 21 27 77 52)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "wrEn" (rect 0 0 75 25)(font "Arial" ))
+		(text "wrEn" (rect 21 43 96 68)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "d[7..0]" (rect 0 0 132 25)(font "Arial" ))
+		(text "d[7..0]" (rect 21 59 153 84)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "q[7..0]" (rect 0 0 132 25)(font "Arial" ))
+		(text "q[7..0]" (rect 20 27 152 52)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 96))
+	)
+)
+(connector
+	(pt 712 248)
+	(pt 784 248)
+	(bus)
+)
+(connector
+	(pt 560 280)
+	(pt 384 280)
+	(bus)
+)
+(connector
+	(pt 384 280)
+	(pt 376 280)
+	(bus)
+)
+(connector
+	(pt 560 248)
+	(pt 464 248)
+)
+(connector
+	(pt 464 224)
+	(pt 464 248)
+)
+(connector
+	(pt 464 224)
+	(pt 384 224)
+)
+(connector
+	(pt 384 224)
+	(pt 376 224)
+)
+(connector
+	(pt 384 264)
+	(pt 560 264)
+)
+(connector
+	(pt 384 256)
+	(pt 368 256)
+)
+(connector
+	(pt 384 256)
+	(pt 384 264)
+)
+(junction (pt 384 280))
+(junction (pt 384 224))

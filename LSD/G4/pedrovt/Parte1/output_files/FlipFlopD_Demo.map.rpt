@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FlipFlopD_Demo
-Mon Mar 06 18:01:39 2017
+Mon Mar 06 19:02:29 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 06 18:01:39 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 06 19:02:29 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; FlipFlopD_Demo                              ;
 ; Top-level Entity Name              ; FlipFlopD_Demo                              ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 06 18:01:24 2017
+    Info: Processing started: Mon Mar 06 19:02:13 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FlipFlopD_Demo -c FlipFlopD_Demo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file flipflopd.vhd
@@ -269,28 +269,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file flipflo
     Info (12023): Found entity 1: FlipFlopD_Demo File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 4
 Info (12127): Elaborating entity "FlipFlopD_Demo" for the top level hierarchy
 Info (12129): Elaborating entity "FlipFlopD" using architecture "A:behavioral" for hierarchy "FlipFlopD:ff_d" File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 12
-Warning (12069): Ignored assignment(s) for "KEY[0]" because "KEY" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 6
-Warning (12069): Ignored assignment(s) for "KEY[1]" because "KEY" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 6
-Warning (12069): Ignored assignment(s) for "KEY[2]" because "KEY" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 6
-Warning (12069): Ignored assignment(s) for "KEY[3]" because "KEY" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 6
-Warning (12069): Ignored assignment(s) for "LEDR[0]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[1]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[2]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[3]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[4]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[5]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[6]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[7]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[8]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[9]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[10]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[11]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[12]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[13]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[14]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[15]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[16]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
-Warning (12069): Ignored assignment(s) for "LEDR[17]" because "LEDR" is not a bus or array File: C:/altera_lite/docs/Aula4/Parte1/FlipFlopD_Demo.vhd Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -298,10 +276,10 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 865 megabytes
-    Info: Processing ended: Mon Mar 06 18:01:39 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Processing ended: Mon Mar 06 19:02:29 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 

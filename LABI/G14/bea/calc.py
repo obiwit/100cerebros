@@ -11,7 +11,7 @@ def f(op, x, y):
         "^2":x * x
     }.get(op, "")
 
-def main(argv):
+def calc(argv):
     x = float(argv[1])
     op = argv[2]
     y = 1 # default value for y is needed for sad reasons :'(
@@ -21,8 +21,8 @@ def main(argv):
     return f(op, x, y)
 
 def usage():
-    print("Usage: python calc.py number <+|-|*|/|%|^2> <number if op is not ^2>");
-    sys.exit(-1)
+    print("Usage: python calc.py number op number <+|-|*|/|%|^2> <number if op is not ^2>")
+    sys.exit(1)
 
 def main(argv):
     # validate input
@@ -31,7 +31,7 @@ def main(argv):
     elif((argv != "^2") & (len(argv) != 4)):
         usage()
 
-    result = main(argv)
+    result = calc(argv)
 
     if (result == ""):
         usage()
@@ -39,4 +39,6 @@ def main(argv):
     print(result)
     sys.exit(0)
 
+
+# Program
 main(sys.argv)

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Mar 06 16:11:22 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : Counter_Demo
+Top-level Entity Name : CounterLoad_Demo
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 14 / 6,272 ( < 1 % )
+    Total combinational functions : 14 / 6,272 ( < 1 % )
+    Dedicated logic registers : 4 / 6,272 ( < 1 % )
+Total registers : 4
+Total pins : 20 / 92 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

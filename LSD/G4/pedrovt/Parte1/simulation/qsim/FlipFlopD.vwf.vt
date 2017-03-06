@@ -1,0 +1,96 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/06/2017 14:32:02"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          FlipFlopD
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module FlipFlopD_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg d;
+reg reset;
+reg set;
+// wires                                               
+wire q;
+
+// assign statements (if any)                          
+FlipFlopD i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.d(d),
+	.q(q),
+	.reset(reset),
+	.set(set)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	clk = 1'b1;
+	# 10000;
+	repeat(49)
+	begin
+		clk = 1'b0;
+		clk = #10000 1'b1;
+		# 10000;
+	end
+	clk = 1'b0;
+end 
+
+// d
+initial
+begin
+	d = 1'b0;
+	d = #120000 1'b1;
+	d = #120000 1'b0;
+	d = #10000 1'b1;
+	d = #110000 1'b0;
+	d = #20000 1'b1;
+	d = #110000 1'b0;
+end 
+
+// set
+initial
+begin
+	set = 1'b0;
+	set = #10000 1'b1;
+	set = #50000 1'b0;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b0;
+	reset = #280000 1'b1;
+	reset = #50000 1'b0;
+end 
+endmodule
+

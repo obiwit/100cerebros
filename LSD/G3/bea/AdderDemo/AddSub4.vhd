@@ -9,19 +9,20 @@ entity AddSub4 is
         cout : out std_logic);
 end AddSub4;
 
---architecture Structural of AddSub4 is
---	signal s_b : std_logic_vector(3 downto 0);
---begin
---	s_b <= b when (sub = '0') else not b;
---	
---	add4 : entity work.Adder4(Structural)
---		port map(a => a,
---					b => s_b,
---					cin => sub,
---					s => s,
---				   cout => cout); -- o cout passa-se fyi
---end Structural;
+architecture Structural of AddSub4 is
+	signal s_b : std_logic_vector(3 downto 0);
+begin
+	s_b <= b when (sub = '0') else not b;
+	
+	add4 : entity work.Adder4(Structural)
+		port map(a => a,
+					b => s_b,
+					cin => sub,
+					s => s,
+				   cout => cout); -- o cout passa-se fyi
+end Structural;
 
+/*
 architecture Behavioral of AddSub4 is
   signal s_a, s_b, s_s : unsigned(4 downto 0);
 begin
@@ -32,3 +33,4 @@ begin
   s    <= std_logic_vector(s_s(3 downto 0));
   cout <= s_s(4);
 end Behavioral;
+*/

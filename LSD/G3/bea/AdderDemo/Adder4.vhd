@@ -21,7 +21,6 @@ begin
                  cin  => cin,
                  s    => s(0),
                  cout => carryOut(0));
-    -- complete para os restantes bits (1 a 3)
     bit1: entity work.FullAdder(Behavioral)
         port map(a    => a(1),
                  b    => b(1),

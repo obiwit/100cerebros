@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LEDR",
+					"name" : "LEDR[0]",
 					"strict" : false
 				},
 				{
@@ -20,7 +20,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY",
+					"name" : "KEY[0]",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Flow report for FreqDivider_Demo
-Sun Mar 05 22:52:07 2017
+Mon Mar 06 17:54:55 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 05 22:52:07 2017       ;
+; Flow Status                        ; Successful - Mon Mar 06 17:54:55 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; FreqDivider_Demo                            ;
 ; Top-level Entity Name              ; FreqDivider_CounterDisplay_Demo             ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 59 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 58 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 72 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 71 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 36 / 114,480 ( < 1 % )                      ;
 ; Total registers                    ; 36                                          ;
 ; Total pins                         ; 11 / 529 ( 2 % )                            ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/05/2017 22:50:03 ;
+; Start date & time ; 03/06/2017 17:53:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FreqDivider_Demo    ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+------------------+---------------------------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value    ; Entity Name                     ; Section Id     ;
 +-------------------------------------+---------------------------------------+------------------+---------------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373748038.148875420301892          ; --               ; --                              ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121373748038.148882281301016          ; --               ; --                              ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --               ; --                              ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>           ; --                              ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --               ; --                              ; --             ;
@@ -99,12 +99,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 852 MB              ; 00:00:38                           ;
-; Fitter                    ; 00:00:26     ; 1.0                     ; 1321 MB             ; 00:00:28                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 739 MB              ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 867 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 704 MB              ; 00:00:03                           ;
-; Total                     ; 00:01:16     ; --                      ; --                  ; 00:01:25                           ;
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 848 MB              ; 00:00:30                           ;
+; Fitter                    ; 00:00:23     ; 1.0                     ; 1323 MB             ; 00:00:25                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 741 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 860 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 705 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:53     ; --                      ; --                  ; 00:01:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FreqDivider_Demo
-Sun Mar 05 22:50:31 2017
+Mon Mar 06 17:53:52 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -45,13 +45,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 05 22:50:31 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 06 17:53:52 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; FreqDivider_Demo                            ;
 ; Top-level Entity Name              ; FreqDivider_CounterDisplay_Demo             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 58                                          ;
-;     Total combinational functions  ; 58                                          ;
+; Total logic elements               ; 71                                          ;
+;     Total combinational functions  ; 71                                          ;
 ;     Dedicated logic registers      ; 36                                          ;
 ; Total registers                    ; 36                                          ;
 ; Total pins                         ; 11                                          ;
@@ -178,17 +178,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 58             ;
+; Estimated Total logic elements              ; 71             ;
 ;                                             ;                ;
-; Total combinational functions               ; 58             ;
+; Total combinational functions               ; 71             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 21             ;
-;     -- 3 input functions                    ; 4              ;
-;     -- <=2 input functions                  ; 33             ;
+;     -- 4 input functions                    ; 22             ;
+;     -- 3 input functions                    ; 3              ;
+;     -- <=2 input functions                  ; 46             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 26             ;
-;     -- arithmetic mode                      ; 32             ;
+;     -- normal mode                          ; 38             ;
+;     -- arithmetic mode                      ; 33             ;
 ;                                             ;                ;
 ; Total registers                             ; 36             ;
 ;     -- Dedicated logic registers            ; 36             ;
@@ -200,7 +200,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 32             ;
-; Total fan-out                               ; 254            ;
+; Total fan-out                               ; 282            ;
 ; Average fan-out                             ; 2.19           ;
 +---------------------------------------------+----------------+
 
@@ -210,10 +210,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
-; |FreqDivider_CounterDisplay_Demo ; 58 (0)            ; 36 (0)       ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |FreqDivider_CounterDisplay_Demo                    ; work         ;
+; |FreqDivider_CounterDisplay_Demo ; 71 (0)            ; 36 (0)       ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |FreqDivider_CounterDisplay_Demo                    ; work         ;
 ;    |Bin7SegDecoder:dec|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqDivider_CounterDisplay_Demo|Bin7SegDecoder:dec ; work         ;
 ;    |CounterUpDown4:cnt|          ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqDivider_CounterDisplay_Demo|CounterUpDown4:cnt ; work         ;
-;    |FreqDivider:fq|              ; 46 (46)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqDivider_CounterDisplay_Demo|FreqDivider:fq     ; work         ;
+;    |FreqDivider:fq|              ; 59 (59)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqDivider_CounterDisplay_Demo|FreqDivider:fq     ; work         ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -238,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 16:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |FreqDivider_CounterDisplay_Demo|Bin7SegDecoder:dec|decOut_n[3] ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |FreqDivider_CounterDisplay_Demo|Bin7SegDecoder:dec|decOut_n[6] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
 
@@ -270,18 +270,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 36                          ;
 ;     SCLR              ; 3                           ;
 ;     plain             ; 33                          ;
-; cycloneiii_lcell_comb ; 58                          ;
-;     arith             ; 32                          ;
-;         2 data inputs ; 29                          ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 26                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
+; cycloneiii_lcell_comb ; 71                          ;
+;     arith             ; 33                          ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 38                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 14                          ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 21                          ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.91                        ;
+; Max LUT depth         ; 4.40                        ;
+; Average LUT depth     ; 3.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -300,7 +300,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 22:50:02 2017
+    Info: Processing started: Mon Mar 06 17:53:32 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FreqDivider_Demo -c FreqDivider_Demo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file freqdivider.vhd
@@ -325,14 +325,14 @@ Info (12129): Elaborating entity "Bin7SegDecoder" using architecture "A:behavior
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 58 logic cells
+    Info (21061): Implemented 71 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 852 megabytes
-    Info: Processing ended: Sun Mar 05 22:50:32 2017
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 848 megabytes
+    Info: Processing ended: Mon Mar 06 17:53:52 2017
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:30
 
 

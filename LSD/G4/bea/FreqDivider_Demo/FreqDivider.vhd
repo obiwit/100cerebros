@@ -21,10 +21,12 @@ begin
 			if (s_counter = (unsigned(K) - 1)) then 
 	  			clkOut <= '0';
 	  			s_counter <= 0;
-	        elsif (s_counter = s_halfWay) then
-	            clkOut    <= '1';
-	       end if;
-		s_counter <= s_counter + 1;
+	         else
+					if (s_counter = s_halfWay) then
+						clkOut <= '1';
+					end if;
+				s_counter <= s_counter + 1;
+				end if;
       end if;
    end process;
 end Behavioral;
@@ -50,10 +52,12 @@ begin
 end Behavioral;
 
 ie:
-    k = 7
- k -1 = 6
-1/2 k = 3
-clkIn:  _|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|
-clkOut: _____|-----|_____|-----|_____|-----|____
-             3     6     9     12    15    18
+k      = 7
+k - 1  = 6
+k/2 -1 = 2
+
+_|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|_|-|
+_____|---------------|___________|------
+ 1	  2   3   4   5   6   0   1   2   3
+ 
 */

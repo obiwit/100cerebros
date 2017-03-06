@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FreqDivider_Demo
-Sun Mar 05 22:52:07 2017
+Mon Mar 06 17:54:55 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 05 22:52:07 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 06 17:54:55 2017 ;
 ; Revision Name             ; FreqDivider_Demo                      ;
 ; Top-level Entity Name     ; FreqDivider_CounterDisplay_Demo       ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 22:52:04 2017
+    Info: Processing started: Mon Mar 06 17:54:53 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off FreqDivider_Demo -c FreqDivider_Demo
 Info (204019): Generated file FreqDivider_Demo_7_1200mv_85c_slow.vho in folder "C:/Users/bea/Desktop/lsdig/aula4/FreqDivider_Demo/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file FreqDivider_Demo_7_1200mv_0c_slow.vho in folder "C:/Users/bea/Desktop/lsdig/aula4/FreqDivider_Demo/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file FreqDivider_Demo_7_1200mv_0c_vhd_slow.sdo in folde
 Info (204019): Generated file FreqDivider_Demo_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/bea/Desktop/lsdig/aula4/FreqDivider_Demo/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file FreqDivider_Demo_vhd.sdo in folder "C:/Users/bea/Desktop/lsdig/aula4/FreqDivider_Demo/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 708 megabytes
-    Info: Processing ended: Sun Mar 05 22:52:07 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 711 megabytes
+    Info: Processing ended: Mon Mar 06 17:54:55 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

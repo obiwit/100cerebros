@@ -1,5 +1,5 @@
 Assembler report for FreqDivider_Demo
-Sun Mar 05 22:51:34 2017
+Mon Mar 06 17:54:33 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Mar 05 22:51:33 2017 ;
+; Assembler Status      ; Successful - Mon Mar 06 17:54:33 2017 ;
 ; Revision Name         ; FreqDivider_Demo                      ;
 ; Top-level Entity Name ; FreqDivider_CounterDisplay_Demo       ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                                      ;
 +----------------+----------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                                ;
-; JTAG usercode  ; 0x005699D7                                                                                   ;
-; Checksum       ; 0x005699D7                                                                                   ;
+; JTAG usercode  ; 0x0056A17E                                                                                   ;
+; Checksum       ; 0x0056A17E                                                                                   ;
 +----------------+----------------------------------------------------------------------------------------------+
 
 
@@ -79,14 +79,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 22:51:22 2017
+    Info: Processing started: Mon Mar 06 17:54:28 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FreqDivider_Demo -c FreqDivider_Demo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 739 megabytes
-    Info: Processing ended: Sun Mar 05 22:51:34 2017
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 741 megabytes
+    Info: Processing ended: Mon Mar 06 17:54:34 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -5,7 +5,7 @@ entity FreqDivider_CounterDisplay_Demo is
 	port(CLOCK_50 : in  std_logic;
 		  SW       : in std_logic_vector(1 downto 0);
 		  HEX0     : out std_logic_vector(6 downto 0);
-		  LEDG     : out std_logic);
+		  LEDG     : out std_logic_vector(0 downto 0));
 end FreqDivider_CounterDisplay_Demo;
 
 architecture Behavioral of FreqDivider_CounterDisplay_Demo is
@@ -28,5 +28,5 @@ begin
 				port map(binInput => s_count,
 							decOut_n => HEX0);
 	
-	LEDG <= s_clk;
+	LEDG(0) <= s_clk;
 end Behavioral;

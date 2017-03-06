@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "FlipFlopD_Demo")
-  (DATE "03/05/2017 04:20:09")
+  (DATE "03/06/2017 16:38:42")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition")
@@ -39,26 +39,26 @@
 
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE \\LEDR\~output\\)
+    (INSTANCE \\LEDR\[0\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (417:417:417) (450:450:450))
-        (IOPATH i o (2895:2895:2895) (2870:2870:2870))
+        (PORT i (2762:2762:2762) (2916:2916:2916))
+        (IOPATH i o (2908:2908:2908) (2866:2866:2866))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\KEY\~input\\)
+    (INSTANCE \\KEY\[0\]\~input\\)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (670:670:670) (776:776:776))
+        (IOPATH i o (650:650:650) (756:756:756))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\SW\[2\]\~input\\)
+    (INSTANCE \\SW\[1\]\~input\\)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (700:700:700) (806:806:806))
@@ -67,7 +67,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\SW\[1\]\~input\\)
+    (INSTANCE \\SW\[2\]\~input\\)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (700:700:700) (806:806:806))
@@ -88,11 +88,11 @@
     (INSTANCE \\ff_d\|q\~0\\)
     (DELAY
       (ABSOLUTE
-        (PORT datab (3102:3102:3102) (3360:3360:3360))
-        (PORT datac (3081:3081:3081) (3334:3334:3334))
-        (PORT datad (3043:3043:3043) (3294:3294:3294))
-        (IOPATH datab combout (423:423:423) (434:434:434))
-        (IOPATH datac combout (287:287:287) (280:280:280))
+        (PORT datab (4173:4173:4173) (4470:4470:4470))
+        (PORT datac (3994:3994:3994) (4271:4271:4271))
+        (PORT datad (4309:4309:4309) (4542:4542:4542))
+        (IOPATH datab combout (418:418:418) (425:425:425))
+        (IOPATH datac combout (285:285:285) (280:280:280))
         (IOPATH datad combout (155:155:155) (139:139:139))
       )
     )
@@ -102,7 +102,7 @@
     (INSTANCE \\ff_d\|q\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (1260:1260:1260) (1255:1255:1255))
+        (PORT clk (1255:1255:1255) (1249:1249:1249))
         (PORT d (87:87:87) (104:104:104))
         (IOPATH (posedge clk) q (232:232:232) (232:232:232))
       )

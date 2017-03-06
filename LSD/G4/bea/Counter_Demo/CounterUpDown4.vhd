@@ -19,7 +19,7 @@ begin
 				s_count <= (others => '0');
 			elsif (upDown = '0') then
 				s_count <= s_count + 1;
-			elsif (upDown = '1') then
+			else--if (upDown = '1') then
 				s_count <= s_count - 1;
 			end if;
      end if;

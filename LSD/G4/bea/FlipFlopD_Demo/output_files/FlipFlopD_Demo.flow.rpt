@@ -1,5 +1,5 @@
 Flow report for FlipFlopD_Demo
-Sun Mar 05 04:20:09 2017
+Mon Mar 06 16:38:42 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 05 04:20:09 2017       ;
+; Flow Status                        ; Successful - Mon Mar 06 16:38:42 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; FlipFlopD_Demo                              ;
 ; Top-level Entity Name              ; FlipFlopD_Demo                              ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/05/2017 04:18:40 ;
+; Start date & time ; 03/06/2017 16:37:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FlipFlopD_Demo      ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373748038.148868752000704 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121373748038.148881824407100 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
@@ -94,12 +94,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 852 MB              ; 00:00:34                           ;
-; Fitter                    ; 00:00:22     ; 1.0                     ; 1321 MB             ; 00:00:23                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 742 MB              ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 850 MB              ; 00:00:29                           ;
+; Fitter                    ; 00:00:19     ; 1.0                     ; 1321 MB             ; 00:00:21                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 736 MB              ; 00:00:07                           ;
 ; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 858 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 704 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:58     ; --                      ; --                  ; 00:01:07                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 701 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:53     ; --                      ; --                  ; 00:01:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Counter_Demo
-Sun Mar 05 18:37:22 2017
+Mon Mar 06 17:15:49 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 05 18:37:22 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 06 17:15:49 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; Counter_Demo                                ;
 ; Top-level Entity Name              ; Counter_Demo                                ;
@@ -53,7 +53,7 @@ agreement for further details.
 ;     Total combinational functions  ; 26                                          ;
 ;     Dedicated logic registers      ; 8                                           ;
 ; Total registers                    ; 8                                           ;
-; Total pins                         ; 34                                          ;
+; Total pins                         ; 42                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -192,14 +192,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 8                                   ;
 ;     -- I/O registers                        ; 0                                   ;
 ;                                             ;                                     ;
-; I/O pins                                    ; 34                                  ;
+; I/O pins                                    ; 42                                  ;
 ;                                             ;                                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                                   ;
 ;                                             ;                                     ;
 ; Maximum fan-out node                        ; CounterLoadUpDown4:inst2|s_count[0] ;
 ; Maximum fan-out                             ; 11                                  ;
-; Total fan-out                               ; 175                                 ;
-; Average fan-out                             ; 1.72                                ;
+; Total fan-out                               ; 183                                 ;
+; Average fan-out                             ; 1.55                                ;
 +---------------------------------------------+-------------------------------------+
 
 
@@ -208,7 +208,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
-; |Counter_Demo                 ; 26 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |Counter_Demo                          ; work         ;
+; |Counter_Demo                 ; 26 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |Counter_Demo                          ; work         ;
 ;    |Bin7SegDecoder:inst1|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter_Demo|Bin7SegDecoder:inst1     ; work         ;
 ;    |Bin7SegDecoder:inst3|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter_Demo|Bin7SegDecoder:inst3     ; work         ;
 ;    |CounterLoadUpDown4:inst2| ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter_Demo|CounterLoadUpDown4:inst2 ; work         ;
@@ -248,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
+; boundary_port         ; 42                          ;
 ; cycloneiii_ff         ; 8                           ;
 ;     ENA SCLR SLD      ; 3                           ;
 ;     SCLR              ; 3                           ;
@@ -271,7 +271,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -281,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 18:36:36 2017
+    Info: Processing started: Mon Mar 06 17:15:27 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Counter_Demo -c Counter_Demo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file counterdown4.vhd
@@ -299,29 +299,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
     Info (12022): Found design unit 1: CounterLoadUpDown4-Behavioral File: C:/Users/bea/Desktop/lsdig/aula4/Counter_Demo/CounterLoadUpDown4.vhd Line: 15
     Info (12023): Found entity 1: CounterLoadUpDown4 File: C:/Users/bea/Desktop/lsdig/aula4/Counter_Demo/CounterLoadUpDown4.vhd Line: 5
 Info (12127): Elaborating entity "Counter_Demo" for the top level hierarchy
-Warning (275089): Not all bits in bus "SW[17..0]" are used
-Warning (275080): Converted elements in bus name "SW" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SW[0]" to "SW0"
-    Warning (275081): Converted element name(s) from "SW[1]" to "SW1"
-    Warning (275081): Converted element name(s) from "SW[13..10]" to "SW13..10"
-    Warning (275081): Converted element name(s) from "SW[14]" to "SW14"
-    Warning (275081): Converted element name(s) from "SW[15]" to "SW15"
-    Warning (275081): Converted element name(s) from "SW[16]" to "SW16"
-    Warning (275081): Converted element name(s) from "SW[17]" to "SW17"
 Info (12128): Elaborating entity "Bin7SegDecoder" for hierarchy "Bin7SegDecoder:inst1"
 Info (12128): Elaborating entity "CounterUpDown4" for hierarchy "CounterUpDown4:inst"
 Info (12128): Elaborating entity "CounterLoadUpDown4" for hierarchy "CounterLoadUpDown4:inst2"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 26 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 856 megabytes
-    Info: Processing ended: Sun Mar 05 18:37:22 2017
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:00:54
+    Info: Peak virtual memory: 847 megabytes
+    Info: Processing ended: Mon Mar 06 17:15:49 2017
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:31
 
 

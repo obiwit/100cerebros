@@ -2,14 +2,14 @@
 CLOCK_50 => freqdivider:fq.clkIn
 SW[0] => counterupdown4:cnt.upDown
 SW[1] => counterupdown4:cnt.reset
-HEX0[0] <= bin7segdecoder:dec.decOut_n[0]
-HEX0[1] <= bin7segdecoder:dec.decOut_n[1]
-HEX0[2] <= bin7segdecoder:dec.decOut_n[2]
-HEX0[3] <= bin7segdecoder:dec.decOut_n[3]
-HEX0[4] <= bin7segdecoder:dec.decOut_n[4]
-HEX0[5] <= bin7segdecoder:dec.decOut_n[5]
-HEX0[6] <= bin7segdecoder:dec.decOut_n[6]
-LEDG <= freqdivider:fq.clkOut
+HEX0[0] << bin7segdecoder:dec.decOut_n[0]
+HEX0[1] << bin7segdecoder:dec.decOut_n[1]
+HEX0[2] << bin7segdecoder:dec.decOut_n[2]
+HEX0[3] << bin7segdecoder:dec.decOut_n[3]
+HEX0[4] << bin7segdecoder:dec.decOut_n[4]
+HEX0[5] << bin7segdecoder:dec.decOut_n[5]
+HEX0[6] << bin7segdecoder:dec.decOut_n[6]
+LEDG[0] << freqdivider:fq.clkOut
 
 
 |FreqDivider_CounterDisplay_Demo|FreqDivider:fq

@@ -4,23 +4,24 @@
  * Beatriz
  */
  
-package whatevs.Data;
+package whatevs;
  
 public class Data {
 	int day, month, year;
 	
 	// constructors
-	Data() {
-		day = -1; month = -1; year = -1;
+	public Data() {
+		// devia na verdade ser feito com o Calendar
+		day = 6; month = 3; year = 2017;
 	}
-	Data(int dia, int mes, int ano) {
+	public Data(int dia, int mes, int ano) {
 		if (ano > 1999) {
 			day = dia;
 			month = mes;
 			year = ano;
 		} else {
-			System.err.println('Pfff... year must be >= 2000!');
-			system.exit(-1);
+			System.err.println("Pfff... year must be >= 2000!");
+			System.exit(1);
 		}
 	}
 	
@@ -34,13 +35,13 @@ public class Data {
 	} 
 	public boolean menorDoQue(Data data) {
 		// lower year or same year and (lower month or same month, lower day)
-		return (year < data.year) || ((year == data.year) && 
+		return ((year < data.year) || ((year == data.year) && 
 				((month < data.month) || 
-				((month == data.month) && (day < this.day))));
+				((month == data.month) && (day < data.day)))));
 	} 
 	public boolean maiorDoQue(Data data) {
 		// bigger year or same year and (bigger month or same month, bigger day)
-		return (year > data.year) || ((year == data.year) && 
+		return ((year > data.year) || (year == data.year) && 
 				((month > data.month) || 
 				((month == data.month) && (day > this.day))));
 		
@@ -51,26 +52,38 @@ public class Data {
 	}
 	
 	public int daysBetween(Data date) {
+		// ATENTION
+		// this method probably doesn't work well - a better alternative
+		// would have been to convert the date to days since 2000, and
+		// then just do the difference between the dates
 		int daysBetween = 0;
-		
-		if(day =! date.day) {
+			
+		if(day != date.day) {
 			daysBetween = day - date.day;
 		}
-		while(month =! date.month) {
+		while(month != date.month) {
 			daysBetween += daysInMonth(month++, year);
 		}
 		while (year > date.year) {
-			daysBetween -= (isLeapYear(year--))? 366 : 365;
+			if (isLeapYear(year--)) {
+				daysBetween -= 366;
+			} else {
+				daysBetween -= 365;
+			}
 		}
-		while (year > date.year) {	
-			daysBetween += (isLeapYear(year++))? 366 : 365;
+		while (year < date.year) {	
+			if (isLeapYear(year++)) {
+				daysBetween += 366;
+			} else {
+				daysBetween += 365;
+			}
 		}
 		
 		return daysBetween;
 	}
 	
 	// class methods
-	private static boolean isLeapYear(year) {
+	private static boolean isLeapYear(int year) {
 		return((year%400 == 0) || ((year%4 == 0) && (year%100 != 0)));
 	}
 	private static int daysInMonth(int month, int year) {
@@ -89,7 +102,7 @@ public class Data {
 			case 11:
 				return 30;
 			default: // month = 2
-				return (leapYear(year))? 29 : 28;
+				return (isLeapYear(year))? 29 : 28;
 		}
 	}
 }

@@ -5,6 +5,7 @@
  * 
  */
 
+import whatevs.Data;
 
 public class Tarefa {
 	Data begin, end;

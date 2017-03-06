@@ -1,4 +1,5 @@
 import static java.lang.System.*;
+import whatevs.Data;
 
 public class p34
 {

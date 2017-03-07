@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Mar 07 19:13:09 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : ALUDemo
+Top-level Entity Name : ALUDemo
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 97 / 6,272 ( 2 % )
+    Total combinational functions : 97 / 6,272 ( 2 % )
+    Dedicated logic registers : 0 / 6,272 ( 0 % )
+Total registers : 0
+Total pins : 19 / 92 ( 21 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

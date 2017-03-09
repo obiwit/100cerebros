@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula4/Parte3/simulation/qsim
+vCounterDown4
+!s110 1488813023
+!i10b 1
+!s100 [P@KVn5=Jk3nlMKb>k6[B1
+IEREf6YjP0V_@<iHf@BBk73
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488813020
+8Counter_Demo.vo
+FCounter_Demo.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1488813023.000000
+!s107 Counter_Demo.vo|
+!s90 -work|work|Counter_Demo.vo|
+!i113 1
+Z3 o-work work
+n@counter@down4
+vCounterDown4_vlg_vec_tst
+!s110 1488813024
+!i10b 1
+!s100 9a[g:k3K719C3aZNPCSJ11
+ILaI;RhE@An9?hVaP1J36_1
+R1
+R0
+w1488813015
+8CounterDown4.vwf.vt
+FCounterDown4.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1488813024.000000
+!s107 CounterDown4.vwf.vt|
+!s90 -work|work|CounterDown4.vwf.vt|
+!i113 1
+R3
+n@counter@down4_vlg_vec_tst

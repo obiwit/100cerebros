@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE_STD_LOGIC_1164.all;
+
+entity LatchD is
+	port(dataIn : in  std_logic;
+		  enable : in  std_logic;
+		  dataOut: out std_logic);
+end LatchD;
+
+architecture Behavioral of LatchD is
+begin
+
+end Behavioral;

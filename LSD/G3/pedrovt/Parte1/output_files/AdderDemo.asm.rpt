@@ -1,5 +1,5 @@
 Assembler report for AdderDemo
-Mon Feb 27 17:07:04 2017
+Tue Mar 07 17:27:56 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Feb 27 17:07:04 2017 ;
+; Assembler Status      ; Successful - Tue Mar 07 17:27:56 2017 ;
 ; Revision Name         ; AdderDemo                             ;
 ; Top-level Entity Name ; AdderDemo                             ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                              ;
 +----------------+----------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                        ;
-; JTAG usercode  ; 0x005686ED                                                           ;
-; Checksum       ; 0x005686ED                                                           ;
+; JTAG usercode  ; 0x00567C84                                                           ;
+; Checksum       ; 0x00567C84                                                           ;
 +----------------+----------------------------------------------------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Feb 27 17:06:59 2017
+    Info: Processing started: Tue Mar 07 17:27:51 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off AdderDemo -c AdderDemo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 758 megabytes
-    Info: Processing ended: Mon Feb 27 17:07:04 2017
+    Info: Peak virtual memory: 761 megabytes
+    Info: Processing ended: Tue Mar 07 17:27:56 2017
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

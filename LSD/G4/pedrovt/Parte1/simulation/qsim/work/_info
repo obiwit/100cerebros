@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula4/Parte1/simulation/qsim
+vFlipFlopD
+!s110 1488810751
+!i10b 1
+!s100 <CFYdd[Ba>jeo??Vj6;J11
+Ia<ToINPJG_nH]7?j8GGUH1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1488810744
+8FlipFlopD_Demo.vo
+FFlipFlopD_Demo.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1488810751.000000
+!s107 FlipFlopD_Demo.vo|
+!s90 -work|work|FlipFlopD_Demo.vo|
+!i113 1
+Z3 o-work work
+n@flip@flop@d
+vFlipFlopD_vlg_vec_tst
+!s110 1488810752
+!i10b 1
+!s100 Aa6HnVQ7cP`DMOYW9Tzb02
+I>U07`=_0RAiSN[iYJOd<51
+R1
+R0
+w1488810723
+8FlipFlopD.vwf.vt
+FFlipFlopD.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1488810752.000000
+!s107 FlipFlopD.vwf.vt|
+!s90 -work|work|FlipFlopD.vwf.vt|
+!i113 1
+R3
+n@flip@flop@d_vlg_vec_tst

@@ -1,6 +1,6 @@
+import sys
 import select
 from socket import *
-import sys
 
 def main():
     udp_c = socket(AF_INET, SOCK_DGRAM)
@@ -9,7 +9,7 @@ def main():
     server_addr = ("127.0.0.1", 1234)
 
     while 1:
-        rsocks = select.select([udp_c, sys.stdin, ], [], [])[0]
+        rsocks = select.select([udp_c, sys.stdin], [], [])[0]
 
         for sock in rsocks:
             if sock == udp_c:

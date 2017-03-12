@@ -28,13 +28,13 @@ public class Data {
 		// lower year or same year and (lower month or same month, lower day)
 		return (year < data.year) || ((year == data.year) && 
 				((month < data.month) || 
-				((month == data.month) && (day < this.day))));
+				((month == data.month) && (day < data.day))));
 	} 
 	public boolean maiorDoQue(Data data) {
 		// bigger year or same year and (bigger month or same month, bigger day)
 		return (year > data.year) || ((year == data.year) && 
 				((month > data.month) || 
-				((month == data.month) && (day > this.day))));
+				((month == data.month) && (day > data.day))));
 		
 	} 
 	

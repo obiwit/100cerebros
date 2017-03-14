@@ -12,13 +12,13 @@ entity TimerN is
 end TimerN;
 
 architecture Behavioral of TimerN is
-	signal s_count : unsigned(26 downto 0); -- only allows N up to 134217727...
+	signal s_count : unsigned(31 downto 0); -- only allows N up to (2^32)-1
 begin
 	-- enable and start are syncronous, reset is unclear
 	counter: process(clk, reset)
 	begin
 		if (reset = '1') then
-			timerOut <= '1';
+			timerOut <= '0';
 			s_count <= (others => '0');
 		elsif (rising_edge(clk)) then
 			if (enable = '0') then

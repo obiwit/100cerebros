@@ -1,16 +1,17 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
-entity BEA_AdjustHourUnit is
+entity BEA_IsEqual is
 	port(hTens  	: in  natural;
+		  mode      : in  natural;
 		  maxChoose	: out std_logic);
-end BEA_AdjustHourUnit;
+end BEA_IsEqual;
 
-architecture Behavioral of BEA_AdjustHourUnit is
+architecture Behavioral of BEA_IsEqual is
 begin
 	process (hTens)
 	begin
-		if (hTens = 2) then
+		if (hTens = mode) then
 			maxChoose <= '1';
 		else
 			maxChoose <= '0';

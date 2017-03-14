@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TimerN_Demo
-Mon Mar 13 00:11:26 2017
+Mon Mar 13 16:39:13 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -14,12 +14,11 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: TimerN:inst
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: TimerN:inst
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -46,15 +45,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 13 00:11:26 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 13 16:39:13 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; TimerN_Demo                                 ;
 ; Top-level Entity Name              ; TimerN_Demo                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 58                                          ;
-;     Total combinational functions  ; 58                                          ;
-;     Dedicated logic registers      ; 28                                          ;
-; Total registers                    ; 28                                          ;
+; Total logic elements               ; 63                                          ;
+;     Total combinational functions  ; 63                                          ;
+;     Dedicated logic registers      ; 33                                          ;
+; Total registers                    ; 33                                          ;
 ; Total pins                         ; 5                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -176,20 +175,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 58             ;
+; Estimated Total logic elements              ; 63             ;
 ;                                             ;                ;
-; Total combinational functions               ; 58             ;
+; Total combinational functions               ; 63             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 27             ;
-;     -- 3 input functions                    ; 3              ;
-;     -- <=2 input functions                  ; 28             ;
+;     -- 4 input functions                    ; 29             ;
+;     -- 3 input functions                    ; 1              ;
+;     -- <=2 input functions                  ; 33             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
 ;     -- normal mode                          ; 32             ;
-;     -- arithmetic mode                      ; 26             ;
+;     -- arithmetic mode                      ; 31             ;
 ;                                             ;                ;
-; Total registers                             ; 28             ;
-;     -- Dedicated logic registers            ; 28             ;
+; Total registers                             ; 33             ;
+;     -- Dedicated logic registers            ; 33             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 5              ;
@@ -197,9 +196,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 28             ;
-; Total fan-out                               ; 276            ;
-; Average fan-out                             ; 2.88           ;
+; Maximum fan-out                             ; 33             ;
+; Total fan-out                               ; 308            ;
+; Average fan-out                             ; 2.91           ;
 +---------------------------------------------+----------------+
 
 
@@ -208,8 +207,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |TimerN_Demo               ; 58 (0)            ; 28 (0)       ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |TimerN_Demo             ; work         ;
-;    |TimerN:inst|           ; 58 (58)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TimerN_Demo|TimerN:inst ; work         ;
+; |TimerN_Demo               ; 63 (0)            ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |TimerN_Demo             ; work         ;
+;    |TimerN:inst|           ; 63 (63)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TimerN_Demo|TimerN:inst ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,24 +218,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Clock Enable       ; 19    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; TimerN:inst|timerOut                   ; 2       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -244,7 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |TimerN_Demo|TimerN:inst|s_count[0] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TimerN_Demo|TimerN:inst|s_count[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
@@ -264,20 +253,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 28                          ;
+; cycloneiii_ff         ; 33                          ;
 ;     CLR               ; 14                          ;
-;     ENA CLR           ; 14                          ;
-; cycloneiii_lcell_comb ; 59                          ;
-;     arith             ; 26                          ;
-;         2 data inputs ; 26                          ;
-;     normal            ; 33                          ;
-;         1 data inputs ; 2                           ;
+;     ENA CLR           ; 19                          ;
+; cycloneiii_lcell_comb ; 63                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 32                          ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 27                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.60                        ;
-; Average LUT depth     ; 3.73                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +285,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 13 00:11:07 2017
+    Info: Processing started: Mon Mar 13 16:38:56 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TimerN_Demo -c TimerN_Demo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file timern.vhd
@@ -306,19 +295,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file timern_
     Info (12023): Found entity 1: TimerN_Demo
 Info (12127): Elaborating entity "TimerN_Demo" for the top level hierarchy
 Info (12128): Elaborating entity "TimerN" for hierarchy "TimerN:inst"
-Info (13000): Registers with preset signals will power-up high File: C:/Users/bea/Desktop/lsdig/aula5/TimerN_Demo/TimerN.vhd Line: 11
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 58 logic cells
+    Info (21061): Implemented 63 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 853 megabytes
-    Info: Processing ended: Mon Mar 13 00:11:26 2017
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 849 megabytes
+    Info: Processing ended: Mon Mar 13 16:39:13 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:26
 
 

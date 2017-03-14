@@ -51,7 +51,10 @@ architecture Structural of BasicWatch is
 	signal s_hUnitsEnb, s_hTensEnb	: std_logic;
 	
 	-- BEA : keep track of max num of hours (i.e. 3 (when hoursTens = 2) vs 9 (when = 0 or = 1))
-	signal maxHours : std_logic;
+	-- signal s_minHours, s_maxHours : std_logic;
+	signal s_h_tens_display_en       : std_logic;
+	signal s_max_num_hours           : std_logic;
+	signal s_max_num_s_m             : std_logic;
 
 begin										
 	-- BEA : set up vars
@@ -86,7 +89,7 @@ begin
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_sUnitsEnb,
-										maxChoose=> '0',
+										--maxChoose=> '0',
 										valOut	=> s_sUnitsBin,
 										termCnt	=> s_sUnitsTerm);
 
@@ -98,7 +101,7 @@ begin
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_sTensEnb,
-										maxChoose=> '0',
+										--maxChoose=> '0',
 										valOut	=> s_sTensBin,
 										termCnt	=> s_sTensTerm);
 
@@ -111,7 +114,7 @@ begin
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_mUnitsEnb,
-										maxChoose=> '0',
+										--maxChoose=> '0',
 										valOut	=> s_mUnitsBin,
 										termCnt	=> s_mUnitsTerm);
 
@@ -123,40 +126,47 @@ begin
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_mTensEnb,
-										maxChoose=> '0',
+										--maxChoose=> '0',
 										valOut	=> s_mTensBin,
 										termCnt	=> s_mTensTerm);
 										
 										
 										
 	-- BEA : control max hours num
-	h_units_max_choose : entity work.BEA_AdjustHourUnit(Behavioral)
-									port map(hTens		 => to_integer(unsigned(s_hTensBin)),
-												maxChoose => maxHours);
-
+	--h_units_max_choose : entity work.BEA_IsEqual(Behavioral)
+	--								port map(hTens		 => to_integer(unsigned(s_hTensBin)),
+	--											mode      => 2,
+	--											maxChoose => s_maxHours);
+	--h_units_min_choose : entity work.BEA_IsEqual(Behavioral)
+	--								port map(hTens		 => to_integer(unsigned(s_hTensBin)),
+	--											mode      => 0,
+	--											maxChoose => s_minHours);
+							 
+	s_max_num_hours <= '1' when (s_hTensBin = "0010" and s_hUnitsBin = "0100") and --'24' horas
+						else '0';
+	
 	s_hUnitsEnb <= ((s_mTensTerm and s_mTensEnb) and not s_mode) or
 						(s_mode and s_hSet);
 
 	h_units_cnt : entity work.Counter4Bits(RTL)
-							generic map(MAX	=> 9, SEC_MAX => 3)
-							port map(reset		=> s_globalRst,
+							generic map(MAX	=> 9)            -- , SEC_MAX => 3)
+							port map(reset		=> (s_globalRst or s_max_num_hours),
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_hUnitsEnb,
-										maxChoose=> maxHours,
+										--maxChoose=> s_maxHours,
 										valOut	=> s_hUnitsBin,
 										termCnt	=> s_hUnitsTerm);
 
 	s_hTensEnb <= (s_hUnitsTerm and s_hUnitsEnb);
 
-										-- BEA : have to change bellow :|
 	h_tens_cnt : entity work.Counter4Bits(RTL)
 							generic map(MAX	=> 2)
-							port map(reset		=> s_globalRst,
+							port map(reset		=> (s_globalRst or s_max_num_hours),
 										clk		=> s_clk4Hz,
 										enable1	=> s_globalEnb,
 										enable2	=> s_hTensEnb,
-										maxChoose=> '0',
+										--maxChoose=> '0',
 										valOut	=> s_hTensBin,
 										termCnt	=> open);
 
@@ -187,9 +197,11 @@ begin
 										binInput	=> s_hUnitsBin,
 										decOut_n	=> HEX6);
 
-										-- BEA : have to change bellow :|
+	-- not enable h_tens_display if h_tens = 0
+	s_h_tens_display_en <= '0' when (s_hTensBin = "0000") else '1';
+	
 	h_tens_decod : entity work.Bin7SegDecoder(RTL)
-							port map(enable	=> (not maxHours),
+							port map(enable	=> s_h_tens_display_en, --(not s_minHours),
 										binInput	=> s_hTensBin,
 										decOut_n	=> HEX7);
 end Structural;

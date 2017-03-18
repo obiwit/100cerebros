@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   =================================================
+   Relax NG Schema for XSPF Version 0, draft 8+
+
+   Copyright (c) 2004 Robert Kaye
+   
+   The schema is released under the Creative Commons 
+   Attribution-ShareAlike 2.0 license.
+
+   http://creativecommons.org/licenses/by-sa/2.0/
+   =================================================
+
+Notes: 
+
+   Spec (8) issues:
+   1. Some element definitions lack cardinality info: 
+       license - MAY contain exactly one assumed
+       link - MAY contain zero or more assumed
+       meta - MAY contain zero or more assumed
+       trackList - MUST contain exactly one assumed
+        
+   2. The order of elements used in playlist and track should be ordered the same.
+      This schema set the order as: title, annotation, creator, info, image
+
+   3. info is the most intuitive name for a weblink. I was expecting text in that node, not a URI
+
+   4. trackList says: 
+    
+           xspf:track elements MUST be rendered in the order in which they appear, 
+           from top to bottom, unless a different ordering is otherwise indicated.
+
+      How do we provide an alternative ordering? Do we need to drop that?
+      I still think we need a Normal / Shuffle indicator -> random playlists
+
+-->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+   <start>
+     <ref name="playlist"/>
+   </start>
+
+   <define name="commonInfo" ns="http://xspf.org/ns/0/">
+       <optional>
+           <element name="title">
+               <text/>
+           </element>
+       </optional>
+       <optional>
+           <element name="creator">
+               <text/>
+           </element>
+       </optional>
+       <optional>
+           <element name="annotation">
+               <text/>
+           </element>
+       </optional>
+       <optional>
+           <element name="info">
+               <data type="anyURI"/>
+           </element>
+       </optional>
+       <optional>
+           <element name="image">
+               <data type="anyURI"/>
+           </element>
+       </optional>
+   </define>
+
+   <define name="commonLinks" ns="http://xspf.org/ns/0/">
+       <zeroOrMore>
+           <element name="link">
+               <attribute name="rel">
+                   <value type="anyURI"/>
+               </attribute>
+               <data type="anyURI"/>
+           </element>
+       </zeroOrMore>
+       <zeroOrMore>
+           <element name="meta">
+               <attribute name="rel">
+                   <value type="anyURI"/>
+               </attribute>
+               <data type="anyURI"/>
+           </element>
+       </zeroOrMore>
+   </define>
+
+   <define name="playlist" ns="http://xspf.org/ns/0/">
+       <element name="playlist">
+           <attribute name="version"/>
+
+           <ref name="commonInfo"/>
+
+           <zeroOrMore>
+               <element name="identifier">
+                   <text/>
+               </element>
+           </zeroOrMore>
+           <optional>
+               <element name="date">
+                   <data type="date"/>
+               </element>
+           </optional>
+           <optional>
+               <element name="license">
+                   <data type="anyURI"/>
+               </element>
+           </optional>
+           <optional>
+               <element name="attribution">
+                   <oneOrMore>
+                       <element name="location">
+                          <data type="anyURI"/>
+                       </element>
+                   </oneOrMore>
+               </element>
+           </optional>
+           
+           <ref name="commonLinks"/>
+
+           <element name="trackList">
+               <oneOrMore>
+                   <element name="track">
+                       <zeroOrMore>
+                           <element name="location">
+                               <data type="anyURI"/>
+                           </element>
+                       </zeroOrMore>
+                       <zeroOrMore>
+                           <element name="identifier">
+                               <data type="anyURI"/>
+                           </element>
+                       </zeroOrMore>
+                       <ref name="commonInfo"/>
+                       <optional>
+                           <element name="album">
+                               <text/>
+                           </element>
+                       </optional>
+                       <optional>
+                           <element name="trackNum">
+                               <data type="nonNegativeInteger"/>
+                           </element>
+                       </optional>
+                       <optional>
+                           <element name="duration">
+                               <data type="nonNegativeInteger"/>
+                           </element>
+                       </optional>
+
+                       <ref name="commonLinks"/>
+
+                   </element>
+               </oneOrMore>
+           </element>
+       </element>
+   </define>
+</grammar>

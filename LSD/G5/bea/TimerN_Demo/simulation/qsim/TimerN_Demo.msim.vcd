@@ -1,0 +1,421 @@
+$comment
+	File created using the following command:
+		vcd file TimerN_Demo.msim.vcd -direction
+$end
+$date
+	Sun Mar 12 23:54:22 2017
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module TimerN_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " enable $end
+$var reg 1 # reset $end
+$var reg 1 $ start $end
+$var wire 1 % timerOut $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , timerOut~output_o $end
+$var wire 1 - clk~input_o $end
+$var wire 1 . enable~input_o $end
+$var wire 1 / s_count[0]~3_combout $end
+$var wire 1 0 Add0~0_combout $end
+$var wire 1 1 s_count[2]~1_combout $end
+$var wire 1 2 Add0~3 $end
+$var wire 1 3 Add0~4_combout $end
+$var wire 1 4 s_count[2]~2_combout $end
+$var wire 1 5 reset~input_o $end
+$var wire 1 6 Add0~5 $end
+$var wire 1 7 Add0~6_combout $end
+$var wire 1 8 Add0~7 $end
+$var wire 1 9 Add0~8_combout $end
+$var wire 1 : Add0~9 $end
+$var wire 1 ; Add0~10_combout $end
+$var wire 1 < Equal0~0_combout $end
+$var wire 1 = Equal0~1_combout $end
+$var wire 1 > s_count[0]~4_combout $end
+$var wire 1 ? Add0~1 $end
+$var wire 1 @ Add0~2_combout $end
+$var wire 1 A start~input_o $end
+$var wire 1 B counter~0_combout $end
+$var wire 1 C s_count[0]~0_combout $end
+$var wire 1 D timerOut~0_combout $end
+$var wire 1 E timerOut~reg0_q $end
+$var wire 1 F s_count [5] $end
+$var wire 1 G s_count [4] $end
+$var wire 1 H s_count [3] $end
+$var wire 1 I s_count [2] $end
+$var wire 1 J s_count [1] $end
+$var wire 1 K s_count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+0$
+1%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+0-
+0.
+0/
+10
+01
+12
+03
+04
+15
+06
+07
+18
+09
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0K
+0J
+0I
+0H
+0G
+0F
+$end
+#20000
+1!
+1"
+1.
+1-
+#40000
+0!
+0-
+#50000
+0#
+1$
+05
+1A
+1B
+1C
+1>
+#60000
+1!
+1-
+1K
+0<
+1?
+00
+1@
+0>
+#80000
+0!
+0-
+#90000
+0$
+0A
+0B
+#100000
+1!
+1-
+1J
+0K
+02
+1<
+0?
+10
+0@
+13
+12
+1@
+1>
+03
+14
+04
+#120000
+0!
+0-
+#140000
+1!
+1-
+1K
+0<
+1?
+00
+02
+0@
+0>
+13
+14
+#160000
+0!
+0-
+#180000
+1!
+1-
+0J
+0K
+1I
+12
+1<
+0?
+10
+1B
+16
+03
+1@
+06
+13
+1=
+0@
+1>
+17
+04
+07
+1D
+0>
+#200000
+0!
+0-
+#220000
+1!
+1-
+1E
+0I
+0,
+0B
+0=
+03
+0%
+0C
+0D
+1>
+1D
+0>
+#240000
+0!
+0-
+#260000
+1!
+1-
+#280000
+0!
+0-
+#300000
+1!
+1-
+#320000
+0!
+0-
+#340000
+1!
+1-
+#360000
+0!
+0-
+#370000
+1$
+1A
+1B
+1C
+0D
+1>
+#380000
+1!
+1-
+0E
+1K
+1,
+0<
+1?
+00
+1%
+1@
+0>
+#400000
+0!
+0-
+#420000
+1!
+1-
+1J
+0K
+02
+1<
+0?
+10
+0@
+13
+12
+1@
+1>
+03
+14
+04
+#430000
+0$
+0A
+0B
+#440000
+0!
+0-
+#450000
+0"
+0.
+0C
+0>
+#460000
+1!
+1-
+#480000
+0!
+0-
+#500000
+1!
+1-
+#520000
+0!
+0-
+#540000
+1!
+1-
+#560000
+0!
+0-
+#580000
+1!
+1-
+#600000
+0!
+0-
+#620000
+1!
+1-
+#640000
+1"
+0!
+1.
+0-
+1C
+1>
+#660000
+1!
+1-
+1K
+0<
+1?
+00
+02
+0@
+0>
+13
+14
+#680000
+0!
+0-
+#700000
+1!
+1-
+0J
+0K
+1I
+12
+1<
+0?
+10
+1B
+16
+03
+1@
+06
+13
+1=
+0@
+1>
+17
+04
+07
+1D
+0>
+#720000
+0!
+0-
+#740000
+1!
+1-
+1E
+0I
+0,
+0B
+0=
+03
+0%
+0C
+0D
+1>
+1D
+0>
+#760000
+0!
+0-
+#780000
+1!
+1-
+#800000
+0!
+0-
+#820000
+1!
+1-
+#840000
+0!
+0-
+#860000
+1!
+1-
+#880000
+0!
+0-
+#890000
+0"
+0.
+#900000
+1!
+1-
+#920000
+0!
+0-
+#940000
+1!
+1-
+#960000
+0!
+0-
+#980000
+1!
+1-
+#1000000

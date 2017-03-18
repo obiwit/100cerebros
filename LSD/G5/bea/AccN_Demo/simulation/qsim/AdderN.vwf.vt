@@ -1,0 +1,104 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/12/2017 22:43:22"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          AdderN
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module AdderN_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [3:0] operand0;
+reg [3:0] operand1;
+// wires                                               
+wire [3:0] result;
+
+// assign statements (if any)                          
+AdderN i1 (
+// port map - connection between master ports and signals/registers   
+	.operand0(operand0),
+	.operand1(operand1),
+	.result(result)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// operand0[ 3 ]
+initial
+begin
+	operand0[3] = 1'b0;
+	operand0[3] = #50000 1'b1;
+	operand0[3] = #80000 1'b0;
+end 
+// operand0[ 2 ]
+initial
+begin
+	operand0[2] = 1'b0;
+	operand0[2] = #50000 1'b1;
+	operand0[2] = #80000 1'b0;
+end 
+// operand0[ 1 ]
+initial
+begin
+	operand0[1] = 1'b0;
+	operand0[1] = #50000 1'b1;
+	operand0[1] = #80000 1'b0;
+end 
+// operand0[ 0 ]
+initial
+begin
+	operand0[0] = 1'b0;
+	operand0[0] = #50000 1'b1;
+	operand0[0] = #80000 1'b0;
+	operand0[0] = #20000 1'b1;
+	operand0[0] = #70000 1'b0;
+end 
+// operand1[ 3 ]
+initial
+begin
+	operand1[3] = 1'b0;
+end 
+// operand1[ 2 ]
+initial
+begin
+	operand1[2] = 1'b0;
+end 
+// operand1[ 1 ]
+initial
+begin
+	operand1[1] = 1'b0;
+	operand1[1] = #140000 1'b1;
+	operand1[1] = #90000 1'b0;
+end 
+// operand1[ 0 ]
+initial
+begin
+	operand1[0] = 1'b0;
+	operand1[0] = #140000 1'b1;
+	operand1[0] = #90000 1'b0;
+end 
+endmodule
+

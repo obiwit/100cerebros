@@ -38,9 +38,9 @@ begin
 			 end if;
 		 else -- logic shift
 			 if (dirLeft = '1') then
-				s_shiftReg <= s_shiftReg(6 downto 0) & siLeft;
+				s_shiftReg <= s_shiftReg(6 downto 0) & siRight;
 			 else
-				s_shiftReg <= siRight & s_shiftReg(7 downto 1);
+				s_shiftReg <= siLeft & s_shiftReg(7 downto 1);
 			 end if;
        end if;
     end if;

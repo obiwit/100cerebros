@@ -1,5 +1,5 @@
 Fitter report for SeqShiftUnit_Demo
-Sun Mar 19 03:23:18 2017
+Mon Mar 20 16:26:10 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Mar 19 03:23:18 2017       ;
+; Fitter Status                      ; Successful - Mon Mar 20 16:26:10 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; SeqShiftUnit_Demo                           ;
 ; Top-level Entity Name              ; SeqShiftUnit_Demo                           ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; LEDR[6]  ; Incomplete set of assignments ;
 ; LEDR[7]  ; Incomplete set of assignments ;
 ; SW[11]   ; Incomplete set of assignments ;
-; SW[8]    ; Incomplete set of assignments ;
+; SW[9]    ; Incomplete set of assignments ;
 ; SW[13]   ; Incomplete set of assignments ;
 ; SW[12]   ; Incomplete set of assignments ;
 ; SW[0]    ; Incomplete set of assignments ;
@@ -184,7 +184,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; SW[4]    ; Incomplete set of assignments ;
 ; SW[5]    ; Incomplete set of assignments ;
 ; SW[6]    ; Incomplete set of assignments ;
-; SW[9]    ; Incomplete set of assignments ;
+; SW[8]    ; Incomplete set of assignments ;
 ; SW[7]    ; Incomplete set of assignments ;
 ; CLOCK_50 ; Incomplete set of assignments ;
 +----------+-------------------------------+
@@ -778,7 +778,7 @@ The pin-out file can be found in C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_D
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 0.6% / 0.4% / 0.8%     ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.4% / 0.9%     ;
 ; Maximum fan-out                             ; 27                     ;
 ; Highest non-global fan-out                  ; 27                     ;
 ; Total fan-out                               ; 301                    ;
@@ -1749,18 +1749,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[7]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[11]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[8]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[9]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[13]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[12]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[12]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[10]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[1]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[3]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[4]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[5]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[5]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[6]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[9]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[8]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[7]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1775,20 +1775,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - SeqShiftUnit:shifter|s_shiftReg~8     ; 0                 ; 6       ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[7]~9  ; 0                 ; 6       ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[7]~10 ; 0                 ; 6       ;
-; SW[8]                                        ;                   ;         ;
-;      - SeqShiftUnit:shifter|s_shiftReg~8     ; 1                 ; 6       ;
+; SW[9]                                        ;                   ;         ;
+;      - SeqShiftUnit:shifter|s_shiftReg~8     ; 0                 ; 6       ;
 ; SW[13]                                       ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg~8     ; 1                 ; 6       ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[7]~9  ; 1                 ; 6       ;
 ; SW[12]                                       ;                   ;         ;
-;      - SeqShiftUnit:shifter|s_shiftReg[0]~0  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[1]~1  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[2]~2  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[3]~3  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[4]~4  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[5]~5  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[6]~6  ; 0                 ; 6       ;
-;      - SeqShiftUnit:shifter|s_shiftReg[7]~7  ; 0                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[0]~0  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[1]~1  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[2]~2  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[3]~3  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[4]~4  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[5]~5  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[6]~6  ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[7]~7  ; 1                 ; 6       ;
 ; SW[0]                                        ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[0]    ; 0                 ; 6       ;
 ; SW[10]                                       ;                   ;         ;
@@ -1809,10 +1809,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[4]                                        ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[4]    ; 1                 ; 6       ;
 ; SW[5]                                        ;                   ;         ;
-;      - SeqShiftUnit:shifter|s_shiftReg[5]    ; 1                 ; 6       ;
+;      - SeqShiftUnit:shifter|s_shiftReg[5]    ; 0                 ; 6       ;
 ; SW[6]                                        ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[6]    ; 0                 ; 6       ;
-; SW[9]                                        ;                   ;         ;
+; SW[8]                                        ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[7]~9  ; 1                 ; 6       ;
 ; SW[7]                                        ;                   ;         ;
 ;      - SeqShiftUnit:shifter|s_shiftReg[7]    ; 0                 ; 6       ;
@@ -1820,16 +1820,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                            ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name                            ; Location          ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                        ; PIN_Y2            ; 27      ; Clock       ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; ClkDividerN:freqDiv|LessThan0~6 ; LCCOMB_X56_Y70_N0 ; 27      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; ClkDividerN:freqDiv|clkOut      ; FF_X56_Y70_N15    ; 8       ; Clock       ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; SW[10]                          ; PIN_AC24          ; 8       ; Sync. load  ; no     ; --                   ; --               ; --                        ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                             ;
++---------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
+; Name                            ; Location           ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                        ; PIN_Y2             ; 27      ; Clock       ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; ClkDividerN:freqDiv|LessThan0~6 ; LCCOMB_X50_Y10_N30 ; 27      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; ClkDividerN:freqDiv|clkOut      ; FF_X50_Y10_N29     ; 8       ; Clock       ; yes    ; Global Clock         ; GCLK15           ; --                        ;
+; SW[10]                          ; PIN_AC24           ; 8       ; Sync. load  ; no     ; --                   ; --               ; --                        ;
++---------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1838,7 +1838,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; CLOCK_50                   ; PIN_Y2         ; 27      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; ClkDividerN:freqDiv|clkOut ; FF_X56_Y70_N15 ; 8       ; 1                                    ; Global Clock         ; GCLK13           ; --                        ;
+; ClkDividerN:freqDiv|clkOut ; FF_X50_Y10_N29 ; 8       ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
 +----------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1847,14 +1847,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 56 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 27 / 10,120 ( < 1 % )  ;
-; C4 interconnects      ; 88 / 209,544 ( < 1 % ) ;
-; Direct links          ; 11 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 54 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 30 / 10,120 ( < 1 % )  ;
+; C4 interconnects      ; 77 / 209,544 ( < 1 % ) ;
+; Direct links          ; 12 / 342,891 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 47 / 119,088 ( < 1 % ) ;
+; Local interconnects   ; 48 / 119,088 ( < 1 % ) ;
 ; R24 interconnects     ; 13 / 9,963 ( < 1 % )   ;
-; R4 interconnects      ; 48 / 289,782 ( < 1 % ) ;
+; R4 interconnects      ; 46 / 289,782 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -2047,7 +2047,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[7]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[12]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2058,7 +2058,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -2116,33 +2116,33 @@ This will disable optimization of problematic paths and expose them for further 
 +--------------------------------------+----------------------------+-------------------+
 ; Source Register                      ; Destination Register       ; Delay Added in ns ;
 +--------------------------------------+----------------------------+-------------------+
-; ClkDividerN:freqDiv|clkOut           ; ClkDividerN:freqDiv|clkOut ; 3.907             ;
-; ClkDividerN:freqDiv|s_divCounter[23] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[22] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[21] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[20] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[19] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[18] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[17] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[16] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[24] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[14] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[13] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[12] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[11] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[10] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[9]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[8]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[7]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[6]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[5]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[4]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[3]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[2]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[1]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[0]  ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[15] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
-; ClkDividerN:freqDiv|s_divCounter[25] ; ClkDividerN:freqDiv|clkOut ; 1.428             ;
+; ClkDividerN:freqDiv|clkOut           ; ClkDividerN:freqDiv|clkOut ; 3.927             ;
+; ClkDividerN:freqDiv|s_divCounter[23] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[22] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[21] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[20] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[19] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[18] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[17] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[16] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[24] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[14] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[13] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[12] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[11] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[10] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[9]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[8]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[7]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[6]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[5]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[4]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[3]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[2]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[1]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[0]  ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[15] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
+; ClkDividerN:freqDiv|s_divCounter[25] ; ClkDividerN:freqDiv|clkOut ; 1.464             ;
 +--------------------------------------+----------------------------+-------------------+
 Note: This table only shows the top 27 path(s) that have the largest delay added for hold.
 
@@ -2684,7 +2684,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2696,8 +2696,8 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2706,10 +2706,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_Demo/output_files/SeqShiftUnit_Demo.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 502 warnings
-    Info: Peak virtual memory: 1322 megabytes
-    Info: Processing ended: Sun Mar 19 03:23:19 2017
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 1326 megabytes
+    Info: Processing ended: Mon Mar 20 16:26:11 2017
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +----------------------------+

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SeqShiftUnit_Demo
-Sun Mar 19 03:23:51 2017
+Mon Mar 20 16:26:42 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 19 03:23:51 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 20 16:26:42 2017 ;
 ; Revision Name             ; SeqShiftUnit_Demo                     ;
 ; Top-level Entity Name     ; SeqShiftUnit_Demo                     ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun Mar 19 03:23:50 2017
+    Info: Processing started: Mon Mar 20 16:26:41 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off SeqShiftUnit_Demo -c SeqShiftUnit_Demo
 Info (204019): Generated file SeqShiftUnit_Demo_7_1200mv_85c_slow.vho in folder "C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_Demo/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file SeqShiftUnit_Demo_7_1200mv_0c_slow.vho in folder "C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_Demo/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file SeqShiftUnit_Demo_7_1200mv_0c_vhd_slow.sdo in fold
 Info (204019): Generated file SeqShiftUnit_Demo_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_Demo/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file SeqShiftUnit_Demo_vhd.sdo in folder "C:/Users/bea/Desktop/lsdig/aula6/SeqShiftUnit_Demo/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 707 megabytes
-    Info: Processing ended: Sun Mar 19 03:23:51 2017
+    Info: Peak virtual memory: 709 megabytes
+    Info: Processing ended: Mon Mar 20 16:26:42 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -10,22 +10,14 @@ entity CombShiftUnit_Demo is
 end CombShiftUnit_Demo;
 
 architecture Structural of CombShiftUnit_Demo is
-	signal s_clk : std_logic;
 begin
-	freqDiv: entity work.ClkDividerN(Behavioral)
-		generic map(divFactor => 50000000) -- n should be 50 * 10^6
-		port map(clkIn  => CLOCK_50,
-					clkOut => s_clk);
 					
 	shifter: entity work.CombShiftUnit(Behavioral)
-	port map(clk     => s_clk,
-				dataIn  => SW(7 downto 0), 
-				siLeft  => SW(8),
-				siRight => SW(9),
-				loadEn  => SW(10),
-				rotate  => KEY(0),
-				dirLeft => KEY(1),
-				shArith => KEY(2),
-				shAmount=> SW(17 downto 15),
+	port map(dataIn  => SW(7 downto 0), 
+				rotate  => SW(8),
+				dirLeft => SW(9),
+				shArith => SW(10),
+				shAmount=> SW(13 downto 11),
 				dataOut => LEDR(7 downto 0));
+				
 end Structural;

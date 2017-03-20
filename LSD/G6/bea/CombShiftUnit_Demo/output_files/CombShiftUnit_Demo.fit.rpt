@@ -1,5 +1,5 @@
 Fitter report for CombShiftUnit_Demo
-Sun Mar 19 04:28:08 2017
+Mon Mar 20 17:58:08 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -26,23 +26,18 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
  18. Fitter Resource Utilization by Entity
  19. Delay Chain Summary
  20. Pad To Core Delay Chain Fanout
- 21. Control Signals
- 22. Global & Other Fast Signals
- 23. Routing Usage Summary
- 24. LAB Logic Elements
- 25. LAB-wide Signals
- 26. LAB Signals Sourced
- 27. LAB Signals Sourced Out
- 28. LAB Distinct Inputs
- 29. I/O Rules Summary
- 30. I/O Rules Details
- 31. I/O Rules Matrix
- 32. Fitter Device Options
- 33. Operating Settings and Conditions
- 34. Estimated Delay Added for Hold Timing Summary
- 35. Estimated Delay Added for Hold Timing Details
- 36. Fitter Messages
- 37. Fitter Suppressed Messages
+ 21. Routing Usage Summary
+ 22. LAB Logic Elements
+ 23. LAB Signals Sourced
+ 24. LAB Signals Sourced Out
+ 25. LAB Distinct Inputs
+ 26. I/O Rules Summary
+ 27. I/O Rules Details
+ 28. I/O Rules Matrix
+ 29. Fitter Device Options
+ 30. Operating Settings and Conditions
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
 
 
 
@@ -69,17 +64,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Mar 19 04:28:08 2017       ;
+; Fitter Status                      ; Successful - Mon Mar 20 17:58:08 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; CombShiftUnit_Demo                          ;
 ; Top-level Entity Name              ; CombShiftUnit_Demo                          ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 89 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 84 / 114,480 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 35 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 35                                          ;
+; Total logic elements               ; 93 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 93 / 114,480 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
+; Total registers                    ; 0                                           ;
 ; Total pins                         ; 31 / 529 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -164,12 +159,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; SW[8]    ; Incomplete set of assignments ;
-; SW[9]    ; Incomplete set of assignments ;
-; SW[11]   ; Incomplete set of assignments ;
-; SW[12]   ; Incomplete set of assignments ;
-; SW[13]   ; Incomplete set of assignments ;
+; CLOCK_50 ; Incomplete set of assignments ;
 ; SW[14]   ; Incomplete set of assignments ;
+; SW[15]   ; Incomplete set of assignments ;
+; SW[16]   ; Incomplete set of assignments ;
+; SW[17]   ; Incomplete set of assignments ;
+; KEY[0]   ; Incomplete set of assignments ;
+; KEY[1]   ; Incomplete set of assignments ;
+; KEY[2]   ; Incomplete set of assignments ;
 ; KEY[3]   ; Incomplete set of assignments ;
 ; LEDR[0]  ; Incomplete set of assignments ;
 ; LEDR[1]  ; Incomplete set of assignments ;
@@ -179,22 +176,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; LEDR[5]  ; Incomplete set of assignments ;
 ; LEDR[6]  ; Incomplete set of assignments ;
 ; LEDR[7]  ; Incomplete set of assignments ;
-; KEY[0]   ; Incomplete set of assignments ;
-; SW[16]   ; Incomplete set of assignments ;
-; SW[15]   ; Incomplete set of assignments ;
-; SW[17]   ; Incomplete set of assignments ;
-; KEY[1]   ; Incomplete set of assignments ;
-; SW[0]    ; Incomplete set of assignments ;
-; SW[10]   ; Incomplete set of assignments ;
+; SW[11]   ; Incomplete set of assignments ;
+; SW[7]    ; Incomplete set of assignments ;
+; SW[5]    ; Incomplete set of assignments ;
+; SW[12]   ; Incomplete set of assignments ;
+; SW[6]    ; Incomplete set of assignments ;
+; SW[4]    ; Incomplete set of assignments ;
+; SW[3]    ; Incomplete set of assignments ;
 ; SW[1]    ; Incomplete set of assignments ;
 ; SW[2]    ; Incomplete set of assignments ;
-; SW[3]    ; Incomplete set of assignments ;
-; SW[4]    ; Incomplete set of assignments ;
-; SW[5]    ; Incomplete set of assignments ;
-; SW[6]    ; Incomplete set of assignments ;
-; SW[7]    ; Incomplete set of assignments ;
-; KEY[2]   ; Incomplete set of assignments ;
-; CLOCK_50 ; Incomplete set of assignments ;
+; SW[0]    ; Incomplete set of assignments ;
+; SW[13]   ; Incomplete set of assignments ;
+; SW[9]    ; Incomplete set of assignments ;
+; SW[8]    ; Incomplete set of assignments ;
+; SW[10]   ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -700,8 +695,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 194 ) ; 0.00 % ( 0 / 194 )         ; 0.00 % ( 0 / 194 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 194 ) ; 0.00 % ( 0 / 194 )         ; 0.00 % ( 0 / 194 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 166 ) ; 0.00 % ( 0 / 166 )         ; 0.00 % ( 0 / 166 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 166 ) ; 0.00 % ( 0 / 166 )         ; 0.00 % ( 0 / 166 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -724,7 +719,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 184 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 156 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -740,49 +735,49 @@ The pin-out file can be found in C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 89 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 54                     ;
-;     -- Register only                        ; 5                      ;
-;     -- Combinational with a register        ; 30                     ;
+; Total logic elements                        ; 93 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 93                     ;
+;     -- Register only                        ; 0                      ;
+;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 27                     ;
-;     -- 3 input functions                    ; 29                     ;
-;     -- <=2 input functions                  ; 28                     ;
-;     -- Register only                        ; 5                      ;
+;     -- 4 input functions                    ; 51                     ;
+;     -- 3 input functions                    ; 34                     ;
+;     -- <=2 input functions                  ; 8                      ;
+;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 59                     ;
-;     -- arithmetic mode                      ; 25                     ;
+;     -- normal mode                          ; 93                     ;
+;     -- arithmetic mode                      ; 0                      ;
 ;                                             ;                        ;
-; Total registers*                            ; 35 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 35 / 114,480 ( < 1 % ) ;
+; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
+;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 6 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 7 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 31 / 529 ( 6 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )         ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
 ;                                             ;                        ;
-; Global signals                              ; 2                      ;
+; Global signals                              ; 0                      ;
 ; M9Ks                                        ; 0 / 432 ( 0 % )        ;
 ; Total block memory bits                     ; 0 / 3,981,312 ( 0 % )  ;
 ; Total block memory implementation bits      ; 0 / 3,981,312 ( 0 % )  ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )        ;
 ; PLLs                                        ; 0 / 4 ( 0 % )          ;
-; Global clocks                               ; 2 / 20 ( 10 % )        ;
+; Global clocks                               ; 0 / 20 ( 0 % )         ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 0.8% / 0.7% / 1.0%     ;
-; Maximum fan-out                             ; 27                     ;
-; Highest non-global fan-out                  ; 27                     ;
-; Total fan-out                               ; 395                    ;
-; Average fan-out                             ; 2.04                   ;
+; Peak interconnect usage (total/H/V)         ; 1.2% / 1.0% / 1.6%     ;
+; Maximum fan-out                             ; 31                     ;
+; Highest non-global fan-out                  ; 31                     ;
+; Total fan-out                               ; 366                    ;
+; Average fan-out                             ; 2.22                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -795,33 +790,32 @@ The pin-out file can be found in C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 89 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 54                    ; 0                              ;
-;     -- Register only                        ; 5                     ; 0                              ;
-;     -- Combinational with a register        ; 30                    ; 0                              ;
+; Total logic elements                        ; 93 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 93                    ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 27                    ; 0                              ;
-;     -- 3 input functions                    ; 29                    ; 0                              ;
-;     -- <=2 input functions                  ; 28                    ; 0                              ;
-;     -- Register only                        ; 5                     ; 0                              ;
+;     -- 4 input functions                    ; 51                    ; 0                              ;
+;     -- 3 input functions                    ; 34                    ; 0                              ;
+;     -- <=2 input functions                  ; 8                     ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 59                    ; 0                              ;
-;     -- arithmetic mode                      ; 25                    ; 0                              ;
+;     -- normal mode                          ; 93                    ; 0                              ;
+;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 35                    ; 0                              ;
-;     -- Dedicated logic registers            ; 35 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 0                     ; 0                              ;
+;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )    ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 6 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 7 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 31                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )       ; 0 / 532 ( 0 % )                ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
-; Clock control block                         ; 2 / 24 ( 8 % )        ; 0 / 24 ( 0 % )                 ;
 ;                                             ;                       ;                                ;
 ; Connections                                 ;                       ;                                ;
 ;     -- Input Connections                    ; 0                     ; 0                              ;
@@ -830,8 +824,8 @@ The pin-out file can be found in C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 390                   ; 5                              ;
-;     -- Registered Connections               ; 107                   ; 0                              ;
+;     -- Total Connections                    ; 361                   ; 5                              ;
+;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -863,29 +857,29 @@ The pin-out file can be found in C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 27                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; KEY[0]   ; M23   ; 6        ; 115          ; 40           ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; KEY[1]   ; M21   ; 6        ; 115          ; 53           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; KEY[2]   ; N21   ; 6        ; 115          ; 42           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; KEY[0]   ; M23   ; 6        ; 115          ; 40           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; KEY[1]   ; M21   ; 6        ; 115          ; 53           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; KEY[2]   ; N21   ; 6        ; 115          ; 42           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; KEY[3]   ; R24   ; 5        ; 115          ; 35           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[0]    ; AB28  ; 5        ; 115          ; 17           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[10]   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[11]   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[12]   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[13]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[0]    ; AB28  ; 5        ; 115          ; 17           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[10]   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[11]   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 31                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[12]   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 27                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[13]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 24                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[14]   ; AA23  ; 5        ; 115          ; 10           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[15]   ; AA22  ; 5        ; 115          ; 6            ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[16]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[17]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[1]    ; AC28  ; 5        ; 115          ; 14           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[2]    ; AC27  ; 5        ; 115          ; 15           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[3]    ; AD27  ; 5        ; 115          ; 13           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[4]    ; AB27  ; 5        ; 115          ; 18           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[5]    ; AC26  ; 5        ; 115          ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[6]    ; AD26  ; 5        ; 115          ; 10           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[7]    ; AB26  ; 5        ; 115          ; 15           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[8]    ; AC25  ; 5        ; 115          ; 4            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[9]    ; AB25  ; 5        ; 115          ; 16           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[15]   ; AA22  ; 5        ; 115          ; 6            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[16]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[17]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[1]    ; AC28  ; 5        ; 115          ; 14           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[2]    ; AC27  ; 5        ; 115          ; 15           ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[3]    ; AD27  ; 5        ; 115          ; 13           ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[4]    ; AB27  ; 5        ; 115          ; 18           ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[5]    ; AC26  ; 5        ; 115          ; 11           ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[6]    ; AD26  ; 5        ; 115          ; 10           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[7]    ; AB26  ; 5        ; 115          ; 15           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[8]    ; AC25  ; 5        ; 115          ; 4            ; 21           ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[9]    ; AB25  ; 5        ; 115          ; 16           ; 7            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -1736,9 +1730,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                       ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------+--------------+
-; |CombShiftUnit_Demo        ; 89 (0)      ; 35 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 31   ; 0            ; 54 (0)       ; 5 (0)             ; 30 (0)           ; |CombShiftUnit_Demo                       ; work         ;
-;    |ClkDividerN:freqDiv|   ; 46 (46)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 5 (5)             ; 22 (22)          ; |CombShiftUnit_Demo|ClkDividerN:freqDiv   ; work         ;
-;    |CombShiftUnit:shifter| ; 43 (43)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (35)      ; 0 (0)             ; 8 (8)            ; |CombShiftUnit_Demo|CombShiftUnit:shifter ; work         ;
+; |CombShiftUnit_Demo        ; 93 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 31   ; 0            ; 93 (0)       ; 0 (0)             ; 0 (0)            ; |CombShiftUnit_Demo                       ; work         ;
+;    |CombShiftUnit:shifter| ; 93 (93)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 93 (93)      ; 0 (0)             ; 0 (0)            ; |CombShiftUnit_Demo|CombShiftUnit:shifter ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1748,12 +1741,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name     ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
-; SW[8]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[9]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[11]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[12]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[13]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; CLOCK_50 ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[14]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[15]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[16]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[17]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[0]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[1]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[2]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[3]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1763,22 +1758,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[7]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; KEY[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[16]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[17]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; KEY[1]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[2]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[5]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[6]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[11]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[7]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; KEY[2]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; SW[5]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[12]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[6]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[1]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[13]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[9]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[8]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1787,126 +1780,237 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                          ; Pad To Core Index ; Setting ;
 +----------------------------------------------+-------------------+---------+
-; SW[8]                                        ;                   ;         ;
-; SW[9]                                        ;                   ;         ;
-; SW[11]                                       ;                   ;         ;
-; SW[12]                                       ;                   ;         ;
-; SW[13]                                       ;                   ;         ;
+; CLOCK_50                                     ;                   ;         ;
 ; SW[14]                                       ;                   ;         ;
-; KEY[3]                                       ;                   ;         ;
-; KEY[0]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~1    ; 1                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg[5]~2 ; 1                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg[5]~3 ; 1                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~23   ; 1                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~24   ; 1                 ; 6       ;
+; SW[15]                                       ;                   ;         ;
 ; SW[16]                                       ;                   ;         ;
+; SW[17]                                       ;                   ;         ;
+; KEY[0]                                       ;                   ;         ;
+; KEY[1]                                       ;                   ;         ;
+; KEY[2]                                       ;                   ;         ;
+; KEY[3]                                       ;                   ;         ;
+; SW[11]                                       ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~0   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~2   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~5   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~0   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~0    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~6   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~9   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~2  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~4   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~6   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~10  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~11  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~13  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~2    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~7   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~4  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~7  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~3    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~14  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~8  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~9  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~10 ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~18      ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~40   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~42   ; 0                 ; 6       ;
+; SW[7]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~0   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~4   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~2   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~6   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~2  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~4   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~10  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~7   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~17   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~9  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~22      ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~30   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[6]~36   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~44   ; 0                 ; 6       ;
+; SW[5]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~0   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~4   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~1   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~8   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~6  ; 1                 ; 6       ;
+; SW[12]                                       ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~0   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~0  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~2   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~1  ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~0   ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~1   ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~3   ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~4   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~0   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~2   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~0    ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~6   ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~8   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~2  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~4   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~5   ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~10  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~1    ; 0                 ; 6       ;
 ;      - CombShiftUnit:shifter|RotateLeft0~12  ; 0                 ; 6       ;
-; SW[15]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|RotateLeft0~2   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~5   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~7   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~9   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~11  ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~13  ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~14  ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~15  ; 0                 ; 6       ;
-; SW[17]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~1    ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg[5]~2 ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|RotateLeft0~16  ; 0                 ; 6       ;
-; KEY[1]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg[0]~0 ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg[5]~2 ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg[5]~3 ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~23   ; 0                 ; 6       ;
-; SW[0]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg[0]   ; 0                 ; 6       ;
-; SW[10]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg[0]   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~6    ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~9    ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~12   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~15   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~18   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~21   ; 0                 ; 6       ;
-;      - CombShiftUnit:shifter|s_shiftReg~25   ; 0                 ; 6       ;
-; SW[1]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~6    ; 0                 ; 6       ;
-; SW[2]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~9    ; 1                 ; 6       ;
-; SW[3]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~12   ; 1                 ; 6       ;
-; SW[4]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~15   ; 0                 ; 6       ;
-; SW[5]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~18   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~2    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~7   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~4  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~6  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~9  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~18      ; 0                 ; 6       ;
 ; SW[6]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~21   ; 0                 ; 6       ;
-; SW[7]                                        ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~25   ; 0                 ; 6       ;
-; KEY[2]                                       ;                   ;         ;
-;      - CombShiftUnit:shifter|s_shiftReg~22   ; 0                 ; 6       ;
-; CLOCK_50                                     ;                   ;         ;
+;      - CombShiftUnit:shifter|RotateRight0~0  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~6   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~12  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~7   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight0~3   ; 0                 ; 6       ;
+; SW[4]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|RotateRight0~0  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~5   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~12  ; 0                 ; 6       ;
+; SW[3]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~2   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~0   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~8   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~6  ; 1                 ; 6       ;
+; SW[1]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|ShiftRight1~2   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~0   ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~0    ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~10  ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~2    ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~4  ; 1                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~9  ; 1                 ; 6       ;
+; SW[2]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|RotateRight0~1  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~1   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftRight1~5   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~1    ; 0                 ; 6       ;
+; SW[0]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|RotateRight0~1  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~3   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[0]~1    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~0    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~2  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~1    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~4  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~5    ; 0                 ; 6       ;
+; SW[13]                                       ;                   ;         ;
+;      - CombShiftUnit:shifter|dataOut[0]~0    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[0]~2    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~6    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~7    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~10   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~3    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~8  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~17   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateRight0~11 ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|ShiftLeft0~5    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~22      ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|RotateLeft0~15  ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~25   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~27   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~28   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~34   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[6]~39   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~40   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~41   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~42   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~43   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~45   ; 0                 ; 6       ;
+; SW[9]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|dataOut[0]~0    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[0]~3    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~5    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~6    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~7    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~10   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~19   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~20   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~21   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[4]~23   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~25   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~26   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~27   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~28   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~31   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~34   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[6]~39   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~41   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~46   ; 0                 ; 6       ;
+; SW[8]                                        ;                   ;         ;
+;      - CombShiftUnit:shifter|dataOut[0]~1    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[0]~2    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~5    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~6    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~7    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[2]~10   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~17   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[3]~19   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[4]~23   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[4]~24   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~25   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~31   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~43   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~44   ; 0                 ; 6       ;
+; SW[10]                                       ;                   ;         ;
+;      - CombShiftUnit:shifter|dataOut[2]~4    ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~18      ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut~22      ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~26   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~27   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[5]~28   ; 0                 ; 6       ;
+;      - CombShiftUnit:shifter|dataOut[7]~45   ; 0                 ; 6       ;
 +----------------------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                            ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name                            ; Location          ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                        ; PIN_Y2            ; 27      ; Clock       ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; ClkDividerN:freqDiv|LessThan0~4 ; LCCOMB_X56_Y3_N10 ; 27      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; ClkDividerN:freqDiv|clkOut      ; FF_X56_Y3_N7      ; 8       ; Clock       ; yes    ; Global Clock         ; GCLK16           ; --                        ;
-; SW[10]                          ; PIN_AC24          ; 8       ; Sync. load  ; no     ; --                   ; --               ; --                        ;
-+---------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                      ;
-+----------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                       ; Location     ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK_50                   ; PIN_Y2       ; 27      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; ClkDividerN:freqDiv|clkOut ; FF_X56_Y3_N7 ; 8       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-+----------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-
-
-+------------------------------------------------+
-; Routing Usage Summary                          ;
-+-----------------------+------------------------+
-; Routing Resource Type ; Usage                  ;
-+-----------------------+------------------------+
-; Block interconnects   ; 92 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 26 / 10,120 ( < 1 % )  ;
-; C4 interconnects      ; 86 / 209,544 ( < 1 % ) ;
-; Direct links          ; 28 / 342,891 ( < 1 % ) ;
-; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 70 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 23 / 9,963 ( < 1 % )   ;
-; R4 interconnects      ; 59 / 289,782 ( < 1 % ) ;
-+-----------------------+------------------------+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 102 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 24 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 103 / 209,544 ( < 1 % ) ;
+; Direct links          ; 10 / 342,891 ( < 1 % )  ;
+; Global clocks         ; 0 / 20 ( 0 % )          ;
+; Local interconnects   ; 47 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 16 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 67 / 289,782 ( < 1 % )  ;
++-----------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 14.83) ; Number of LABs  (Total = 6) ;
+; Number of Logic Elements  (Average = 13.29) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
@@ -1914,27 +2018,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 11                                          ; 1                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
+; 14                                          ; 1                           ;
 ; 15                                          ; 2                           ;
-; 16                                          ; 3                           ;
+; 16                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
-
-
-+------------------------------------------------------------------+
-; LAB-wide Signals                                                 ;
-+------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 6) ;
-+------------------------------------+-----------------------------+
-; 1 Clock                            ; 6                           ;
-; 1 Sync. clear                      ; 2                           ;
-; 1 Sync. load                       ; 1                           ;
-+------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 20.00) ; Number of LABs  (Total = 6) ;
+; Number of Signals Sourced  (Average = 13.29) ; Number of LABs  (Total = 7) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1942,81 +2035,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
+; 6                                            ; 1                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
+; 11                                           ; 1                           ;
+; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 1                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 1                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 0                           ;
-; 29                                           ; 1                           ;
+; 14                                           ; 1                           ;
+; 15                                           ; 2                           ;
+; 16                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.50) ; Number of LABs  (Total = 6) ;
+; Number of Signals Sourced Out  (Average = 6.71) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 2                           ;
+; 4                                               ; 3                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 1                           ;
 ; 7                                               ; 1                           ;
 ; 8                                               ; 0                           ;
 ; 9                                               ; 0                           ;
 ; 10                                              ; 1                           ;
-; 11                                              ; 1                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 13.67) ; Number of LABs  (Total = 6) ;
+; Number of Distinct Inputs  (Average = 12.43) ; Number of LABs  (Total = 7) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
-; 2                                            ; 1                           ;
+; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
+; 5                                            ; 1                           ;
 ; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
-; 8                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 1                           ;
 ; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
+; 10                                           ; 1                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
+; 13                                           ; 1                           ;
 ; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
+; 15                                           ; 1                           ;
 ; 16                                           ; 0                           ;
-; 17                                           ; 3                           ;
+; 17                                           ; 1                           ;
 ; 18                                           ; 0                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 1                           ;
+; 19                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -2081,12 +2159,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 0         ; 31           ; 0         ; 31           ; 31           ; 0         ; 0         ; 31           ; 0         ; 0         ; 31           ; 23           ; 31           ; 31           ; 8            ; 31           ; 23           ; 8            ; 31           ; 31           ; 31           ; 23           ; 31           ; 31           ; 31           ; 31           ; 31           ; 0         ; 31           ; 31           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[12]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[17]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2096,22 +2176,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[7]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[17]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[10]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[12]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[10]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2151,53 +2229,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary              ;
-+-----------------+----------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------+----------------------+-------------------+
-; CLOCK_50        ; CLOCK_50             ; 3.9               ;
-+-----------------+----------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
-
-
-+---------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                         ;
-+--------------------------------------+----------------------------+-------------------+
-; Source Register                      ; Destination Register       ; Delay Added in ns ;
-+--------------------------------------+----------------------------+-------------------+
-; ClkDividerN:freqDiv|clkOut           ; ClkDividerN:freqDiv|clkOut ; 3.926             ;
-; ClkDividerN:freqDiv|s_divCounter[23] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[22] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[21] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[20] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[19] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[24] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[17] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[16] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[18] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[15] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[13] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[12] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[14] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[11] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[9]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[8]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[7]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[10] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[6]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[4]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[3]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[2]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[1]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[0]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[5]  ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-; ClkDividerN:freqDiv|s_divCounter[25] ; ClkDividerN:freqDiv|clkOut ; 1.533             ;
-+--------------------------------------+----------------------------+-------------------+
-Note: This table only shows the top 27 path(s) that have the largest delay added for hold.
-
-
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -2226,15 +2257,11 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'CombShiftUnit_Demo.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_Demo/CombShiftUnit_Demo.vhd Line: 6
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
-Info (176353): Automatically promoted node ClkDividerN:freqDiv|clkOut  File: C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_Demo/ClkDividerN.vhd Line: 8
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node ClkDividerN:freqDiv|clkOut~9 File: C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_Demo/ClkDividerN.vhd Line: 8
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2727,20 +2754,21 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2748,11 +2776,11 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/bea/Desktop/lsdig/aula6/CombShiftUnit_Demo/output_files/CombShiftUnit_Demo.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 494 warnings
-    Info: Peak virtual memory: 1324 megabytes
-    Info: Processing ended: Sun Mar 19 04:28:08 2017
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Fitter was successful. 0 errors, 495 warnings
+    Info: Peak virtual memory: 1294 megabytes
+    Info: Processing ended: Mon Mar 20 17:58:09 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +----------------------------+

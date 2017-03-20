@@ -14,14 +14,14 @@ SW[10] => seqshiftunit:shifter.loadEn
 SW[11] => seqshiftunit:shifter.rotate
 SW[12] => seqshiftunit:shifter.dirLeft
 SW[13] => seqshiftunit:shifter.shArith
-LEDR[0] << seqshiftunit:shifter.dataOut[0]
-LEDR[1] << seqshiftunit:shifter.dataOut[1]
-LEDR[2] << seqshiftunit:shifter.dataOut[2]
-LEDR[3] << seqshiftunit:shifter.dataOut[3]
-LEDR[4] << seqshiftunit:shifter.dataOut[4]
-LEDR[5] << seqshiftunit:shifter.dataOut[5]
-LEDR[6] << seqshiftunit:shifter.dataOut[6]
-LEDR[7] << seqshiftunit:shifter.dataOut[7]
+LEDR[0] <= seqshiftunit:shifter.dataOut[0]
+LEDR[1] <= seqshiftunit:shifter.dataOut[1]
+LEDR[2] <= seqshiftunit:shifter.dataOut[2]
+LEDR[3] <= seqshiftunit:shifter.dataOut[3]
+LEDR[4] <= seqshiftunit:shifter.dataOut[4]
+LEDR[5] <= seqshiftunit:shifter.dataOut[5]
+LEDR[6] <= seqshiftunit:shifter.dataOut[6]
+LEDR[7] <= seqshiftunit:shifter.dataOut[7]
 
 
 |SeqShiftUnit_Demo|ClkDividerN:freqDiv
@@ -72,8 +72,8 @@ dataIn[4] => s_shiftReg.DATAB
 dataIn[5] => s_shiftReg.DATAB
 dataIn[6] => s_shiftReg.DATAB
 dataIn[7] => s_shiftReg.DATAB
-siLeft => s_shiftReg.DATAB
-siRight => s_shiftReg.DATAA
+siLeft => s_shiftReg.DATAA
+siRight => s_shiftReg.DATAB
 loadEn => s_shiftReg.OUTPUTSELECT
 loadEn => s_shiftReg.OUTPUTSELECT
 loadEn => s_shiftReg.OUTPUTSELECT

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula6/ShiftRegister_Demo/simulation/qsim
+vShiftRegister4
+Z1 !s110 1489866562
+!i10b 1
+!s100 d>B7kFP_<Mnf]1<LS:9FN3
+IbZAK@o2zH8E2fGaSOKdMa0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1489866561
+8ShiftRegister_Demo.vo
+FShiftRegister_Demo.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1489866562.000000
+!s107 ShiftRegister_Demo.vo|
+!s90 -work|work|ShiftRegister_Demo.vo|
+!i113 1
+Z5 o-work work
+n@shift@register4
+vShiftRegister4_vlg_vec_tst
+R1
+!i10b 1
+!s100 NkoPlAz9U0Ng2AMPWzTWL3
+I;>aJ;?bzfKk0m:znY[GnF0
+R2
+R0
+w1489866555
+8ShiftRegister4.vwf.vt
+FShiftRegister4.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 ShiftRegister4.vwf.vt|
+!s90 -work|work|ShiftRegister4.vwf.vt|
+!i113 1
+R5
+n@shift@register4_vlg_vec_tst

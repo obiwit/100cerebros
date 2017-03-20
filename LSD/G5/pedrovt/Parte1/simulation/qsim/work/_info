@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula5/Parte1/simulation/qsim
+vCmpN
+!s110 1490034271
+!i10b 1
+!s100 4=13E=0IZl^:UU;FlVi6:3
+Id]SU5c]RAF@14KlQ0kE6f2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1490034268
+8CmpN_Demo.vo
+FCmpN_Demo.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1490034271.000000
+!s107 CmpN_Demo.vo|
+!s90 -work|work|CmpN_Demo.vo|
+!i113 1
+Z3 o-work work
+n@cmp@n
+vCmpN_vlg_vec_tst
+!s110 1490034272
+!i10b 1
+!s100 a<fUSQ]B:iYDnBH4LzgmB0
+IigRDUHWHU=IVzL?z]clL[1
+R1
+R0
+w1490034264
+8CmpN.vwf.vt
+FCmpN.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1490034272.000000
+!s107 CmpN.vwf.vt|
+!s90 -work|work|CmpN.vwf.vt|
+!i113 1
+R3
+n@cmp@n_vlg_vec_tst

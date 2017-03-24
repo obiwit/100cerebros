@@ -5,14 +5,13 @@
  * MIECT - DETI UA
  */
 
+// Ex 6.7b (ex 6.7a is a specific situation of 6.7b)
+
 import java.io.File;
 import java.util.Scanner;
+
 public class Ex06_7 {
-
-	/*
-	 * Ex 6.7b (ex 6.7a is a specific situation of 6.7b)
-	 */
-
+	
 	public static void main(String[] args) {
 
 		Scanner read = new Scanner (System.in);
@@ -53,12 +52,14 @@ public class Ex06_7 {
 		//if dir is actually a directory, prints its content
 		if (dir.isDirectory()) {
 			File[] contents = dir.listFiles();
-			for (File i : contents) {
-				// if it's a directory, gets its contents 
-				if (i.getPath().indexOf(name) != -1)    //if found
-					System.out.println(i.getPath());	//print file
-				if (i.isDirectory()) {
-					searchDir(i.getPath(), name);
+			if (contents != null) {			//avoids I/O Errors (see listFiles documentation)
+				for (File i : contents) {
+					// if it's a directory, gets its contents 
+					if (i.getPath().indexOf(name) != -1)    //if found
+						System.out.println(i.getPath());	//print file
+					if (i.isDirectory()) {
+						searchDir(i.getPath(), name);
+					}
 				}
 			}
 		}

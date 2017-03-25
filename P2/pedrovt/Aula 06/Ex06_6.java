@@ -16,7 +16,10 @@ public class Ex06_6 {
 
 		// through args
 		if (args.length >= 4){
-			System.arraycopy(args, 0, values, 0, values.length);
+			//parse values
+			for(int i = 0; i < values.length; i++){
+        		values[i]=Integer.parseInt(args[i]);
+    		}
 		}
 
 		// or console

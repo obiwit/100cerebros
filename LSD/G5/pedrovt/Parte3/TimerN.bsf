@@ -27,29 +27,29 @@ agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "start" (rect 0 0 17 12)(font "Arial" ))
-		(text "start" (rect 21 27 38 39)(font "Arial" ))
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 27 41 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "clk" (rect 0 0 10 12)(font "Arial" ))
-		(text "clk" (rect 21 43 31 55)(font "Arial" ))
+		(text "enable" (rect 0 0 24 12)(font "Arial" ))
+		(text "enable" (rect 21 43 45 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "enable" (rect 0 0 24 12)(font "Arial" ))
-		(text "enable" (rect 21 59 45 71)(font "Arial" ))
+		(text "start" (rect 0 0 17 12)(font "Arial" ))
+		(text "start" (rect 21 59 38 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 75 41 87)(font "Arial" ))
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 75 31 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
@@ -61,7 +61,7 @@ agreement for further details.
 	)
 	(parameter
 		"N"
-		"4"
+		"6"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

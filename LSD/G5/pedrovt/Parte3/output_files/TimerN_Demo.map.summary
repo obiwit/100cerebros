@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Mar 21 19:32:46 2017
+Analysis & Synthesis Status : Successful - Sun Mar 26 18:54:16 2017
 Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 Revision Name : TimerN_Demo
 Top-level Entity Name : TimerN_Demo
 Family : Cyclone IV E
-Total logic elements : 50
-    Total combinational functions : 50
+Total logic elements : 52
+    Total combinational functions : 52
     Dedicated logic registers : 33
 Total registers : 33
 Total pins : 5

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TimerN_Demo
-Tue Mar 21 19:32:46 2017
+Sun Mar 26 18:54:16 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -45,13 +45,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 21 19:32:46 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sun Mar 26 18:54:16 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; TimerN_Demo                                 ;
 ; Top-level Entity Name              ; TimerN_Demo                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 50                                          ;
-;     Total combinational functions  ; 50                                          ;
+; Total logic elements               ; 52                                          ;
+;     Total combinational functions  ; 52                                          ;
 ;     Dedicated logic registers      ; 33                                          ;
 ; Total registers                    ; 33                                          ;
 ; Total pins                         ; 5                                           ;
@@ -175,16 +175,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 50             ;
+; Estimated Total logic elements              ; 52             ;
 ;                                             ;                ;
-; Total combinational functions               ; 50             ;
+; Total combinational functions               ; 52             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 17             ;
+;     -- 4 input functions                    ; 18             ;
 ;     -- 3 input functions                    ; 0              ;
-;     -- <=2 input functions                  ; 33             ;
+;     -- <=2 input functions                  ; 34             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 19             ;
+;     -- normal mode                          ; 21             ;
 ;     -- arithmetic mode                      ; 31             ;
 ;                                             ;                ;
 ; Total registers                             ; 33             ;
@@ -197,7 +197,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 33             ;
-; Total fan-out                               ; 269            ;
+; Total fan-out                               ; 275            ;
 ; Average fan-out                             ; 2.89           ;
 +---------------------------------------------+----------------+
 
@@ -207,8 +207,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |TimerN_Demo               ; 50 (0)            ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |TimerN_Demo             ; work         ;
-;    |TimerN:inst|           ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TimerN_Demo|TimerN:inst ; work         ;
+; |TimerN_Demo               ; 52 (0)            ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |TimerN_Demo             ; work         ;
+;    |TimerN:inst|           ; 52 (52)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TimerN_Demo|TimerN:inst ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -256,16 +256,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 33                          ;
 ;     ENA SCLR          ; 32                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 50                          ;
+; cycloneiii_lcell_comb ; 52                          ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
-;     normal            ; 19                          ;
+;     normal            ; 21                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 17                          ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.48                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -284,11 +284,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 21 19:32:34 2017
+    Info: Processing started: Sun Mar 26 18:54:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TimerN_Demo -c TimerN_Demo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file timern.vhd
-    Info (12022): Found design unit 1: TimerN-DataFlow File: C:/altera_lite/docs/Aula5/Parte3/TimerN.vhd Line: 11
+    Info (12022): Found design unit 1: TimerN-Behavioral File: C:/altera_lite/docs/Aula5/Parte3/TimerN.vhd Line: 11
     Info (12023): Found entity 1: TimerN File: C:/altera_lite/docs/Aula5/Parte3/TimerN.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file timern_demo.bdf
     Info (12023): Found entity 1: TimerN_Demo
@@ -297,14 +297,14 @@ Info (12128): Elaborating entity "TimerN" for hierarchy "TimerN:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 50 logic cells
+    Info (21061): Implemented 52 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 863 megabytes
-    Info: Processing ended: Tue Mar 21 19:32:46 2017
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 864 megabytes
+    Info: Processing ended: Sun Mar 26 18:54:16 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 

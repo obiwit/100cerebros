@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition"
 
--- DATE "03/27/2017 16:31:54"
+-- DATE "03/27/2017 17:13:19"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DebugDemo
-Mon Mar 27 16:30:57 2017
+Mon Mar 27 17:24:49 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -10,15 +10,10 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "CntUp:system_core"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  5. Source assignments for sld_signaltap:auto_signaltap_0
+  6. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+  7. Port Connectivity Checks: "CntUp:system_core"
+  8. Analysis & Synthesis Messages
 
 
 
@@ -45,20 +40,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 27 16:30:57 2017       ;
+; Analysis & Synthesis Status        ; Failed - Mon Mar 27 17:24:49 2017           ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; DebugDemo                                   ;
 ; Top-level Entity Name              ; DebugDemo                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 31                                          ;
-;     Total combinational functions  ; 31                                          ;
-;     Dedicated logic registers      ; 30                                          ;
-; Total registers                    ; 30                                          ;
-; Total pins                         ; 21                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -155,86 +150,81 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; CntUp.vhd                        ; yes             ; User VHDL File  ; C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/CntUp.vhd     ;         ;
-; DebugDemo.vhd                    ; yes             ; User VHDL File  ; C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
++-------------------------------------------------------+
+; Source assignments for sld_signaltap:auto_signaltap_0 ;
++-----------------+-------+------+----------------------+
+; Assignment      ; Value ; From ; To                   ;
++-----------------+-------+------+----------------------+
+; MESSAGE_DISABLE ; 13410 ; -    ; -                    ;
++-----------------+-------+------+----------------------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 31          ;
-;                                             ;             ;
-; Total combinational functions               ; 31          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 31          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 2           ;
-;     -- arithmetic mode                      ; 29          ;
-;                                             ;             ;
-; Total registers                             ; 30          ;
-;     -- Dedicated logic registers            ; 30          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 21          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; SW[0]~input ;
-; Maximum fan-out                             ; 31          ;
-; Total fan-out                               ; 220         ;
-; Average fan-out                             ; 2.14        ;
-+---------------------------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; |DebugDemo                 ; 31 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |DebugDemo                   ; work         ;
-;    |CntUp:system_core|     ; 31 (31)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DebugDemo|CntUp:system_core ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 30    ;
-; Number of registers using Synchronous Clear  ; 30    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 30    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |DebugDemo|CntUp:system_core|s_cntVal[12] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                        ;
++-------------------------------------------------+-------------------------------------+----------------+
+; Parameter Name                                  ; Value                               ; Type           ;
++-------------------------------------------------+-------------------------------------+----------------+
+; lpm_type                                        ; sld_signaltap                       ; String         ;
+; sld_node_info                                   ; 805334528                           ; Untyped        ;
+; SLD_SECTION_ID                                  ; hdl_signaltap_0                     ; String         ;
+; SLD_IP_VERSION                                  ; 6                                   ; Signed Integer ;
+; SLD_IP_MINOR_VERSION                            ; 0                                   ; Signed Integer ;
+; SLD_COMMON_IP_VERSION                           ; 0                                   ; Signed Integer ;
+; sld_data_bits                                   ; 3                                   ; Untyped        ;
+; sld_trigger_bits                                ; 3                                   ; Untyped        ;
+; SLD_NODE_CRC_BITS                               ; 32                                  ; Signed Integer ;
+; SLD_NODE_CRC_HIWORD                             ; 41394                               ; Signed Integer ;
+; SLD_NODE_CRC_LOWORD                             ; 50132                               ; Signed Integer ;
+; sld_incremental_routing                         ; 1                                   ; Untyped        ;
+; sld_sample_depth                                ; 4096                                ; Untyped        ;
+; sld_segment_size                                ; 4096                                ; Untyped        ;
+; sld_ram_block_type                              ; AUTO                                ; Untyped        ;
+; sld_state_bits                                  ; 11                                  ; Untyped        ;
+; sld_buffer_full_stop                            ; 1                                   ; Untyped        ;
+; SLD_MEM_ADDRESS_BITS                            ; 7                                   ; Signed Integer ;
+; SLD_DATA_BIT_CNTR_BITS                          ; 4                                   ; Signed Integer ;
+; sld_trigger_level                               ; 1                                   ; Untyped        ;
+; sld_trigger_in_enabled                          ; 0                                   ; Untyped        ;
+; SLD_HPS_TRIGGER_IN_ENABLED                      ; 0                                   ; Signed Integer ;
+; SLD_HPS_TRIGGER_OUT_ENABLED                     ; 0                                   ; Signed Integer ;
+; SLD_HPS_EVENT_ENABLED                           ; 0                                   ; Signed Integer ;
+; SLD_HPS_EVENT_ID                                ; 0                                   ; Signed Integer ;
+; sld_advanced_trigger_entity                     ; basic,1,                            ; Untyped        ;
+; sld_trigger_level_pipeline                      ; 1                                   ; Untyped        ;
+; sld_enable_advanced_trigger                     ; 0                                   ; Untyped        ;
+; SLD_ADVANCED_TRIGGER_1                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_2                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_3                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_4                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_5                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_6                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_7                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_8                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_9                          ; NONE                                ; String         ;
+; SLD_ADVANCED_TRIGGER_10                         ; NONE                                ; String         ;
+; sld_inversion_mask_length                       ; 35                                  ; Untyped        ;
+; sld_inversion_mask                              ; 00000000000000000000000000000000000 ; Untyped        ;
+; sld_power_up_trigger                            ; 0                                   ; Untyped        ;
+; SLD_STATE_FLOW_MGR_ENTITY                       ; state_flow_mgr_entity.vhd           ; String         ;
+; sld_state_flow_use_generated                    ; 0                                   ; Untyped        ;
+; sld_current_resource_width                      ; 1                                   ; Untyped        ;
+; sld_attribute_mem_mode                          ; OFF                                 ; Untyped        ;
+; sld_storage_qualifier_bits                      ; 3                                   ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_GAP_RECORD                ; 0                                   ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_MODE                      ; OFF                                 ; String         ;
+; SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION ; 0                                   ; Signed Integer ;
+; sld_storage_qualifier_inversion_mask_length     ; 0                                   ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY ; basic                               ; String         ;
+; SLD_STORAGE_QUALIFIER_PIPELINE                  ; 0                                   ; Signed Integer ;
+; SLD_CREATE_MONITOR_INTERFACE                    ; 0                                   ; Signed Integer ;
+; SLD_USE_JTAG_SIGNAL_ADAPTER                     ; 1                                   ; Signed Integer ;
++-------------------------------------------------+-------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -246,64 +236,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 30                          ;
-;     ENA SCLR          ; 30                          ;
-; cycloneiii_lcell_comb ; 31                          ;
-;     arith             ; 29                          ;
-;         2 data inputs ; 29                          ;
-;     normal            ; 2                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 3.90                        ;
-; Average LUT depth     ; 2.83                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 27 16:30:39 2017
+    Info: Processing started: Mon Mar 27 17:24:28 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DebugDemo -c DebugDemo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file cntup.vhd
-    Info (12022): Found design unit 1: CntUp-Behavioral File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/CntUp.vhd Line: 12
-    Info (12023): Found entity 1: CntUp File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/CntUp.vhd Line: 5
+    Info (12022): Found design unit 1: CntUp-Behavioral File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/CntUp.vhd Line: 12
+    Info (12023): Found entity 1: CntUp File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/CntUp.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file debugdemo.vhd
-    Info (12022): Found design unit 1: DebugDemo-Shell File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd Line: 10
-    Info (12023): Found entity 1: DebugDemo File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd Line: 4
+    Info (12022): Found design unit 1: DebugDemo-Shell File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/DebugDemo.vhd Line: 10
+    Info (12023): Found entity 1: DebugDemo File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/DebugDemo.vhd Line: 4
 Info (12127): Elaborating entity "DebugDemo" for the top level hierarchy
-Critical Warning (10920): VHDL Incomplete Partial Association warning at DebugDemo.vhd(12): port or argument "cntVal" has 12/30 unassociated elements File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd Line: 12
-Info (12129): Elaborating entity "CntUp" using architecture "A:behavioral" for hierarchy "CntUp:system_core" File: C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd Line: 12
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 31 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 848 megabytes
-    Info: Processing ended: Mon Mar 27 16:30:57 2017
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:26
+Critical Warning (10920): VHDL Incomplete Partial Association warning at DebugDemo.vhd(12): port or argument "cntVal" has 12/30 unassociated elements File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/DebugDemo.vhd Line: 12
+Info (12129): Elaborating entity "CntUp" using architecture "A:behavioral" for hierarchy "CntUp:system_core" File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/DebugDemo.vhd Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ut14.tdf
+    Info (12023): Found entity 1: altsyncram_ut14 File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/altsyncram_ut14.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/mux_tsc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
+    Info (12023): Found entity 1: decode_dvf File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/decode_dvf.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_pei.tdf
+    Info (12023): Found entity 1: cntr_pei File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cntr_pei.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ogc.tdf
+    Info (12023): Found entity 1: cmpr_ogc File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cmpr_ogc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_m9j.tdf
+    Info (12023): Found entity 1: cntr_m9j File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cntr_m9j.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ggi.tdf
+    Info (12023): Found entity 1: cntr_ggi File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cntr_ggi.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_rgc.tdf
+    Info (12023): Found entity 1: cmpr_rgc File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cmpr_rgc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
+    Info (12023): Found entity 1: cntr_23j File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cntr_23j.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
+    Info (12023): Found entity 1: cmpr_ngc File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/cmpr_ngc.tdf Line: 23
+Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Error (265013): Can't open SignalTap II Logic Analyzer. Verify that the license file exists and is stored in the correct location. If you are using the Quartus Prime Lite Edition software, you must turn on the TalkBack feature to use the SignalTap II Logic Analyzer.
+Info (11170): Start IP generation for the debug fabric within sld_hub.
+Info (11172): 2017.03.27.17:24:44 Progress: Loading sld095f4fa4/alt_sld_fab_wrapper_hw.tcl
+Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
+Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
+Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
+Info (11172): Presplit: "alt_sld_fab" instantiated altera_super_splitter "presplit"
+Info (11172): Splitter: "alt_sld_fab" instantiated altera_sld_splitter "splitter"
+Info (11172): Sldfabric: "alt_sld_fab" instantiated altera_sld_jtag_hub "sldfabric"
+Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification_hub "ident"
+Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
+Info (11171): Finished IP generation for the debug fabric within sld_hub.
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld095f4fa4/alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_ident.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 92
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/ip/sld095f4fa4/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Error (12154): Can't elaborate inferred hierarchy "sld_hub:auto_hub"
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 880 megabytes
+    Error: Processing ended: Mon Mar 27 17:24:49 2017
+    Error: Elapsed time: 00:00:21
+    Error: Total CPU time (on all processors): 00:00:45
 
 

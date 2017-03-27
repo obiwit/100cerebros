@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/CntUp.vhd
-source_file = 1, C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/DebugDemo.vhd
+source_file = 1, D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/CntUp.vhd
+source_file = 1, D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/DebugDemo.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/bea/Desktop/lsdig/aula7/DebugDemo/db/DebugDemo.cbx.xml
+source_file = 1, D:/Users/Ambiente de trabalho/os meus documentos/trabalhos/escola/Universidade/LSD/Altera/aula7/parte4/db/DebugDemo.cbx.xml
 design_name = DebugDemo
 instance = comp, \LEDR[0]~output\, LEDR[0]~output, DebugDemo, 1
 instance = comp, \LEDR[1]~output\, LEDR[1]~output, DebugDemo, 1

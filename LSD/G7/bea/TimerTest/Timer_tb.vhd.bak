@@ -1,0 +1,5 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164;
+
+entity Timer_tb is
+end Timer_Tb;

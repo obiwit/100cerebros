@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula7/TimerTest/simulation/modelsim
+Etimer
+Z1 w1490567136
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd
+Z6 FC:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd
+l0
+L5
+V3iM_Ma_ZB^m_E4n8F8SYL1
+!s100 ;B_Inj3]EihOYEKmRUGEi0
+Z7 OV;C;10.4b;61
+32
+Z8 !s110 1490570522
+!i10b 1
+Z9 !s108 1490570522.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd|
+Z11 !s107 C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 5 timer 0 22 3iM_Ma_ZB^m_E4n8F8SYL1
+l16
+L14
+VWo=37:[;<GFO]kVKGQcCK1
+!s100 5U`nmlDmFG[Z0[9;<QNk41
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etimer_tb
+Z15 w1490570394
+R3
+R4
+R0
+Z16 8C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd
+Z17 FC:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd
+l0
+L4
+VM_H^hhkBKFQ<:aQU4lV[c1
+!s100 BeOSaJ]45mLh:^ab]8V6M2
+R7
+32
+Z18 !s110 1490570528
+!i10b 1
+Z19 !s108 1490570528.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd|
+Z21 !s107 C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd|
+!i113 1
+R12
+R13
+Astimulus
+R2
+R14
+R3
+R4
+Z22 DEx4 work 8 timer_tb 0 22 M_H^hhkBKFQ<:aQU4lV[c1
+l16
+L7
+Z23 VPnJTYf]Qg4_z_372b3<;`1
+Z24 !s100 _fkSeWL?S^4PSNnQzKQTk2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Etimertest
+Z25 w1490570054
+Z26 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 9L7WOjalBLjVlJ:R>F9:13
+Z27 DPx10 cycloneive 21 cycloneive_components 0 22 zHe@=:>9cbU;4Xj]jOJ^60
+Z28 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z29 DPx6 altera 11 dffeas_pack 0 22 VGN[`NdbD557>Wc5mPGc93
+Z30 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R3
+R4
+Z31 DPx6 altera 28 altera_primitives_components 0 22 z;MfmOU0<abV50UVn9d221
+R0
+Z32 8TimerTest_7_1200mv_85c_slow.vho
+Z33 FTimerTest_7_1200mv_85c_slow.vho
+l0
+L37
+Vg:lKzJ?^nnz53F4GeiY[@3
+!s100 SQn7RZhG;nFg`eTo2BE2`0
+R7
+31
+Z34 !s110 1490570481
+!i10b 1
+Z35 !s108 1490570481.000000
+Z36 !s90 -reportprogress|300|-93|-work|work|TimerTest_7_1200mv_85c_slow.vho|
+Z37 !s107 TimerTest_7_1200mv_85c_slow.vho|
+!i113 1
+Z38 o-93 -work work
+R13
+Astructure
+R26
+R27
+R28
+R29
+R30
+R3
+R4
+R31
+DEx4 work 9 timertest 0 22 g:lKzJ?^nnz53F4GeiY[@3
+l154
+L53
+Vkb7`MNnM1[Hh0K[G`DXfA3
+!s100 A2Rc?zAffEA0>a1P4YJ3o3
+R7
+31
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 1
+R38
+R13

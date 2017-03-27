@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula7/ALU16/simulation/modelsim
+Ealu16
+Z1 w1490548308
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 9L7WOjalBLjVlJ:R>F9:13
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zHe@=:>9cbU;4Xj]jOJ^60
+R0
+Z8 8ALU16_6_1200mv_85c_slow.vho
+Z9 FALU16_6_1200mv_85c_slow.vho
+l0
+L35
+VWgEM_[^1n]U:f2`KhmFaI3
+!s100 <E5QHjHo;7@1d9W_JoPBe0
+Z10 OV;C;10.4b;61
+31
+Z11 !s110 1490548403
+!i10b 1
+Z12 !s108 1490548403.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|ALU16_6_1200mv_85c_slow.vho|
+Z14 !s107 ALU16_6_1200mv_85c_slow.vho|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 DEx4 work 5 alu16 0 22 WgEM_[^1n]U:f2`KhmFaI3
+l1217
+L115
+V<zgcjIU@lmoa^7HGLmD`P3
+!s100 ZC1jk7F<DY^50_4cF3lcW3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealu16_tb
+Z18 w1490548220
+R5
+R6
+R0
+Z19 8C:/Users/bea/Desktop/lsdig/aula7/ALU16/ALU16_Tb.vhd
+Z20 FC:/Users/bea/Desktop/lsdig/aula7/ALU16/ALU16_Tb.vhd
+l0
+L4
+V0oC_kP1^hj5An^`Ok5o@G1
+!s100 5JC]d<:9IfXOd6o[f3]8?3
+R10
+31
+Z21 !s110 1490548404
+!i10b 1
+Z22 !s108 1490548404.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/bea/Desktop/lsdig/aula7/ALU16/ALU16_Tb.vhd|
+Z24 !s107 C:/Users/bea/Desktop/lsdig/aula7/ALU16/ALU16_Tb.vhd|
+!i113 1
+R15
+R16
+Astimulus
+R2
+R3
+R4
+R7
+R17
+R5
+R6
+DEx4 work 8 alu16_tb 0 22 0oC_kP1^hj5An^`Ok5o@G1
+l15
+L7
+VOXYa5RR;gY@@DY?7iTARK2
+!s100 XaHz3:7n12nhMZ_=g[zOX1
+R10
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R15
+R16

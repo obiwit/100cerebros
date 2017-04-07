@@ -352,6 +352,7 @@ public class LinkedList<E> {
   
   /** remove */
   public void remove(E removeMe) {
+    assert(removeMe != null): "AHHHHHHHHH! DESASTRE CAPITAL DE TRISTEZA MAXIMA! O PINACULO DA TRAGEDIA GREGA NO MUNDO DA ATUALIDADE!!!!! OHHHHHH BABY! DON'T DO THIS TO ME BABY! --Java"
     remove(first, removeMe);
   }
   private void remove(Node<E> n, E removeMe) {

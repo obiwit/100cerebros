@@ -25,11 +25,11 @@ public class P72
     LinkedList<Integer> rev = cln.reverse();
 
     out.println(rev.first());
-/*
+
     out.println(rev.contains(5));
     rev.remove(5);
     out.println(rev.contains(5));
-*/
+
     LinkedList<Integer> another = new LinkedList<Integer>();
     another.addFirst(123);
     another.addFirst(999);

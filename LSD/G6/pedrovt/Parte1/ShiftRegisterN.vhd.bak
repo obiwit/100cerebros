@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity ShiftRegisterN is
+	generic (N: positive := 4);
+	port(clk, sin: in std_logic;
+		  dataOut : out std_logic_vector(N-1 downto 0));
+end ShiftRegisterN;
+
+architecture DataFlow of ShiftRegisterN is 
+	signal s_data : std_logic_vector(N-1 downto 0);
+	begin
+	shift_left : process(clk)
+	begin
+		if (rising_edge(clk)) then
+			s_data <= s_data(N-2 downto 0) & sin;
+		end if;
+	end process;
+	
+end DataFlow;

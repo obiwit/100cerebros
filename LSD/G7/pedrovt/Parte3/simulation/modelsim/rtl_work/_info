@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/docs/Aula7/Parte3/simulation/modelsim
+Ealu16
+w1491323687
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+8C:/altera_lite/docs/Aula7/Parte3/ALU16.vhd
+FC:/altera_lite/docs/Aula7/Parte3/ALU16.vhd
+l0
+L5
+V;23k`GaR4Y<Z_JUBf@REn2
+!s100 M8oCc]=oPTB^RCe9Ozz2g0
+Z4 OV;C;10.4b;61
+32
+!s110 1491324439
+!i10b 1
+!s108 1491324439.000000
+!s90 -reportprogress|300|-work|work|C:/altera_lite/docs/Aula7/Parte3/ALU16.vhd|C:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd|
+!s107 C:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd|C:/altera_lite/docs/Aula7/Parte3/ALU16.vhd|
+!i113 1
+Z5 o-work work
+Z6 tExplicit 1
+Ealu16_tb
+Z7 w1491323856
+R2
+R3
+R0
+Z8 8C:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd
+Z9 FC:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd
+l0
+L4
+VZgH9gabT[R<?`5`SQbH7L2
+!s100 5JC]d<:9IfXOd6o[f3]8?3
+R4
+32
+Z10 !s110 1491324226
+!i10b 1
+Z11 !s108 1491324226.000000
+Z12 !s90 -reportprogress|300|-work|work|C:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd|
+Z13 !s107 C:/altera_lite/docs/Aula7/Parte3/ALU16_Tb.vhd|
+!i113 1
+R5
+R6
+Astimulus
+R1
+DEx4 work 5 alu16 0 22 ;23k`GaR4Y<Z_JUBf@REn2
+R2
+R3
+DEx4 work 8 alu16_tb 0 22 ZgH9gabT[R<?`5`SQbH7L2
+l16
+L7
+V;IM5RG?5oKkc4k4^QZjP`1
+!s100 @<PG[ZcD19fYoKDoE5BWD0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6

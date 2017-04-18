@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/docs/Aula8/Parte2/simulation/qsim
+vDrinksMachine
+Z1 !s110 1492534287
+!i10b 1
+!s100 R8`GASgEDH`CQV9oJbC;83
+Iom0`P52>WfFPXDanj2mVB2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1492534283
+8DrinksMachine.vo
+FDrinksMachine.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1492534287.000000
+!s107 DrinksMachine.vo|
+!s90 -work|work|DrinksMachine.vo|
+!i113 1
+Z5 o-work work
+n@drinks@machine
+vDrinksMachine_vlg_vec_tst
+R1
+!i10b 1
+!s100 41Rm@EU>i<6:@<zXKbz?D1
+IoYDkH[R3[^B>1cCcWaY@_2
+R2
+R0
+w1492534268
+8DrinksMachine.vwf.vt
+FDrinksMachine.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 DrinksMachine.vwf.vt|
+!s90 -work|work|DrinksMachine.vwf.vt|
+!i113 1
+R5
+n@drinks@machine_vlg_vec_tst

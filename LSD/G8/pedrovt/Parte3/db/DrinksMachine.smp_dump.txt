@@ -1,7 +1,0 @@
-
-State Machine - |DrinksMachine|DrinksMachineFSM:inst|fstate
-Name fstate.st3 fstate.st2 fstate.st1 fstate.st0 
-fstate.st0 0 0 0 0 
-fstate.st1 0 0 1 1 
-fstate.st2 0 1 0 1 
-fstate.st3 1 0 0 1 

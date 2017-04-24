@@ -1,6 +1,4 @@
 package p2utils_aula8;
-
-import p2utils.LinkedList;
 //import p2utils.Node;
 
 public class SortedList<E extends Comparable<E>> {
@@ -96,8 +94,9 @@ public class SortedList<E extends Comparable<E>> {
 		return contains(first,e); 
 	}
 	private boolean contains(Node<E> n,E e) {
-		if (n == null) return false;
-		if (n.elem==null) return e==null; //dispensável, se impedirmos elem==null
+		// if value of node is greater than e value, since the list is sorted, it means we won't find value e 
+		if (n == null || n.elem.compareTo(e) > 0) return false;						
+		//if (n.elem==null) return e==null; //dispensável, se impedirmos elem==null
 		if (n.elem.equals(e)) return true; 
 		return contains(n.next,e);
 	}
@@ -107,8 +106,11 @@ public class SortedList<E extends Comparable<E>> {
 	 * exemplo [1,12,7,9]. Desenvolva uma solu¸c˜ao iterativa para este m´etodo.
 	 */
 	public String toString() {
+		if (this.size == 0) {
+			return "[]";
+		}
+
 		String listToString = "[";
-		
 		Node<E> node = this.first;
 		int i = size;
 		while (node != null && i > 1) {				//stop before the last element (so a comma is not added)
@@ -116,9 +118,11 @@ public class SortedList<E extends Comparable<E>> {
 			node = node.next;
 			i--;
 		}
-		
+
 		listToString += node.elem + "]";			// adds the last element and closes the string with ]
 		return listToString;
+
+		
 	}
 	
 	/* merge(lst) - Devolve uma nova lista ordenada contendo os elementos da lista (em que

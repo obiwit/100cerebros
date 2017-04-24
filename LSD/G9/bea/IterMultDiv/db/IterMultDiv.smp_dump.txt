@@ -1,0 +1,16 @@
+
+State Machine - |IterMultDiv|IterMultCore:mult_core|MultCtrlUnit:control_unit|s_state
+Name s_state.ST_SHIFT s_state.ST_RES_ACC s_state.ST_BIT_TEST s_state.ST_INIT s_state.ST_IDLE 
+s_state.ST_IDLE 0 0 0 0 0 
+s_state.ST_INIT 0 0 0 1 1 
+s_state.ST_BIT_TEST 0 0 1 0 1 
+s_state.ST_RES_ACC 0 1 0 0 1 
+s_state.ST_SHIFT 1 0 0 0 1 
+
+State Machine - |IterMultDiv|MainCtrlUnit:main_ctrl_unit|s_state
+Name s_state.ST_DIV_WAIT s_state.ST_DIV_START s_state.ST_MULT_WAIT s_state.ST_MULT_START s_state.ST_IDLE 
+s_state.ST_IDLE 0 0 0 0 0 
+s_state.ST_MULT_START 0 0 0 1 1 
+s_state.ST_MULT_WAIT 0 0 1 0 1 
+s_state.ST_DIV_START 0 1 0 0 1 
+s_state.ST_DIV_WAIT 1 0 0 0 1 

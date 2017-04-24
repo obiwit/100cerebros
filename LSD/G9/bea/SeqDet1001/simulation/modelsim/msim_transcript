@@ -1,0 +1,76 @@
+# do SeqDet1001_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:56:02 on Apr 24,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeqDetFSM
+# -- Compiling architecture MealyArch of SeqDetFSM
+# End time: 10:56:02 on Apr 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDet1001.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:56:02 on Apr 24,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDet1001.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeqDet1001
+# -- Compiling architecture Structural of SeqDet1001
+# -- Loading entity SeqDetFSM
+# End time: 10:56:02 on Apr 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:56:27 on Apr 24,2017
+# vcom -reportprogress 300 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeqDetFSM_tb
+# -- Compiling architecture Stimulus of SeqDetFSM_tb
+# -- Loading entity SeqDetFSM
+# End time: 10:56:27 on Apr 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:56:29 on Apr 24,2017
+# vcom -reportprogress 300 -work work C:/Users/bea/Desktop/lsdig/aula9/SeqDet1001/SeqDetFSM_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeqDetFSM_tb
+# -- Compiling architecture Stimulus of SeqDetFSM_tb
+# -- Loading entity SeqDetFSM
+# End time: 10:56:29 on Apr 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.seqdetfsm_tb
+# vsim work.seqdetfsm_tb 
+# Start time: 10:56:34 on Apr 24,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.seqdetfsm_tb(stimulus)
+# Loading work.seqdetfsm(mealyarch)
+add wave -position end  sim:/seqdetfsm_tb/s_clk
+add wave -position end  sim:/seqdetfsm_tb/s_xin
+add wave -position end  sim:/seqdetfsm_tb/s_yout
+add wave -position end  sim:/seqdetfsm_tb/s_states
+run
+# End time: 10:57:17 on Apr 24,2017, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0

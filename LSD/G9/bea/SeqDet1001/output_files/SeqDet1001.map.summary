@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 24 17:46:08 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : SeqDet1001
+Top-level Entity Name : SeqDet1001
+Family : Cyclone IV E
+Total logic elements : 46
+    Total combinational functions : 45
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

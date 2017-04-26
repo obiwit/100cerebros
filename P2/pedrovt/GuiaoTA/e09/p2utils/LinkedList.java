@@ -229,7 +229,10 @@ public class LinkedList<E> {
 		}
 	}
 
-	//removeSublist(start,end) - remove da lista os elementos nas posições start até end-1.
+	/** 
+	 * removeSublist(start,end) - remove da lista os elementos nas posições start até end-1.
+	 * @author Beatriz Borges
+	 */
 	public void removeSublist(int start, int end) {
 		assert end > start : "Start must be greater than end";
 		this.first = removeSublist(this.first, 0, start, end);

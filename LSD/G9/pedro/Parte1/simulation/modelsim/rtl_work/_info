@@ -1,0 +1,89 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/docs/Aula9/Parte1/simulation/modelsim
+Eseqdetfsm
+Z1 w1493289198
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/altera/docs/Aula9/Parte1/SeqDetFSM.vhd
+Z5 FC:/altera/docs/Aula9/Parte1/SeqDetFSM.vhd
+l0
+L4
+VDSAPg__AY=L_dFF9F4i7S3
+!s100 WaDNj^EAE4TIbW?@5VD:;1
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1493291013
+!i10b 1
+Z8 !s108 1493291013.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/docs/Aula9/Parte1/SeqDetFSM.vhd|
+Z10 !s107 C:/altera/docs/Aula9/Parte1/SeqDetFSM.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Amealyarch
+R2
+R3
+Z13 DEx4 work 9 seqdetfsm 0 22 DSAPg__AY=L_dFF9F4i7S3
+l15
+L10
+V>=SbUME3<FfCWA=OQN@i:3
+!s100 :TlYf[kA<mL=Yz9zlT3YB2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eseqdetfsm_tb
+Z14 w1493290933
+R2
+R3
+R0
+Z15 8C:/altera/docs/Aula9/Parte1/SeqDetFSM_Tb.vhd
+Z16 FC:/altera/docs/Aula9/Parte1/SeqDetFSM_Tb.vhd
+l0
+L4
+V]K4?ST`[=K35hFfGLZj1`2
+!s100 @1f9oRQFb=DZ92>:BNW953
+R6
+32
+Z17 !s110 1493291030
+!i10b 1
+Z18 !s108 1493291030.000000
+Z19 !s90 -reportprogress|300|-work|work|C:/altera/docs/Aula9/Parte1/SeqDetFSM_Tb.vhd|
+Z20 !s107 C:/altera/docs/Aula9/Parte1/SeqDetFSM_Tb.vhd|
+!i113 1
+Z21 o-work work
+R12
+Astimulus
+R13
+R2
+R3
+DEx4 work 12 seqdetfsm_tb 0 22 ]K4?ST`[=K35hFfGLZj1`2
+l11
+L7
+V9Xaz;RFbFd@DJh6[z[6<F2
+!s100 QVeO<BOQ9jI5Y?SbChB151
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R12

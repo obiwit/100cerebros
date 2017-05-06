@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>LABI</title>
+        
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+        <link rel="stylesheet" href="css/ratchet.css">
+        <link rel="stylesheet" href="css/ratchet-theme-ios.css">
+        <link rel="stylesheet" href="css/app.css">
+        
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="js/ratchet.js"></script>
+
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+        <script src="js/location.js"></script>
+    </head>
+
+    <body>
+        <header class="bar bar-nav">
+            <h1 class="title">LABI</h1>
+        </header>
+        
+        <div class="bar bar-footer">
+        </div>
+        
+        <div class="content">
+            <ul class="table-view">
+                <li class="table-view-cell">Hello World</li>
+                <div id="location"></div>
+            </ul>
+    
+            <!-- Mapas -->
+            <h2 id="mapas">Mapas</h2>
+            <div id="oMeuMapa" style="width: 500px; height: 400px"></div>
+                <script type="text/javascript" src="js/guide11_maps.js"></script>   
+                <span id="coordenadas"></span>
+            </div>
+
+            <!-- <div class="content">
+                <button id="refresh" class="btn btn-block btn-primary">Refresh</button>
+                <div id="clock" style="width:100%; text-align:center;"></div>
+            </div>-->
+    </body>
+</html>

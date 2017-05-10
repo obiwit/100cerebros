@@ -5,7 +5,7 @@
  * Copyright 2017, MIECT - DETI UA
  */
 
-import p2utils.*;
+import p2utils.Stack;
 public class HanoiTowers {
 
 	// Fields

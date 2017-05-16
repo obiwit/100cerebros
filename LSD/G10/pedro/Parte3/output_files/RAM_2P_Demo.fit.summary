@@ -1,0 +1,16 @@
+Fitter Status : Failed - Tue May 16 19:31:15 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : RAM_2P_Demo
+Top-level Entity Name : RAM_2P_Demo
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 90 / 6,272 ( 1 % )
+    Total combinational functions : 74 / 6,272 ( 1 % )
+    Dedicated logic registers : 53 / 6,272 ( < 1 % )
+Total registers : 53
+Total pins : 22 / 92 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 128 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

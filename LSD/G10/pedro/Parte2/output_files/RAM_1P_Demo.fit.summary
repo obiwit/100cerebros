@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 16 18:59:07 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : RAM_1P_Demo
+Top-level Entity Name : RAM_1P_Demo
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 174 / 114,480 ( < 1 % )
+    Total combinational functions : 112 / 114,480 ( < 1 % )
+    Dedicated logic registers : 128 / 114,480 ( < 1 % )
+Total registers : 128
+Total pins : 23 / 529 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

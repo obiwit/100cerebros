@@ -1,0 +1,15 @@
+#
+# LSD.TOS, March 2017 (DO NOT REMOVE THIS LINE)
+#
+# This file has to be copied to the project's directory and has to be renamed to match the name of the project's revision.
+#
+# Suppress the following harmless warning messages:
+#   Warning  15705: Ignored locations or region assignments to the following nodes
+#   Warning  15706: Node "..." is assigned to location or region, but does not exist in design
+#   Warning 169133: Can't reserve pin "..." -- pin name is an illegal or unsupported format
+#   Warning 169140: Reserve pin assignment ignored because of existing pin with name "..."
+#
+{ "" "" "" "*" { } { } 0  15705 "" 0 0 "Design Software" 0 -1 0 ""}
+{ "" "" "" "*" { } { } 0  15706 "" 0 0 "Design Software" 0 -1 0 ""}
+{ "" "" "" "*" { } { } 0 169133 "" 0 0 "Design Software" 0 -1 0 ""}
+{ "" "" "" "*" { } { } 0 169140 "" 0 0 "Design Software" 0 -1 0 ""}

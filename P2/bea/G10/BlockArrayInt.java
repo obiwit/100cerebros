@@ -3,6 +3,8 @@
 // A implementação fornecida cria um único array, mas queremos substituí-lo
 // por uma lista de blocos (arrays de tamanho blocksize), que poderá crescer
 // juntando progressivamente mais blocos à lista.
+import p2utils.*;
+
 public class BlockArrayInt
 {
   public BlockArrayInt(int blockSize,int numBlocks)
@@ -10,41 +12,51 @@ public class BlockArrayInt
     assert blockSize > 0;
     assert numBlocks > 0;
 
-    a = new int[blockSize*numBlocks];
+    a = new LinkedList<Integer[]>();
+    a.addFirst(new Integer[blockSize]);
+	blocks = 1;
+    
+    this.blockSize = blockSize;
+    
+    maxBlocks = numBlocks;
   }
 
   public int get(int index)
   {
     assert validIndex(index);
-
-    return a[index];
+    
+    return a.get(index/blockSize)[index % blockSize];
   }
 
   public void put(int elem,int index)
   {
     assert validIndex(index);
-
-    a[index] = elem;
+    if (index == blockSize * blocks) incrementNumberOfBlocks();
+	// ir ao ultimo array, espetar la no fim o novo 
+    a.get(index/blockSize)[index % blockSize] = elem;
+    size++;
+    
   }
 
   public void incrementNumberOfBlocks()
   {
-    assert false: "Not yet implemented!";
+    a.addLast(new Integer[blockSize]);
+    blocks++;
   }
 
   public int size()
   {
-    return a.length;
+    return size;
   }
 
   public int numberOfBlocks()
   {
-    return 1;
+    return blocks;
   }
 
   public int blockSize()
   {
-    return a.length;
+    return blockSize;
   }
 
   public boolean validIndex(int index)
@@ -52,6 +64,7 @@ public class BlockArrayInt
     return index >= 0 && index < size();
   }
 
-  private int[] a;
+  private LinkedList<Integer[]> a;
+  private int size = 0, blockSize = 0, maxBlocks = 0, blocks = 0;
 }
 

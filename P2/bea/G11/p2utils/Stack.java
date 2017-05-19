@@ -27,12 +27,7 @@ public class Stack<E> {
    * @return  {@code true} if stack empty, otherwise {@code false}.
    */
   public boolean isEmpty() { return list.isEmpty(); }
-  
-  /** read the function's name... */
-  public String toString() { return list.reverseToString(); }
 
   private LinkedList<E> list = new LinkedList<E>();
-
-  // Acrescente aqui outras funções necessárias:
-
 }
+

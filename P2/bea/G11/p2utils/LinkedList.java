@@ -2,23 +2,26 @@ package p2utils;
 
 public class LinkedList<E> {
 
+  private Node<E> first = null;
+  private Node<E> last = null;
+  private int size = 0;
+
   /**
    * {@code LinkedList} constructor, empty so far.
    */
   public LinkedList() { }
 
-  /**
+  /** Returns the number of elements in the list.
    * @return Number of elements in the list
    */
   public int size() { return size; }
 
-  /**
-   * Checks if the list is empty
+  /** Checks if the list is empty.
    * @return  {@code true} if list empty, otherwise {@code false}.
    */
   public boolean isEmpty() { return size == 0; }
 
-  /**
+  /** Returns the first element in the list.
    * @return  First element in the list
    */
   public E first() {
@@ -27,8 +30,8 @@ public class LinkedList<E> {
     return first.elem;
   }
 
-  /**
-   * @return  Last element in the list
+  /** Returns the last element in the list.
+   * @return Last element in the list
    */
   public E last() {
     assert !isEmpty(): "empty!";
@@ -36,8 +39,8 @@ public class LinkedList<E> {
     return last.elem;
   }
 
-  /**
-   * Adds a new element to the start of the list
+  /** Adds the given element to the start of the list.
+   * @param e the element to add
    */
   public void addFirst(E e) {
     first = new Node<>(e, first);
@@ -49,8 +52,8 @@ public class LinkedList<E> {
     assert first().equals(e) : "wrong element";
   }
 
-  /**
-   * Adds a new element to the end of the list
+  /** Adds the given element to the end of the list.
+   * @param e the element to add
    */
   public void addLast(E e) {
     Node<E> newest = new Node<>(e);
@@ -65,8 +68,7 @@ public class LinkedList<E> {
     assert last().equals(e) : "wrong element";
   }
 
-  /**
-   * Removes the first element in the list
+  /** Removes the first element in the list.
    */
   public void removeFirst() {
     assert !isEmpty(): "empty!";
@@ -76,58 +78,14 @@ public class LinkedList<E> {
       last = null;
   }
 
-  /**
-   * Removes all elements
+  /** Removes all elements.
    */
   public void clear() {
     first = last = null;
     size = 0;
   }
 
-  private Node<E> first = null;
-  private Node<E> last = null;
-  private int size = 0;
+  // Acrescente as funções adicionais pedidas no guião...
 
-  /** toString */ 
-  public String toString() {
-	if (size()==0) 
-		return "[ ]";
-	String s = "[ " + first.elem.toString();
-	if (size()==1) 
-		return s + " ]";
-	Node<E> n = first.next;
-	while (n!=null) {
-		s += (", " + n.elem.toString());
-		n = n.next;
-	}
-	return s + " ]";
-  }
-  /** reverse toString() */
-  public String reverseToString() {
-	if (size()==0) 
-		return "[ ]";
-	if (size()==1) 
-		return "[ " + first.elem.toString() + " ]";
-	String s = "";
-	Node<E> n = first.next;
-	while (n!=null) {
-		s = n.elem.toString() + ", " + s;
-		n = n.next;
-	}
-	return "[ " + s + first.elem.toString() + " ]";
-  }
-
-  // Acrescente as funções adicionais pedidas no guião:
-  
-  public E get(int index) {
-	assert index < size;
-	
-	Node<E> n = first;
-	while (index > 0) {
-		n = n.next;
-		index--;
-	} 
-	return n.elem;
-  }
 
 }

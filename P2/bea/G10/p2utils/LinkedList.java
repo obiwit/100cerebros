@@ -104,5 +104,16 @@ public class LinkedList<E> {
   }
 
   // Acrescente as funções adicionais pedidas no guião:
+  
+  public E get(int index) {
+	assert index < size;
+	
+	Node<E> n = first;
+	while (index > 0) {
+		n = n.next;
+		index--;
+	} 
+	return n.elem;
+  }
 
 }

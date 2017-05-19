@@ -15,9 +15,10 @@ public class DelayLine<E> {
   public DelayLine(int size, E init) {
     assert size >= 0;
     buffer = new LinkedList<>();
-    // FALTA encher a lista com size amostras com o valor "init"
-    //...
-
+    
+    for(int i = size; i > 0; i--)
+		buffer.addFirst(init);
+    
     // Invariante:
     assert size()==size: String.format("Delay line size should be %d", size);
     // Pós-condição:
@@ -31,8 +32,8 @@ public class DelayLine<E> {
    * @param x  A amostra atual que é acrescentada no fim da linha.
    */
   public void in(E x) {
-    // FALTA completar!
-    //...
+    buffer.addLast(x);
+    buffer.removeFirst();
   }
 
   /** Valor da amostra do instante t.

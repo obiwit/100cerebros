@@ -29,7 +29,7 @@ public class Stack<E> {
   public boolean isEmpty() { return list.isEmpty(); }
   
   /** read the function's name... */
-  public String toString() { return list.toString(); }
+  public String toString() { return list.reverseToString(); }
 
   private LinkedList<E> list = new LinkedList<E>();
 

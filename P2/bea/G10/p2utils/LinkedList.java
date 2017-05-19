@@ -97,10 +97,24 @@ public class LinkedList<E> {
 		return s + " ]";
 	Node<E> n = first.next;
 	while (n!=null) {
-		s += ("," + n.elem.toString());
+		s += (", " + n.elem.toString());
 		n = n.next;
 	}
 	return s + " ]";
+  }
+  /** reverse toString() */
+  public String reverseToString() {
+	if (size()==0) 
+		return "[ ]";
+	if (size()==1) 
+		return "[ " + first.elem.toString() + " ]";
+	String s = "";
+	Node<E> n = first.next;
+	while (n!=null) {
+		s = n.elem.toString() + ", " + s;
+		n = n.next;
+	}
+	return "[ " + s + first.elem.toString() + " ]";
   }
 
   // Acrescente as funções adicionais pedidas no guião:

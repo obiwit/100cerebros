@@ -1,0 +1,13 @@
+Refeicao servida: sopa:1 carne:1 cerveja:1 
+Refeicao servida: sopa:1 peixe:1 agua:1 torta:1 
+Refeicao servida: carne:1 sumo:1 
+Food in stock:
+  carne: 0
+  sumo: 0
+  agua: 0
+  cerveja: 0
+  feijao: 1
+  sopa: 0
+  peixe: 0
+  torta: 0
+Refeicao pendente: carne:1 feijao:1 

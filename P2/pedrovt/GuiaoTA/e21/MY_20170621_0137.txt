@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+	Syntax error, insert ";" to complete Statement
+	The left-hand side of an assignment must be a variable
+
+	at e21.Restaurante.processMealOrders(Restaurante.java:80)
+	at e21.Restaurante.main(Restaurante.java:32)

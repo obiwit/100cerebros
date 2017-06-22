@@ -1,0 +1,10 @@
+entrada: cerveja
+entrada: sopa
+entrada: carne
+entrada: carne
+entrada: feijao
+entrada: sumo
+entrada: sopa
+entrada: torta
+entrada: peixe
+entrada: agua

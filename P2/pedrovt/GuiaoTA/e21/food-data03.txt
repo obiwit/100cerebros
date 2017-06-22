@@ -1,0 +1,12 @@
+entrada: cerveja
+entrada: sopa
+entrada: carne
+entrada: carne
+entrada: feijao
+saida: sopa:1 marisco:1 cerveja:1
+entrada: sumo
+entrada: sopa
+entrada: torta
+saida: carne:1 feijao:1
+entrada: peixe
+entrada: agua

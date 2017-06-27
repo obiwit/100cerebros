@@ -17,7 +17,7 @@ public class TestContainers {
     String t = s1.toString();
     out.printf("s1.toString()=%s\n", t);
     
-    /*
+    
     int p;
     p = s1.searchRec("carrots");
     out.printf("s1.searchRec(\"%s\")=%d\n", "carrots", p);
@@ -28,10 +28,10 @@ public class TestContainers {
     out.printf("containersInStack()=[ ");
     Container[] a = s1.containersInStack();
     for (int i=0; i<a.length; i++) {
-      out.printf("%s ", a[i].toString());
+    	out.printf("%s ", a[i].toString());
     }
     out.printf("]\n");
-    */
+    
     out.printf("\nTesting a ContainerTerminal\n");
     String[] types = {"a", "b", "c", "d", "b", "b", "a"};
     ContainerTerminal term1 = new ContainerTerminal(3, 4);
@@ -40,7 +40,7 @@ public class TestContainers {
     }
     term1.print();
     
-    /*
+    
     Container c;
     c = term1.retrieve("b");
     out.printf("retrieve(\"b\")=%s\n", c.toString());
@@ -69,7 +69,7 @@ public class TestContainers {
       
       term.print();
     }
-    */
+    
     
   }
   

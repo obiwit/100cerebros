@@ -10,14 +10,16 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 
 ## Ano 1
 ### 1º Semestre
-- **P1** (Programação 1)
-- **ISD** (Introdução a Sistemas Digitais)
-- **ALGA** (Algebra Linear e Geometria Analítica)
-- **C1** (Cálculo 1)
+- <del>**P1** (Programação 1)</del>
+- <del>**ISD** (Introdução a Sistemas Digitais)</del>
+- <del>**ALGA** (Algebra Linear e Geometria Analítica)</del>
+- <del>**C1** (Cálculo 1)</del>
 ### 2º Semestre
 - **P2** (Programação 2)
 - **LSD** (Laboratórios de Sistemas Digitais)
-- **MD** (Matemática Discreta)
+- <del>**MD** (Matemática Discreta)</del>
 - **C2** (Programação 1)
 ### Cadeiras anuais
 - **LABI** (Laboratórios de Informática)
+
+<sub><sup>Se uma cadeira está riscada, não há no repositório ficheiros sobre ela.</sup></sub>

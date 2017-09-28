@@ -6,7 +6,7 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 - **P3** (Programação 3)
 - **AC1** (Arquitetura de Computadores 1)
 - **MPEI** (Métodos Probabilísticos para Engenharia Informática)
-- **MCE** (Mecânica e Campos Electromagnéticos)
+- <del>**MCE** (Mecânica e Campos Electromagnéticos)</del>
 
 ## Ano 1
 ### 1º Semestre

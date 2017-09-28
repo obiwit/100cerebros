@@ -18,7 +18,7 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 - **P2** (Programação 2)
 - **LSD** (Laboratórios de Sistemas Digitais)
 - <del>**MD** (Matemática Discreta)</del>
-- **C2** (Programação 1)
+- **C2** (Cálculo 2)
 ### Cadeiras anuais
 - **LABI** (Laboratórios de Informática)
 

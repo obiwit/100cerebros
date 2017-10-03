@@ -1,0 +1,44 @@
+Refeicao servida: massa:3 biscoitos:4 
+Refeicao servida: grao:3 feijao:4 oleo:4 
+Refeicao servida: soja:1 maionese:4 feijao:1 agrioes:4 
+Refeicao servida: bolachas:3 
+Refeicao servida: maionese:2 peras:2 massa:4 fiambre:5 piri-piri:5 ovos:3 leite:2 
+Refeicao servida: batatas:5 agrioes:2 laranjas:1 arroz:3 batata-frita:1 
+Refeicao servida: cenouras:3 massa:4 
+Refeicao servida: hamburguer:1 presunto:1 cerveja:1 
+Comida em stock:
+  presunto: 1
+  pao: 2
+  bananas: 2
+  carne: 1
+  couves: 1
+  macas: 1
+  sumo: 2
+  queijo: 1
+  cereais: 2
+  agua: 1
+  vinho: 3
+  acucar: 1
+  iogurte: 2
+  azeite: 2
+  ameixas: 1
+  pizza: 2
+  sal: 2
+  banha: 4
+  laranjas: 5
+  peras: 2
+  soja: 1
+  sopa: 2
+  castanhas: 2
+  espinafres: 1
+  manteiga: 3
+  chocolate: 3
+  peixe: 3
+  cenouras: 1
+  cha: 2
+  torta: 4
+  tomates: 2
+  doce: 2
+  milho: 1
+  pessegos: 1
+  bolo: 1

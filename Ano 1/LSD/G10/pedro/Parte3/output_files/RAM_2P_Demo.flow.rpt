@@ -1,0 +1,115 @@
+Flow report for RAM_2P_Demo
+Tue May 16 19:31:15 2017
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Tue May 16 19:31:15 2017      ;
+; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
+; Revision Name                      ; RAM_2P_Demo                                 ;
+; Top-level Entity Name              ; RAM_2P_Demo                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 90 / 6,272 ( 1 % )                          ;
+;     Total combinational functions  ; 74 / 6,272 ( 1 % )                          ;
+;     Dedicated logic registers      ; 53 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 53                                          ;
+; Total pins                         ; 22 / 92 ( 24 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 128 / 276,480 ( < 1 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Device                             ; EP4CE6E22C6                                 ;
+; Timing Models                      ; Final                                       ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/16/2017 19:30:59 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; RAM_2P_Demo         ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 154880091116473.149495945819436 ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 867 MB              ; 00:00:26                           ;
+; Fitter               ; 00:00:01     ; 1.0                     ; 978 MB              ; 00:00:01                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:27                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; ENVY-PC          ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter               ; ENVY-PC          ; Windows 8 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off RAM_2P_Demo -c RAM_2P_Demo
+quartus_fit --read_settings_files=off --write_settings_files=off RAM_2P_Demo -c RAM_2P_Demo
+
+
+

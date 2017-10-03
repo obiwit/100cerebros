@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bea/Desktop/lsdig/aula7/TimerTest/simulation/modelsim
+Etimer
+Z1 w1490567136
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd
+Z6 FC:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd
+l0
+L5
+VP8dID7bchO0A9o=F;?W^l3
+!s100 ;B_Inj3]EihOYEKmRUGEi0
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1490570622
+!i10b 1
+Z9 !s108 1490570622.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd|
+Z11 !s107 C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 5 timer 0 22 P8dID7bchO0A9o=F;?W^l3
+l16
+L14
+VkWHZz6FUG1lLo7<<BO7B_2
+!s100 5U`nmlDmFG[Z0[9;<QNk41
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etimer_tb
+Z15 w1490570827
+R3
+R4
+R0
+Z16 8C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd
+Z17 FC:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd
+l0
+L4
+VM_H^hhkBKFQ<:aQU4lV[c1
+!s100 BeOSaJ]45mLh:^ab]8V6M2
+R7
+32
+Z18 !s110 1490570881
+!i10b 1
+Z19 !s108 1490570881.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd|
+Z21 !s107 C:/Users/bea/Desktop/lsdig/aula7/TimerTest/Timer_tb.vhd|
+!i113 1
+Z22 o-work work
+R13
+Astimulus
+R2
+R14
+R3
+R4
+Z23 DEx4 work 8 timer_tb 0 22 M_H^hhkBKFQ<:aQU4lV[c1
+l16
+L7
+Z24 Vh`J6TKbBNbbI^K4lSo6293
+Z25 !s100 _6JnZVEX<W8XN67`J@of]3
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R22
+R13
+Etimertest
+Z26 w1490570341
+R2
+R3
+R4
+R0
+Z27 8C:/Users/bea/Desktop/lsdig/aula7/TimerTest/TimerTest.vhd
+Z28 FC:/Users/bea/Desktop/lsdig/aula7/TimerTest/TimerTest.vhd
+l0
+L5
+Vlf2796GWDTGSJ<]ddYRW02
+!s100 F]zY0X4V<j:TM=84?H^[h0
+R7
+31
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/bea/Desktop/lsdig/aula7/TimerTest/TimerTest.vhd|
+Z30 !s107 C:/Users/bea/Desktop/lsdig/aula7/TimerTest/TimerTest.vhd|
+!i113 1
+R12
+R13
+Astructural
+R14
+R2
+R3
+R4
+DEx4 work 9 timertest 0 22 lf2796GWDTGSJ<]ddYRW02
+l12
+L11
+VbC8mI;Bl81`SE@U2U:cz^2
+!s100 e6eDO2[>N:TO`Q_78L7ld3
+R7
+31
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13

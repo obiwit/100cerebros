@@ -16,13 +16,10 @@ while (sucesses / N < 0.5)
 
     sucesses = 0;
     for i=1:N
-        sucesses = sucesses + (length(unique(peopleBirthdays(:,i)))~=n);
+        if (length(unique(peopleBirthdays(:,i)))~=n)
+            sucesses = sucesses + 1;
+        end
     end
 end
 
-disp("Minimum number of people: " + n);
-
-
-% Theoric formula:  366*365*364*...*(366-n+1)       1
-%                 ---------------------------- = ------- * Multiply(366-i+1), i from 1 to n
-%                            366^n                366^n
+n

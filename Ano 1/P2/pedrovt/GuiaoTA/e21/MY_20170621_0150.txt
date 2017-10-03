@@ -1,0 +1,152 @@
+Refeicao servida: cerveja:1 batatas:5 leite:4 
+Refeicao servida: macas:4 ovos:5 feijao:5 torta:2 
+Refeicao servida: alfaces:4 biscoitos:4 sumo:2 pizza:3 ovos:4 
+Refeicao servida: biscoitos:2 cha:2 tomates:2 batata-frita:3 bananas:1 fiambre:4 bolachas:4 
+Refeicao servida: chocolate:3 agrioes:5 massa:4 grao:5 pizza:2 bolo:5 fiambre:4 
+Refeicao servida: grao:1 cafe:2 tomates:1 laranjas:3 
+Refeicao servida: pizza:3 tomates:5 carne:2 uvas:4 couves:5 iogurte:5 cha:3 
+Refeicao servida: ovos:2 biscoitos:4 cerveja:5 sumo:1 castanhas:2 ameixas:1 tarte:3 tomates:1 
+Refeicao servida: arroz:4 
+Refeicao servida: pao:5 bananas:5 sumo:1 cerveja:2 tarte:3 
+Refeicao servida: bananas:4 vinho:3 cenouras:2 
+Refeicao servida: alfaces:4 espinafres:2 torta:2 presunto:4 cafe:1 laranjas:2 arroz:5 
+Refeicao servida: sopa:5 couves:3 iogurte:5 leite:1 vinho:5 queijo:4 
+Refeicao servida: chocolate:4 omeleta:3 iogurte:1 pessegos:2 batata-frita:1 
+Refeicao servida: bolachas:4 cereais:4 torta:2 chocolate:5 couves:4 
+Refeicao servida: carne:5 couves:4 agrioes:3 cereais:1 
+Refeicao servida: agrioes:5 pizza:1 
+Refeicao servida: batata-frita:4 feijao:1 batatas:5 ovos:4 sumo:4 
+Refeicao servida: batatas:2 ervilhas:4 sopa:3 laranjas:4 cenouras:4 
+Comida em stock:
+  hamburguer: 19
+  presunto: 8
+  pao: 10
+  arroz: 4
+  bananas: 7
+  grao: 6
+  biscoitos: 4
+  carne: 16
+  tarte: 15
+  couves: 1
+  macas: 15
+  sumo: 10
+  queijo: 16
+  uvas: 16
+  cereais: 18
+  fiambre: 13
+  agua: 21
+  vinho: 11
+  cerveja: 14
+  iogurte: 2
+  ameixas: 18
+  pizza: 7
+  ovos: 8
+  leite: 13
+  bolachas: 15
+  omeleta: 14
+  feijao: 15
+  laranjas: 14
+  agrioes: 6
+  cafe: 12
+  peras: 12
+  sopa: 21
+  castanhas: 14
+  espinafres: 16
+  chocolate: 4
+  massa: 9
+  batatas: 8
+  peixe: 22
+  cenouras: 9
+  cha: 14
+  torta: 13
+  tomates: 21
+  milho: 14
+  pessegos: 14
+  ervilhas: 12
+  alfaces: 13
+  batata-frita: 15
+  bolo: 20
+Refeicao pendente: iogurte:4 fiambre:2 tarte:2 bananas:2 milho:5 
+Refeicao pendente: massa:4 couves:3 arroz:3 vinho:3 iogurte:3 omeleta:5 carne:4 
+Refeicao pendente: iogurte:3 espinafres:5 pao:2 
+Refeicao pendente: milho:3 presunto:2 batata-frita:4 bolo:4 feijao:3 alfaces:5 
+Refeicao pendente: tarte:5 
+Refeicao pendente: alfaces:3 agrioes:2 milho:4 omeleta:4 biscoitos:1 uvas:5 fiambre:5 iogurte:3 
+Refeicao pendente: ervilhas:2 couves:5 bolo:5 grao:1 alfaces:3 omeleta:3 cafe:3 pessegos:5 
+Refeicao pendente: macas:1 bolo:2 couves:5 bolachas:2 tomates:3 bananas:4 
+Refeicao pendente: pao:2 ovos:4 fiambre:3 
+Refeicao pendente: carne:5 couves:5 castanhas:4 massa:5 pao:2 tomates:2 
+Refeicao pendente: sopa:2 agua:3 iogurte:3 massa:2 
+Refeicao pendente: laranjas:1 alfaces:1 queijo:1 
+Refeicao pendente: batatas:1 leite:2 milho:3 grao:5 tomates:2 cha:4 pizza:2 
+Refeicao pendente: omeleta:5 cha:2 tarte:2 hamburguer:2 bananas:1 sumo:1 
+Refeicao pendente: peras:2 uvas:1 presunto:4 cenouras:4 carne:3 feijao:4 hamburguer:1 
+Refeicao pendente: tomates:5 massa:2 castanhas:2 leite:2 ovos:2 
+Refeicao pendente: tarte:1 laranjas:3 peras:5 
+Refeicao pendente: bananas:4 agrioes:5 hamburguer:4 cerveja:3 alfaces:1 carne:2 ameixas:2 biscoitos:3 
+Refeicao pendente: cenouras:1 
+Refeicao pendente: batata-frita:2 massa:5 chocolate:3 cenouras:4 tarte:2 pizza:3 hamburguer:2 
+Refeicao pendente: ameixas:3 
+Refeicao pendente: peixe:1 chocolate:1 pessegos:1 uvas:4 hamburguer:5 
+Refeicao pendente: espinafres:1 massa:4 pizza:4 
+Refeicao pendente: agrioes:1 milho:5 iogurte:3 couves:4 arroz:4 cha:1 batatas:3 macas:3 
+Refeicao pendente: ovos:5 bananas:2 bolachas:1 massa:3 sopa:1 pao:5 peras:2 
+Refeicao pendente: cafe:2 bananas:2 agrioes:1 ovos:2 presunto:4 espinafres:5 grao:5 batata-frita:5 
+Refeicao pendente: couves:4 bolo:2 macas:3 
+Refeicao pendente: alfaces:5 
+Refeicao pendente: sopa:2 
+Refeicao pendente: grao:4 
+Refeicao pendente: batatas:5 uvas:4 fiambre:3 iogurte:5 laranjas:2 cereais:2 bolachas:4 
+Refeicao pendente: pizza:4 cenouras:3 ervilhas:1 bananas:1 
+Refeicao pendente: massa:1 agrioes:1 pessegos:1 espinafres:4 grao:4 macas:3 feijao:2 sopa:2 
+Refeicao pendente: arroz:2 tomates:3 pizza:2 agrioes:2 leite:3 macas:5 
+Refeicao pendente: fiambre:3 vinho:1 sopa:3 queijo:3 cereais:1 milho:1 presunto:5 
+Refeicao pendente: biscoitos:5 pizza:3 cereais:1 couves:2 cafe:2 peras:3 
+Refeicao pendente: macas:1 agua:1 batatas:4 massa:5 hamburguer:1 tarte:5 peras:2 pessegos:3 
+Refeicao pendente: milho:3 agrioes:3 laranjas:1 bolo:3 cenouras:5 espinafres:1 massa:4 
+Refeicao pendente: massa:2 hamburguer:3 feijao:5 bolachas:3 
+Refeicao pendente: iogurte:2 
+Refeicao pendente: peras:2 uvas:1 feijao:3 
+Refeicao pendente: pao:1 feijao:4 queijo:2 espinafres:3 tarte:4 cereais:4 
+Refeicao pendente: alfaces:2 grao:4 bolachas:2 feijao:3 bananas:5 torta:2 arroz:1 
+Refeicao pendente: queijo:1 
+Refeicao pendente: uvas:1 iogurte:4 peras:2 agrioes:2 
+Refeicao pendente: pao:4 agrioes:3 iogurte:2 espinafres:4 
+Refeicao pendente: grao:4 alfaces:5 
+Refeicao pendente: feijao:3 batata-frita:2 macas:2 tarte:5 
+Refeicao pendente: omeleta:1 ovos:2 tomates:2 
+Refeicao pendente: cereais:2 leite:4 carne:4 chocolate:5 
+Refeicao pendente: tarte:2 pessegos:1 bolo:3 iogurte:3 peixe:3 
+Refeicao pendente: torta:3 batatas:5 massa:4 alfaces:4 uvas:1 vinho:2 chocolate:4 iogurte:2 
+Refeicao pendente: iogurte:1 hamburguer:5 milho:1 
+Refeicao pendente: macas:3 espinafres:1 cereais:4 pao:4 torta:1 presunto:5 ovos:2 
+Refeicao pendente: batata-frita:2 
+Refeicao pendente: queijo:1 tomates:3 uvas:2 
+Refeicao pendente: hamburguer:3 torta:3 peixe:2 
+Refeicao pendente: vinho:1 agrioes:2 presunto:1 batatas:3 uvas:2 castanhas:2 
+Refeicao pendente: pessegos:2 
+Refeicao pendente: torta:3 omeleta:5 espinafres:5 cereais:1 sumo:1 
+Refeicao pendente: cerveja:3 laranjas:3 alfaces:2 pao:1 uvas:4 ovos:1 cenouras:5 
+Refeicao pendente: carne:1 pao:2 bolachas:5 batata-frita:3 iogurte:3 batatas:5 peras:1 bolo:5 
+Refeicao pendente: peixe:5 leite:5 cafe:2 castanhas:4 ovos:1 
+Refeicao pendente: carne:3 presunto:1 uvas:2 ameixas:1 batata-frita:2 iogurte:2 cha:3 
+Refeicao pendente: pessegos:4 cerveja:2 pao:4 macas:2 peixe:4 ervilhas:3 bolachas:5 queijo:3 
+Refeicao pendente: grao:2 pessegos:4 pao:2 
+Refeicao pendente: chocolate:3 queijo:1 milho:2 presunto:2 fiambre:3 ervilhas:5 bananas:4 vinho:5 
+Refeicao pendente: peixe:1 batata-frita:1 agua:2 ameixas:4 alfaces:2 
+Refeicao pendente: batata-frita:4 cha:2 
+Refeicao pendente: omeleta:5 espinafres:2 cha:2 tomates:2 sopa:3 ervilhas:3 pessegos:5 chocolate:5 
+Refeicao pendente: macas:4 laranjas:3 
+Refeicao pendente: ameixas:3 massa:1 ovos:3 peixe:4 fiambre:3 batatas:3 laranjas:4 
+Refeicao pendente: tomates:2 leite:4 castanhas:4 grao:5 queijo:4 cafe:2 sopa:5 
+Refeicao pendente: peras:2 
+Refeicao pendente: pizza:2 pao:1 fiambre:1 presunto:4 milho:1 queijo:2 biscoitos:3 
+Refeicao pendente: castanhas:4 pizza:5 
+Refeicao pendente: grao:3 
+Refeicao pendente: peras:1 alfaces:3 leite:5 ameixas:5 queijo:2 arroz:1 peixe:4 
+Refeicao pendente: torta:3 cafe:2 batatas:2 pao:4 ameixas:1 chocolate:3 feijao:3 couves:3 
+Refeicao pendente: torta:1 bolachas:4 macas:1 
+Refeicao pendente: leite:4 batata-frita:3 macas:2 biscoitos:2 uvas:1 fiambre:4 
+Refeicao pendente: torta:5 massa:1 ovos:4 macas:1 
+Refeicao pendente: leite:3 queijo:2 hamburguer:1 ameixas:3 pao:1 batata-frita:3 
+Refeicao pendente: bolachas:4 cereais:1 

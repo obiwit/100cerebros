@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Mar 27 00:13:22 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : TimerTest
+Top-level Entity Name : TimerTest
+Family : Cyclone IV E
+Total logic elements : 47
+    Total combinational functions : 47
+    Dedicated logic registers : 33
+Total registers : 33
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,14 @@
+|MUx2_1Demo
+LEDG[0] <= Mux2_1:inst.muxOut
+KEY[3] => Mux2_1:inst.sel
+SW[0] => Mux2_1:inst.input0
+SW[1] => Mux2_1:inst.input1
+
+
+|MUx2_1Demo|Mux2_1:inst
+sel => muxOut.OUTPUTSELECT
+input0 => muxOut.DATAB
+input1 => muxOut.DATAA
+muxOut <= muxOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

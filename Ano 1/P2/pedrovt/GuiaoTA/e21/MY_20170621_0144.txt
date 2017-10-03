@@ -1,0 +1,3 @@
+Refeicao servida: sopa:1 carne:1 cerveja:1 
+Refeicao servida: sopa:1 peixe:1 agua:1 torta:1 
+Refeicao servida: carne:1 sumo:1 

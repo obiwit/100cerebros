@@ -1,0 +1,4 @@
+palavras 1 2 3 what 4
+5 is 6 this 7
+bla bla bla 8 and 9
+symbols^%#$ ^^& 10

@@ -1,0 +1,1404 @@
+TimeQuest Timing Analyzer report for DrinksMachine
+Tue Apr 18 19:29:20 2017
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'CLOCK_50'
+ 13. Slow 1200mV 85C Model Setup: 'KEY[0]'
+ 14. Slow 1200mV 85C Model Hold: 'KEY[0]'
+ 15. Slow 1200mV 85C Model Hold: 'CLOCK_50'
+ 16. Slow 1200mV 85C Model Metastability Summary
+ 17. Slow 1200mV 0C Model Fmax Summary
+ 18. Slow 1200mV 0C Model Setup Summary
+ 19. Slow 1200mV 0C Model Hold Summary
+ 20. Slow 1200mV 0C Model Recovery Summary
+ 21. Slow 1200mV 0C Model Removal Summary
+ 22. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 23. Slow 1200mV 0C Model Setup: 'CLOCK_50'
+ 24. Slow 1200mV 0C Model Setup: 'KEY[0]'
+ 25. Slow 1200mV 0C Model Hold: 'KEY[0]'
+ 26. Slow 1200mV 0C Model Hold: 'CLOCK_50'
+ 27. Slow 1200mV 0C Model Metastability Summary
+ 28. Fast 1200mV 0C Model Setup Summary
+ 29. Fast 1200mV 0C Model Hold Summary
+ 30. Fast 1200mV 0C Model Recovery Summary
+ 31. Fast 1200mV 0C Model Removal Summary
+ 32. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 33. Fast 1200mV 0C Model Setup: 'CLOCK_50'
+ 34. Fast 1200mV 0C Model Setup: 'KEY[0]'
+ 35. Fast 1200mV 0C Model Hold: 'KEY[0]'
+ 36. Fast 1200mV 0C Model Hold: 'CLOCK_50'
+ 37. Fast 1200mV 0C Model Metastability Summary
+ 38. Multicorner Timing Analysis Summary
+ 39. Board Trace Model Assignments
+ 40. Input Transition Times
+ 41. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 42. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 43. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 44. Setup Transfers
+ 45. Hold Transfers
+ 46. Report TCCS
+ 47. Report RSKM
+ 48. Unconstrained Paths Summary
+ 49. Clock Status Summary
+ 50. Unconstrained Input Ports
+ 51. Unconstrained Output Ports
+ 52. Unconstrained Input Ports
+ 53. Unconstrained Output Ports
+ 54. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; DrinksMachine                                       ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE115F29C7                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; CLOCK_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
+; KEY[0]     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] }   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 206.57 MHz ; 206.57 MHz      ; CLOCK_50   ;                                                               ;
+; 651.89 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++----------+--------+-----------------+
+; Clock    ; Slack  ; End Point TNS   ;
++----------+--------+-----------------+
+; CLOCK_50 ; -3.841 ; -275.497        ;
+; KEY[0]   ; -1.236 ; -3.877          ;
++----------+--------+-----------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++----------+-------+-----------------+
+; Clock    ; Slack ; End Point TNS   ;
++----------+-------+-----------------+
+; KEY[0]   ; 0.440 ; 0.000           ;
+; CLOCK_50 ; 0.597 ; 0.000           ;
++----------+-------+-----------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++----------+--------+-------------------------------+
+; Clock    ; Slack  ; End Point TNS                 ;
++----------+--------+-------------------------------+
+; CLOCK_50 ; -3.000 ; -110.940                      ;
+; KEY[0]   ; -3.000 ; -8.140                        ;
++----------+--------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'CLOCK_50'                                                                                          ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.841 ; timer:inst3|s_count[28] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.722      ;
+; -3.784 ; timer:inst3|s_count[28] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.704      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.737 ; timer:inst3|s_count[28] ; timer:inst3|s_count[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.655      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.731 ; timer:inst3|s_count[19] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.612      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.730 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.649      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.724 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.643      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.702 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.621      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
+; -3.692 ; timer:inst3|s_count[30] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.117     ; 4.573      ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'KEY[0]'                                                                                                              ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.236 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.691      ;
+; -1.079 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.530      ; 4.097      ;
+; -1.023 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.478      ;
+; -0.887 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.342      ;
+; -0.877 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.530      ; 3.895      ;
+; -0.877 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.530      ; 3.895      ;
+; -0.877 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.530      ; 3.895      ;
+; -0.865 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.320      ;
+; -0.750 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.205      ;
+; -0.718 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 1.173      ;
+; -0.557 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.530      ; 4.075      ;
+; -0.534 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.505      ;
+; -0.524 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 0.979      ;
+; -0.514 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.533     ; 0.969      ;
+; -0.496 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.467      ;
+; -0.387 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.358      ;
+; -0.321 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.530      ; 3.839      ;
+; -0.321 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.530      ; 3.839      ;
+; -0.321 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.530      ; 3.839      ;
+; -0.182 ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.153      ;
+; -0.176 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.147      ;
+; -0.109 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.080      ;
+; -0.104 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 1.075      ;
+; 0.005  ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.047     ; 0.966      ;
+; 0.241  ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 0.734      ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'KEY[0]'                                                                                                              ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.440 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.043      ; 0.669      ;
+; 0.595 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 0.828      ;
+; 0.681 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 0.914      ;
+; 0.728 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 0.961      ;
+; 0.756 ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 0.989      ;
+; 0.765 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 0.998      ;
+; 0.865 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.633      ; 3.714      ;
+; 0.865 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.633      ; 3.714      ;
+; 0.865 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.633      ; 3.714      ;
+; 0.979 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 1.212      ;
+; 0.985 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 0.883      ;
+; 0.992 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 0.890      ;
+; 1.009 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.633      ; 3.858      ;
+; 1.052 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 0.950      ;
+; 1.070 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 0.968      ;
+; 1.071 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 1.304      ;
+; 1.081 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.047      ; 1.314      ;
+; 1.107 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 1.005      ;
+; 1.281 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 1.179      ;
+; 1.422 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.633      ; 3.771      ;
+; 1.422 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.633      ; 3.771      ;
+; 1.422 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.633      ; 3.771      ;
+; 1.439 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 1.337      ;
+; 1.506 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.633      ; 3.855      ;
+; 1.639 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.318     ; 1.537      ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'CLOCK_50'                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.597 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.299      ;
+; 0.643 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.908      ;
+; 0.645 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.910      ;
+; 0.645 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[9]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.910      ;
+; 0.649 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.914      ;
+; 0.656 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[21]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.922      ;
+; 0.657 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.658 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[17]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[19]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[1]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[13]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.659 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[23]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.925      ;
+; 0.659 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.925      ;
+; 0.659 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[25]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.925      ;
+; 0.659 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[29]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.925      ;
+; 0.659 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[27]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.925      ;
+; 0.659 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[3]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[11]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.660 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.926      ;
+; 0.660 ; timer:inst3|s_count[30]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.926      ;
+; 0.662 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.928      ;
+; 0.662 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.927      ;
+; 0.683 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[0]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.948      ;
+; 0.685 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.951      ;
+; 0.705 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.969      ;
+; 0.712 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.976      ;
+; 0.713 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.977      ;
+; 0.723 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.987      ;
+; 0.723 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.987      ;
+; 0.873 ; DebounceUnit:inst2|s_dirtyIn         ; DebounceUnit:inst2|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.334     ; 0.725      ;
+; 0.931 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.517      ; 1.634      ;
+; 0.943 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.207      ;
+; 0.943 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.207      ;
+; 0.947 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.117      ; 1.250      ;
+; 0.949 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.213      ;
+; 0.952 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.117      ; 1.255      ;
+; 0.961 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.226      ;
+; 0.962 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.227      ;
+; 0.972 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.237      ;
+; 0.974 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.240      ;
+; 0.974 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.240      ;
+; 0.975 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.241      ;
+; 0.975 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.241      ;
+; 0.975 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.240      ;
+; 0.975 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.240      ;
+; 0.976 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.242      ;
+; 0.976 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.242      ;
+; 0.976 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.242      ;
+; 0.976 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.242      ;
+; 0.976 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.976 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.976 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.976 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.977 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.077      ; 1.240      ;
+; 0.977 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.242      ;
+; 0.978 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.077      ; 1.241      ;
+; 0.981 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.246      ;
+; 0.985 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[21]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.251      ;
+; 0.985 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[19]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.251      ;
+; 0.985 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[29]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.251      ;
+; 0.985 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[13]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.250      ;
+; 0.985 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[3]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.250      ;
+; 0.986 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[27]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.252      ;
+; 0.986 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[11]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.251      ;
+; 0.987 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[17]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.253      ;
+; 0.987 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[1]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.252      ;
+; 0.988 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.077      ; 1.251      ;
+; 0.989 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[25]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.255      ;
+; 0.989 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[9]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.254      ;
+; 0.990 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.256      ;
+; 0.990 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.256      ;
+; 0.990 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.256      ;
+; 0.990 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.255      ;
+; 0.990 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.255      ;
+; 0.991 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.257      ;
+; 0.991 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.256      ;
+; 0.992 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.258      ;
+; 0.992 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.257      ;
+; 0.994 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.260      ;
+; 0.994 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.259      ;
+; 1.004 ; DebounceUnit:inst1|s_debounceCnt[20] ; DebounceUnit:inst1|s_debounceCnt[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.271      ;
+; 1.006 ; DebounceUnit:inst2|s_debounceCnt[19] ; DebounceUnit:inst2|s_debounceCnt[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.270      ;
+; 1.009 ; DebounceUnit:inst2|s_debounceCnt[21] ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.273      ;
+; 1.012 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[23]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.278      ;
+; 1.014 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.278      ;
+; 1.017 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.283      ;
+; 1.024 ; DebounceUnit:inst1|s_debounceCnt[21] ; DebounceUnit:inst1|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.291      ;
+; 1.027 ; DebounceUnit:inst1|s_debounceCnt[17] ; DebounceUnit:inst1|s_debounceCnt[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.294      ;
+; 1.028 ; DebounceUnit:inst1|s_debounceCnt[16] ; DebounceUnit:inst1|s_debounceCnt[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.295      ;
+; 1.028 ; DebounceUnit:inst1|s_dirtyIn         ; DebounceUnit:inst1|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.066      ; 1.280      ;
+; 1.033 ; DebounceUnit:inst2|s_debounceCnt[11] ; DebounceUnit:inst2|s_debounceCnt[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.297      ;
+; 1.058 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.117      ; 1.361      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 226.04 MHz ; 226.04 MHz      ; CLOCK_50   ;                                                               ;
+; 726.22 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; -3.424 ; -245.059       ;
+; KEY[0]   ; -0.943 ; -3.310         ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; KEY[0]   ; 0.387 ; 0.000          ;
+; CLOCK_50 ; 0.562 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; CLOCK_50 ; -3.000 ; -110.940                     ;
+; KEY[0]   ; -3.000 ; -8.140                       ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'CLOCK_50'                                                                                           ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -3.424 ; timer:inst3|s_count[28] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 4.353      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.422 ; timer:inst3|s_count[28] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.315      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.338 ; timer:inst3|s_count[28] ; timer:inst3|s_count[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.265      ;
+; -3.334 ; timer:inst3|s_count[1]  ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.077     ; 4.256      ;
+; -3.328 ; timer:inst3|s_count[19] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 4.257      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.326 ; timer:inst3|s_count[19] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.219      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.306 ; timer:inst3|s_count[4]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.302 ; timer:inst3|s_count[2]  ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.077     ; 4.224      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.301 ; timer:inst3|s_count[9]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.229      ;
+; -3.299 ; timer:inst3|s_count[13] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.077     ; 4.221      ;
+; -3.296 ; timer:inst3|s_count[30] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 4.225      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.294 ; timer:inst3|s_count[30] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.106     ; 4.187      ;
+; -3.290 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.218      ;
+; -3.290 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.218      ;
+; -3.290 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.218      ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'KEY[0]'                                                                                                               ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.943 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.535      ;
+; -0.942 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.381      ; 3.812      ;
+; -0.789 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.381      ; 3.659      ;
+; -0.789 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.381      ; 3.659      ;
+; -0.789 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 2.381      ; 3.659      ;
+; -0.761 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.353      ;
+; -0.617 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.209      ;
+; -0.608 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.200      ;
+; -0.490 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.082      ;
+; -0.469 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 1.061      ;
+; -0.377 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 1.350      ;
+; -0.360 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.381      ; 3.730      ;
+; -0.343 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 1.316      ;
+; -0.289 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 0.881      ;
+; -0.274 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.397     ; 0.866      ;
+; -0.267 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 1.240      ;
+; -0.143 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.381      ; 3.513      ;
+; -0.143 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.381      ; 3.513      ;
+; -0.143 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 2.381      ; 3.513      ;
+; -0.067 ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 1.040      ;
+; -0.056 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 1.029      ;
+; -0.005 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 0.978      ;
+; 0.002  ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 0.971      ;
+; 0.100  ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.046     ; 0.873      ;
+; 0.321  ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.039     ; 0.659      ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'KEY[0]'                                                                                                               ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.387 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.039      ; 0.597      ;
+; 0.541 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 0.758      ;
+; 0.619 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 0.836      ;
+; 0.661 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 0.878      ;
+; 0.689 ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 0.906      ;
+; 0.702 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 0.919      ;
+; 0.723 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.476      ; 3.400      ;
+; 0.723 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.476      ; 3.400      ;
+; 0.723 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.476      ; 3.400      ;
+; 0.813 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 0.812      ;
+; 0.818 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 0.817      ;
+; 0.855 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 2.476      ; 3.532      ;
+; 0.871 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 0.870      ;
+; 0.877 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 1.094      ;
+; 0.888 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 0.887      ;
+; 0.919 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 0.918      ;
+; 0.977 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 1.194      ;
+; 0.985 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.046      ; 1.202      ;
+; 1.069 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 1.068      ;
+; 1.210 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 1.209      ;
+; 1.367 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.476      ; 3.544      ;
+; 1.367 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.476      ; 3.544      ;
+; 1.367 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.476      ; 3.544      ;
+; 1.399 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.202     ; 1.398      ;
+; 1.413 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 2.476      ; 3.590      ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'CLOCK_50'                                                                                                                     ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.562 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.473      ; 1.206      ;
+; 0.587 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.829      ;
+; 0.589 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.831      ;
+; 0.590 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[9]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.832      ;
+; 0.593 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.835      ;
+; 0.600 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[21]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.601 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
+; 0.601 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
+; 0.601 ; timer:inst3|s_count[30]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
+; 0.601 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.843      ;
+; 0.602 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[17]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.845      ;
+; 0.602 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[19]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.845      ;
+; 0.602 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[29]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.845      ;
+; 0.602 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[1]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[13]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.603 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[23]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
+; 0.603 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
+; 0.603 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[25]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
+; 0.603 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[27]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
+; 0.603 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[3]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[11]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.605 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.848      ;
+; 0.605 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.847      ;
+; 0.624 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.867      ;
+; 0.625 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[0]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.867      ;
+; 0.652 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.891      ;
+; 0.659 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.898      ;
+; 0.660 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.899      ;
+; 0.677 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.916      ;
+; 0.677 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.916      ;
+; 0.804 ; DebounceUnit:inst2|s_dirtyIn         ; DebounceUnit:inst2|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.310     ; 0.665      ;
+; 0.853 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.106      ; 1.130      ;
+; 0.864 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.510      ;
+; 0.864 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.106      ; 1.141      ;
+; 0.873 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.115      ;
+; 0.875 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.114      ;
+; 0.876 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.115      ;
+; 0.877 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.119      ;
+; 0.877 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.119      ;
+; 0.881 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.120      ;
+; 0.881 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.123      ;
+; 0.886 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.129      ;
+; 0.888 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.131      ;
+; 0.888 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[21]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.131      ;
+; 0.888 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[19]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.131      ;
+; 0.888 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[29]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.131      ;
+; 0.888 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[13]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.888 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[3]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.888 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.889 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[27]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[11]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.890 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.133      ;
+; 0.890 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.133      ;
+; 0.890 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.133      ;
+; 0.890 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.891 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[17]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.134      ;
+; 0.892 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[1]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.134      ;
+; 0.892 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.134      ;
+; 0.893 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[25]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.136      ;
+; 0.893 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[9]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.135      ;
+; 0.899 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.142      ;
+; 0.899 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.142      ;
+; 0.899 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.142      ;
+; 0.899 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.141      ;
+; 0.899 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.141      ;
+; 0.900 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.143      ;
+; 0.900 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.142      ;
+; 0.902 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.145      ;
+; 0.903 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.145      ;
+; 0.904 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.147      ;
+; 0.904 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.146      ;
+; 0.912 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[23]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.155      ;
+; 0.913 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.152      ;
+; 0.913 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.152      ;
+; 0.923 ; DebounceUnit:inst1|s_debounceCnt[20] ; DebounceUnit:inst1|s_debounceCnt[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.166      ;
+; 0.923 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.166      ;
+; 0.923 ; DebounceUnit:inst2|s_debounceCnt[19] ; DebounceUnit:inst2|s_debounceCnt[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.164      ;
+; 0.927 ; DebounceUnit:inst2|s_debounceCnt[21] ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.168      ;
+; 0.928 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.167      ;
+; 0.939 ; DebounceUnit:inst1|s_debounceCnt[21] ; DebounceUnit:inst1|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.182      ;
+; 0.941 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 1.180      ;
+; 0.942 ; DebounceUnit:inst1|s_debounceCnt[17] ; DebounceUnit:inst1|s_debounceCnt[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.185      ;
+; 0.945 ; DebounceUnit:inst1|s_debounceCnt[16] ; DebounceUnit:inst1|s_debounceCnt[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.188      ;
+; 0.947 ; DebounceUnit:inst2|s_debounceCnt[11] ; DebounceUnit:inst2|s_debounceCnt[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.188      ;
+; 0.953 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.106      ; 1.230      ;
+; 0.961 ; DebounceUnit:inst1|s_dirtyIn         ; DebounceUnit:inst1|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.055      ; 1.187      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; -1.359 ; -90.654        ;
+; KEY[0]   ; -0.687 ; -2.316         ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; KEY[0]   ; 0.201 ; 0.000          ;
+; CLOCK_50 ; 0.268 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; CLOCK_50 ; -3.000 ; -92.261                      ;
+; KEY[0]   ; -3.000 ; -7.576                       ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'CLOCK_50'                                                                                           ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.359 ; timer:inst3|s_count[28] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.281      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.334 ; timer:inst3|s_count[30] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.256      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.315 ; timer:inst3|s_count[19] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.065     ; 2.237      ;
+; -1.306 ; timer:inst3|s_count[28] ; timer:inst3|pulseOut    ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 2.254      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.306 ; timer:inst3|s_count[1]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.252      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.292 ; timer:inst3|s_count[2]  ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.238      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.289 ; timer:inst3|s_count[13] ; timer:inst3|s_count[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.235      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
+; -1.287 ; timer:inst3|s_count[28] ; timer:inst3|s_count[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.233      ;
++--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'KEY[0]'                                                                                                               ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.687 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 1.209      ; 2.373      ;
+; -0.543 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 1.209      ; 2.229      ;
+; -0.543 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 1.209      ; 2.229      ;
+; -0.543 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.500        ; 1.209      ; 2.229      ;
+; -0.239 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.796      ;
+; -0.125 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.682      ;
+; -0.080 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.637      ;
+; -0.058 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.615      ;
+; -0.022 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.579      ;
+; -0.006 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.563      ;
+; 0.047  ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 1.209      ; 2.139      ;
+; 0.086  ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.471      ;
+; 0.088  ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; -0.420     ; 0.469      ;
+; 0.155  ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 1.209      ; 2.031      ;
+; 0.155  ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 1.209      ; 2.031      ;
+; 0.155  ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 1.000        ; 1.209      ; 2.031      ;
+; 0.263  ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.719      ;
+; 0.276  ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.706      ;
+; 0.355  ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.627      ;
+; 0.431  ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.551      ;
+; 0.431  ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.551      ;
+; 0.475  ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.507      ;
+; 0.475  ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.507      ;
+; 0.527  ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.025     ; 0.455      ;
+; 0.635  ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.022     ; 0.350      ;
++--------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'KEY[0]'                                                                                                               ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.201 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.022      ; 0.307      ;
+; 0.270 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.379      ;
+; 0.313 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st3 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.422      ;
+; 0.334 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st1 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.443      ;
+; 0.342 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.451      ;
+; 0.347 ; DrinksMachineFSM:inst|fstate.st3 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.456      ;
+; 0.467 ; DrinksMachineFSM:inst|fstate.st0 ; DrinksMachineFSM:inst|fstate.st0 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.576      ;
+; 0.485 ; DrinksMachineFSM:inst|fstate.st1 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.594      ;
+; 0.491 ; DrinksMachineFSM:inst|fstate.st2 ; DrinksMachineFSM:inst|fstate.st2 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.025      ; 0.600      ;
+; 0.587 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 1.262      ; 1.963      ;
+; 0.587 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 1.262      ; 1.963      ;
+; 0.587 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 1.262      ; 1.963      ;
+; 0.590 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.398      ;
+; 0.592 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.400      ;
+; 0.635 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.443      ;
+; 0.642 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.450      ;
+; 0.653 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; 1.262      ; 2.029      ;
+; 0.662 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.470      ;
+; 0.734 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.542      ;
+; 0.826 ; DebounceUnit:inst1|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.634      ;
+; 0.917 ; DebounceUnit:inst2|s_pulsedOut   ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; 0.000        ; -0.306     ; 0.725      ;
+; 1.293 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st3 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 1.262      ; 2.169      ;
+; 1.293 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st2 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 1.262      ; 2.169      ;
+; 1.293 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st1 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 1.262      ; 2.169      ;
+; 1.378 ; CLOCK_50                         ; DrinksMachineFSM:inst|fstate.st0 ; CLOCK_50     ; KEY[0]      ; -0.500       ; 1.262      ; 2.254      ;
++-------+----------------------------------+----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'CLOCK_50'                                                                                                                     ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.268 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.248      ; 0.600      ;
+; 0.292 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.417      ;
+; 0.294 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[9]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.419      ;
+; 0.295 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.420      ;
+; 0.295 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.420      ;
+; 0.299 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.424      ;
+; 0.300 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[21]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[30]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[1]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[2]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[13]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; timer:inst3|s_count[12]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
+; 0.301 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[23]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[16]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[17]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[18]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[19]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[20]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[26]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[29]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[28]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[10]              ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[3]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[11]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
+; 0.302 ; timer:inst3|s_count[24]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
+; 0.302 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[25]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
+; 0.302 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[27]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
+; 0.302 ; timer:inst3|s_count[8]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
+; 0.312 ; timer:inst3|s_count[0]               ; timer:inst3|s_count[0]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.437      ;
+; 0.314 ; timer:inst3|s_count[22]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.439      ;
+; 0.330 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.452      ;
+; 0.335 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.457      ;
+; 0.336 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.458      ;
+; 0.337 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.459      ;
+; 0.338 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.460      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[23]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[16]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[15]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[24]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[17]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[18]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[19]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[20]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[21]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[22]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[26]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[25]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[29]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[27]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[28]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.390 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[30]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.416      ; 0.920      ;
+; 0.400 ; DebounceUnit:inst2|s_dirtyIn         ; DebounceUnit:inst2|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; -0.155     ; 0.329      ;
+; 0.414 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.248      ; 0.746      ;
+; 0.433 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[15]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.065      ; 0.582      ;
+; 0.434 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.556      ;
+; 0.435 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.557      ;
+; 0.436 ; timer:inst3|s_count[14]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.065      ; 0.585      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[10]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[0]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[1]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[2]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[3]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[4]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[5]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[6]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[7]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[8]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[9]               ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[11]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[13]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[12]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|s_count[14]              ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.407      ; 0.960      ;
+; 0.439 ; DrinksMachineFSM:inst|fstate.st3     ; timer:inst3|pulseOut                 ; KEY[0]       ; CLOCK_50    ; 0.000        ; 0.418      ; 0.971      ;
+; 0.441 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.563      ;
+; 0.441 ; timer:inst3|s_count[5]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.566      ;
+; 0.443 ; timer:inst3|s_count[9]               ; timer:inst3|s_count[10]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.568      ;
+; 0.446 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.568      ;
+; 0.446 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.568      ;
+; 0.447 ; DebounceUnit:inst2|s_previousIn      ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.569      ;
+; 0.449 ; timer:inst3|s_count[15]              ; timer:inst3|s_count[16]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
+; 0.449 ; timer:inst3|s_count[21]              ; timer:inst3|s_count[22]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
+; 0.449 ; timer:inst3|s_count[13]              ; timer:inst3|s_count[14]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
+; 0.449 ; timer:inst3|s_count[1]               ; timer:inst3|s_count[2]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
+; 0.449 ; timer:inst3|s_count[7]               ; timer:inst3|s_count[8]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
+; 0.450 ; timer:inst3|s_count[29]              ; timer:inst3|s_count[30]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.450 ; timer:inst3|s_count[17]              ; timer:inst3|s_count[18]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.450 ; timer:inst3|s_count[19]              ; timer:inst3|s_count[20]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.450 ; timer:inst3|s_count[23]              ; timer:inst3|s_count[24]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.450 ; timer:inst3|s_count[3]               ; timer:inst3|s_count[4]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.450 ; timer:inst3|s_count[11]              ; timer:inst3|s_count[12]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
+; 0.451 ; timer:inst3|s_count[25]              ; timer:inst3|s_count[26]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.576      ;
+; 0.451 ; timer:inst3|s_count[27]              ; timer:inst3|s_count[28]              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.576      ;
+; 0.453 ; DebounceUnit:inst1|s_debounceCnt[20] ; DebounceUnit:inst1|s_debounceCnt[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.579      ;
+; 0.453 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[5]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.578      ;
+; 0.453 ; timer:inst3|s_count[6]               ; timer:inst3|s_count[7]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.578      ;
+; 0.456 ; DebounceUnit:inst1|s_dirtyIn         ; DebounceUnit:inst1|s_previousIn      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.033      ; 0.573      ;
+; 0.456 ; DebounceUnit:inst2|s_debounceCnt[21] ; DebounceUnit:inst2|s_debounceCnt[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.579      ;
+; 0.456 ; timer:inst3|s_count[4]               ; timer:inst3|s_count[6]               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.581      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.841   ; 0.201 ; N/A      ; N/A     ; -3.000              ;
+;  CLOCK_50        ; -3.841   ; 0.268 ; N/A      ; N/A     ; -3.000              ;
+;  KEY[0]          ; -1.236   ; 0.201 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -279.374 ; 0.0   ; 0.0      ; 0.0     ; -119.08             ;
+;  CLOCK_50        ; -275.497 ; 0.000 ; N/A      ; N/A     ; -110.940            ;
+;  KEY[0]          ; -3.877   ; 0.000 ; N/A      ; N/A     ; -8.140              ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; LEDG[0]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; CLOCK_50                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; KEY[0]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 5970     ; 32       ; 0        ; 0        ;
+; KEY[0]     ; CLOCK_50 ; 32       ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]   ; 13       ; 4        ; 0        ; 0        ;
+; KEY[0]     ; KEY[0]   ; 9        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 5970     ; 32       ; 0        ; 0        ;
+; KEY[0]     ; CLOCK_50 ; 32       ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]   ; 13       ; 4        ; 0        ; 0        ;
+; KEY[0]     ; KEY[0]   ; 9        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 2     ; 2    ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++------------------------------------------+
+; Clock Status Summary                     ;
++----------+----------+------+-------------+
+; Target   ; Clock    ; Type ; Status      ;
++----------+----------+------+-------------+
+; CLOCK_50 ; CLOCK_50 ; Base ; Constrained ;
+; KEY[0]   ; KEY[0]   ; Base ; Constrained ;
++----------+----------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; LEDG[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; LEDG[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+    Info: Processing started: Tue Apr 18 19:29:18 2017
+Info: Command: quartus_sta DrinksMachine -c DrinksMachine
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'DrinksMachine.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.841
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.841            -275.497 CLOCK_50 
+    Info (332119):    -1.236              -3.877 KEY[0] 
+Info (332146): Worst-case hold slack is 0.440
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.440               0.000 KEY[0] 
+    Info (332119):     0.597               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -110.940 CLOCK_50 
+    Info (332119):    -3.000              -8.140 KEY[0] 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.424
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.424            -245.059 CLOCK_50 
+    Info (332119):    -0.943              -3.310 KEY[0] 
+Info (332146): Worst-case hold slack is 0.387
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.387               0.000 KEY[0] 
+    Info (332119):     0.562               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -110.940 CLOCK_50 
+    Info (332119):    -3.000              -8.140 KEY[0] 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.359
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.359             -90.654 CLOCK_50 
+    Info (332119):    -0.687              -2.316 KEY[0] 
+Info (332146): Worst-case hold slack is 0.201
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.201               0.000 KEY[0] 
+    Info (332119):     0.268               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -92.261 CLOCK_50 
+    Info (332119):    -3.000              -7.576 KEY[0] 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 862 megabytes
+    Info: Processing ended: Tue Apr 18 19:29:20 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

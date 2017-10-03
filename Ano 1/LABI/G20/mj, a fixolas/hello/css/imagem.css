@@ -1,0 +1,13 @@
+.button{
+text-align: center;
+color: #007aff;
+width: 137px;
+}
+
+.button:before{
+color: white;
+content: ’Usar Imagem’;
+padding-right:40px;
+margin-top: -20px;
+padding-left: 10px;
+}

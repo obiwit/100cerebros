@@ -1,0 +1,7 @@
+#!/bin/sh
+javadoc -private -author -linksource \
+  -charset UTF8 -encoding UTF8 -docencoding UTF8 \
+  -link http://docs.oracle.com/javase/8/docs/api/ \
+  -overview overview.html \
+  -d doc v*
+

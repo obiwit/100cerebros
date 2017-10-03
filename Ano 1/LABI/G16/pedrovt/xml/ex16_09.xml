@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stats>
+  <value time="1489853660">
+    <cpu>27</cpu>
+    <network>60526239</network>
+  </value>
+  <value time="1489853662">
+    <cpu>38</cpu>
+    <network>60538684</network>
+  </value>
+  <value time="1489853664">
+    <cpu>32</cpu>
+    <network>60544133</network>
+  </value>
+  <value time="1489853666">
+    <cpu>29</cpu>
+    <network>60547191</network>
+  </value>
+  <value time="1489853668">
+    <cpu>37</cpu>
+    <network>60550835</network>
+  </value>
+  <value time="1489853670">
+    <cpu>35</cpu>
+    <network>60552249</network>
+  </value>
+  <value time="1489853672">
+    <cpu>46</cpu>
+    <network>60552369</network>
+  </value>
+  <value time="1489853674">
+    <cpu>35</cpu>
+    <network>60554627</network>
+  </value>
+  <value time="1489853676">
+    <cpu>50</cpu>
+    <network>60554735</network>
+  </value>
+</stats>

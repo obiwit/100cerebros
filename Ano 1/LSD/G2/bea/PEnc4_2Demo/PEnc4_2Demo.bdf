@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 128 288 376 304)
+	(text "INPUT" (rect 205 0 287 21)(font "Arial" (font_size 6)))
+	(text "SW[3..0]" (rect 5 0 157 25)(font "Arial" ))
+	(pt 248 8)
+	(drawing
+		(line (pt 164 12)(pt 189 12))
+		(line (pt 164 4)(pt 189 4))
+		(line (pt 193 8)(pt 248 8))
+		(line (pt 164 12)(pt 164 4))
+		(line (pt 189 4)(pt 193 8))
+		(line (pt 189 12)(pt 193 8))
+	)
+	(text "VCC" (rect 208 7 257 28)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -32 304 128 344))
+)
+(pin
+	(output)
+	(rect 1040 312 1226 328)
+	(text "OUTPUT" (rect 1 0 100 21)(font "Arial" (font_size 6)))
+	(text "LEDG[0]" (rect 90 0 180 18)(font "Arial" (font_size 5)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1226 328 1370 368))
+)
+(pin
+	(output)
+	(rect 1024 280 1249 296)
+	(text "OUTPUT" (rect 1 0 100 21)(font "Arial" (font_size 6)))
+	(text "LEDR[1..0]" (rect 90 0 219 18)(font "Arial" (font_size 5)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1249 296 1393 336))
+)
+(symbol
+	(rect 576 264 808 344)
+	(text "PEnc4_2" (rect 5 0 137 25)(font "Arial" ))
+	(text "inst" (rect 8 64 83 89)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "decodedIn[3..0]" (rect 0 0 283 25)(font "Arial" ))
+		(text "decodedIn[3..0]" (rect 21 27 304 52)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "encodedOut[1..0]" (rect 0 0 302 25)(font "Arial" ))
+		(text "encodedOut[1..0]" (rect -44 27 258 52)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "validOut" (rect 0 0 151 25)(font "Arial" ))
+		(text "validOut" (rect 84 43 235 68)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 64))
+	)
+)
+(connector
+	(pt 808 312)
+	(pt 1024 312)
+)
+(connector
+	(pt 1024 312)
+	(pt 1024 320)
+)
+(connector
+	(pt 1024 320)
+	(pt 1040 320)
+)
+(connector
+	(pt 1040 320)
+	(pt 1048 320)
+)
+(connector
+	(pt 808 296)
+	(pt 1024 296)
+	(bus)
+)
+(connector
+	(pt 1024 296)
+	(pt 1024 288)
+	(bus)
+)
+(connector
+	(pt 576 296)
+	(pt 376 296)
+	(bus)
+)
+(junction (pt 1040 320))

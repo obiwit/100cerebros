@@ -1,0 +1,11 @@
+trueRefeicao servida: sopa:1 marisco:1 cerveja:1 
+trueRefeicao servida: carne:1 feijao:1 
+Food in stock:
+  carne: 1
+  sumo: 1
+  agua: 1
+  cerveja: 0
+  feijao: 0
+  sopa: 1
+  peixe: 1
+  torta: 1

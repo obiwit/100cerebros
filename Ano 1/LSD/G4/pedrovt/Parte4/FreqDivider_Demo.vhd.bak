@@ -1,0 +1,17 @@
+import IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity FreqDivider_Demo is
+	port(CLOCK_50: 
+	
+end FreqDivider_Demo;
+
+architecture Shell of FreqDivider_Demo is
+begin
+	ff_d : work.FreqDivider(Behavioral)
+	port map(clk 	=> KEY,
+				d 		=> SW(0),
+				set 	=> SW(1),
+				reset => SW(2),
+				q 		=> LEDR);
+end Shell;

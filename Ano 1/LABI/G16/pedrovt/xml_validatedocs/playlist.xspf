@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+    <title>My playlist</title>
+    <creator>Jane Doe</creator>
+    <annotation>My favorite songs</annotation>
+    <info>http://example.com/myplaylists</info>
+
+    <trackgList>
+        <track>
+            <location>http://example.com/my.mp3</location>
+            <title>My Way</title>
+            <creator>Frank Sinatra</creator>
+            <annotation>This is my theme song.</annotation>
+            <album>Frank Sinatra’s Greatest Hits</album>
+            <trackNum>3</trackNum>
+            <duration>19200</duration>
+        </track>
+    </trackList>
+</playlist>

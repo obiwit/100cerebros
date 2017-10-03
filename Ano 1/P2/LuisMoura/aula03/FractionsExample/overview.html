@@ -1,0 +1,75 @@
+<html>
+<body>
+Este conjunto de pastas e ficheiros formam um exemplo de desenvolvimento de
+um programa que permite fazer cálculos com fracções (números racionais).
+<P>
+Este programa está feito de forma diferente em cada uma das várias versões,
+cada qual na sua pasta/pacote (package).
+A versão v1 contém um programa monolítico.
+As versões seguintes introduzem novos conceitos e mecanismos que permitem
+melhorar progressivamente a forma como o programa está implementado.
+O utilizador do programa {@code FractionCalculator} possivelmente não notará
+qualquer diferença entre as várias versões, mas o programador deverá
+aperceber-se que de versão para versão ganha em reutilizabilidade,
+compreensibilidade, extensibilidade, segurança e outras qualidades "internas"
+que lhe valorizam e facilitam o trabalho.
+<P>
+<b>Como ler este documento:</b>
+<P>
+Este documento é composto de várias páginas HTML e deve ser lido usando um
+browser qualquer, abrindo o ficheiro {@code doc/index.html}.
+<ul>
+<li> Avance por ordem para cada versão (package) indicada no topo
+     desta página.
+<li> No pacote de cada versão encontra uma lista de classes.
+<li> Comece pela classe do programa {@code FractionCalculator},
+     depois avance seguindo as ligações indicadas.
+<li> Em cada classe encontra explicações gerais e detalhes sobre cada atributo
+     e função.
+<li> Poderá mesmo ver o código associado a cada função seguindo a ligação
+     associada ao nome respectivo.
+</ul>
+Em qualquer altura pode regressar à classe, ao pacote ou aqui (Overview)
+para navegar para qualquer outra página da forma que entender.
+<P>
+Este documento foi gerado com {@code javadoc} (ver abaixo) a partir dos
+comentários incluídos nos ficheiros {@code .java}.
+Por isso também pode simplesmente navegar por esses ficheiros usando um
+editor de texto comum, mas terá mais dificuldade a ler alguns comentários e a
+seguir as ligações.
+<P>
+<b>Como gerar este documento:</b>
+<P>
+Este documento, mantido na pasta {@code doc/}, foi gerado correndo o script
+contido no ficheiro {@code makeDoc}.
+Em Unix, poderá executar directamente este ficheiro com o comando:
+<pre><code>
+  sh makeDoc
+</code></pre>
+<P>
+<b>Como compilar os programas:</b>
+<P>
+Supondo que está no directório base do exemplo,
+pode compilar todos os ficheiros com o comando:
+<pre><code>
+  javac v*/*.java
+</code></pre>
+<P>
+<b>Como executar os programas:</b>
+<P>
+Mantendo-se no directório base, execute por exemplo:
+<pre><code>
+  $ java -ea v1.FractionCalculator 1/5 + 2/6
+  (1/5) + (2/6) = (16/30)
+</code></pre>
+<P>
+<b>Contacto:</b>
+<P>
+Caso detecte incorrecções, tenha críticas ou sugestões, por favor
+<a href="mailto:jmr@ua.pt?subject=Fractions Example">contacte o autor</a>.
+<P>
+Obrigado e bom proveito.
+<P>
+@author João Manuel Rodrigues
+</body>
+</html>

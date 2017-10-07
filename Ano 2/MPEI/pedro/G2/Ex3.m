@@ -21,7 +21,7 @@ tic
 N         = 1e6;
 pC        = 1/10000;
 
-terCancro = rand(1, N) < pC ;
+terCancro   = rand(1, N) < pC ;
 darPositivo = zeros (1, N);
 for i = 1 : N
     if terCancro(i)  == 1

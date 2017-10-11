@@ -25,7 +25,7 @@ for i=1:N
     end
 end
 
-disp("Probability there are colisions: " + (1 -numUniqueKeys/N)); %0.04
+disp("Probability there are colisions: " + (1 - numUniqueKeys/N)); %0.04
 
 
 
@@ -33,7 +33,7 @@ disp("Probability there are colisions: " + (1 -numUniqueKeys/N)); %0.04
 % de keys.
 
 %N = 100;
-%possibleValuesRange = 1000;
+possibleValuesRange = 1000;
 N=1000;
 keyRange = 1000;
 
@@ -60,23 +60,26 @@ title("Alinea b");
 % a variacao da probabilidade de nao haver qualquer colisao em funcao do
 % tamanho do array.
 
-NRange = 1e3;
+N = 1e3;
 keyNum = 50;
 %possibleValuesRange = 1000;
 
-numCollisions = zeros(1, NRange);
+numNoCollisions = zeros(1, N);
 
-for N=1:NRange
+for possibleValuesRange=1:N % change array size
 
     simulation = floor(possibleValuesRange*rand(keyNum, N));
     
     for i=1:N
-        if (length(unique(simulation(:,i))) ~= keyNum)
-            numCollisions(N) = numCollisions(N) + 1;
+        if (length(unique(simulation(:,i))) == keyNum)
+            numNoCollisions(possibleValuesRange) = numNoCollisions(possibleValuesRange) + 1;
         end
     end
-    numCollisions(N) = numCollisions(N);% / keyNum; % average collisions
+    %numCollisions(N) = numCollisions(N) / N; % / keyNum % average collisions
 end
+
+numNoCollisions = numNoCollisions / N; % / keyNum % average collisions
+
 %disp(numCollisions);
 figure(2);
-plot(numCollisions);
+plot(numNoCollisions);

@@ -1,6 +1,10 @@
+# --------------------------------
 # Guião 2, Ex 2
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
+
 # Shift Instructions with masks
-# Pedro Teixeira, MIECT, 84715
 
 # val >> $t0
 # Results from And, Or, Nor, Xor, Not val_1, Not val_2 >> $t2 to $t7

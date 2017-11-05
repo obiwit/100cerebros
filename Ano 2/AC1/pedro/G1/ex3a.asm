@@ -1,3 +1,9 @@
+# --------------------------------
+# Guião 1, Ex 3a
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
+
 	.data
 	.text
 	.globl main

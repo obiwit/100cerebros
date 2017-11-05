@@ -1,6 +1,10 @@
+# --------------------------------
 # Guião 2, Ex 2
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
+
 # Shift Instructions
-# Pedro Teixeira, MIECT, 84715
 
 # ---------------------------------------------------
 # val_1 >> $t0

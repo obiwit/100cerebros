@@ -1,3 +1,9 @@
+# --------------------------------
+# Guião 1, Ex 1
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
+
 	.data
 				# nada a colocar aqui, de momento
 	.text

@@ -1,6 +1,10 @@
+# --------------------------------
 # Guião 2, Ex 1
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
+
 # Logic Instructions
-# Pedro Teixeira, MIECT, 84715
 
 # val_1 >> $t0, val_2 >> $t1
 # Results from And, Or, Nor, Xor, Not val_1, Not val_2 >> $t2 to $t7

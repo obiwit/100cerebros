@@ -1,5 +1,8 @@
+# --------------------------------
 # Guião 3, Ex 1
-# Pedro Teixeira, MIECT, 84715
+# Arquitectura de Computadores I
+# Pedro Teixeira, 84715, MIECT
+# --------------------------------
 
 # ---------------------------------------------------
 

@@ -1,0 +1,12 @@
+library ieee;
+  use ieee.std_logic_1164.all;
+  library work;
+  use work.MIPS_pkg.all;
+  use work.DisplayUnit_pkg.all;
+entity mips_single_cycle is 
+	port( CLOCK_50: in std_logic;
+			SW : in std_logic_vector(2 downto 0); 
+			KEY : in std_logic_vector(3 downto 0); 
+			HEX0 : out std_logic_vector(3 downto 0); 
+			HEX7 : out std_logic_vector(3 downto 0) );
+  end mips_single_cycle;

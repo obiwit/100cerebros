@@ -1,0 +1,455 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/01/2017 22:40:00"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          PCupdate
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module PCupdate_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg branch;
+reg clk;
+reg [25:0] jAddr26;
+reg jump;
+reg [31:0] offset32;
+reg reset;
+reg zero;
+// wires                                               
+wire [31:0] pc;
+
+// assign statements (if any)                          
+PCupdate i1 (
+// port map - connection between master ports and signals/registers   
+	.branch(branch),
+	.clk(clk),
+	.jAddr26(jAddr26),
+	.jump(jump),
+	.offset32(offset32),
+	.pc(pc),
+	.reset(reset),
+	.zero(zero)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #50000 1'b1;
+	#50000;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #40000 1'b0;
+end 
+
+// zero
+initial
+begin
+	zero = 1'b0;
+	zero = #520000 1'b1;
+	zero = #420000 1'b0;
+end 
+
+// branch
+initial
+begin
+	branch = 1'b0;
+	branch = #330000 1'b1;
+	branch = #380000 1'b0;
+	branch = #110000 1'b1;
+	branch = #120000 1'b0;
+end 
+
+// jump
+initial
+begin
+	jump = 1'b0;
+	jump = #140000 1'b1;
+	jump = #180000 1'b0;
+end 
+// jAddr26[ 25 ]
+initial
+begin
+	jAddr26[25] = 1'b0;
+end 
+// jAddr26[ 24 ]
+initial
+begin
+	jAddr26[24] = 1'b0;
+end 
+// jAddr26[ 23 ]
+initial
+begin
+	jAddr26[23] = 1'b0;
+end 
+// jAddr26[ 22 ]
+initial
+begin
+	jAddr26[22] = 1'b0;
+end 
+// jAddr26[ 21 ]
+initial
+begin
+	jAddr26[21] = 1'b0;
+end 
+// jAddr26[ 20 ]
+initial
+begin
+	jAddr26[20] = 1'b0;
+end 
+// jAddr26[ 19 ]
+initial
+begin
+	jAddr26[19] = 1'b0;
+end 
+// jAddr26[ 18 ]
+initial
+begin
+	jAddr26[18] = 1'b0;
+end 
+// jAddr26[ 17 ]
+initial
+begin
+	jAddr26[17] = 1'b0;
+end 
+// jAddr26[ 16 ]
+initial
+begin
+	jAddr26[16] = 1'b0;
+end 
+// jAddr26[ 15 ]
+initial
+begin
+	jAddr26[15] = 1'b0;
+end 
+// jAddr26[ 14 ]
+initial
+begin
+	jAddr26[14] = 1'b0;
+end 
+// jAddr26[ 13 ]
+initial
+begin
+	jAddr26[13] = 1'b0;
+end 
+// jAddr26[ 12 ]
+initial
+begin
+	jAddr26[12] = 1'b0;
+end 
+// jAddr26[ 11 ]
+initial
+begin
+	jAddr26[11] = 1'b0;
+end 
+// jAddr26[ 10 ]
+initial
+begin
+	jAddr26[10] = 1'b0;
+end 
+// jAddr26[ 9 ]
+initial
+begin
+	jAddr26[9] = 1'b0;
+end 
+// jAddr26[ 8 ]
+initial
+begin
+	jAddr26[8] = 1'b0;
+end 
+// jAddr26[ 7 ]
+initial
+begin
+	jAddr26[7] = 1'b0;
+end 
+// jAddr26[ 6 ]
+initial
+begin
+	jAddr26[6] = 1'b0;
+end 
+// jAddr26[ 5 ]
+initial
+begin
+	jAddr26[5] = 1'b0;
+end 
+// jAddr26[ 4 ]
+initial
+begin
+	jAddr26[4] = 1'b0;
+end 
+// jAddr26[ 3 ]
+initial
+begin
+	jAddr26[3] = 1'b0;
+end 
+// jAddr26[ 2 ]
+initial
+begin
+	jAddr26[2] = 1'b0;
+	jAddr26[2] = #140000 1'b1;
+	jAddr26[2] = #210000 1'b0;
+end 
+// jAddr26[ 1 ]
+initial
+begin
+	jAddr26[1] = 1'b0;
+end 
+// jAddr26[ 0 ]
+initial
+begin
+	jAddr26[0] = 1'b0;
+	jAddr26[0] = #140000 1'b1;
+	jAddr26[0] = #210000 1'b0;
+end 
+// offset32[ 31 ]
+initial
+begin
+	offset32[31] = 1'b0;
+	offset32[31] = #770000 1'b1;
+	offset32[31] = #220000 1'b0;
+end 
+// offset32[ 30 ]
+initial
+begin
+	offset32[30] = 1'b0;
+	offset32[30] = #770000 1'b1;
+	offset32[30] = #220000 1'b0;
+end 
+// offset32[ 29 ]
+initial
+begin
+	offset32[29] = 1'b0;
+	offset32[29] = #770000 1'b1;
+	offset32[29] = #220000 1'b0;
+end 
+// offset32[ 28 ]
+initial
+begin
+	offset32[28] = 1'b0;
+	offset32[28] = #770000 1'b1;
+	offset32[28] = #220000 1'b0;
+end 
+// offset32[ 27 ]
+initial
+begin
+	offset32[27] = 1'b0;
+	offset32[27] = #770000 1'b1;
+	offset32[27] = #220000 1'b0;
+end 
+// offset32[ 26 ]
+initial
+begin
+	offset32[26] = 1'b0;
+	offset32[26] = #770000 1'b1;
+	offset32[26] = #220000 1'b0;
+end 
+// offset32[ 25 ]
+initial
+begin
+	offset32[25] = 1'b0;
+	offset32[25] = #770000 1'b1;
+	offset32[25] = #220000 1'b0;
+end 
+// offset32[ 24 ]
+initial
+begin
+	offset32[24] = 1'b0;
+	offset32[24] = #770000 1'b1;
+	offset32[24] = #220000 1'b0;
+end 
+// offset32[ 23 ]
+initial
+begin
+	offset32[23] = 1'b0;
+	offset32[23] = #770000 1'b1;
+	offset32[23] = #220000 1'b0;
+end 
+// offset32[ 22 ]
+initial
+begin
+	offset32[22] = 1'b0;
+	offset32[22] = #770000 1'b1;
+	offset32[22] = #220000 1'b0;
+end 
+// offset32[ 21 ]
+initial
+begin
+	offset32[21] = 1'b0;
+	offset32[21] = #770000 1'b1;
+	offset32[21] = #220000 1'b0;
+end 
+// offset32[ 20 ]
+initial
+begin
+	offset32[20] = 1'b0;
+	offset32[20] = #770000 1'b1;
+	offset32[20] = #220000 1'b0;
+end 
+// offset32[ 19 ]
+initial
+begin
+	offset32[19] = 1'b0;
+	offset32[19] = #770000 1'b1;
+	offset32[19] = #220000 1'b0;
+end 
+// offset32[ 18 ]
+initial
+begin
+	offset32[18] = 1'b0;
+	offset32[18] = #770000 1'b1;
+	offset32[18] = #220000 1'b0;
+end 
+// offset32[ 17 ]
+initial
+begin
+	offset32[17] = 1'b0;
+	offset32[17] = #770000 1'b1;
+	offset32[17] = #220000 1'b0;
+end 
+// offset32[ 16 ]
+initial
+begin
+	offset32[16] = 1'b0;
+	offset32[16] = #770000 1'b1;
+	offset32[16] = #220000 1'b0;
+end 
+// offset32[ 15 ]
+initial
+begin
+	offset32[15] = 1'b0;
+	offset32[15] = #770000 1'b1;
+	offset32[15] = #220000 1'b0;
+end 
+// offset32[ 14 ]
+initial
+begin
+	offset32[14] = 1'b0;
+	offset32[14] = #770000 1'b1;
+	offset32[14] = #220000 1'b0;
+end 
+// offset32[ 13 ]
+initial
+begin
+	offset32[13] = 1'b0;
+	offset32[13] = #770000 1'b1;
+	offset32[13] = #220000 1'b0;
+end 
+// offset32[ 12 ]
+initial
+begin
+	offset32[12] = 1'b0;
+	offset32[12] = #770000 1'b1;
+	offset32[12] = #220000 1'b0;
+end 
+// offset32[ 11 ]
+initial
+begin
+	offset32[11] = 1'b0;
+	offset32[11] = #770000 1'b1;
+	offset32[11] = #220000 1'b0;
+end 
+// offset32[ 10 ]
+initial
+begin
+	offset32[10] = 1'b0;
+	offset32[10] = #770000 1'b1;
+	offset32[10] = #220000 1'b0;
+end 
+// offset32[ 9 ]
+initial
+begin
+	offset32[9] = 1'b0;
+	offset32[9] = #770000 1'b1;
+	offset32[9] = #220000 1'b0;
+end 
+// offset32[ 8 ]
+initial
+begin
+	offset32[8] = 1'b0;
+	offset32[8] = #770000 1'b1;
+	offset32[8] = #220000 1'b0;
+end 
+// offset32[ 7 ]
+initial
+begin
+	offset32[7] = 1'b0;
+	offset32[7] = #770000 1'b1;
+	offset32[7] = #220000 1'b0;
+end 
+// offset32[ 6 ]
+initial
+begin
+	offset32[6] = 1'b0;
+	offset32[6] = #770000 1'b1;
+	offset32[6] = #220000 1'b0;
+end 
+// offset32[ 5 ]
+initial
+begin
+	offset32[5] = 1'b0;
+	offset32[5] = #770000 1'b1;
+	offset32[5] = #220000 1'b0;
+end 
+// offset32[ 4 ]
+initial
+begin
+	offset32[4] = 1'b0;
+	offset32[4] = #330000 1'b1;
+	offset32[4] = #660000 1'b0;
+end 
+// offset32[ 3 ]
+initial
+begin
+	offset32[3] = 1'b0;
+	offset32[3] = #770000 1'b1;
+	offset32[3] = #220000 1'b0;
+end 
+// offset32[ 2 ]
+initial
+begin
+	offset32[2] = 1'b0;
+	offset32[2] = #330000 1'b1;
+	offset32[2] = #660000 1'b0;
+end 
+// offset32[ 1 ]
+initial
+begin
+	offset32[1] = 1'b0;
+end 
+// offset32[ 0 ]
+initial
+begin
+	offset32[0] = 1'b0;
+end 
+endmodule
+

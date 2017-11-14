@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -12.322
+TNS   : -22149.454
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.668
+TNS   : -419.995
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DebounceUnit:debnc|s_pulsedOut'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -149.490
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -1.285
+TNS   : -2587.990
+
+Type  : Slow 1200mV 0C Model Setup 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -11.287
+TNS   : -20302.933
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -4.261
+TNS   : -378.279
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DebounceUnit:debnc|s_pulsedOut'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -149.490
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -1.285
+TNS   : -2587.990
+
+Type  : Fast 1200mV 0C Model Setup 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -5.787
+TNS   : -10199.079
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.804
+TNS   : -147.695
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DebounceUnit:debnc|s_pulsedOut'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -124.333
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:debnc|s_pulsedOut'
+Slack : -1.000
+TNS   : -2014.000
+
+------------------------------------------------------------

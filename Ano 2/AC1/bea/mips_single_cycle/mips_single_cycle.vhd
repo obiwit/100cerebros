@@ -7,7 +7,7 @@ use work.DisplayUnit_pkg.all;
   
 entity mips_single_cycle is 
 	port( CLOCK_50 : in std_logic;
-			SW       : in std_logic_vector(7 downto 0); 
+			SW       : in std_logic_vector(2 downto 0); 
 			KEY      : in std_logic_vector(3 downto 0); 
 			
 			HEX0 : out std_logic_vector(6 downto 0); 
@@ -22,13 +22,19 @@ end mips_single_cycle;
 
 architecture Structural of mips_single_cycle is 
 
-	signal s_clk, s_reset 			   : std_logic;
+	signal s_clk, s_reset, s_regDst  : std_logic;
+	signal s_regWrite, s_ALUscr		: std_logic;
+	signal s_zero, s_memRead			: std_logic;
+	signal s_memWrite, s_memToReg		: std_logic;
+	signal s_branch, s_jump				: std_logic;
+	
+	signal s_ALUop							: std_logic_vector(1 downto 0);
 	
 	signal s_ALUaction					: std_logic_vector(2 downto 0);
 	
 	signal s_rt_readAddr, s_rt, s_rd : std_logic_vector(4 downto 0);
 	signal s_rs_readAddr, s_shamt    : std_logic_vector(4 downto 0);
-	signal s_dstReg						: std_logic_vector(4 downto 0);
+	signal s_dstReg				 		: std_logic_vector(4 downto 0);
 	
 	signal s_funct, s_op 			   : std_logic_vector(5 downto 0);
 	
@@ -36,7 +42,8 @@ architecture Structural of mips_single_cycle is
 	signal s_jumpAddr 				   : std_logic_vector(25 downto 0);
 	
 	signal s_extendImm, s_pc, s_ALUout : std_logic_vector(31 downto 0);
-	signal s_ALUscr, s_instruction	  : std_logic_vector(31 downto 0);
+	signal s_writeData, s_memOut		  : std_logic_vector(31 downto 0);
+	signal s_ALU_in2, s_instruction	  : std_logic_vector(31 downto 0);
 	signal s_rs_data, s_rt_data		  : std_logic_vector(31 downto 0);
 	
 begin
@@ -57,9 +64,9 @@ begin
 	pcUp: entity work.PCupdate(Behavioral)
 	port map( clk     => s_clk,
 				 reset 	 => s_reset,
-				 zero 	 => '0',
-				 branch 	 => '0',
-				 jump		 => '0',
+				 zero 	 => s_zero,
+				 branch 	 => s_branch,
+				 jump		 => s_jump,
 				 offset32 => s_extendImm,
 				 jAddr26  => s_jumpAddr,
 				 pc 	    => s_pc);
@@ -109,7 +116,7 @@ begin
 	-- Mux2N
 	muxTD: entity work.Mux2N(BehavAssign)
 	generic map(N => 5)
-	port map(sel    => SW(6),
+	port map(sel    => s_regDst,
 				input0 => s_rt_readAddr,
 				input1 => s_rd,
 				muxOut => s_dstReg);
@@ -118,9 +125,9 @@ begin
 	-- RegFile
 	regFile: entity work.RegFile(Structural)
 	port map (clk			 => s_clk,
-				 writeEnable => SW(7),
+				 writeEnable => s_regWrite,
 				 writeReg    => s_dstReg,
-				 writeData   => s_ALUout,
+				 writeData   => s_writeData,
 				 readReg1	 => s_rs_readAddr,
 				 readReg2	 => s_rt_readAddr,
 				 readData1	 => s_rs_data,
@@ -129,7 +136,7 @@ begin
 	
 	-- ALU Control Unit
 	ALUCtrl: entity work.ALUControlUnit(Behavioral)			 
-	port map (ALUop      => SW(4 downto 3),
+	port map (ALUop      => s_ALUop,
 				 funct      => s_funct,
 				 ALUcontrol => s_ALUaction);
 				 
@@ -137,21 +144,50 @@ begin
 	-- Mux2N
 	muxALU: entity work.Mux2N(BehavAssign)
 	generic map(N => 32)
-	port map( sel    => SW(6),
+	port map( sel    => s_ALUscr,
 				 input0 => s_rt_data,
 				 input1 => s_extendImm,
-				 muxOut => s_ALUscr);
+				 muxOut => s_ALU_in2);
 				 
 				 
 				 
 	-- ALU
 	alu: entity work.ALU32(DataFlow)
 	port map(a	  => s_rs_data,
-				b	  => s_ALUscr,
+				b	  => s_ALU_in2,
 				op   => s_ALUaction,
 				r    => s_ALUout,
-				zero => open);
+				zero => s_zero);
 				
-	DU_DMdata <= s_ALUout;
 	
+	-- DataMemory
+	dataMem: entity work.DataMemory(Behavioral)
+	port map(clk       => s_clk, 
+				readEn    => s_memRead, 
+				writeEn   => s_memWrite, 
+				address   => s_ALUout(7 downto 2), 
+				writeData => s_rt_data, 
+				readData  => s_memOut);
+	
+	-- Mux2N
+	muxMemOut: entity work.Mux2N(BehavAssign)
+	generic map(N => 32)
+	port map( sel    => s_memToReg,
+				 input0 => s_ALUout,
+				 input1 => s_memOut,
+				 muxOut => s_writeData);
+				
+	
+	-- ControlUnit
+	ctrlUnit: entity work.ControlUnit(Behavioral)		
+	port map(OpCode   => s_op,
+				RegDst   => s_regDst,
+				Branch   => s_branch,
+				Jump	   => s_jump,
+				MemRead  => s_memRead,
+				MemWrite => s_memWrite,
+				MemToReg => s_memToReg,
+				ALUsrc   => s_ALUscr,
+				RegWrite => s_regWrite,
+				ALUop    => s_ALUop);	
 end Structural;

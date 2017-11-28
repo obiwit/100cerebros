@@ -1,5 +1,5 @@
 Flow report for mips_single_cycle
-Tue Nov 14 17:11:58 2017
+Tue Nov 21 17:22:26 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 14 17:11:58 2017       ;
+; Flow Status                        ; Successful - Tue Nov 21 17:22:26 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; mips_single_cycle                           ;
 ; Top-level Entity Name              ; mips_single_cycle                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,021 / 114,480 ( 3 % )                     ;
-;     Total combinational functions  ; 2,116 / 114,480 ( 2 % )                     ;
-;     Dedicated logic registers      ; 2,128 / 114,480 ( 2 % )                     ;
-; Total registers                    ; 2128                                        ;
-; Total pins                         ; 69 / 529 ( 13 % )                           ;
+; Total logic elements               ; 4,886 / 114,480 ( 4 % )                     ;
+;     Total combinational functions  ; 3,241 / 114,480 ( 3 % )                     ;
+;     Dedicated logic registers      ; 3,536 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 3536                                        ;
+; Total pins                         ; 64 / 529 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2017 17:09:11 ;
+; Start date & time ; 11/21/2017 17:20:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_single_cycle   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373748038.151067935104724          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121373748038.151128482304504          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -98,12 +98,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 860 MB              ; 00:00:34                           ;
-; Fitter                    ; 00:01:14     ; 1.0                     ; 1423 MB             ; 00:01:16                           ;
-; Assembler                 ; 00:00:12     ; 1.0                     ; 753 MB              ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 924 MB              ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 745 MB              ; 00:00:06                           ;
-; Total                     ; 00:02:08     ; --                      ; --                  ; 00:02:16                           ;
+; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 876 MB              ; 00:00:44                           ;
+; Fitter                    ; 00:00:36     ; 1.0                     ; 1379 MB             ; 00:00:38                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 752 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 911 MB              ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 754 MB              ; 00:00:08                           ;
+; Total                     ; 00:01:29     ; --                      ; --                  ; 00:01:41                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

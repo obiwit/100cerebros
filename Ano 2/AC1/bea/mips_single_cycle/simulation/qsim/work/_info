@@ -92,8 +92,92 @@ R12
 !i113 1
 R9
 n@a@l@u@control@unit_vlg_vec_tst
+vControlUnit
+Z13 !s110 1510832013
+!i10b 1
+!s100 >5JGd2COSb4jzf;jLc;jW3
+I7=4Z6lSmK?O=>HiT4QD6I0
+R2
+R0
+w1510832012
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1510832013.000000
+R7
+R8
+!i113 1
+R9
+n@control@unit
+vControlUnit_vlg_vec_tst
+R13
+!i10b 1
+!s100 aJVheYbg`V2FI=;O1ToZS3
+IfCHWnY10h0JMj2C>Uk7V02
+R2
+R0
+w1510832005
+8ControlUnit.vwf.vt
+FControlUnit.vwf.vt
+R10
+R6
+r1
+!s85 0
+31
+R14
+!s107 ControlUnit.vwf.vt|
+!s90 -work|work|ControlUnit.vwf.vt|
+!i113 1
+R9
+n@control@unit_vlg_vec_tst
+vDataMemory
+Z15 !s110 1510829814
+!i10b 1
+!s100 @dO0jgeSS=Z>Hz5Lh;Qo=1
+I09jUAOH9jUom_5Mh:]i9>1
+R2
+R0
+w1510829812
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1510829813.000000
+R7
+R8
+!i113 1
+R9
+n@data@memory
+vDataMemory_vlg_vec_tst
+R15
+!i10b 1
+!s100 =Lzd7CcV1>nz;TLoA@KeH1
+IXC1_06IUgX4lnAZK5a[Ei3
+R2
+R0
+w1510829803
+8DataMemory.vwf.vt
+FDataMemory.vwf.vt
+R10
+R6
+r1
+!s85 0
+31
+!s108 1510829814.000000
+!s107 DataMemory.vwf.vt|
+!s90 -work|work|DataMemory.vwf.vt|
+!i113 1
+R9
+n@data@memory_vlg_vec_tst
 vInstructionMemory
-Z13 !s110 1509557584
+Z16 !s110 1509557584
 !i10b 1
 !s100 Ha`Q588;0n:B^NNg:198W1
 IRCDGERFJ@<FZoaF8IAh:U1
@@ -107,14 +191,14 @@ R6
 r1
 !s85 0
 31
-Z14 !s108 1509557584.000000
+Z17 !s108 1509557584.000000
 R7
 R8
 !i113 1
 R9
 n@instruction@memory
 vInstructionMemory_vlg_vec_tst
-R13
+R16
 !i10b 1
 !s100 8]2WQd[jSY@LLAcA^2SVi3
 IXIgPMQBT0ke6PGRkB@i0a2
@@ -128,14 +212,14 @@ R6
 r1
 !s85 0
 31
-R14
+R17
 !s107 InstructionMemory.vwf.vt|
 !s90 -work|work|InstructionMemory.vwf.vt|
 !i113 1
 R9
 n@instruction@memory_vlg_vec_tst
 vMux2N
-Z15 !s110 1510261264
+Z18 !s110 1510261264
 !i10b 1
 !s100 n^WIYDU?Vdj;CPWH=?QD>3
 IQaFFC?jLa]AI0GjaFDLVD0
@@ -149,14 +233,14 @@ R6
 r1
 !s85 0
 31
-Z16 !s108 1510261264.000000
+Z19 !s108 1510261264.000000
 R7
 R8
 !i113 1
 R9
 n@mux2@n
 vMux2N_vlg_vec_tst
-R15
+R18
 !i10b 1
 !s100 <S?_^DgiSh8ZP2o0H6@891
 IZL[U_HEJd_FNFdo5W>]?Z3
@@ -170,14 +254,14 @@ R6
 r1
 !s85 0
 31
-R16
+R19
 !s107 Mux2_5.vwf.vt|
 !s90 -work|work|Mux2_5.vwf.vt|
 !i113 1
 R9
 n@mux2@n_vlg_vec_tst
 vPCupdate
-Z17 !s110 1509576008
+Z20 !s110 1509576008
 !i10b 1
 !s100 7[IeNha0S_`MjYWhg>FMZ1
 I1]9a0fJ0N[WOVaPW]A<362
@@ -191,14 +275,14 @@ R6
 r1
 !s85 0
 31
-Z18 !s108 1509576008.000000
+Z21 !s108 1509576008.000000
 R7
 R8
 !i113 1
 R9
 n@p@cupdate
 vPCupdate_vlg_vec_tst
-R17
+R20
 !i10b 1
 !s100 3A?2<To7]_FHDn`KLYA@o3
 INdIYVMHj<2ohTXaT?`_f53
@@ -212,14 +296,14 @@ R6
 r1
 !s85 0
 31
-R18
+R21
 !s107 PCupdate.vwf.vt|
 !s90 -work|work|PCupdate.vwf.vt|
 !i113 1
 R9
 n@p@cupdate_vlg_vec_tst
 vRegFile
-Z19 !s110 1510252752
+Z22 !s110 1510252752
 !i10b 1
 !s100 FUo3PD:zDEAL<7MZD`Jmd2
 IcXTnM?gJ:NiZEPgSNH[cd0
@@ -240,7 +324,7 @@ R8
 R9
 n@reg@file
 vRegFile_vlg_vec_tst
-R19
+R22
 !i10b 1
 !s100 8ei6QQd?ChZPcddL`d7f02
 I<fd:[HO9Qg>[0:fIzX6Z>0
@@ -261,7 +345,7 @@ r1
 R9
 n@reg@file_vlg_vec_tst
 vSignExtend
-Z20 !s110 1509549740
+Z23 !s110 1509549740
 !i10b 1
 !s100 z3Pz]ehh5RkJ<>MSg2^VB0
 I<3CGFo<WB0b2:O2ATkBk51
@@ -275,14 +359,14 @@ R6
 r1
 !s85 0
 31
-Z21 !s108 1509549740.000000
+Z24 !s108 1509549740.000000
 R7
 R8
 !i113 1
 R9
 n@sign@extend
 vSignExtend_vlg_vec_tst
-R20
+R23
 !i10b 1
 !s100 3EEG1NBPi]W8LO0CZ==BM2
 IjnDW>hJ;Zj@c5jOfDnAT@0
@@ -296,7 +380,7 @@ R6
 r1
 !s85 0
 31
-R21
+R24
 !s107 SignExtend.vwf.vt|
 !s90 -work|work|SignExtend.vwf.vt|
 !i113 1

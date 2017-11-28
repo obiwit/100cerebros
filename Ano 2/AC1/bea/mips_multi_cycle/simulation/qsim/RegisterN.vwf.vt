@@ -1,0 +1,372 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/24/2017 21:12:02"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          RegisterN
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module RegisterN_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg enable;
+reg [5:0] readAddr;
+reg [5:0] writeAddr;
+reg [31:0] writeData;
+// wires                                               
+wire [31:0] readData;
+
+// assign statements (if any)                          
+RegisterN i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.enable(enable),
+	.readAddr(readAddr),
+	.readData(readData),
+	.writeAddr(writeAddr),
+	.writeData(writeData)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #50000 1'b1;
+	#50000;
+end 
+
+// enable
+initial
+begin
+	enable = 1'b0;
+	enable = #90000 1'b1;
+	enable = #110000 1'b0;
+	enable = #110000 1'b1;
+	enable = #80000 1'b0;
+	enable = #180000 1'b1;
+	enable = #140000 1'b0;
+end 
+// writeAddr[ 5 ]
+initial
+begin
+	writeAddr[5] = 1'b0;
+	writeAddr[5] = #140000 1'b1;
+	writeAddr[5] = #150000 1'b0;
+end 
+// writeAddr[ 4 ]
+initial
+begin
+	writeAddr[4] = 1'b0;
+	writeAddr[4] = #140000 1'b1;
+	writeAddr[4] = #150000 1'b0;
+end 
+// writeAddr[ 3 ]
+initial
+begin
+	writeAddr[3] = 1'b0;
+	writeAddr[3] = #140000 1'b1;
+	writeAddr[3] = #150000 1'b0;
+end 
+// writeAddr[ 2 ]
+initial
+begin
+	writeAddr[2] = 1'b0;
+	writeAddr[2] = #140000 1'b1;
+	writeAddr[2] = #150000 1'b0;
+end 
+// writeAddr[ 1 ]
+initial
+begin
+	writeAddr[1] = 1'b0;
+	writeAddr[1] = #140000 1'b1;
+	writeAddr[1] = #150000 1'b0;
+end 
+// writeAddr[ 0 ]
+initial
+begin
+	writeAddr[0] = 1'b0;
+	writeAddr[0] = #140000 1'b1;
+	writeAddr[0] = #150000 1'b0;
+end 
+// writeData[ 31 ]
+initial
+begin
+	writeData[31] = 1'b0;
+	writeData[31] = #140000 1'b1;
+	writeData[31] = #380000 1'b0;
+end 
+// writeData[ 30 ]
+initial
+begin
+	writeData[30] = 1'b0;
+	writeData[30] = #140000 1'b1;
+	writeData[30] = #380000 1'b0;
+end 
+// writeData[ 29 ]
+initial
+begin
+	writeData[29] = 1'b0;
+	writeData[29] = #140000 1'b1;
+	writeData[29] = #380000 1'b0;
+end 
+// writeData[ 28 ]
+initial
+begin
+	writeData[28] = 1'b0;
+	writeData[28] = #140000 1'b1;
+	writeData[28] = #380000 1'b0;
+end 
+// writeData[ 27 ]
+initial
+begin
+	writeData[27] = 1'b0;
+	writeData[27] = #140000 1'b1;
+	writeData[27] = #380000 1'b0;
+end 
+// writeData[ 26 ]
+initial
+begin
+	writeData[26] = 1'b0;
+	writeData[26] = #140000 1'b1;
+	writeData[26] = #380000 1'b0;
+end 
+// writeData[ 25 ]
+initial
+begin
+	writeData[25] = 1'b0;
+	writeData[25] = #140000 1'b1;
+	writeData[25] = #380000 1'b0;
+end 
+// writeData[ 24 ]
+initial
+begin
+	writeData[24] = 1'b0;
+	writeData[24] = #140000 1'b1;
+	writeData[24] = #380000 1'b0;
+end 
+// writeData[ 23 ]
+initial
+begin
+	writeData[23] = 1'b0;
+	writeData[23] = #140000 1'b1;
+	writeData[23] = #380000 1'b0;
+end 
+// writeData[ 22 ]
+initial
+begin
+	writeData[22] = 1'b0;
+	writeData[22] = #140000 1'b1;
+	writeData[22] = #380000 1'b0;
+end 
+// writeData[ 21 ]
+initial
+begin
+	writeData[21] = 1'b0;
+	writeData[21] = #140000 1'b1;
+	writeData[21] = #380000 1'b0;
+end 
+// writeData[ 20 ]
+initial
+begin
+	writeData[20] = 1'b0;
+	writeData[20] = #140000 1'b1;
+	writeData[20] = #380000 1'b0;
+end 
+// writeData[ 19 ]
+initial
+begin
+	writeData[19] = 1'b0;
+	writeData[19] = #140000 1'b1;
+	writeData[19] = #380000 1'b0;
+end 
+// writeData[ 18 ]
+initial
+begin
+	writeData[18] = 1'b0;
+	writeData[18] = #140000 1'b1;
+	writeData[18] = #380000 1'b0;
+end 
+// writeData[ 17 ]
+initial
+begin
+	writeData[17] = 1'b0;
+	writeData[17] = #140000 1'b1;
+	writeData[17] = #380000 1'b0;
+end 
+// writeData[ 16 ]
+initial
+begin
+	writeData[16] = 1'b0;
+	writeData[16] = #140000 1'b1;
+	writeData[16] = #380000 1'b0;
+end 
+// writeData[ 15 ]
+initial
+begin
+	writeData[15] = 1'b0;
+	writeData[15] = #140000 1'b1;
+	writeData[15] = #380000 1'b0;
+end 
+// writeData[ 14 ]
+initial
+begin
+	writeData[14] = 1'b0;
+	writeData[14] = #140000 1'b1;
+	writeData[14] = #380000 1'b0;
+end 
+// writeData[ 13 ]
+initial
+begin
+	writeData[13] = 1'b0;
+	writeData[13] = #140000 1'b1;
+	writeData[13] = #380000 1'b0;
+end 
+// writeData[ 12 ]
+initial
+begin
+	writeData[12] = 1'b0;
+	writeData[12] = #140000 1'b1;
+	writeData[12] = #380000 1'b0;
+end 
+// writeData[ 11 ]
+initial
+begin
+	writeData[11] = 1'b0;
+	writeData[11] = #140000 1'b1;
+	writeData[11] = #380000 1'b0;
+end 
+// writeData[ 10 ]
+initial
+begin
+	writeData[10] = 1'b0;
+	writeData[10] = #140000 1'b1;
+	writeData[10] = #380000 1'b0;
+end 
+// writeData[ 9 ]
+initial
+begin
+	writeData[9] = 1'b0;
+	writeData[9] = #140000 1'b1;
+	writeData[9] = #380000 1'b0;
+end 
+// writeData[ 8 ]
+initial
+begin
+	writeData[8] = 1'b0;
+	writeData[8] = #140000 1'b1;
+	writeData[8] = #380000 1'b0;
+end 
+// writeData[ 7 ]
+initial
+begin
+	writeData[7] = 1'b0;
+	writeData[7] = #140000 1'b1;
+	writeData[7] = #380000 1'b0;
+end 
+// writeData[ 6 ]
+initial
+begin
+	writeData[6] = 1'b0;
+	writeData[6] = #140000 1'b1;
+	writeData[6] = #380000 1'b0;
+end 
+// writeData[ 5 ]
+initial
+begin
+	writeData[5] = 1'b0;
+	writeData[5] = #140000 1'b1;
+	writeData[5] = #380000 1'b0;
+end 
+// writeData[ 4 ]
+initial
+begin
+	writeData[4] = 1'b0;
+	writeData[4] = #140000 1'b1;
+	writeData[4] = #380000 1'b0;
+end 
+// writeData[ 3 ]
+initial
+begin
+	writeData[3] = 1'b0;
+	writeData[3] = #140000 1'b1;
+	writeData[3] = #380000 1'b0;
+end 
+// writeData[ 2 ]
+initial
+begin
+	writeData[2] = 1'b0;
+	writeData[2] = #140000 1'b1;
+	writeData[2] = #380000 1'b0;
+end 
+// writeData[ 1 ]
+initial
+begin
+	writeData[1] = 1'b0;
+	writeData[1] = #140000 1'b1;
+	writeData[1] = #380000 1'b0;
+end 
+// writeData[ 0 ]
+initial
+begin
+	writeData[0] = 1'b0;
+	writeData[0] = #140000 1'b1;
+	writeData[0] = #380000 1'b0;
+end 
+// readAddr[ 5 ]
+initial
+begin
+	readAddr[5] = 1'b0;
+end 
+// readAddr[ 4 ]
+initial
+begin
+	readAddr[4] = 1'b0;
+end 
+// readAddr[ 3 ]
+initial
+begin
+	readAddr[3] = 1'b0;
+end 
+// readAddr[ 2 ]
+initial
+begin
+	readAddr[2] = 1'b0;
+end 
+// readAddr[ 1 ]
+initial
+begin
+	readAddr[1] = 1'b0;
+end 
+// readAddr[ 0 ]
+initial
+begin
+	readAddr[0] = 1'b0;
+end 
+endmodule
+

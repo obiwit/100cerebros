@@ -36,7 +36,7 @@ fprintf('Número de elementos no grupo C ao fim da aula 30, %.0f\n', prob_B(3) * 
 % os 90 alunos equitativamente pelos 3 grupos?
 
 fprintf('\n-------------\nAlínea d:\n')
-X_D = [72/90; 18/90; 18/90]
+X_D = [30/90; 30/90; 30/90]
 prob_D = T^30 * X_D
 fprintf('Número de elementos no grupo A ao fim da aula 30, %.0f\n', prob_D(1) * 90);
 fprintf('Número de elementos no grupo B ao fim da aula 30, %.0f\n', prob_D(2) * 90);

@@ -8,81 +8,123 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/bea/Desktop/mips_multi_cycle/simulation/qsim
-vMux4N
-Z1 !s110 1511545091
+vControlUnit
+!s110 1512068550
 !i10b 1
-!s100 ^A1GE6J4Ja1FXa_m;0K@63
-IU=7DlH7Mh?B`2<XgX3U1k3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 [ZeG`nU3OLJ[ge46a_<he3
+IjCzaGbP2GFKO6TadF5]<l3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1511545090
-Z3 8mips_multi_cycle.vo
-Z4 Fmips_multi_cycle.vo
-Z5 L0 32
-Z6 OV;L;10.4b;61
+w1512068536
+Z2 8mips_multi_cycle.vo
+Z3 Fmips_multi_cycle.vo
+Z4 L0 32
+Z5 OV;L;10.4b;61
 r1
 !s85 0
 31
-Z7 !s108 1511545091.000000
-Z8 !s107 mips_multi_cycle.vo|
-Z9 !s90 -work|work|mips_multi_cycle.vo|
+!s108 1512068550.000000
+Z6 !s107 mips_multi_cycle.vo|
+Z7 !s90 -work|work|mips_multi_cycle.vo|
 !i113 1
-Z10 o-work work
+Z8 o-work work
+n@control@unit
+vControlUnit_vlg_vec_tst
+!s110 1512068551
+!i10b 1
+!s100 P79lVe1g6ga>K_XaAo]Xj3
+I4zND2]J0[;W1@;ji^5N6?3
+R1
+R0
+w1512068502
+8ControlUnit.vwf.vt
+FControlUnit.vwf.vt
+Z9 L0 30
+R5
+r1
+!s85 0
+31
+!s108 1512068551.000000
+!s107 ControlUnit.vwf.vt|
+!s90 -work|work|ControlUnit.vwf.vt|
+!i113 1
+R8
+n@control@unit_vlg_vec_tst
+vMux4N
+Z10 !s110 1511545091
+!i10b 1
+!s100 ^A1GE6J4Ja1FXa_m;0K@63
+IU=7DlH7Mh?B`2<XgX3U1k3
+R1
+R0
+w1511545090
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1511545091.000000
+R6
+R7
+!i113 1
+R8
 n@mux4@n
 vMux4N_vlg_vec_tst
-R1
+R10
 !i10b 1
 !s100 10iOgj62l5kDP6@2FPaeK3
 INM_NNdJ^0cCRZd9J4fe5@0
-R2
+R1
 R0
 w1511545084
 8Mux4N.vwf.vt
 FMux4N.vwf.vt
-Z11 L0 30
-R6
+R9
+R5
 r1
 !s85 0
 31
-R7
+R11
 !s107 Mux4N.vwf.vt|
 !s90 -work|work|Mux4N.vwf.vt|
 !i113 1
-R10
+R8
 n@mux4@n_vlg_vec_tst
 vPCupdate
 Z12 !s110 1511544306
 !i10b 1
 !s100 iTb0QGlhkVS1DgoM;R^D01
 IJk=:WIHnPEZYLnPSKLP5d1
-R2
+R1
 R0
 w1511544305
+R2
 R3
 R4
 R5
-R6
 r1
 !s85 0
 31
 Z13 !s108 1511544306.000000
-R8
-R9
+R6
+R7
 !i113 1
-R10
+R8
 n@p@cupdate
 vPCupdate_vlg_vec_tst
 R12
 !i10b 1
 !s100 I8QTI_?P=`5h5SPIdm5AS1
 IF4OG7=j6MXF_=z5fA=Cd:1
-R2
+R1
 R0
 w1511544300
 8PCupdate.vwf.vt
 FPCupdate.vwf.vt
-R11
-R6
+R9
+R5
 r1
 !s85 0
 31
@@ -90,41 +132,41 @@ R13
 !s107 PCupdate.vwf.vt|
 !s90 -work|work|PCupdate.vwf.vt|
 !i113 1
-R10
+R8
 n@p@cupdate_vlg_vec_tst
 vRegisterN
 Z14 !s110 1511557929
 !i10b 1
 !s100 ;94bZcSc5``@K7jliE`jK2
 Ik@LNiiM^^S=`DL;jmhAfJ3
-R2
+R1
 R0
 w1511557927
+R2
 R3
 R4
 R5
-R6
 r1
 !s85 0
 31
 !s108 1511557928.000000
-R8
-R9
+R6
+R7
 !i113 1
-R10
+R8
 n@register@n
 vRegisterN_vlg_vec_tst
 R14
 !i10b 1
 !s100 JzdaZCiBo415<f0aNS_M[3
 IgmFLGPPc_@D>7f5>zjUWV2
-R2
+R1
 R0
 w1511557922
 8RegisterN.vwf.vt
 FRegisterN.vwf.vt
-R11
-R6
+R9
+R5
 r1
 !s85 0
 31
@@ -132,5 +174,5 @@ r1
 !s107 RegisterN.vwf.vt|
 !s90 -work|work|RegisterN.vwf.vt|
 !i113 1
-R10
+R8
 n@register@n_vlg_vec_tst

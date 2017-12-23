@@ -1,16 +1,20 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
+library work;
+use work.DisplayUnit_pkg.all;
+
 entity PCupdate is
 port( clk 		: in std_logic;
 		reset 	: in std_logic;
 		zero 		: in std_logic;
-		PCSource : in std_logic_vector(1 downto 0); PCWrite : in std_logic;
+		PCSource : in std_logic_vector(1 downto 0); 
+		PCWrite  : in std_logic;
 		PCWriteCond : in std_logic;
 		PC4 		: in  std_logic_vector(31 downto 0);
 		BTA 		: in  std_logic_vector(31 downto 0);
 		jAddr 	: in  std_logic_vector(25 downto 0);
-		pc 		: out  std_logic_vector(31 downto 0));
+		pc 		: out std_logic_vector(31 downto 0));
 end PCupdate;
 
 architecture Behavioral of PCupdate is
@@ -41,5 +45,8 @@ begin
 	end process;
 	
 	pc <= s_pc;
+				
+	-- Sinais para a DU
+	DU_PC <= s_pc;
 	
 end Behavioral;

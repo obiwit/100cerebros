@@ -1,5 +1,5 @@
 Flow report for mips_multi_cycle
-Fri Nov 24 21:12:07 2017
+Tue Dec 19 17:22:52 2017
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 24 21:12:07 2017       ;
+; Flow Status                        ; Successful - Tue Dec 19 17:22:52 2017       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; mips_multi_cycle                            ;
-; Top-level Entity Name              ; RegisterN                                   ;
+; Top-level Entity Name              ; mips_multi_cycle                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,744                                       ;
-;     Total combinational functions  ; 720                                         ;
-;     Dedicated logic registers      ; 1,024                                       ;
-; Total registers                    ; 1024                                        ;
-; Total pins                         ; 78                                          ;
+; Total logic elements               ; 5,505 / 114,480 ( 5 % )                     ;
+;     Total combinational functions  ; 4,778 / 114,480 ( 4 % )                     ;
+;     Dedicated logic registers      ; 3,579 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 3579                                        ;
+; Total pins                         ; 80 / 529 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 2,048 / 3,981,312 ( < 1 % )                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,66 +65,77 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2017 21:10:29 ;
+; Start date & time ; 12/19/2017 17:20:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_multi_cycle    ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+------------------------------+------------------+-------------+----------------+
-; Assignment Name                     ; Value                        ; Default Value    ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373748038.151155782803548 ; --               ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --               ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>           ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --               ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --               ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                         ; --               ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                     ; --               ; RegisterN   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --               ; RegisterN   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --               ; RegisterN   ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --               ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; RegisterN                    ; mips_multi_cycle ; --          ; --             ;
-+-------------------------------------+------------------------------+------------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++----------------------------------------+---------------------------------------+--------------------+-------------+----------------+
+; Assignment Name                        ; Value                                 ; Default Value      ; Entity Name ; Section Id     ;
++----------------------------------------+---------------------------------------+--------------------+-------------+----------------+
+; ALLOW_REGISTER_DUPLICATION             ; Off                                   ; On                 ; --          ; --             ;
+; ALLOW_REGISTER_MERGING                 ; Off                                   ; On                 ; --          ; --             ;
+; ALLOW_REGISTER_RETIMING                ; Off                                   ; On                 ; --          ; --             ;
+; ALM_REGISTER_PACKING_EFFORT            ; Low                                   ; Medium             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                  ; 121373748038.151370405110584          ; --                 ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT                 ; Vhdl                                  ; --                 ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                    ; ModelSim-Altera (VHDL)                ; <None>             ; --          ; --             ;
+; FIT_ONLY_ONE_ATTEMPT                   ; On                                    ; Off                ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                 ; 85                                    ; --                 ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                 ; 0                                     ; --                 ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE            ; 1.2V                                  ; --                 ; --          ; --             ;
+; OPTIMIZE_TIMING                        ; Off                                   ; Normal compilation ; --          ; --             ;
+; PARTITION_COLOR                        ; 16764057                              ; --                 ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; PLACEMENT_AND_ROUTING                 ; --                 ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE                 ; SOURCE                                ; --                 ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL              ; None (CONSERVATIVE)                   ; --                 ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                 ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY               ; output_files                          ; --                 ; --          ; --             ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS          ; Off                                   ; On                 ; --          ; --             ;
+; USE_LOGICLOCK_CONSTRAINTS_IN_BALANCING ; Off                                   ; On                 ; --          ; --             ;
+; VHDL_INPUT_VERSION                     ; VHDL_2008                             ; VHDL_1993          ; --          ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES         ; Off                                   ; --                 ; --          ; --             ;
++----------------------------------------+---------------------------------------+--------------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 856 MB              ; 00:00:27                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 699 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 703 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 695 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 703 MB              ; 00:00:01                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:31                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 879 MB              ; 00:00:36                           ;
+; Fitter                    ; 00:00:47     ; 1.0                     ; 1267 MB             ; 00:00:50                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 758 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 918 MB              ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; 765 MB              ; 00:00:08                           ;
+; Total                     ; 00:01:35     ; --                      ; --                  ; 00:01:45                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; BEATRIZBORG5199  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off mips_multi_cycle -c mips_multi_cycle
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off mips_multi_cycle -c mips_multi_cycle --vector_source=C:/Users/bea/Desktop/mips_multi_cycle/RegisterN.vwf --testbench_file=C:/Users/bea/Desktop/mips_multi_cycle/simulation/qsim/RegisterN.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/bea/Desktop/mips_multi_cycle/simulation/qsim/ mips_multi_cycle -c mips_multi_cycle
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off mips_multi_cycle -c mips_multi_cycle --vector_source=C:/Users/bea/Desktop/mips_multi_cycle/RegisterN.vwf --testbench_file=C:/Users/bea/Desktop/mips_multi_cycle/simulation/qsim/RegisterN.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/bea/Desktop/mips_multi_cycle/simulation/qsim/ mips_multi_cycle -c mips_multi_cycle
+quartus_fit --read_settings_files=off --write_settings_files=off mips_multi_cycle -c mips_multi_cycle
+quartus_asm --read_settings_files=off --write_settings_files=off mips_multi_cycle -c mips_multi_cycle
+quartus_sta mips_multi_cycle -c mips_multi_cycle
+quartus_eda --read_settings_files=off --write_settings_files=off mips_multi_cycle -c mips_multi_cycle
 
 
 

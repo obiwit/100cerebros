@@ -1,0 +1,1288 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("ALUop")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ALUop[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ALUop";
+}
+
+SIGNAL("ALUop[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ALUop";
+}
+
+SIGNAL("ALUSelA")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ALUSelB")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ALUSelB[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ALUSelB";
+}
+
+SIGNAL("ALUSelB[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "ALUSelB";
+}
+
+SIGNAL("Clock")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("IorD")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("IRWrite")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MemRead")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MemToReg")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MemWrite")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("OpCode")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("OpCode[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("OpCode[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("OpCode[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("OpCode[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("OpCode[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("OpCode[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "OpCode";
+}
+
+SIGNAL("PCSource")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PCSource[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PCSource";
+}
+
+SIGNAL("PCSource[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PCSource";
+}
+
+SIGNAL("PCWrite")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PCWriteCond")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("RegDest")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("RegWrite")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("STATE")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("STATE[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "STATE";
+}
+
+SIGNAL("STATE[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "STATE";
+}
+
+SIGNAL("STATE[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "STATE";
+}
+
+SIGNAL("STATE[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "STATE";
+}
+
+TRANSITION_LIST("ALUop[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 52.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 420.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 457.5;
+		}
+	}
+}
+
+TRANSITION_LIST("ALUop[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 507.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 245.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 177.5;
+		}
+	}
+}
+
+TRANSITION_LIST("ALUSelA")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 52.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 177.5;
+		}
+	}
+}
+
+TRANSITION_LIST("ALUSelB[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 107.5;
+		}
+	}
+}
+
+TRANSITION_LIST("ALUSelB[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 52.5;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("Clock")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 2.5;
+		}
+	}
+}
+
+TRANSITION_LIST("IorD")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 227.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 562.5;
+		}
+	}
+}
+
+TRANSITION_LIST("IRWrite")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("MemRead")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("MemToReg")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 262.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 702.5;
+		}
+	}
+}
+
+TRANSITION_LIST("MemWrite")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 402.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 562.5;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 320.0;
+			LEVEL 0 FOR 540.0;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 420.0;
+			LEVEL 0 FOR 260.0;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 740.0;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 160.0;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 460.0;
+			LEVEL 0 FOR 240.0;
+			LEVEL 1 FOR 160.0;
+		}
+	}
+}
+
+TRANSITION_LIST("OpCode[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 320.0;
+			LEVEL 0 FOR 540.0;
+		}
+	}
+}
+
+TRANSITION_LIST("PCSource[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 892.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("PCSource[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 787.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 177.5;
+		}
+	}
+}
+
+TRANSITION_LIST("PCWrite")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 17.5;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 107.5;
+		}
+	}
+}
+
+TRANSITION_LIST("PCWriteCond")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 787.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 177.5;
+		}
+	}
+}
+
+TRANSITION_LIST("RegDest")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 87.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 877.5;
+		}
+	}
+}
+
+TRANSITION_LIST("RegWrite")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 87.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 245.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 282.5;
+		}
+	}
+}
+
+TRANSITION_LIST("Reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 940.0;
+			LEVEL 1 FOR 60.0;
+		}
+	}
+}
+
+TRANSITION_LIST("STATE[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 507.5;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("STATE[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 52.5;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 140.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 562.5;
+		}
+	}
+}
+
+TRANSITION_LIST("STATE[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 52.5;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 245.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 105.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 72.5;
+		}
+	}
+}
+
+TRANSITION_LIST("STATE[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 17.5;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 35.0;
+			LEVEL 0 FOR 70.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 72.5;
+		}
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Clock";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6, 7, 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OpCode[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUop";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+	CHILDREN = 10, 11;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUop[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 9;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUop[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 9;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUSelA";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUSelB";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+	CHILDREN = 14, 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUSelB[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ALUSelB[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "IorD";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "IRWrite";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MemRead";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MemToReg";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MemWrite";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "PCSource";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+	CHILDREN = 22, 23;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "PCSource[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 1;
+	PARENT = 21;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "PCSource[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 1;
+	PARENT = 21;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "PCWrite";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "PCWriteCond";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "RegDest";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "RegWrite";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATE";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+	CHILDREN = 29, 30, 31, 32;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATE[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATE[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATE[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATE[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 1;
+	PARENT = 28;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

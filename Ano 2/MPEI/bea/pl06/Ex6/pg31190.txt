@@ -1,0 +1,3353 @@
+﻿The Project Gutenberg eBook, Tratado das Cores, by Diogo de Carvalho e
+Sampaio
+
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+
+
+
+Title: Tratado das Cores
+       Que consta de tres partes: analythica, synthetica, hermeneutica
+
+
+Author: Diogo de Carvalho e Sampaio
+
+
+
+Release Date: February 5, 2010  [eBook #31190]
+
+Language: Portuguese
+
+
+***START OF THE PROJECT GUTENBERG EBOOK TRATADO DAS CORES***
+
+
+E-text prepared by Júlio Reis and the Project Gutenberg Online Distributed
+Proofreading Team (http://www.pgdp.net)
+
+
+
+Note: Project Gutenberg also has an HTML version of this
+      file which includes the original illustrations.
+      See 31190-h.htm or 31190-h.zip:
+      (http://www.gutenberg.org/files/31190/31190-h/31190-h.htm)
+      or
+      (http://www.gutenberg.org/files/31190/31190-h.zip)
+
+
+Notas de transcrição:
+
+      Este livro foi publicado no século XVIII, quando a
+      ortografia portuguesa não se encontrava normalizada.
+      Foram mantidas as inconsistências de escrita, por
+      exemplo: cadahuma/cada huma, cinco/sinco, graõ/grão,
+      Pomona/Pomòna. No entanto, os erros de composição
+      foram corrigidos, por exemplo uma única ocorrência
+      de "observacoens".
+
+      No Vocabulario das Cores, a letra S vinha depois da
+      letra T; isso foi corrigido na transcrição.
+
+      A errata presente no final da obra foi aplicada no
+      texto.
+
+      As notas de rodapé que consistiam unicamente numa
+      referência para a secção de notas foram intercaladas
+      com o texto, p. ex. "estas se dizem secundarias, porque
+      saõ accidentes separaveis dos mesmos corpos [NOTA II.]"
+      As outras notas de rodapé foram colocadas logo a seguir
+      ao parágrafo a que dizem respeito, e marcadas com
+      [Nota A: ].
+
+      o local das ilustrações encontra-se marcado com
+      [Ilustração: ]
+
+      O texto em versaletes (maiúsculas pequenas) foi
+      colocado em maiúsculas.
+
+      O texto em itálico foi colocado entre _ e _.
+
+      Os textos em grego encontram-se transliterados entre
+      { e }, por exemplo: {dê pragmateia eis duo}. A letra
+      upsilon foi sempre transliterada como "u", nunca como
+      "y".
+
+      O texto em língua alemã continha o sinal _umlaut_ arcaico:
+      um "e" por cima da letra. Foi transcrito da seguinte
+      forma: ae, oe, ue.
+
+      A ligação latina oe foi marcada como [oe].
+
+      Sempre que o til surgia sobre a letra e ou u, foi
+      colocado assim: [~e],
+      [~u].
+
+      _Fim das notas de transcrição._
+
+
+
+
+
+TRATADO
+
+DAS
+
+CORES.
+
+
+
+
+TRATADO
+DAS
+CORES
+
+QUE CONSTA DE TRES PARTES
+
+ANALYTICA, SYNTHETICA,
+HERMENEUTICA:
+
+OFFERECIDO
+
+AOS AMADORES DAS SCIENCIAS NATURAES, E A OS
+DILECTANTES, E ARTISTAS, QUE COMEÇAÕ
+A OCCUPAR-SE EM TODO O GENERO
+DE TRABALHO COLORIDO:
+
+POR
+
+DIOGO DE CARVALHO E SAMPAYO,
+CAVALHEIRO DA ORDEM DE MALTA.
+
+MALTA
+
+Na Officina Typographica de S. A. E.
+Impressor Fr. Joaõ Mallìa
+MCCLXXXVII.
+_Com licença dos Superiores._
+
+
+
+
+    --Hujus enim ignorantia quam plurimos, labore non exiguo, sed inani
+    tamen, exercuit--_NEWT. Opt. par. secund. Sect. prima_.
+
+
+
+
+PREFACÇAÕ
+
+
+Este breve Tratado naõ he outra cousa mais, que huma clara exposiçaõ das
+minhas ideas, a respeito das Cores, na mesma ordem, com que ellas se me
+presentáraõ. Illuminando alguns planos, me apercebi dos diversos
+effeitos, que resultavaõ da mixtura de differentes Cores. Fiz
+experiencias mais methodicas, e me pareceo, que sobre os seus
+resultados, se poderiaõ estabelecer alguns Principios. Estes Principios,
+nascidos da experiencia, os achei conformes ás analogias da Natureza; e
+assim os tive por verdadeiros.
+
+No fazer as mencionadas experiencias vi, que com pouquissimas Cores, se
+poderiaõ formar todas as precisas, para imitar a Natureza. Ordenei
+algumas Taboas, que logo me servíraõ para os meus curiosos
+intertenimentos, os quaes por este methodo, me ficáraõ muito mais
+faceis.
+
+Terei a mayor satisfaçaõ de que os verdadeiros Amadores das Sciencias
+Naturaes achem as minhas hypothesis bem fundadas: e espero que em huma
+sciencia puramente natural naõ exigiráõ demonstraçoens geometricas,
+contentando-se da experiencia, e de bem fundadas analogias, que saõ a
+verdadeira prova desta sorte de Conhecimentos.
+
+Os Dilectantes, e Artistas que começaõ a occupar-se em todo o genero de
+trabalho colorido, acharaõ o modo de formar, com poucos elementos, huma
+infinidade de Cores, que jamais seraõ repugnantes, e que sempre se
+concervaraõ, quanto ao brilhante, na mesma proporçaõ, com que se
+empregáraõ, sem que humas fiquem permanentes, e as outras sujeitas ás
+alteraçoens do tempo.
+
+Se deste breve Tratado resultar alguma luz á quella parte da Phisica,
+que se versa sobre as Cores; e se elle puder contribuir para guiar o
+trabalho dos Dilectantes, e Artistas que começaõ a occuparse da sua
+combinaçaõ: eu darei por bem empregados os poucos dias que passei em
+compollo; e a nimguem pezará de ter sacrificado os poucos momentos, que
+saõ necessarios para o ler.
+
+
+ARGUMENTO
+
+DA
+
+INTRODUCÇAÕ.
+
+_Primarias, e secundarias qualidades dos corpos §§ 1, 2._
+
+_Todas as producçoens da Natureza saõ effeitos da mera combinaçaõ de
+principios mais simplez § 3._
+
+_A verdadeira natureza dos corpos, isto he dos seus primitivos
+principios, he absolutamente desconhecida § 4._
+
+_Igualmente he desconhecida a natureza das suas secundarias qualidades §
+5._
+
+_Opiniaõ de Aristoteles sobre as Cores § 7._
+
+_--Dos Cartesianos § 8._
+
+_--De Newton § 9._
+
+_Divisaõ do presente Tratado § 10._
+
+_Explicaçaõ das Taboas § 13._
+
+
+ARGUMENTO DA PRIMEIRA PARTE,
+
+QUE CONTEM A ANALYSIS DAS CORES.
+
+_O magestoso espectaculo do Universo, entre huma infinita variedade de
+Cores, nos presenta seis mais claras, e distinctas: e quaes sejaõ estas
+Cores § 14._
+
+_Modo de as preparar para fazer as experiencias, e para se servir dellas
+§§ 15, 16._
+
+_A Cor Negra provem da mixtura das Cores primitivas, e das que
+immediatamente dellas se derivaõ § 17._
+
+_A Cor Branca nasce da extrema divisaõ das mesmas Cores § 19._
+
+_O Negro he huma cor positiva § 20._
+
+_O Branco he igualmente huma Cor positiva § 21._
+
+_O Vermelho, e Verde saõ as duas Cores primitivas § 24._
+
+_A Cor Azul naõ he primitiva, mas sim derivada do Vermelho § 28._
+
+_A Cor Amarella naõ he primitiva, mas sim derivada do Verde § 30._
+
+
+ARGUMENTO DA SEGUNDA PARTE,
+
+QUE COMTEM A SYNTHESIS DAS CORES.
+
+
+SECÇAÕ PRIMEIRA.
+
+_Para recebermos a sensaçaõ das Cores, he necessario, que concorraõ trez
+cousas, a luz, os corpos illuminados, e o orgaõ sensorio § 35._
+
+_O orgaõ sensorio da vista nada contribue para a formaçaõ das Cores §
+37._
+
+_A formaçaõ das Cores naõ depende só da diversa contextura dos corpos §
+40._
+
+_As Cores primitivas, e as que dellas se derivaõ, dependem para se
+manifestarem, e da luz, e da contextura dos corpos § 43._
+
+_Analogia das Cores originarias com o fogo electrico § 44._
+
+_A Luz, pelo reflexo, transmite a imagem dos corpos; e pelo reflexo, e
+refracçaõ, os faz ver de differentes Cores § 47._
+
+_As duas Cores primitivas se manifestaõ pela descomposiçaõ, que a luz
+padece, urtando os corpos naturaes § 48._
+
+_A diversidade das Cores resulta da differente combinaçaõ das duas
+primitivas, e das que immediatamente dellas se derivaõ, nascida das
+diversas refracçoens, comque a luz se modifica, urtando a superficie dos
+corpos § 48._
+
+_Os phenomenos do Prisma saõ os mesmos que os do Iris § 49._
+
+
+SECÇAÕ SEGUNDA.
+
+_A Natureza, para colorir todo o Universo, se servio unicamente de duas
+Cores; mas a Arte para imitar as suas admiraveis obras, necessita de se
+servir de seis § 51._
+
+_Para mudar as Cores, se devem mudar as superficies § 52._
+
+_Modo de formar toda a sorte de Cores § 55._
+
+
+ARGUMENTO DA TERCEIRA PARTE,
+
+E ESTA HERMENEUTICA.
+
+_Divisaõ de todas as Cores § 68._
+
+_Vocabulario das Cores, que contem a explicaçaõ das Cores mais
+conhecidas, segundo os principios deste Tratado; indicando ao mesmo
+tempo a similhança, que ellas tem com as Cores das Taboas A, B, C, D, ou
+com as seis Cores genericas da Tab. XIV. n. 1. 2. 3. 4. 5. 6._
+
+NOTAS, E ILLUSTRAÇOENS.
+
+
+EXPLICAÇAÕ
+
+DE
+
+ALGUMAS PALAVRAS DE ORIGEM GREGA, QUE SE ACHAÕ NESTE TRATADO.
+
+_Analysis palavra Grega {Analusis}, que significa resoluçaõ, ou
+descomposiçaõ de alguma cousa para achar os seus elementos._
+
+_Synthesis {Sunthesis}, composiçaõ._
+
+_Hermeneutica de {Ermêneuô} interpretar, explicar._
+
+_Analogia {Analogia}, proporçaõ, rasaõ similhante._
+
+_Physica de {Phusis}, a natureza._
+
+_Phenomeno de {Phainomai}, apparecer, manifestar-se. Phenomeno quer
+dizer cousa, que apparece, e se faz visivel._
+
+_Theoria {Theôria}, contemplaçaõ, meditaçaõ de cousas superiores, e de
+difficil comprehençaõ. Collecçaõ de principios, que formaõ o tratado de
+qualquer Disciplina. Esta palavra vem do verbo {Theôreô}, que significa
+considerar, contemplar._
+
+_Hypothesis {Upothesis}, supposiçaõ, opiniaõ; condiçaõ com que se
+discorre._
+
+_Homogeneo de {Omogenês}, do mesmo genero, e qualidade._
+
+_Heterogeneo de {Eterogenês}, de diverso genero._
+
+_Problema {Problêma}, proposiçaõ, questaõ, duvida._
+
+_Atmosphera de {Atmos}, vapor, e de {sphaira} esphera; quer diser huma
+esphera de vapores._
+
+
+
+
+TRATADO DAS CORES.
+
+
+INTRODUCÇAÕ.
+
+Todos os corpos naturaes, de que se compoem o Globo da Terra, e que lhe
+estaõ inherentes, alem das primarias qualidades, que constituem a sua
+essencia, e os fazem uteis, saõ dotados de outras qualidades
+secundarias, que prehenchendo tambem este mesmo fim, os fazem ao mesmo
+tempo agradaveis [NOTA I.].
+
+§ 2. As primarias qualidades dos corpos saõ a figura, a grandeza, a
+contextura das suas partes constituentes, e outras. As secundarias porem
+consistem no som, no gosto, no cheiro, na Cor &c. Aquellas chamaõ-se
+primarias, porque dellas se compoem a essencia de todos os corpos: estas
+se dizem secundarias, porque saõ accidentes separaveis dos mesmos
+corpos [NOTA II.]. Mas, de todas estas qualidades, eu naõ fallarei que
+da differente organizaçaõ ou contextura dos corpos, e da sua Cor; por
+serem as outras alheas do prezente assumpto.
+
+§ 3. Todas as producçoens da Natureza, que fazem o objecto da
+contemplaçõ do homem, saõ hum puro effeito da mera combinaçaõ de
+principios simplicissimos, que a mesma Natureza, por meyo de huma serie
+de concatenadas operaçoens, variou ao infinito. Para achar estes
+principios, o processo mais natural seria huma exacta, e rigorosa
+analysis. Mas he bastante este methodo, para descobrir os originarios, e
+primitivos principios?--Parece que naõ he bastante; mas he sem duvida
+hum caminho seguro, para fazer maravilhozas descobertas, e para levar,
+de hum certo modo, as Sciencias, e Artes a sua perfeiçaõ.
+
+§ 4. A analysis de todos os corpos, que compoem o imperio da Natureza,
+os reduz todos a quatro elementos; e he quanto basta, para ser de summa
+utilidade á especie humana. Mas segue-se por isso, que estes quatro
+elementos sejaõ os primeiros, e simplez principios dos corpos
+organizados?--Póde ser que o Ar naõ seja que hum fogo condensado; e que
+a Agoa seja muito bem hum ar mais denso. A Terra he, sem duvida, hum
+composto de agoa crystallizada, que forma a parte vitrea; e de despojos
+de corpos organisados, que formaõ a parte acida, e alkalina: de cuja
+reciproca mixtura resulta todo o reino mineral [NOTA III.]. Mas aquelle
+fogo, onde vai terminar esta analysis, he elle composto de partes
+homogeneas, ou as suas constituentes partes saõ ellas de differente
+natureza?--Questoens deste genero naõ saõ da repartiçaõ do homem: ellas
+dependem de principios desconhecidos, e taõ distantes dos limites dos
+nossos conhecimentos, que o occupar-se dellas, seria perder inutilmente
+o tempo.
+
+§ 5. A inevitavel difficuldade, que se encontra, em descobrir a natureza
+dos primitivos principios dos corpos, he tambem commum aos seus
+accidentes, ou sejaõ secundarias qualidades. A observaçaõ dos homens
+mais reflexivos tem descoberto na Natureza dous sons, hum dos quaes he
+extremamente grave, e o outro nimiamente agudo: de cuja replica e
+combinaçaõ nascem os sons elementares de todas as linguas; e se compoem
+toda a sorte de canto, e armonia. Mas conheceraõ os antigos, e modernos
+cultivadores da Musica a natureza destes sons, ou podéraõ jamais
+sujeitallos a huma exacta proporçaõ, ou arithemetica, ou
+geometrica?--Naõ chegáraõ ja mais a este ponto: e as escholas de
+Pitagoras, e Aristoxenes [NOTA IV.] naõ faraõ eternamente outra cousa
+mais, que disputar sobre a preferencia da theoria ou da pratica, sem
+passar alem da mera observaçaõ de poucos phenomenos, donde se tem
+deduzido os principios, que formaõ a arte musical.
+
+§ 6. Se isto succede a respeito dos sons, naõ he mais intelligivel a
+natureza da outra secundaria qualidade dos corpos, que consiste na
+admiravel variedade das Cores. Os Philosophos de todos os tempos, os
+Historiadores Naturaes, os Poetas, e os Artistas, se tem reflexiva, e
+attentamente occupado deste interessantissimo objecto; ja para explicar
+a natureza das Cores, e classificallas na sua ordem natural; ja para se
+servir dellas, com mayor vantagem, na pratica dos trabalhos coloridos:
+sem que athegora, de tantas indagaçoens reunidas, tenha resultado huma
+theoria fundada, que possa satisfazer o espirito do Philosopho, ou
+servir de guia ao Artista: e em lugar de explicar o admiravel systema da
+Natureza, naõ fizeraõ outra cousa mais que confundillo, e perturballo;
+servindo-se de theorias complicadas para explicar phenomenos simplez,
+donde naõ podiaõ nascer que confusissimos resultados.
+
+§ 7. Aristoteles affirmou: Que as Cores eraõ propriedades ou qualidades
+dos corpos, e que existiaõ nelles sem dependencia da luz. Esta sua
+opiniaõ naõ a provou de forma alguma; nem o podia fazer, achando-se ella
+contraria a todas as experiencias [NOTA V.].
+
+§ 8. Os Cartesianos diziaõ: Que naõ havia Cores primitivas, attribuindo
+todas as Cores só ás differentes modificaçoens, que a luz recebe pelo
+reflexo, e pela refracçaõ; sem se lembrarem do famozo principio do
+Poeta Epicureo: Que do nada naõ póde resultar cousa alguma; e que assim,
+se nem os corpos, nem a luz tem Cor, por mais combinaçoens que se façaõ,
+naõ pode dellas resultar Cor alguma [NOTA VI.].
+
+§ 9. Os Philosophos naturaes seguiaõ ou huma ou outra destas duas
+opinioens, quando o immortal Newton publicou a segunda parte da sua
+Optica, com hum novo systema sobre as Cores. O Peripateticismo, e a mal
+fundada hypothesis de Cartesio cederaõ immediatamente ao brilhante
+systema de Newton, que foi logo abraçado de muitos; e que, a pesar de
+grandes contradiçoens, passa de hum seculo, que he implicitamente
+seguido de todo o mundo. Se alguma cousa me fez vacillar sobre a
+concludencia dos Principios, em que se estabelece este Tratado, foi o
+ver que alguns delles se oppunhaõ a parte das sinco Proposiçoens, em que
+Newton fundou a sua doutrina sobres as Cores. Mas as repetidas
+experiencias, as exactas observaçoens, e as naturaes analogias em que se
+fundaõ estes Principios, me fizeraõ antepor a força da evidencia,
+talvez a mais plausivel de todas as opinioens. E sem aspirar ao
+proselytismo, farei, em lugar competente, huma succinta comparaçaõ das
+Proposiçoens de Newton com os mencionados Principios; ficando sempre a
+cadahum a inteira liberdade de seguir o que lhe parecer mais bem fundado
+[NOTA VII.].
+
+§ 10. Sem deixar de ter a mayor consideraçaõ pela respeitavel memoria
+dos celebres Auctores de taõ diversas opinioens, eu puz de parte toda a
+preoccupaçaõ da auctoridade, e tomei somente a pura Natureza por guia do
+meu trabalho, no compor o presente Tratado. Elle naõ se versa sobre a
+intima natureza das Cores, a qual sempre nos sera desconhecida; mas sim
+sobre as suas sensiveis propriedades, em quanto estas podem ser de algum
+uso, ou nas Sciencias Naturaes, ou nos trabalhos coloridos. Analysando
+as principaes Cores, que nos offerece o variado, e maravilhozo quadro do
+Universo, naõ só achei as Cores originarias, e primitivas, que a
+Natureza combinou de mil modos differentes, para o colorir; mas tambem
+achei quaes saõ as Cores elementares, preparadas pela Natureza, ou pela
+Arte, das quaes se devem servir os Artistas nos seus trabalhos
+imitativos. A exposiçaõ do processo, que segui para achar estes
+resultados, constituirá a Parte Analytica.
+
+§ 11. Combinando as Cores elementares [VEJA-SE A NOTA XXIII.] preparadas
+pela Natureza, ou pela Arte, achei todas as graduaçoens das Cores
+compostas, relativas a cadahuma dellas; e as classifiquei na ordem mais
+natural, e intelligivel. A exposiçaõ deste processo formará a Parte
+Synthetica; a qual por mayor clareza devidi em duas Secçoens. A primeira
+expora o modo, com que a Natureza, por meyo de huma combinaçaõ admiravel
+das duas Cores primitivas, formou todas as que vemos nos corpos
+naturaes. A segunda indicará o methodo com que, só com as duas Cores
+primitivas, e quatro outras que se derivaõ immediatamente dellas, se
+podem imitar todas as Cores naturaes.
+
+§ 12. A parte Hermeneutica conterá hum pequeno Vocabulario com a
+explicaçaõ das Cores mais conhecidas, segundo os Principios deste
+Tratado.
+
+§ 13. E finalmente as Taboas illuminadas, que se juntaõ, dilucidaraõ com
+as proprias Cores, a theoria que vou dar por escrito: e os seus usos, e
+applicaçoens se exporaõ nos respectivos lugares [NOTA VIII.].
+
+
+
+
+TRATADO DAS CORES.
+
+PARTE PRIMEIRA,
+
+QUE CONTEM A ANALYSIS DAS CORES.
+
+
+Contemplando o magestoso espectaculo do Universo, nos presentaõ os
+corpos naturaes huma maravilhoza, e quasi incomprehensivel variedade, e
+mixtura de differentes Cores [NOTA IX.]. Entre estas porem se destinguem
+positivamente seis, a saber: o Negro, o Vermelho, o Azul, o Verde, o
+Amarello e o Branco, com as quaes, todas as outras Cores deixaõ entrever
+alguma affinidade. Eu fiz abstracçaõ de todas estas, tomando somente
+aquellas seis mais positivas, claras, e distinctas por objecto da minha
+analysis, a que procedi no seguinte modo.
+
+§ 15. Deixando a Cor branca, como desnecessaria, segundo o genero das
+minhas experiencias, dissolvi em cinco conchas as seguintes Cores [NOTA
+XXIII.]: Tinta da China, Carmim, Azul de Prussia, Verde-destilado e
+Gomma-gutta, e levando-as todas ao mesmo gráo de força, formei as cinco
+Cores, que com a Branca geralmente dominaõ no quadro do Universo. Puz em
+cada huma das conchas hum pincel fino; tomei outro, e huma palheta de
+marfim; e com este simplez apparato procedi ás experiencias.
+
+§ 16. Meti sobre a palheta, com os respectivos pinceis, huma gotta de
+cadahuma das refferidas tintas, e mixturando-as docemente, fui
+observando, que passavaõ por degráos insensiveis a Cores mui
+differentes; e quando as mixturei bem todas, vi sobre a palheta huma Cor
+muito escura, tirando quasi nada para Vermelho Tab. I. n.º 1. [NOTA X.].
+
+§ 17. Repeti esta experiencia só com as ultimas quatro Cores, sem
+mixturar a Tinta da China; e da sua uniaõ me resultou huma Cor neutra,
+muito escura, e da mesma especie do Nankim, que naõ he muito carregado
+Tab. I. n.º 2.
+
+§ 18. Este phenomeno me fez lembrar, que assim como a Cor negra era o
+resultado da uniaõ das quatro Cores, devia naturalmente da divisaõ das
+mesmas Cores, resultar a Cor branca.
+
+§ 19. Sem excluir a Cor negra, formei a Tab. IV., que me deu quatro
+Cores mixtas n.º 1. 2. 3. 4., em que dominava o Vermelho; quatro outras
+n.º 5. 6. 8. 10. em que dominava o Verde; e duas n.º 7. 9. çujas, e
+faltas de energia. Exclui as do n.º 7. 9., como passivas, e com as
+outros formei a Tab. XIV. e tirando resultados de resultados, achei, á
+oitava combinaçaõ, a Cor branca, que procurava, taõ clara como o mesmo
+papel, em que fazia a prova. Por meyo destas duas experiencias, achei os
+dous Principios seguintes.
+
+
+PRIMEIRO PRINCIPIO.
+
+§ 20. O Negro he huma Cor positiva, na qual o Vermelho, o Azul, o Verde,
+e o Amarello se achaõ intimamente unidos, e em quantidades quasi iguaes.
+
+
+SEGUNDO PRINCIPIO.
+
+§ 21. O Branco he huma Cor igualmente positiva, onde o Vermelho, o Azul,
+o Verde, e o Amarello se achaõ extremamente divididos, athe o ponto de
+se fazerem invisiveis [NOTA XI.].
+
+§ 22. No contemplar a Tab. VI. observei, que da reciproca mixtura das
+sinco Cores, de que se compoem, resultava do n.º 1. 2. 4., huma Cor
+mixta, onde reynava o Vermelho; do n.º 5. 6. 8. 10. resultavaõ Cores, em
+que predominava o Verde; do n.º 7. 9. resultavaõ Cores pardas ou çujas;
+e que finalmente do n.º 3. onde o Vermelho, e Verde se achaõ combinados
+em differentes proporçoens, resultava a mesma Cor escura, ou a mesma
+especie de negro, que tinha resultado da mixtura do Vermelho, Azul,
+Verde, e Amarello Tab. I. n. 2. [NOTA XII.].
+
+§ 23. Este phenomeno me fez ver, que as quatro Cores Tab. I. n.º 2., e
+as duas Tab. VI. n.º 3, e ainda as das Tab. VIII. X. XII, no mesmo
+numero, importavaõ a mesma cousa; isto he, que o Vermelho, e Verde
+combinados em certas proporçoens, valem tanto como o Vermelho, o Azul, o
+Verde, e o Amarello; ou que no Vermelho, e Verde se contem as outras
+duas Cores. E reflectindo em que nas Tab. II. III. IV. V. VII. IX. XI,
+nas quaes em differentes proporçoens, se achaõ combinadas as sinco
+Cores, se descobrem sempre quatro numeros, em que domina o Vermelho, e
+saõ, o n.º 1. 2. 3. 4. e outros quatro em que domina o Verde, a saber, o
+n.º 5. 6. 8. 10. e que o Azul, e Amarello cedem sempre ao Vermelho, e
+Verde; e quando se combinaõ com o Negro, em diversas proporçoens, ou se
+confundem inteiramente com elle, ou recebem huma sombra, que as escurece
+sensivelmente, sem que jamais produzaõ huma terceira Cor: esta reflexaõ,
+digo, me suscitou outro Principio.
+
+
+TERCEIRO PRINCIPIO.
+
+§ 24. O Vermelho, e Verde saõ as Cores primitivas, e dominantes na
+Natureza: e o Azul, e Amarello naõ saõ que puras modificaçoens destas
+duas.
+
+§ 25. Fiz todas as combinaçoens possiveis do Vermelho, e Verde, e naõ
+pude achar hum Azul, e Amarello igual ao de que me servia nas
+experiencias. Interrompias por algum tempo, e fui estudar no grande
+livro da Natureza [NOTA XIII.], onde se podia achar a resoluçaõ destes
+problemas.
+
+§ 26. Este vastissimo imperio, nos seus differentes reynos, me presentou
+duas analogias, que adiantáraõ a minha indagaçaõ. Vi que no reyno
+animal, dominava a Cor vermelha. O sangue dos animaes, e a carne em que
+elle se acha espalhado, me confirmáraõ em que o Vermelho he huma Cor
+universal, e primitiva. Vi igualmente que, o Verde coloria todo o reyno
+vegetal, o que me convenceo tambem, de que o Verde era huma Cor
+primitiva, e universal.
+
+§ 27. Occorreu-me, que a carne dos animaes quando he contundida, ou
+passa a maceraçaõ, passa tambem da Cor vermelha á azul. Lembrou-me logo,
+que a mesma tinta azul das minhas experiencias, que era Azul de Prussia,
+se fazia de sangue de boi, ou de qualquer outro animal. Poucos dias
+antes eu tinha reiterado as observaçoens de M. de Buffon, ácerca da
+sombra da luz do Sol, tincta com a Cor da Aurora, e achei, que a sombra
+de huma palheta de marfim, de duas pollegadas de largo, sobre hum papel
+branco, era sempre azul, pondo a palheta, pouco mais ou menos, a hum pé
+de distancia do papel; e chegando-a quasi ao papel, achei entaõ sempre
+escura a sua sombra; o que naõ podia resultar senaõ da refracçaõ da luz
+vermelha do sol, que coloria a sombra de azul. Esta observaçaõ me
+produsio o Principio seguinte [NOTA XIV.].
+
+
+QUARTO PRINCIPIO.
+
+§ 28. A Cor azul naõ he primitiva, mas sim gerada pelas modificaçoens,
+que recebe a Cor vermelha pela refracçaõ da luz, ou mixtura de outras
+substancias.
+
+§ 29. Fiz a mesma especulaçaõ com a Cor verde, e achei, que todos os
+vegetaes, no estado da sua perfeiçaõ, nos presentaõ universalmente esta
+agradavel Cor; mas que geralmente todos os vegetaes, com as suas folhas,
+fructos, sementes &c. na sua decadencia, passaõ da Cor verde á amarella.
+Occorreu-me tambem, que a Cor amarella das minhas experiencias, era a
+gomma de huma arvore; e consequentemente naõ vinha a ser que hum Verde
+degenerado. Esta reflexaõ me deu outro Principio [NOTA XV.].
+
+
+QUINTO PRINCIPIO
+
+§ 30. A Cor amarella naõ he originaria, ou primitiva; mas sim
+secundaria, e derivada da Verde [NOTA XVI.].
+
+§ 31. Fiz muitas outras experiencias, combinando em differentes
+proporçoens, todas as sinco Cores; e de todas estas combinaçoens naõ
+resultou cousa alguma, que podesse formar principios, ou destruir os que
+ficaõ estabelecidos. As combinaçoens de cinco, ou quatro Cores, tomando
+quatro ou tres por primeiro termo, e combinando-as em proporção de 1/2,
+me deraõ resultados quasi similhantes; isto he, huma Cor escura, algumas
+vezes insensivelmente affectada de Vermelho, ou Verde; e por isso as
+regeitei todas. A combinaçaõ de tres Cores, tomando duas por primeiro
+termo, e comparando-as com a outra, me deu as Cores que constaõ da Tab.
+II, e III. A Tab. IIII, e seguintes me deraõ huma grande variedade de
+Cores, todas bastantemente fortes, e capazes de serem empregadas como
+Cores locaes.
+
+§ 32. Era inutil passar adiante; por que já na Tab. XI., que he feita em
+proporçaõ de 1/5, os resultados saõ quasi iguaes ao primeiro termo dos
+antecedentes: e a Tab. XII. he quasi igual ás Tab. VI. e VIII. E se se
+fizessem outras Taboas em proporção de 1/7 e 1/8 parte, em humas seriaõ
+os resultados quasi iguaes a os elementos; e nas outras coincidiriaõ os
+resultados com os da Tab. IIII.; pelo que era inutil o passar adiante. E
+como destas ultimas experiencias nada mais resultava, que a composiçaõ
+de diversas Cores, eu vi bem que a minha analysis degenerava em
+synthesis, e que consequentemente era tempo de passar á Segunda Parte.
+
+
+
+
+
+TRATADO DAS CORES.
+
+PARTE SEGUNDA,
+
+QUE CONTEM A SYNTHESIS DAS CORES.
+
+
+Como nesta Segunda Parte se trata da composiçaõ das Cores, e esta ou he
+feita pela Natureza, ou pela Arte; pede o methodo que ella seja dividida
+em duas Secçoens. Na primeira se exporá o mechanismo, de que se serve a
+Natureza, para com duas Cores unicas, ornar taõ diversamente o seu vasto
+imperio. Na segunda porem se assignará o modo, com que a Arte deve
+combinar estas duas Cores, com quatro outras, para imitar todas as Cores
+naturaes.
+
+
+SECÇAÕ PRIMEIRA,
+
+QUE CONTEM A SYNTHESIS NATURAL DAS CORES.
+
+§ 34. Assim como o reyno animal, e vegetal nos presentaõ as duas Cores
+primitivas, e dominantes, assim tambem o reyno mineral, que he
+principalmente composto da quelles dous, nos offerece huma infinita
+variedade de Cores, com que se achaõ embellecidas todas as obras da
+Natureza. E para conhecermos o modo, com que ella formou esta admiravel
+variedade de Cores, consideremos os meyos, que devem necessariamente
+concorrer para recebermos as suas sensaçoens.
+
+§ 35. O Sentido da vista, assim como he o mais espiritual [NOTA XVII.]
+dos sinco, pelos quaes recebemos todas as impressoens das causas
+externas, he tambem o que depende demais circunstancias, para se
+formarem as suas sensaçoens. A luz, os corpos naturaes, e o orgaõ
+sensorio da vista, saõ de absoluta necessidade, para se cooperar este
+fim: e he em todos estes meyos, ou em parte delles, que devemos procurar
+a formaçaõ das Cores; para o que eu passo a considerallos em particular.
+
+§ 36. He indubitavel, que as qualidades secundarias dos corpos consistem
+em certos accidentes, que inherem a os mesmos corpos. E se o orgaõ
+sensorio recebe a sensaçaõ das qualidades primarias dos corpos, que
+indubitavelmente existem fóra delle; da mesma sorte recebe a impressaõ
+das suas secundarias qualidades, que tambem existem fóra delle com os
+corpos que as sustem. Neste concludente raciocinio se estabelece o
+seguinte Principio.
+
+
+SEXTO PRINCIPIO.
+
+§ 37. O orgaõ sensorio da vista nada contribue para a formaçaõ das
+Cores; as quaes sendo qualidades secundarias dos corpos, existem com
+elles, fóra de nós mesmos.
+
+§ 38. Naõ contribuindo assim o orgaõ sensorio nada mais para a formaçaõ
+das Cores, do que huma camara obscura, onde os objectos se representaõ
+já coloridos; ponhamos de parte esta divisaõ, e passemos a examinar os
+phenomenos, que os corpos naturaes nos presentaõ a respeito das mesmas
+Cores.
+
+§ 39. Se tomamos hum papel branco, e fazemos sobre elle as experiencias
+da luz do Sol affectada da Cor da Aurora, achamos que o mesmo papel,
+quasi no mesmo instante, nos presenta quatro Cores differentes. Antes
+da experiencia, e vendo o papel sem ser ao Sol elle nos presenta a sua
+Cor branca e natural. Expondo o mesmo papel ao Sol, o vemos tincto de
+huma especie de Cor de roza. Fazendo cahir sobre elle a sombra de huma
+palheta de marfim, ou de qualquer outro corpo semelhante, nas
+circunstancias do § 27, entaõ nos faz ver ou huma Cor de Azul claro, ou
+hum Branco mais escuro que a sua propria Cor. E resultando estes
+diversos phenomenos da mesma luz, do mesmo papel, e de huma observaçaõ
+feita em hum momento, sem que na superficie do papel possa ter
+acontecido alguma alteraçaõ, segue-se outro Principio.
+
+
+SEPTIMO PRINCIPIO.
+
+§ 40. A Diversidade das Cores naõ resulta só da differente contextura
+dos corpos naturaes; pois que sobre huma superficie homogenea vemos, ao
+mesmo tempo, diversas Cores.
+
+§ 41. Consideremos agora os phenomenos da luz, os quaes necessariamente
+nos haõ de dar toda a clareza, que ainda falta a esta indagaçaõ.
+
+§ 42. Se a luz se propaga por continuaçaõ, ou por contiguidade, isto
+he, se ella consiste em rayos, que partem em linha direita dos corpos
+lucidos athe os objectos illuminados; ou se consiste somente em huma
+continuaçaõ de urtos das molleculas ethereas, causada pela rotaçaõ do
+Sol, ou vivo movimento, que existe em todos os corpos lucidos: he huma
+questaõ que eu deixo a decidir aos partidistas de Euler, e de Newton
+[NOTA XVIII.]; e qual quer que seja a sua decisaõ, naõ offenderá nada
+este systema. A luz terá sempre a qualidade de nos fazer visiveis os
+corpos, e de affectar-se de mil modos differentes, pelo reflexo, e
+refracçaõ, que sofre urtando contra os mesmos corpos. E como a luz he
+huma substancia clara, refraccivel e reflexivel, onde residem as Cores
+primitivas; mas que naõ as manifesta, nem as combina e varía senaõ por
+meyo do reflexo e refracçaõ, com que se modifica, urtando os corpos
+naturaes: e este reflexo e refracçaõ devem ser diversos segundo a
+differente contextura dos corpos, a qual naõ he mais homogenea em
+especies diversas; segue-se outro Principio.
+
+
+OITAVO PRINCIPIO.
+
+§ 43. As Cores originarias e primitivas, e as que dellas nascem e se
+compoem, necessitaõ para se manifestar e compor, e da luz, e da diversa
+contextura dos corpos, que as refringem, e reflectem.
+
+§ 44. A Natureza da luz, e das Cores seraõ sempre taõ desconhecidas,
+como a natureza do espirito, e da materia; mas as propriedades da luz, e
+das Cores, nós as podemos conhecer de hum certo modo. A luz he huma
+substancia subtilissima, em que residem as duas Cores primitivas, como
+no puro ether reside o fogo electrico. O fogo electrico naõ se
+manifesta, sem que se perca o equilibrio, ou se descomponhaõ as
+molleculas, ou sejaõ pequenas partes do ether que o contem: perdido o
+equilibrio, por mil causas diversas, o fogo se faz visivel, por outros
+tantos modos differentes [NOTA XIX.].
+
+§ 45. O Fogo do rayo, a que nenhum corpo natural póde resister, he o
+mesmo fogo, que nos gabinetes de physica se faz sahir impunemente da
+ponta dos nossos dedos; e que em huma bella noute, illumina
+pacificamente o horizonte. O fogo, que faz jogar as batarias de hum
+navio de tres pontes, he o mesmo, com que os artilheiros fumaõ
+sensualmente o tabaco. O incendio de huma casa nasce do mesmo fogo, que
+nutria seu dono, e o aquentava. O Etna, e hum graõ de polvora naõ
+differem que nas grandezas. Os horrorozos phenomenos dos Vulcanos [NOTA
+XX.], e hum agradavel fogo de artificio, naõ differem senaõ nas
+quantidades. Basta de exemplos: e deixo tambem de trazer outra
+similhante analogia tirada dos dous sons, de que se compoem todas as
+lingoas, toda a sorte de canto, e harmonia, por ser inteiramente
+superfluo.
+
+§ 46. A Respeito das Cores vemos na Natureza o mesmo mechanismo. Os
+rayos da luz illuminaõ os corpos naturaes, e pela opposiçaõ que
+encontraõ urtando os mesmos corpos, se descompoem em tantos modos
+diversos, quanto he differente a sua superficie; e entaõ se manifestaõ
+as duas Cores primitivas, ou puras, ou combinadas de mil modos
+differentes; e quanto mais heterogeneos saõ os corpos, que a luz
+encontra, tanto mais irregular he a refracçaõ, e tanto mais composta he
+a Cor que della resulta.
+
+§ 47. A luz affectada de huma refracçaõ recebe sempre huma Cor, mais ou
+menos sensivel, a qual conserva sem alteração alguma, athe novamente se
+descompor, com o encontro, de outros corpos. A lux do Sol, por exemplo,
+chega á superficie da atmosphera da Terra, sem receber talvez alteraçaõ
+alguma; mas apenas entra na atmosphera do nosso Globo começa a
+refringir-se e a descompor-se, e nos manifesta huma Cor azul com alguma
+mixtura de Verde, que he a Cor do Ceo. Se a mesma luz, ao nascer do Sol,
+encontra os vapores, que ordinariamente cobrem o horizonte, se
+descompoem novamente, e nos faz ver huma Cor, que participa do Amarello
+e Vermelho, que he a Cor da Aurora. Esta Cor se conserva, athe que a luz
+toque a superficie da Terra, onde no mar, e grandes maças de agoa, se
+descompoem como na atmosphera, em huma Cor azul, mais ou menos verde,
+segundo o movimento ou altura da agoa: e cahindo sobre a superficie
+secca de nosso Globo, entaõ se descompoem em tantos modos differentes,
+quantas saõ as diversas organisaçoens dos corpos naturaes; da mesma
+sorte que encontrando sobre o horizonte nuvens de differentes
+configuraçoens, no las faz ver diversamente coloridas. Donde resulta o
+ultimo e fundamental Principio [NOTA XXI.].
+
+
+NONO PRINCIPIO.
+
+§ 48. As Duas Cores primitivas, que residem na luz, se manifestaõ pela
+descomposiçaõ, que a mesma luz padece urtando os corpos naturaes: e
+todas as outras Cores, de qual quer genero que sejaõ, resultaõ da
+differente combinaçaõ das duas primitivas, nascida das diversas
+refracçoens, com que a luz se modifica, tocando a superficie dos corpos.
+
+§. 49. Com estes simplez, e naturaes principios, fundados todos sobre
+exactas observaçoens, naturaes analogias, e repetidas experiencias, se
+explicaõ todos os phenomenos das Cores. O Prisma, o Iris, o pescoço da
+Pomba, a cauda do Pavaõ [NOTA XXII.] &c., saõ phenomenos identicos, que
+resultaõ da mera descomposiçaõ da luz, nascida da differente contextura
+das partes, de que se compoem a quelles corpos.
+
+§ 50. Athequi a Synthesis da Natureza. Passemos agora a ver como a Arte
+com as duas Cores primitivas, e quatro outras que dellas immediatamente
+se derivaõ, póde formar todas as Cores necessarias para, em qualquer
+genero de trabalho colorido, se imitarem as decoraçoens do Universo.
+
+
+SECÇAÕ SEGUNDA,
+
+QUE CONTEM A SYNTHESIS ARTIFICIAL DAS CORES.
+
+§ 51. A Sabia Natureza só com as duas Cores primitivas, que residem na
+luz, e se variaõ ao infinito, por meyo de huma prodigioza combinaçaõ,
+nos faz ver todos os corpos de differentes especies, coloridos
+diversamente. A Arte porem, menos poderosa que a Natureza, tem
+necessidade, para imitar as suas admiraveis obras, de quatro outras
+Cores, nascidas immediatamente da quellas duas; isto he do Azul, que
+vem do Vermelho; e do Amarelo, que se produs do Verde; do Negro, que
+consiste na soma do Vermelho, e Azul, do Verde, e Amarelo; e do Branco,
+que se manifesta pela divisaõ destas mesmas Cores: de sorte que a
+Natureza executa, em hum instrumento de duas cordas, toda a harmonia das
+Cores, que a Arte só póde executar em hum de seis.
+
+§ 52. A formaçaõ das Cores consiste em hum simplez, e puro mechanismo.
+Mudar a superficie dos corpos, ou alteralla, he o mesmo que mudar, ou
+alterar a Cor dos mesmos corpos. Mudada a contextura, muda-se a
+refracçaõ, e muda-se a Cor.
+
+§ 53. Os Corpos ou tem a mesma contextura, em toda a sua massa, ou só na
+sua superficie. Hum cubo de marmore branco, partido em pedaços, mostrará
+sempre a Cor branca; mas hum pedaço de páo branco tingido de vermelho,
+se o fendermos, nos prezentará interiormente a sua Cor branca, e
+natural; e a alteraçaõ, que se tinha feito na sua superficie,
+applicando-lhe a Cor vermelha, fazia que toda a massa apparecesse desta
+Cor, sendo realmente branca.
+
+§ 54. A Arte de Colorir naõ se versa senaõ a respeito das Cores
+superficiaes; e he o modo de achar toda a sorte de Cores, ou de mudar
+toda a sorte de superficies, que faz a materia desta secçaõ.
+
+§ 55. O Mechanismo das Cores se contem da Taboa I. athe XIII. das quaes
+a explicaçaõ he a seguinte.
+
+§ 56. Todas as ditas Taboas contem duas sortes de numeros, hum Romano,
+no angulo direito superior, que marca a Taboa; e outro Arabico sobre os
+circulos coloridos, que indica a figura: de sorte que toda a vez que se
+achar, por exemplo, IIII. 1. quer dizer Taboa quarta n.º 1., que he o
+mesmo que dizer, que de partes iguaes de Vermelho, e Azul resulta huma
+especie de Cor de purpura.
+
+§ 57. Todas as figuras constaõ de duas partes, antecedente, e
+consequente: a parte antecedente saõ os elementos, de que se formaõ as
+Cores; e a consequente he a Cor, que resulta dos antecedentes: por
+exemplo Tab. IIII. n. 1. o antecedente he o Vermelho, e Azul, e o
+consequente he a Cor de purpura, que nasce delles: e assim em todas as
+mais.
+
+§ 58. O Consequente he sempre hum, mas os antecedentes podem ser de dous
+athe seis. A Tab. IIII. mostra antecedentes de dous; a Taboa II. III.
+mostra antecedentes de tres; e a I. de quatro e de cinco. Nas pinturas a
+oleo, onde a Cor branca se combina com todas as outras Cores, pode o
+antecedente ser de seis.
+
+§ 59. Os Antecedentes, ou se combinaõ em partes iguaes, ou em
+differentes proporçoens. A Tab. I. II. III. IIII. offeressem
+antecedentes combinados em partes iguaes; e as outras athe XII. os
+mostraõ combinados em differentes proporçoens. As Tab. V. VI. mostraõ os
+antecedentes combinados em proporçaõ de 1/2; a VII. VIII. em proporçaõ
+de 1/3; a IX. X. em proporçaõ de 1/4; XI. XII. em proporçaõ de 1/5.
+
+§ 60. A Taboa XIII. faz ver, que, na combinaçaõ das duas Cores
+primitivas, e dominantes, Vermelho, e Verde, com as outras quatro, em
+partes iguais, os resultados saõ sempre affectados da Cor vermelha, e
+verde; mas que a vermelha he mais forte que a verde: porque nos
+resultados numeros 1. 2. 3. 4. 5. 6. 7., que provem de antecedentes, em
+que a Cor vermelha se combina com o Azul, Verde, Amarello, e Negro,
+domina sempre a Cor vermelha. Porem nos numeros 8. 9. 10. 11. 12. 13.
+14., que provem de antecedentes em que a Cor verde se compara com o
+Vermelho, Azul, Amarello, e Negro, há dous resultados em que domina a
+Cor vermelha, e saõ os 8. 12.; e somente cinco em que domina o Verde;
+donde se ve que das duas Cores primitivas, e dominantes, a mais poderosa
+he a vermelha.
+
+§ 61. Nesta mesma Taboa se vem Cores de cinco especies, ou graos
+diferentes. O numero 1. vem da combinaçaõ dos seus respectivos
+antecedentes Vermelho, e Azul; e o n.º 2. vem do Vermelho, e Verde
+combinados em partes iguaes: O n.º 5. vem da combinaçaõ do n.º 1. 2.
+tambem em partes iguaes: e o n.º 7. procede da combinaçaõ do n.º 5. 6.
+na mesma proporçaõ, e assim em todos os mais.
+
+§ 62. A Tab. XIV. he feita á imitaçaõ da Tab. XIII., e se póde chamar a
+Taboa da somma, e divisaõ das Cores; porque as seis Cores n.º 1. 2. 3.
+4. 5. 6. unidas em partes iguaes, produsem a Cor escura, ou negra n.º 7.
+E divididas estas seis Cores, por meyo de repetidas combinaçoens, athe o
+oitavo grao, tomando os consequentes, ou resultados do primeiro grao,
+por antecedentes ou elementos do segundo, e procedendo desta mesma sorte
+athe o oitavo, entaõ se vem as ditas seis Cores resolvidas na Cor clara
+ou branca n.º 43.
+
+§ 63. As Tab. A, B, C, D são como hum index de todas as outras. A letra
+A, por exemplo, indica a Tab. A. Os numeros Romanos desta Taboa indicaõ
+as Taboas notadas com os numeros Romanos: e o numero Arabico indica as
+figuras das respectivas Taboas.
+
+§ 64. Isto supposto, eisaqui o modo, com que se podem formar, com a
+mayor facilidade, todas as Cores, que presentaõ as Taboas A, B, C, D.
+
+§ 65. Preparadas as Cores elementares, como fica dito § 15., se queremos
+imitar huma Cor natural, que seja similhante á Cor verde Taboa A. IIII.
+8. procuramos a Tab. IIII. n.º 8. e acharemos, naõ só a Cor verde
+procurada, mas que ella se forma de partes iguaes de Verde, e Amarello.
+Se quisermos imitar a Cor de violeta, ou purpura Tab. A. IIII. 1.
+procuraremos a Tab. IIII. n.º 1. onde acharemos a Cor desejada, e que
+ella se compoem de partes iguaes de Vermelho, e Azul: e para achar a
+composiçaõ de todas as mais Cores, de que se compoem as Tab. A, B, C, D,
+se procederá da mesma sorte.
+
+§ 66. Por este methodo, só com os exemplos, que se vem nas Taboas, se
+formaõ cento e vinte Cores, capazes de se empregarem como Cores locaes,
+e suceptiveis de trez graos de força, isto he, de escuro, meya tinta, e
+claro, o que faz trezentas, e sessenta meyas tintas diversas. E para
+formar muitas outras, se procederá da mesma sorte, ordenando Taboas á
+imitaçaõ das que se presentaõ; tomando por antecedentes cinco, ou seis
+Cores especificas, isto he, das de que se compoem as Tab. A, B, C, D, o
+que produsirá huma infinita variedade de Cores, que todas se compoem das
+duas primitivas Vermelho, e Verde; e das quatro, que destas
+immediatamente se derivaõ, i. e. Azul, Amarelo, Negro, e Branco [NOTA
+XXIII.].
+
+§ 67. Tal he a Synthesis artificial das Cores, que tanto desanima os
+Dilectantes, e que por tantos annos embaraça os Artistas; a qual por
+este methodo se comprehende, e se executa em poucas horas. Passemos a
+Terceira Parte.
+
+
+
+
+TRATADO DAS CORES.
+
+
+
+
+PARTE TERCEIRA,
+
+E ESTA HERMENEUTICA.
+
+
+Esta Terceira parte comprehende, em hum breve Vocabulario, a explicação
+das Cores mais conhecidas; indicando, ao mesmo tempo, a similhança, que
+algumas dellas tem com as Cores das Taboas A, B, C, D, de sorte que,
+para formar a idea de algumas destas Cores, e para as compor todas, naõ
+he necessaria outra cousa, que procurar no Vocabulario o nome dessa Cor;
+e a hi mesmo se acharaõ citadas as Taboas, que prehencheraõ estes dous
+fins.
+
+§ 69. Querendo-se saber, por exemplo, qual he a Cor de purpura, e como
+se compoem, procure-se no Vocabulario a palavra purpura, onde se achará
+citada a Taboa A. IIII. 1. das quaes a primeira mostrará a Cor, e a
+segunda ensinará o modo de a compor. E as Cores, que naõ se acharem nas
+Taboas A, B, C, D, se indicaráõ somente os seus elementos, para que se
+possaõ compor com a mesma facilidade.
+
+§ 70. Para se entenderem as explicaçoens do Vocabulario, convirá muito
+ter presentes as prenoçoens seguintes.
+
+§ 71. As Cores, como fica dito, saõ huma propriedade da luz, que por hum
+admiravel mechanismo da Natureza, se manifestaõ, em tantos modos
+differentes, quanto saõ diversas as configuraçoens dos corpos naturaes,
+illuminados pela luz. Ellas saõ de duas sortes, ou genericas, ou
+especificas.
+
+§ 72. As Cores genericas saõ tambem de duas sortes, ou genericas
+primitivas, ou genericas derivadas.
+
+§ 73. As Genericas primitivas saõ duas, a saber, o Vermelho, e o Verde;
+e se manifestaõ pelo mesmo mechanismo, que todas as outras.
+
+§ 74. As Genericas derivadas saõ quatro, a saber, o Azul, que nasce do
+Vermelho; o Amarelo, que se forma do Verde; o Negro, que resulta da
+uniaõ do Vermelho, e Verde; e o Branco, que provem da divisaõ destas
+duas Cores. § 22. Tab. XIV.
+
+§ 75. Cores especificas saõ as que se formaõ da mixtura das genericas. A
+Cor de purpura he huma Cor especifica, que nasce da mixtura das duas
+Cores genericas Vermelho, e Azul.
+
+§ 76. Da Combinaçaõ das seis Cores genericas resultaõ seis especies de
+Cores, como se ve na Taboa IIII. na qual o n.º 1. 2. 3. 4. formaõ a
+especie das Cores vermelhas; o n.º 5. 6. 8. 10. formaõ a especie das
+Cores verdes; o n.º 7. forma a especie das Cores azues; o n.º 9. forma a
+especie das Cores amarellas: a Cor negra forma a especie das Cores
+escuras; e a branca forma a especie das Cores claras.
+
+§ 77. Da Mixtura destas duas ultimas Cores, em differentes proporçoens,
+nasce toda a sorte de claro escuro; e da mixtura destas mesmas Cores com
+as quatro primeiras, e as suas especies, provem todas as meyas tintas,
+com que se podem modificar todas as referidas Cores.
+
+
+
+
+VOCABULARIO DAS CORES.
+
+
+INTRODUCÇAÕ
+
+As Cores, que presenta este Vocabulario, saõ as que geralmente se
+empregaõ em todo o genero de trabalho colorido. Ellas se pódem imitar
+todas com os elementos da Tab. XIV. n.º 1. 2. 3. 4. 5. 6. o que
+indubitavelmente me prováraõ repetidas experiencias.
+
+Em huma folha de papel branco risquei duas series de pequenos circulos,
+de sorte que os circulos de huma das series correspondessem exactamente
+a os da outra. Colori huma serie destes circulos com as Cores finas da
+preparaçaõ dos dous Reeves Inglezes, e do Chimico Francez Antheaume, que
+saõ as melhores que se conhecem; e na outra serie, nos correspondentes
+circulos, as imitei com os elementos da Taboa, e numeros assima
+refferidos: de tal sorte, que vendo-se em justa posiçaõ os originaes, e
+as imitaçoens, naõ se differençavaõ huns dos outros.
+
+Os Dilectantes poderaõ repetir estas experiencias; e se depois tomarem
+por originaes as mais bellas flores, os fructos, as folhas das plantas,
+as pennas dos passaros diversamente coloridas, pedaços de marmore
+manchados de differentes Cores &c. faraõ hum estudo ainda mais
+proveitoso; e se convenceraõ, com a mayor evidencia, de que a
+diversidade das Cores naõ resulta, que da mixtura de poucos, e
+simplessissimos elementos, combinados, de mil modos differentes, ou
+pela, Natureza, ou pela Arte.
+
+
+
+
+VOCABULARIO DAS CORES,
+
+QUE CONTEM A EXPLICAÇAÕ DAS CORES MAIS CONHECIDAS, INDICANDO A
+SIMILHANÇA, QUE ALGUMAS DELLAS TEM COM AS DAS TABOAS A, B, C, D, E O
+MODO COM QUE TODAS SE PÓDEM IMITAR, COM OS ELEMENTOS DA TAB. XIIII. N.
+I. II. III. IIII. V. VI.
+
+
+A
+
+ALVAIADE, Cor especifica do branco. O Alvaiade se faz de chumbo, assim
+como o branco de chumbo; mas he menos fino, e delicado, que este: e se
+forma em pequenos paens de huma libra, pouco mais ou menos. Elle
+encorpora todas as Cores, com que se mixtura.
+
+AMARELLO, Cor generica derivada. O Amarello he a Cor mais clara depois
+do Branco, e naõ he que hum Verde degenerado. Esta Cor tem differentes
+tintas, taes saõ a Gomma-gutta, a Ocre commua, a Ocre escura ou de Ruth,
+a Terra de Italia, o Amarello de Napoles, o Massicote claro, e o
+Massicote escuro, o Stil de Troyes, o Stil de Inglaterra, o Ouropimenta
+claro, e Ouropimenta escuro, e a Pedra de fel, cujos elementos se
+acharão ao pé de cadahuma destas tintas.
+
+ANIL, Cor especifica do Azul. O Anil dá hum Azul muito escuro similhante
+ao que presenta a Tab. C. XI. 7. e se póde imitar exactamente,
+proporcionando as quantidades dos elementos do dito n.º 7.
+
+AZUL, Cor generica derivada. O Azul naõ he outra cousa, que huma
+degradação do Vermelho. Esta Cor tem diversas tintas, a saber, o Azul de
+Prussia, o Ultramarino, o Esmalte, as Cinzas azues, e o Anil. O
+Ultramarino se deve ter, como o Azul elementar, com o qual se pódem
+imitar todas as especies desta Cor, mixturando mais ou menos Negro, ou
+Branco. Com o Azul de Prussia naõ se póde bem imitar o Ultramarino, mas
+faz-se huma especie de Azul celeste, que se lhe avisinha muito; porem
+todas as outras tintas desta especie se imitaõ bellamente com o Azul de
+Prussia.
+
+AZUL DE PRUSSIA, Cor especifica do Azul. O Azul de Prussia he o mais
+bello depois do Ultramarino: eu o tomei por Cor elementar Tab. XIV. n.º
+3. por naõ ter achado do bom Ultramarino. Com o Ultramarino se imita
+esta Cor, juntando-lhe hum pouco de Negro; mas com o Azul de Prussia se
+imitaõ todas as outras especies de Azul. Para a Miniatura, e
+illuminaçaõ, he melhor dissolvello em vinagre branco distillado, doque
+em agoa; por que esta o escurece muito, conservando-lhe a quelle a sua
+Cor viva, e natural. Deve juntarse-lhe, para o uso, alguma gomma, e
+açucar candi, para o unir melhor.
+
+
+B
+
+BRANCO, Cor generica derivada. Ella resulta da divisaõ, ou por dizello
+assim, da rarefacçaõ das duas Cores primitivas, e das que se derivaõ
+immediatamente dellas, como se ve da Tab. XIIII. n.º 43. Esta Cor se
+associa com todas as outras, de qual quer genero, ou especie que sejaõ,
+para produsir huma grande variedade de tintas differentes. Rompendo-se
+sobre huma palheta o Branco, e o Negro, em differentes proporçoens, se
+forma toda a sorte de Cores cinzentas. Se se praticar o mesmo com as
+outras quatro Cores elementares, se terá com a mayor facilidade, hum
+grande numero de tintas, das quaes se poderão escolher as melhores para
+a pratica da pintura. A Cor branca naõ tem lugar na illuminaçaõ:
+porquanto, ainda que se junte em pequena quantidade com as outras Cores,
+as encorpora, e lhes faz perder o diaphano, que devem ter para este
+genero de colorido, no qual, se póde dizer, que a agoa, e o branco do
+papel tem lugar da Cor de que se trata. Alem disto o Branco he de
+diversas sortes, a saber, Branco de chumbo, Alvaiade, Cal, e Gesso, os
+quaes se buscaraõ nos seus respectivos lugares.
+
+BISTRO, Cor especifica do Vermelho. O Bistro se faz de ferrugem das
+chamines; e se póde imitar com os elementos da Tab. III. n.º 8.
+
+
+C
+
+CARMIM, Cor especifica do Vermelho. A base desta Cor he a Cochenilha. Eu
+a tomei por Cor elementar Tab. XIIII. n.º 2. e ella he de grande uso na
+Miniatura, e indespensavelmente necessaria na illuminaçaõ dos planos.
+
+CAL, Cor especifica do Branco. Ella se faz de marmore calcinando, e o
+seu mayor uso he nas pinturas a fresco.
+
+CINABRO, Cor especifica do Vermelho. O Cinabro ou he natural, ou
+arteficial; aquelle se acha nas minas de ouro, e de prata, e este se
+compoem de azougue, e enxofre. Parece-se muito com a Cor Tab. A. IIII.
+2., e se pode imitar com os seus elementos.
+
+CINZAS AZUES, Cor especifica do Azul. Veja-se Esmalte.
+
+CINZAS VERDES, Cor especifica do Azul. Chamaõ-se Cinzas verdes, porque
+desbotaõ em verde. Veja-se Cinzas Azues.
+
+COCHENILHA, Cor especifica do Vermelho. A Cochenilha he hum pequeno
+insecto dessecado, que se exporta da America, em pequenos graõs
+concavos de huma parte, e convexos da outra. Ella se emprega para tingir
+de escarlate, e purpura: e ella faz a base do Carmin, e da Laca
+composta.
+
+
+E
+
+ESMALTE, Cor especifica do Azul C. XI. 6. O Esmalte he feito de vidro
+azul, moido em pó subtilissimo; e quando he mais groceiro, se chama
+Cinzas azues. Esta Cor se parece com o Ultramarino, ainda que naõ seja
+taõ fina; ella póde imitar-se com o Azul de Prussia, mixturando-lhe hum
+pouco de branco de chumbo.
+
+
+F
+
+FERRETE DE ESPANHA, Cor especifica do Vermelho. Elle se tira das minas,
+em huma especie de agulhetas pontudas, e rajadas de negro, e he entaõ
+muito escuro; mas depois que se reduz em pó, se faz de hum Vermelho como
+sangue. O que se tira nas minas de Inglaterra naõ he em agulhetas, nem
+taõ duro como o de Espanha. Elle se póde imitar com os elementos da Tab.
+IIII. n.º 8.
+
+
+G
+
+GOMMA-GUTTA, Cor especifica do Amarello. Esta Cor se faz da gomma de
+huma arvore, que crece na India. Eu a tomei por Cor elementar Tab. XIII.
+n. 5; porque he susceptivel de todas as variaçoens da sua especie: naõ
+he preciso disolvella em agoa de gomma, sendo ella gommada naturalmente.
+
+GESSO, Cor especifica do Branco. O Gesso se faz de huma pedra, de
+mediocre duresa, calcinada. O Gesso he menos bello que o Alvaiade; e se
+póde imitar com este, escurecendo-o hum pouco de Amarello, e Negro.
+
+
+L
+
+LACA, nome commum a muitas especies de maça; que se impregaõ na pintura.
+Mas o que se chama propriamente Laca he huma materia gommosa, e resinoza
+que vem da India. Assim a Laca he huma Cor especifica do Vermelho, Tab.
+C. XI. 1. e se póde imitar exactamente, mixturando-lhe alguma cousa de
+branco.
+
+
+M
+
+MASSICOTE, Cor especifica do Amarello. O Massicote se faz de Alvaiade
+queimado, e segundo o grao de fogo, que se lhe da, he mais ou menos
+carregado. Elle se póde imitar com o elemento Tab. XIIII. n.º 5.
+juntando-lhe mais ou menos Branco.
+
+MINIUM, Cor especifica do Vermelho. O Minium se faz de chumbo
+calcinado. Parecesse muito com a Cor Tab. C. XI. 2. e se imitará
+exactamente com os seus elementos, juntando-lhe alguma cousa de Branco
+de chumbo.
+
+
+N
+
+NEGRO, Cor generica derivada. Pela experiencia Tab. I. n.º 2. elle se
+compoem de partes quasi iguaes de Vermelho, Azul, Verde, e Amarello, ou
+por melhor dizer, de partes desiguaes de Vermelho, e Verde; pois que
+pelas experiencias Tab. VI. VIII. X. XII. n.º 3. se prova com a mayor
+evidencia, que no Vermelho, e Verde se contem o Azul e Amarello. O
+Negro, assim como as outras Cores genericas, he de muitas sortes; taes
+saõ o Negro de fumo, o Negro de pessego, o Negro de Alemanha, o Negro de
+marfim, o Negro de osso, e a Tinta da China, os quaes se pódem ver nos
+seus respectivos lugares.
+
+NEGRO DE ALEMANHA, Cor especifica do Negro. O Negro de Alemanha he huma
+terra natural, que dá hum negro azulado, de que se servem os
+Impressores. Elle se póde imitar com os elementos da Tab. X. n.º 7.
+
+NEGRO DE CORTIÇA, Cor especifica do Negro. Elle se faz com o carvão de
+Cortiça, e dá hum Negro mui ligeiro, com hum tom de azul, que se
+avisinha ás Cinzas do Ultramarino; e póde imitar-se com os elementos da
+Tab. VIII. n.º 7.
+
+NEGRO DE FUMO, Cor especifica do Negro. Ella se faz do fumo de
+termentina; e para ser de melhor uso, deve calcinar-se sobre huma lamina
+de ferro; mas ainda assim se associa mal com as outras Cores, e as
+destroe; de sorte que he de pouco uso na pintura.
+
+NEGRO DE MARFIM, Cor especifica do Negro. Elle se faz de raspaduras do
+marfim, humedecidas com oleo de linhaça, e queimadas em hum vazo
+hermeticamente tapado. Este he o mais bello Negro, que se possa empregar
+na pintura.
+
+NEGRO DE OSSO, Cor especifica do Negro. Elle se faz de ossos de animaes,
+e da mesma sorte, que o Negro de marfim. V. Negro de marfim.
+
+NEGRO DE PESSEGO, Cor especifica do Negro. Elle se faz com o carvão de
+caroços de pessegos, redusidos a pó subtil.
+
+
+O
+
+OUROPIMENTA, Cor especifica do Amarello. O Ouropimenta claro se avisinha
+muito á Cor da Tab. C. XII. 2. elle he composto de arcenico, e enxofre;
+e se pode imitar exactamente com os elementos da Tab. XII. n.º 2,
+proporcionando as quantidades.
+
+OUROPIMENTA ESCURO, Cor especifica do Amarello. Ella he similhante á Cor
+da Tab. VIII. 2. e se póde bem imitar com os seus elementos.
+
+OCRE COMMUA, Cor especifica do Amarello. Ella he huma terra ferruginosa,
+que se acha nas minas de chumbo, e de cobre. Assimilha-se muito á Cor da
+Tab. C. XII. 2., e se póde compor com os seus elementos.
+
+OCRE DE RUTH, ou OCRE ESCURA. Cor especifica do Amarello. Ella se acha
+natural, nas minas de diversos metaes; ou se compoem da Ocre commua, por
+meyo da calcinaçaõ. Parece-se muito com a Cor da Tab. B. VIII. 2., e se
+póde formar com os seus elementos.
+
+
+P
+
+PEDRA DE FEL, Cor especifica do Amarello. Ella se póde compor com os
+elementos da Cor Tab. A. III. 8, tomando por base o Amarello, e
+mixturando-lhe hum quasi nada de Negro, e hum pouco mais de Vermelho.
+
+
+S
+
+STIL DE INGLATERRA, Cor especifica do Amarello. Ella he mais escura, que
+o Stil de Troyes, e pode imitar-se com os elementos da Tab. III. n. 8.
+
+STIL DE TROYES, Cor especifica do Amarello. Ella se compoem de huma
+terra cretacea, tincta com o Amarello de Avinhaõ; e pode imitar-se com
+os elementos da Tab. III. n.º 8. mixturando com o Amarello, muito pouco
+Negro, e Vermelho.
+
+
+T
+
+TINTA DA CHINA, Cor especifica do Negro. Esta Cor, que se exporta da
+China, em pequenos páos, he a melhor para dessenhar, e para lavar
+planos; para o que se dissolve em agoa pura, sobre huma palheta, ou em
+huma concha. Eu a tomei por Cor elementar, Tab. XIIII. n.º 1. por que se
+associa com todas as outras Cores.
+
+TERRA VERDE, Cor especifica do Verde. Esta Cor parece-se muito com a da
+Tab. B. V. 10, e se póde exactamente imitar com os seus elementos.
+
+TERRAS VERMELHAS, Cores especificas do Vermelho. Estas Cores se formaõ
+todas com os elementos da Tab. A. III. 8.
+
+TERRA DE ITALIA, Cor especifica do Amarello. V. Ocre de ruth.
+
+TERRA DE COLONIA, Cor especifica do Vermelho. Esta Cor he muito escura,
+e para a sua composiçaõ se devem tomar os elementos da Tab. A. III. 8.
+juntando, à mayor quantidade de Negro, as outras duas Cores.
+
+
+V
+
+VERDE, Cor generica primitiva, e dominante em todo o reyno vegetal. O
+mais bello verde, e que se pode chamar Verde elementar, he o Verde
+distillado, ou seja Verdete Tab. XIIII. n.º 4., que he huma especie de
+ferrugem do cobre. A agoa pura naõ o dissolve, he necessario para isto
+servir-se de qualquer acido vegetal. O çumo de limaõ azedo, ou o vinagre
+branco distillado, saõ os melhores, que se pódem empregar. Esta Cor tem
+muitas tintas differentes, assim como, Verdete, Verde montanha, Verde
+bexiga, Verde azul, Verde-pé de pato, Verde Iris, os quaes se pódem ver
+nos seus lugares.
+
+VERDETE. Veja-se Verde.
+
+VERDE AZUL, Cor especifica do Verde. Esta Cor he hum mineral, que
+participa do Verde, e Azul, tirando hum tanto para o escuro; e se póde
+imitar com os elementos da Tab. III. n. 10., mixturando pouquissimo
+Negro.
+
+VERDE BEXIGA, Cor especifica do Verde. Esta Cor tira algum tanto para
+Amarello escuro, e se compoem de produçoens do reyno vegetal. Ella póde
+imitar-se com os elementos Tab. II. n.º 5. mixturando mui pouco Negro.
+
+VERDE IRIS, Cor especifica do Verde. Ella se compoem das flores de
+Lirio; e se póde imitar com os elementos da Tab. XI. n. 8.
+
+VERDE MONTANHA, Cor especifica do Verde. Ella se faz de huma certa area
+fina, que se tira das montanhas de Hungria, e Moldavia. Ella póde
+imitar-se com os elementos da Tab. XII. n.º 6. mixturando hum pouco de
+branco de chumbo.
+
+VERDE-PÉ DE PATO, Cor especifica do Verde. Ella se póde imitar com os
+elementos da Tab. VII. n.º 8.
+
+VERDE DE SAXONIA, Cor especifica do Verde. Ella se compoem dos elementos
+do Verde-azul, com o qual se parece inteiramente. V. Verde-azul.
+
+VERMELHO, Cor generica primitiva, e dominante em todo o reyno animal.
+Ella tem hum grande numero de tintas differentes, taes saõ, a Laca,
+Vermelho escuro, Vermelhaõ, Ouropimenta, Carmim, e toda a sorte de
+Terras vermelhas; as quaes se podem ver nos seus lugares.
+
+VERMELHAÕ, Cor especifica do Vermelho. O Vermelhaõ ou he natural, ou
+artificial. O artificial se faz de azougue, e enxofre; e póde imitar-se
+com os elementos da Tab. VIII. n.º 2., mixturando-lhe, para o
+encorporar, hum quasi nada de branco de chumbo.
+
+VERMELHO ESCURO ou VERMELHO DE INGLATERRA, Cor especifica do Vermelho.
+Elle he huma terra natural, de Cor Vermelha leonada. Esta Cor he mui
+terreste, e se chama tambem Ocre vermelha. Ella póde imitar-se com os
+elementos da Tab. III. n.º 8. mixturando, de mais, hum pouco de branco
+de chumbo.
+
+
+
+
+NOTAS E ILLUSTRAÇOENS.
+
+
+
+
+NOTAS E ILLUSTRAÇOENS.
+
+
+NOTA I. § 1.
+
+Lock. _Essay concernig. Hum. Understan. Lib. 2.º Cap. 8. § 8. e seg._
+
+
+NOTA II. § 2.
+
+LOCKE define as qualidades primarias dos corpos: _Qualities thus
+considered in Bodies, are, such as are utterly inseparable from the
+Body, in what Estate soever it be_; e as secundarias: _Such Qualities,
+which in truth are nothing in the Objects themselves, but Powers to
+produce various Sensations in us by their primary Qualities_. O que
+LOCKE chama poderes, eu o chamo accidentes, por importar o mesmo, e naõ
+necessitar de mais extensas explicaçoens.
+
+
+NOTA III. § 4.
+
+_La solidité & l'arrangement actuel de la terre sont l'ouvrage des eaux,
+des corps organisés & du laps de temps. Les végétaux & les animaux ont
+fertilisé la croûte superficielle de la terre que nous cultivons. Les
+eaux y sont venues à plusieurs reprises._ M. BAUME _Chim. expér. & rais.
+T. I. p. 123. Paris. 1773_. Póde ver-se M. de BUFFON, e LINEUS, sobre a
+formaçaõ da Terra.
+
+
+NOTA IV. § 5.
+
+ARISTOXENES pretendia, que os principios da Musica dependessem
+unicamente do bom ouvido, e de hum exacto discernimento. {Anagetai}, diz
+elle, {dê pragmateia eis duo. eis te tên akoên, kai eis tên dianoian. tê
+men gar akoê krinomen ta tôn diastêmatôn megethê. tê de dianoia
+theôroumen tas toutôn dunameis}. E mais à baixo: {Tô de mousikô schedon
+estin archês echousa tazin ê tês aisthêseôs akribeia}. _L. 2. dos
+Element. Harmon._ PITAGORAS porem deduzia os mesmos principios do
+proporcional diametro, peso, ou grandeza, do corpo sonoro. NICOMACHO,
+depois de referir as observaçoens de PITAGORAS sobre os sons e as
+diversas applicaçoens da sua Doutrina à differentes instrumentos, diz:
+{Kai sumphônon êurisken en apasi kai aparalêpton tên di arithmou
+katalêpsin}. _Encherid. Harmon. L. I_. Póde ver-se tambem EUCLIDES na
+sua geometrica _Secçaõ do Canon_, onde a Doutrina de PITAGORAS se
+explica com a mayor claresa.
+
+
+NOTA V. § 7.
+
+As definiçoens de Aristoteles quasi todas saõ confusas; e a que nos
+deixou das Cores, he verdadeiramente sua. Elle define assim as Cores:
+{Chrôma de esti tou diaphanous en sômati ôrismenô peras}: o que he mais
+de pressa a definiçaõ da superficie colorida, que da mesma Cor. Este
+sophista pretendia persuadir, que as Cores eraõ inseparaveis dos corpos,
+como as suas primarias qualidades; o que he absolutamente inadmissivel,
+por ser contrario à todas as experiencias.
+
+
+NOTA VI. § 8.
+
+EULER combate, no modo seguinte, a opiniaõ de Cartesio a respeito das
+Cores. _Des Cartes, der zuerst dem Muth hatte, die Geheimnisse der Natur
+zu erforschen, erklaerte die Farben aus einer gewissen Vermischung des
+Lichts und des Schattens. Aber da der Schatten ein blosser Mangel des
+Lichts ist, indem er sich allenthalben befindet, wo das Licht nicht
+hindurchdringen kann, so siehet man wohl, dass das Licht mit einem
+Mangel des Lichts vermischt, die verchiednen Farben nicht hervorbringen
+koenne, die Wir an den Koerpern wahrnehmen. Breif 133._
+
+
+NOTA VII § 9.
+
+_Dos numeros, que na presente Nota se acharem entre (), os que forem
+precedidos do sinal §. se referem ao Tratado: e os que tiverem antes de
+si hum n. indicaõ os numeros desta mesma Nota._
+
+Como a Doutrina de NEWTON sobre as Cores he principalmente fundada nas
+experiencias do Prisma, e estas dependem da combinaçaõ da Luz com os
+Corpos naturaes: faz-se indespensavel, para comparar os Principios, que
+presenta este Tratado com as Proposiçoens do Philosopho Inglez, o dizer
+preventivamente alguma cousa a respeito da quellas duas substancias, e
+dos phenomenos, que resultaõ da sua combinaçaõ, por meyo das prismaticas
+experiencias.
+
+
+_Da Luz._
+
+2. A Luz consiste em pequenissimas partes de materia, que de hum corpo
+lucido, sahem em todas as direcçoens. Segundo o calculo do Dr.
+NIEWENTIT, em hum segundo de tempo, sahem 418, 660, 000, 000, 000, 000,
+000, 000, 000, 000, 000, 000, 000, 000, 000 partes de Luz de huma vela
+accesa; o qual numero contem, ao menos, 6, 337, 242, 000, 000 vezes, o
+numero de grãos de area, que conteria toda a Terra, suppondo, que cem
+grãos de area saõ iguaes à huma polgada de comprido, e que
+consequentemente, cada polgada cubica da Terra conteria hum milhaõ dos
+ditos grãos.
+
+3. Se a Luz he taõ admiravel pela sua subtileza, naõ o he menos pela sua
+velocidade. Em hum segundo de tempo, ella corre 164 mil milhas, ou 50
+mil legoas; vindo a ser desta sorte 1, 230, 000 vezes mais ligeira que
+huma bala de artelharia, que corre 600 pes, em hum minuto segundo: o que
+he innegavelmente certo, pelas observaçoens dos Satellites de Jupiter,
+feitas das duas oppostas extremidades do Orbito da Terra.
+
+4. Quando as pequenas partes, de que se compoem a Luz, sahem de hum
+corpo luminoso, como o Sol, ou huma vela accesa, se propagaõ sempre em
+linha direita: o que se prova evidentemente do constante facto, que os
+corpos lucidos deixaõ de ser visiveis, pela interposiçaõ dos corpos
+opacos; como as Estrelas fixas, pela interposiçaõ da Lua, e dos
+Planetas; e o Sol em todo, ou em parte, pela interposiçaõ da Lua, de
+Mercurio, e de Venus.
+
+5. Os rayos da Luz naõ só se propagaõ em linha direita, mas se encrusaõ
+huns pelos outros, sem que se confundaõ. Se em huma lamina subtil, de
+qual quer materia opaca, fazemos hum buraco, que naõ seja mayor, que hum
+ponto, e por elle observamos de noute os Ceos, vemos huma multidaõ de
+Estrellas, cujos rayos de Luz, sem confusaõ alguma, se crusaõ todos no
+buraco, por onde os observamos: o que demonstrativamente prova esta
+asserçaõ.
+
+6. Aquella ley he innalteravel, quando a Luz passa por hum meyo de igual
+densidade; mas quando a Luz atravessa hum meyo, de huma densidade
+differente da quella, donde partio, neste caso se rompe ou quebra,
+avisinhando-se mais, ou menos, da perpendicular.
+
+7. Os Rayos da Luz cahindo obliquamente de hum meyo mais raro, ou mais
+diaphano, sobre outro mais denso, ou menos transparente, como do Ar
+sobre o crystal, se avisinhaõ da perpendicular, tirada do ponto da
+incidencia, à angulos direitos, sobre a superficie do meyo mais denso; a
+qual se chama superficie rompente. Se, ao contrario, o rayo passa de hum
+meyo mais denso a hum, que o he menos, como do crystal a o Ar, no
+romper-se, se affasta da perpendicular. A primeira refracçaõ, chama-se
+refracçaõ á perpendicular; e a segunda, refracçaõ da perpendicular.
+
+8. Quanto mais obliquamente os rayos da Lux cahem sobre qualquer meyo,
+tanto mayor he a refracçaõ. Assim a refracçaõ da Luz do Sol, a o nascer,
+ou ao por-se, he a mayor; por que ella fere mais obliquamente a
+superficie da atmosphera da Terra: e á proporçaõ que o Sol se eleva
+sobre o horisonte, diminue a obliquidade, e a refracçaõ, athe que no
+ponto culminante deste Astro, se reduzem à nada; como se prova pelas
+Taboas das refracçoens do Sol, da Lua, e das Estrellas, calculadas pelos
+melhores Geometras. He quanto basta à respeito da Luz.
+
+
+_Dos Corpos._
+
+9. Sendo a verdadeira essencia dos Corpos absolutamente desconhecida,
+naõ se póde dar huma justa definiçaõ daquillo, que se chama Corpo. E
+como agora se naõ falla dos Corpos, que relativamente á luz, e a o
+sentido da vista, póde chamar-se Corpo tudo aquillo, que he capaz de ser
+illuminado pela Luz, e visto com os nossos olhos.
+
+10. Os Corpos, assim considerados, devem ser tidos como hum aggregado de
+minutissimas partes de materia, e mesmo divisiveis ao infinito. Se
+consideramos, de huma parte, huma esphera de materia solida, que toque
+com o equator as duas Estrellas Anthares, e Aldebaram; e com os polos,
+no Norte, o Dragao, e a Dourada, no Sul: he indubitavel, que, por
+calculo, se póde redusir esta immensa esphera a partes taõ pequenas,
+como hum graõ de area. Se, de outra parte, consideramos huma esphera,
+que naõ tenha, que meyo pé de diametro, he igualmente indubitavel, que o
+calculo da primeira esphera se póde applicar á segunda; da mesma sorte
+que a escala, de huma carta de navegaçaõ, mede huma grande parte do
+Oceano; ou, que huma esphera armilar, de meyo pé de diametro, representa
+todo o systema do Mundo. Ora como as partes, que correspondem á ultima
+divisaõ da pequena esphera, haõ de ser a hum grão de area, na mesma
+proporçaõ, em que meyo pé está a o diametro da grande esphera; o qual he
+taõ grande, que segundo as observaçoens, e calculos de BRADLEY, huma
+bala de artilheria, a razaõ de 600 pés por segundo, de duas legoas por
+minuto, de 120 legoas per hora, de 2880 legoas por dia, e de 1,051,200
+legoas por anno, deve gastar 2,000,000,000,000, de annos para o correr:
+segue-se, que as partes, que correspondem á ultima divisaõ da pequena
+esphera, saõ de tal pequenez, que naõ basta toda a força do entendimento
+humano, para as comprehender. Mas eu deixo estes calculos abstractos,
+aindaque exactissimos, para fazer ver athe onde póde chegar a physica
+divisaõ da materia.
+
+11. Hum fio de seda, de 300 pés de comprido, naõ pesa mais de hum grão:
+ora, huma polgada he divisivel em 600 partes visiveis, sendo cadahuma
+dellas da subtileza de hum cabello finissimo; logo hum fio de seda, que
+naõ pesa mais que hum grão, pode physicamente dividir-se em 2,592,000
+visiveis partes.
+
+12. O ouro he o mais ductivel e maleavel de todos os metaes. De hum grão
+de ouro tem-se feito hum fio de 500 pés de comprido, o qual physicamente
+se podia dividir em partes visiveis 3,600,000.
+
+13. Hum grão de Anil, ou de Azul de Prussia, he divisivel, por
+experiencias incontestaveis, em 24,788,000,000 partes, todas claramente
+visiveis.
+
+14. Segundo o calculo de NIEWENTYT, a Eolipila resolve, pela actividade
+do fogo, huma onça de agoa, em mais de 13,365,000,000 partes. Basta
+isto, para dar huma justa idea da divisibilidade da materia, e para
+fazer conhecer, que qualquer corpo se compoem de minutissimas partes,
+que entresi coherem por huma ley da Natureza, ou por hum admiravel, e
+occulto mechanismo, que as theorias mais reflexivas naõ tem pódido
+athegora descobrir.
+
+
+_Da Luz, e dos Corpos, considerados juntamente._
+
+15. Quanto, pois, á materia de que se trata, podem todos os Corpos ser
+divididos em lucidos, e opacos. O Sol, as Estrellas fixas, a Luz de huma
+vela &c., pertencem a os primeiros; a Terra, todos os Planetas, e
+qualquer producçaõ dos tres reynos da Natureza, pertencem a os
+segundos.
+
+16. Os Corpos lucidos podemos considerallos, como outros tantos centros
+de immensas espheras de Luz; pois que a propagaõ em todas os direcçoens.
+O Sol he igualmente visivel, das duas oppostas extremidades, do
+vastissimo Orbito de Herschel; e o fanal de hum navio he igualmente
+visto, de todos os que o circundaõ sobre a linha do horisonte. A Luz,
+encontrando na esphera da sua actividade hum Corpo opaco, he por elle
+reflectida à os nossos olhos, e excita em nós a idea desse Corpo,
+formando-nos a sua pintura na retina. E como os Corpos saõ visiveis de
+todas as partes, a Luz deve ser reflectida por elles em todas as
+direcçoens. Assim os Corpos opacos tambem se devem ter, como huns
+centros de Luz reflectida, que delles se propaga em todas as direcçoens,
+que os mesmos Corpos saõ visiveis.
+
+17. Mas, dos Corpos lucidos à os opacos, ha huma consideravel
+differença, a qual consiste, em que os primeiros naõ tem sombra alguma
+de si mesmos, sendo os centros absolutos de outras tantas espheras de
+Luz propria, que delles parte ao mesmo tempo: em lugar que os segundos,
+naõ sendo, que centros parciaes de huma Luz precaria, a reflectem só de
+huma parte da sua massa, proporcionadamente á incidencia dos rayos de
+Luz, que recebem dos Corpos lucidos; ficando a outra parte obscurecida
+com a sua propria sombra.
+
+18. Tal he o caso de Mercurio, de Venus, e da Lua, na sua opposiçaõ, ou
+na sua conjunçaõ com o Sol. No primeiro caso, estes Planetas nos
+reflectem a Luz, que recebem do grande Luminar, e nos deixaõ ver ametade
+da sua massa illuminada. No segundo caso, porem, interceptando a Luz do
+Sol, nos presentaõ a parte obscurecida, com a sua propria sombra, a qual
+se distingue bem, quanto a Mercurio, e Venus, quando passaõ pelo disco
+do Sol; e quanto á Lua, ou poucos dias antes, e depois da sua conjunçaõ,
+ou quando nos eclipsa a Luz do Sol. Mas basta de preliminares; passemos
+ao nosso Ponto.
+
+
+_Dos Prismas, e das Prismaticas experiencias._
+
+19. Quando as pequenas partes, de que a Luz se compoem (n. 2), cahem
+sobre qualquer Corpo opaco, e saõ por elle reflectidas a os nossos
+olhos, naõ só nos excitaõ a idea da figura desse Corpo,
+dessenhando-no-la na retina (n. 16); mas tambem no-la-pintaõ, com huma
+quasi incomprehensivel, e harmonica variedade de bellissimas, e
+differentes Cores. Mas, de todas estas, as mais vivas, e resplandecentes
+saõ, as que nos offerecem as experiencias do Prisma.
+
+20. Prisma, geometricamente fallando, he hum solido, do qual duas faces
+oppostas saõ dous planos iguaes, e parallelos, sendo todas as outras
+faces parallelogrammos. Chama-se {Prisma}, _Prisma_, do verbo Grego
+{Priô}, que significa serrar, ou cortar: e effectivamente o Prisma he
+huma figura truncada, que parece o segmento de outro Corpo. Porem,
+relativamente á Luz, e ás Cores, o Prisma he hum instrumento
+triangular, de grandeza indefinida, e de huma materia diaphana, pelo
+qual se observa, ou hum Ponto lucido, em hum ambiente escuro; ou hum
+Ponto escuro em hum ambiente lucido.
+
+21. Estes Prismas saõ, ordinariamente, feitos de crystal branco; mas
+como he dificil o achallos desta materia, bastantemente grandes para se
+fazerem as experiencias, podem se os mesmos compor de vidros brancos,
+lizos, e delgados, unindo-lhes as junturas com betume, e enchendo-os de
+agoa pura, ou colorida, segundo o genero das experiencias, que se
+quiserem fazer.
+
+22. Eu os fiz construir de todas as figuras, e com angulos de 10 gráos
+athe 90, mas a experiencia me mostrou, que os melhores Prismas, para
+observar, saõ os triangulares equilatros. Os de 45 gráos, ainda saõ
+bons. Os de angulos menores, naõ mostraõ bem as Cores: e os que excedem
+60 gráos, ainda que mostraõ as Cores mui vivas, e fortes, desfiguraõ os
+objectos, curvando muito todas as linhas direitas.
+
+23. Os Prismas, com que fiz as minhas experiencias, eraõ feitos de
+vidros brancos, lizos, e delgados, unidos com betume de cera, e resina;
+e da figura, grandeza, e cor seguinte.
+
+_Primeiro_. Equilatro triangular, de 6 polgadas de comprido; e os
+parallelogrammos, de duas de largo; cheyo de agoa crystalina.
+
+_Segundo_. Da mesma figura, e grandeza; cheyo de tintura de Carmim.
+
+_Terceiro_. Da mesma figura, e grandeza; cheyo de tintura de Azul de
+Prussia.
+
+_Quarto_. Da mesma figura, e grandeza; cheyo de tintura de Verde
+distillado.
+
+_Quinto_. Da mesma figura e grandeza; cheyo de tintura de Açafraõ, que
+substitui á Gomma-Gutta, por esta dar huma tintura muito opaca, que naõ
+deixava passar os rayos da Luz.
+
+_Sexto_. Da mesma figura, e grandeza; cheyo de tintura de Nankim.
+
+_Settimo_. Hum parallelipipedo rectangulo, de duas polgadas de base, e
+seis de alto; cheyo de agoa pura.
+
+Taes eraõ os Prismas com que procedi ás seguintes experiencias.
+
+
+_Experiencias do Prisma, feitas sobre hum Ponto lucido, circundádo de
+hum ambiente escuro._
+
+24. Como, de todos os pontos lucidos, circumdados de hum ambiente
+escuro, os mais brilhantes saõ as Estrellas fixas, he por ellas que eu
+principiei as minhas experiencias. Regulus, Castor, a {a} do Cocheiro,
+Procyon, Cyrius, Rigel, a {a} de Orion, e Aldebaram, eraõ à o mesmo
+tempo visiveis, quando eu as observei, pelos seis primeiros Prismas (n.
+23). O Prisma acromatico, por este entendo sempre o que he cheyo de agoa
+crystalina, fazia ver cadahuma destas Estrellas, como huma piramide de
+Luz, da qual a base era vermelha, e o resto verde. Com os Prismas
+coloridos, se alteravaõ alguma cousa estas duas Cores, fazendo-se mais,
+ou menos escuras; mas naõ se destruiaõ. O Prisma amarello naõ as
+alterava, mas antes as reforçava mais, que o branco.
+
+25. A longitude geocentrica de Jupiter era, neste tempo, de 2 S. 24 G. e
+alguns minutos; e a de Marte, de 3 S. e quasi 27 G. consequentemente
+eraõ ambos visiveis, com as sobreditas Estrellas; achando-se o primeiro
+na constellaçaõ de _Gemini_; e o segundo na de _Cancer_. Observei pelos
+mesmos Prismas estes dous Planetas, e me deraõ as mesmas figuras, e as
+mesmas Cores, que as Estrellas fixas.
+
+26. A lua, no tempo da sua opposiçaõ, vista pelo Prisma acromatico, se
+reduz a huma figura oblonga, que termina mais em ponta, de huma parte,
+que da outra; e deixa ver cinco Cores na ordem seguinte: Vermelho,
+Amarello, Verde, Azul, e Purpura. Exceptuado o Prisma amarello, todos os
+outros coloridos, alterando mais, ou menos estas Cores, as conservaõ
+todas; mas, o Prisma amarello, reforçando a Verde, e a Vermelha, destroe
+todas as outras.
+
+27. Feitas estas mesmas experiencias sobre a Luz de huma vela, ou sobre
+hum pequeno circulo branco, de qualquer materia, posto sobre hum fundo
+escuro, como hum chapeo, ou qualquer seda, ou pano negro, se vem os
+mesmos resultados, que nos numeros precedentes: e assim qualquer outra
+experiencia que se faça, neste genero, será huma pura repetiçaõ das que
+ficaõ referidas.
+
+
+_Experiencias do Prisma, feitas sobre hum Ponto escuro, circundado de
+hum ambiente lucido._
+
+28. Se, no meyo de huma janella aberta, se suspende huma pequena
+esphera, de qual quer materia opaca, observando-se da parte da sombra, a
+huma proporcionada distancia, com o Prisma acromatico, entaõ se ve huma
+figura oblonga, apparentemente diaphana, e colorida, de baixo em alto,
+na ordem que se segue: Amarello, Vermelho, Azul escuro, algum reflexo de
+Purpura, e Verde, que saõ, justamente, as mesmas Cores (n. 26. 27.), com
+a differença, de se mostrarem em huma ordem diversa. Se esta experiencia
+se faz com o Prisma amarello, todas estas Cores se reduzem a Vermelho,
+e Verde; occupando o Vermelho a parte inferior da esphera, e o Verde a
+superior: o que he bem o contrario, do que succede nas experiencias do
+Ponto lucido, em hum ambiente escuro.
+
+29. Se, sobre huma folha de papel branco, pomos hum circulo de seda
+negra, ou de qual quer outra cousa da mesma Cor, vemos o mesmo phenomeno
+(n. 28), que he sempre inaltaravel em similhantes circumstancias.
+
+
+_Outras Experiencias do Prisma._
+
+30. Se observamos, pelo Prisma acromatico as nuvens, que em differentes
+formas, cobrem o Ceo, da parte do horisonte, à o nascer, ou à o pòr do
+Sol, vemos, que as pequenas nuvens brancas nos presentaõ somente a Cor
+Vermelha, e Verde: a primeira, da parte donde recebem a Luz; e a Verde
+da parte opposta. As nuvens densas, e escuras, nos presentaõ da parte
+donde recebem a Luz, a Cor amarella e vermelha; e da parte opposta, as
+Cores azul, e verde; e em certas circunstancias, a Cor de Purpura: e
+quando as nuvens, assim coloridas, passaõ humas pelas outras, levadas
+por diversas correntes de ar, entaõ vemos, que as suas Cores se
+mixturaõ, e formaõ outras Cores diversas. Se giramos o Prisma, de sorte
+que os rayos da Luz cáhiaõ mais obliquamente sobre a sua face, que
+primeiro os recebia quasi perpendiculares, todas aquellas Cores se vaõ
+incorporando humas nas outras, e finalmente se reduzem a huma faxa de
+Cor mui forte, da qual ametade he vermelha, e a outra parte verde.
+
+31. No ver huma Cidade illuminada, pela Luz do Sol, succede o mesmo. Os
+profis, dos edificios illuminados apparecem vermelhos, e amarellos; e os
+da parte da sombra, apparecem azues, e verdes, com algum reflexo de
+Purpura: mas girando o Prisma, como na experiencia (n. 30) todas estas
+Cores, e as que se tivessem composto da sua mixtura, se reduzem a duas,
+Vermelho, e Verde. O mesmo succede, se fazemos naturalmente a
+observaçaõ com o Prisma amarello. Obtem-se este mesmo resultado,
+observando da mesma sorte, de dentro de huma camara, as vidraças, as
+persiannas, ou a luz, que entra irregularmente pelas janellas mal
+fechadas.
+
+32. A linha do horizonte, no mar, observada com o Prisma acromatico, se
+ve sempre de hum Verde mais, ou menos carregado, segundo os differentes
+reflexos da Luz, e o estado da superficie da agoa. As ondas mostraõ
+sempre a Cor Vermelha, e Verde; e o mesmo succede ás velas dos navios, e
+principalmente das pequenas embarcaçoens.
+
+33. Fazendo, de hum terraço elevado, diversas observaçoens sobre as
+Cores, vi casualmente ao pòr do Sol, que as velas de hum moinho de
+vento, que me ficava à poente, pareciaõ compostas, ao comprido, de dous
+panos, hum vermelho, e outro verde, quando ellas estavaõ horizontalmente
+situadas. Quando, porem, se avisinhavaõ da perpendicular, começavaõ
+estas duas Cores a confundir-se, de sorte que, justamente na
+perpendicular, se resolviaõ em huma especie de nuvem, ou sombra muito
+escura, a qual se desvanecia á proporçaõ, que as velas se avisinhavaõ
+utraves da linha horizontal; em cuja situaçaõ recuperavaõ as duas
+primeiras Cores, e na mesma ordem, sempre inalteravel i. e. o Vermelho
+na parte inferior, e o Verde na superior.
+
+34. Tambem outra casuàlidade me fez, em hum dia de vento fresco,
+encontrar com o Prisma, huma destas bandeiras, que em la se costumaõ
+pendurar nas ruas, para indicar festas mais solemnes. O vento a movia em
+todas as direcçoens; e muitas vezes a tinha suspensa horizontalmente.
+Vendo-a pelo Prisma nesta situaçaõ, parecia huma larga fita, ametade
+vermelha, e a outra ametade verde, e quando ondeava irregularmente,
+entaõ se via nascer destas duas Cores muitas outras que desapareciaõ
+todas, quando a bandeira tornava á situaçaõ horizontal: e neste caso se
+recolhia ás duas, de que se tinhaõ formado.
+
+35. Se, em hum quarto de papel branco, colamos hum circulo de seda
+negra, de tafetá, por exemplo, e se, em hum pedaço de tafetá, desta
+mesma Cor, colamos hum circulo de papel branco, da mesma grandeza do
+primeiro; e pomos estas duas figuras, de sorte que os dous circulos
+fiquem em justa posiçaõ, hum ao lado do outro, e como comprehendidos
+entre duas parallelas: observando-os, pelo Prisma acromatico, os vemos
+coloridos com as mesmas Cores; mas em huma ordem diametralmente opposta.
+O circulo branco mostra, na sua peripheria superior, as Cores vermelha,
+e amarella; e na inferior hum Verde claro, pouco Azul, e hum quasi
+imperceptivel reflexo de Purpura. O circulo negro, porem, mostrando
+estas mesmas Cores, as faz ver em huma ordem toda opposta, isto he, o
+Vermelho, e Amarello na peripheria inferior; e as outras Cores, na
+superior.
+
+36. Todas as experiencias feitas com o Prisma, sobre hum rayo de Luz do
+Sol, introdusido em huma camera escura, se redusem ás experiencias (n.
+24. 25. 26. 27.), isto he, a observar hum Ponto lucido, em hum ambiente
+escuro. Este rayo de Luz, se se recebe em hum cartaõ branco, forma neste
+hum circulo mui claro, rodeado de hum ambiente escuro, correspondendo
+justamente a obscuridade da camera à o azul escuro dos Ceos, nas
+observaçoens das Estrellas, e dos Planetas (n. 24. 25.). Se observamos,
+pelo Prisma acromatico, este circulo de Luz, o vemos colorido da mesma
+sorte, e com as mesmas Cores, que elle se pinta no cartaõ, quando tem
+passado à o traves do Prisma; de sorte que tanto vale observar, pelo
+Prisma, o rayo de Luz, que sobre o cartaõ he branco, como ver sobre o
+cartaõ o rayo de Luz colorido, depois de ter passado pelo Prisma.
+
+37. No que respeita á figura oblonga, formada da incidencia de muitos
+circulos, na qual se pretendem achar as sete Cores chamadas primitivas,
+deve reflectir-se, que esta figura naõ he que huma pura illusaõ. Ella se
+compoem indubitavelmente, de muitos circulos coloridos com as cinco
+Cores, que resultaõ da experiencia (n. 26. 27.), os quaes circulos
+cahindo huns sobre os outros, mixturaõ aquellas cinco Cores, e formaõ
+quantidade de outras compostas, entre as quaes se pertendem destinguir
+aquellas, que se chamaõ primitivas.
+
+38. Tanto he isto assim, que, se applicamos ao tubo, que intreduz o rayo
+do Sol, huma lamina subtil, de qualquer materia opaca, na qual se tenhaõ
+feito cinco, ou seis pequeninos buracos, que naõ distem huns dos outros
+mais de oito pontos, ou huma linha; e fazemos passar estes rayosinhos de
+Luz pelo Prisma acromatico: entaõ vemos, à huma proporcionada distancia,
+sobre o cartaõ, outras tantas figuras coloridas, da mesma sorte, e na
+mesma ordem, que se ve hum so rayo mayor de Luz do Sol (n. 36.). Mas se
+affastamos, pouco a pouco, o cartaõ, aquellas figuras se avisinhaõ,
+cadavez mais, humas das outras; atheque, finalmente, se mixturaõ,
+formando huma figura oblonga, comprehendida entre duas parallelas, e
+circular nas duas extremidades; aqual figura he absolutamente
+similhante, á que forma hum rayo mais forte de Luz do Sol, quando se
+recebe obliquamente na face de hum Prisma. Ora as Cores que resultaõ da
+mixtura dos, cinco ou sete pequenos rayos de Luz, saõ indubitavelmente
+compostas: logo as que se vem na figura oblonga, que resulta de hum so
+rayo de Luz, a qual tamben he composta de circulos coloridos, mixturados
+huns com os outros, saõ da mesma natureza, e consequentemente naõ se
+podem chamar primitivas.
+
+39. Se observamos, com o Prisma amarello, todas as experiencias, que na
+camera escura, se fazem com os rayos do Sol, naõ vemos senaõ a Cor
+vermelha, e verde: e se fazemos as mesmas experiencias com este Prisma,
+todas as figuras conservaõ as mesmas formas, que lhes dá o Prisma
+acromatico; mas naõ mostraõ senaõ as Cores vermelha, e verde.
+
+40. Se em huma camera, em que naõ entre Luz alguma erratica, se faz
+entrar hum subtilissimo rayo da Luz do Sol, e tendo passado pelo
+Prisma, o recebemos em hum cartaõ branco, bem perto do tubo por onde
+entra, entaõ naõ vemos, que hum circulo luminosissimo, sem Cor alguma.
+Se affastamos mais o cartaõ, vemos este circulo menos luminoso, mas
+colorido. E se finalmente pomos o cartaõ em grande distancia, vemos hum
+circulo obscuro sem Cor alguma.
+
+41. Fora da camara obscura, succedem os mesmos phenomenos. Se observamos
+o Sol, pelo Prisma, naõ vemos que hum circulo de Luz muito clara, sem
+Cor alguma. Se observamos da mesma sorte huma Estrella da primeira
+grandeza, ou hum Planeta, vemos huma figura colorida. Se finalmente
+olhamos pello Prisma para huma Estrella da segunda, ou terceira
+grandeza, naõ vemos que hum circulo obscuro, sem Cor alguma. Athequi as
+experiencias do Prisma.
+
+
+_Principios, que resultaõ das experiencias Prismaticas._
+
+42. Todos os conhecimentos physicos se versaõ, ou sobre factos
+particulares, ou sobre leys geraes. O conhecimento dos factos, precede
+sempre o das leys, as quaes saõ meros resultados das observaçoens, do
+que ordinariamente acontece, em hum grande numero de casos particulares;
+e que depois servem de norma, para decidir outros casos da mesma
+natureza. Assim, das observaçoens feitas sobre o movimento projectil dos
+Corpos, em linha direita, e do universal poder da attracçaõ, que os tira
+desta linha, se formaraõ as leys, que applicadas a os Planetas, fizeraõ
+conhecer o seu curvilineo movimento. Quando as leys geraes servem, para
+explicar casos particulares, chamaõ-se entaõ Principios.
+
+43. He com este nome, que se achaõ caracterisadas todas as leys
+physicas, que resultaõ das experiencias sobre as Cores, e fazem a
+materia da Primeira, e Segunda Parte do Tratado: e he com este mesmo
+nome, que eu vou designar as leys, que resultaõ das experiencias
+Prismaticas, que acabo de referir nesta Nota.
+
+
+PRIMEIRO PRINCIPIO.
+
+44. As Cores se manifestaõ, e se formaõ, por meyo da refracçaõ da Luz.
+
+
+_Escholio._
+
+45. Se na camara obscura, se faz passar hum rayo de Luz, pelo _Set._
+Prisma (n. 23.), nem a refracçaõ he sensivel, nem se ve Cor alguma. Se
+se faz passar o mesmo rayo de Luz, por hum angulo de 10 gráos, ja he
+sensivel a refracçaõ, e a Cor. Hum angulo de 30 gráos, refracte mais a
+Luz, e dá mais Cor. E finalmente, hum angulo de 60 gráos, dá huma
+grandissima refracçaõ, e as Cores muito vivas. E como as Cores nascem
+com a refracçaõ, e augmentaõ á proporçaõ, que ella cresce; naõ se póde,
+de forma alguma, contestar a evidencia deste Principio, que
+inteiramente concorda com os Principios Oitavo, e Nono, do Tratado (§
+43. 48.)
+
+
+SEGUNDO PRINCIPIO.
+
+46. A Luz, que emana dos Corpos lucidos, e a que he reflectida dos
+opacos, contem as mesmas Cores, e produz os mesmos phenomenos.
+
+
+_Escholio._
+
+47. Se, pelo _prim._ Prisma (n. 23.), se observa Cyrius, e Jupiter,
+ve-se em ambos, a mesma figura, e a mesma Cor (n. 24. 25.). Ora a Luz de
+Cyrius vem immediatamente de hum Corpo lucido, e a de Jupiter de hum
+opaco: logo este Principio he de huma absoluta evidencia.
+
+
+TERCEIRO PRINCIPIO.
+
+48. A intensaõ da Luz he igualmente destructiva das Cores, como a
+densidade da sombra.
+
+
+QUARTO PRINCIPIO.
+
+49. He com huma Luz mediana, que apparecem, e se formaõ as Cores.
+
+
+_Escholio._
+
+50. Este quarto Principio (n. 49.) he hum Corollario do Terceiro (n.
+48.); e ambos se provaõ evidentemente, com as experiencias (n. 40. e
+41.). A grande intensaõ da Luz do Sol faz, que observando-se este astro
+pelo Prisma, naõ mostre Cor alguma. A debil Luz de huma Estrella da
+segunda, ou terceira grandeza, he a causa, de que ella se veja pelo
+Prisma, sem Cor alguma. Mas a Luz de huma grande Estrella, que se póde
+reputar mediana entre o Sol, e huma pequena Estrella, presenta mui
+vivas, e brilhantes, as duas Cores Vermelho, e Verde. Os phenomenos (n.
+41.) saõ identicos; pelo que he inutil o recapitullallos.
+
+
+QUINTO PRINCIPIO.
+
+51. As cores primitivas saõ duas, Vermelho, e Verde.
+
+
+_Escholio._
+
+52. Simplez, e primitivo, só se póde chamar aquillo, que naõ he
+derivado, nem composto. Para conhecer esta qualidade, em qualquer
+substancia, he necessario descompolla, e resolvella nos seus elementos;
+que entaõ se chamaõ simplez, e primitivos, quando resistem ás analysis
+mais rigorozas, sem soffrerem alteraçaõ alguma. Assim, a respeito dos
+corpos, só se pódem ter por elementos simplez, e primitivos, a materia
+vitrea e calcarea; por que a estas duas substancias se reduzem todos os
+corpos do nosso Globo, por meyo de hum intenso fogo, que naõ tem mais a
+força de as descompor; e effectivamente he destas mesmas duas
+substancias, que se formaraõ todos os Corpos, de que se compoem a Terra,
+e que lhe estaõ inherentes (§. 4.)
+
+53. Pela mesma razaõ, que se tem por simplez, e primitivos, só aquelles
+elementos dos Corpos, que resistem á analysis do fogo mais intenso; se
+devem ter tambem, por simplez, e primitivas, só aquellas Cores, que
+resistem ás analysis mais fortes, que sobre ellas se pódem praticar. E
+como as Cores naõ podem soffrer que duas sortes de analysis, huma sobre
+os Corpos coloridos, e a outra sobre a Luz tambem colorida: segue-se,
+que só se devem ter por Cores primitivas aquellas, que resistem á força
+destas analysis, conservando-se inalteraveis. Ora o Vermelho, e o Verde,
+saõ as duas Cores, que resistem á força das analysis mais fortes, e que
+se conservaõ inalteraveis; quando todas as outras Cores se descompoem, e
+se destroem; como se prova das experiencias feitas sobre os Corpos
+coloridos (§ 16. 17. 19.), e observaçoens (§ 22. 23.): e igualmente das
+experiencias feitas sobre, a Luz colorida (n. 24. 25. 28. 29. 30. 31.
+32. 34. 39.): segue-se, que naõ se podem ter, physicamente, por Cores
+primitivas, senaõ o Vermelho, e Verde; por serem os elementos
+indestructiveis, a que se reduzem todas as outras Cores; e dos quaes as
+mesmas se compoem (n. 34.). Ainda que isto bastasse, para provar a
+evidencia deste Principio; elle tem ainda a seu favor as duas analogias
+(§ 26. 27. 29.), que na presente materia, saõ da mayor concludencia.
+
+
+SEXTO PRINCIPIO.
+
+54. A Cor Azul he derivada, e naõ primitiva.
+
+
+_Escholio._
+
+55. Este Principio he hum corollario do Quinto (n. 51.); e a formaçaõ
+desta Cor, consta das experiencias, em que se funda o Principio Quarto
+(§ 28.).
+
+
+SEPTIMO PRINCIPIO.
+
+56. A Cor amarella he derivada, e naõ primitiva.
+
+
+_Escholio._
+
+57. Este Principio he hum corollario do quinto (n. 51.): e o modo, por
+que esta Cor se forma, se ve das experiencias, e especulaçoens, em que
+se funda o Principio (§ 30.).
+
+
+OITAVO PRINCIPIO.
+
+58. O Negro he huma Cor positiva, e se forma do Vermelho, e Verde.
+
+
+_Escholio._
+
+59. A Evidencia deste Principio, se mostra da observaçaõ (n. 33.). As
+velas do moinho de vento, de que ali se trata, estando horisontaes,
+pareciaõ duas largas faixas, unidas ao comprido, huma verde na parte
+superior; e outra vermelha, na inferior. E como estas duas Cores
+conservaõ sempre a mesma posiçaõ, sobre a linha horisontal, deviaõ
+necessariamente unir-se, à o passar pela perpendicular. He pois nesta
+passagem, e uniaõ, que se formava sempre a especie de nuvem ou sombra
+mui escura, como fica refferido. Aquela machina estava situada na linha
+visual ao ponto, em que o Sol se punha; as suas velas moviaõ-se em hum
+plano perpendicular à esta linha, e consequentemente eu as observava da
+parte da sombra, e de hum ponto diametralmente opposto à aquelle, donde
+partia a Luz, ellas eraõ, quadrilateras, e teriaõ 20 pés de comprido,
+sobre cinco, ou seis de largo; eraõ da mesma lona de que se fazem as
+velas dos navios; e me ficavaõ na distancia de 250 passos geometricos.
+Exponho todas estas circunstancias, porque em observaçoens deste genero,
+a direcção da Luz; a sua força; a grandeza, a figura, a materia dos
+objectos e a distancia em que se observa, influem muito nos resultados.
+As observaçoens feitas sobre as nuvens em movimento, daõ este mesmo
+resultado; e as experiencias (§ 16. 17.), feitas sobre as Cores
+materiaes, convem inteiramente com as da Luz colorida.
+
+
+NONO PRINCIPIO.
+
+60. O branco he huma Cor positiva, e nasce da extrema divisaõ das duas
+Cores primitivas, Vermelho, e Verde.
+
+
+_Escholio._
+
+61. As experiencias (n. 40. 41.) mostraõ a evidencia deste Principio. O
+Sol, visto pelo Prisma, parece hum circulo de Luz mui viva; mas sem Cor
+alguma: por que a Cor se acha dividida em huma grande massa de Luz, e
+por isso he invisivel. O mesmo succede na experiencia (n. 40.), em que o
+rayo de Luz, depois de passar pelo Prisma, se recebe no cartaõ branco,
+ao pé do tubo, que o introduz na camara escura: e como, nesta distancia,
+a Luz se acha ainda mui intensa, e cahe sobre huma superficie branca,
+que tambem augmenta a sua massa, pela mesma razaõ da experiencia. (n.
+41.) naõ deixa ver cor alguma. O mesmo succede com as Cores materiaes;
+como se prova pela Taboa XIIII. n. 43. e ainda mais palpavelmente,
+mixturando sobre o porphyro, hum graõ de Anil, com duas libras de
+Alvaiade, dividindo-o o Branco de tal sorte, que nelle senaõ destingue a
+minima sombra de Azul.
+
+62. Digo que o Branco, e o Negro, saõ Cores positivas, (n. 58. 60.)
+porque o contrario repugna à todas as leys da physica. Nós recebemos
+indubitavelmente a idea dos objectos externos, pelo orgaõ sensoreo da
+vista, mediante o reflexo da Luz, a qual, cahindo sobre, os mesmos
+objectos, se reflecte à os nossos olhos, trasendo-nos comsigo à sua
+imagem (n. 15.). Ora, se a Cor negra naõ fosse que huma privaçaõ da Luz,
+seguir-se-hia, que naõ poderiamos receber a idea, nem de huma columna de
+marmore negro, nem de qual quer outro corpo da mesma Cor: mas a
+experiencia mostra, que estando em justa posiçaõ duas ou mais columnas,
+huma de marmore negro, e as outras de marmore branco, vermelho &c.
+recebemos taõ clara a idea de humas, como das outras; logo o negro he
+huma Cor taõ positiva, como qual quer das outras, a que senaõ disputa
+esta qualidade; e assim naõ póde consistir na privaçaõ da Luz.
+
+63. Alem disto, huma taboa de marmore negro, bem polida, reflecte a Luz
+taõ exactamente, que nella vemos as imagens dos objectos, como em hum
+espelho. Ora, isto naõ póde acontecer, segundo as leys da Catoptrica,
+senaõ nos corpos, que reflectem fielmente os rayos da Luz; logo he
+imphilosophico o dizer, que a Cor negra consiste na absorbencia dos
+rayos da luz; quando os Corpos desta Cor os reflectem igualmente, que os
+coloridos de Branco, Vermelho &c. De mais he provado (§ 22. n. 23.), que
+a Cor negra se forma da mixtura do Vermelho, e Verde; ora, se a Cor de
+Purpura, que se forma de Vermelho, e Azul, he huma Cor positiva; da
+mesma sorte o deve ser a Cor negra, que se forma pór huma similhante
+combinação. Hum igual raciocinio prova, que o Branco he tambem huma Cor
+positiva.
+
+64. O confundir estas duas Cores, huma com a Luz, a outra com a sombra,
+deu lugar ás ideas commumente recebidas. He preciso, differençar a Luz,
+da Cor branca, e a sombra, da Cor negra. A Luz faz visiveis os objectos,
+com as suas qualidades; e a escuridade, produz hum effeito opposto, isto
+he, de naõ deixar ver cousa alguma; mas a Luz, e a obscuridade, saõ
+tanto a Cor branca, e negra, como a azul, e verde. Ora, nimguem diria,
+que estas ultimas duas Cores equivalem á Luz, ou a escuridade; da mesma
+sorte senaõ póde dizer isto, das duas primitivas Negro, e Branco;
+sabendo-se de outra sorte, o mechanismo da sua formação, pelas
+experiencias (§ 16. 17. 19. 22. n. 33.)
+
+65. Taes saõ os Principios, que resultaõ das observaçoens, feitas sobre
+as experiencias Prismaticas: os quaes se achaõ inteiramente conformes,
+com os que resultaõ das observaçoens feitas sobre as experiencias dos
+Corpos coloridos (§ 20. 21. 24. 28. 30. 37. 40. 43. 48.); e que tem
+ainda em seu favor, as analogias da Natureza (§ 26. 29.).
+
+
+_Phenomenos das Cores, explicados pelos Principios, que resultaõ das
+experiencias do Prisma._
+
+66. Se as leys geraes, quando servem para explicar casos particulares,
+se chamaõ Principios (n. 42.); a explanaçaõ, ou injuncçaõ, destes
+Principios, he chamada theoria, ou systema; e os factos que se devem
+explicar com elles chamaõ-se phenomenos. Assim os Treze Principios que
+presenta este Tratado (§. 20. 21. 24. 28. 30. 37. 40. 43. 48. n. 44. 46.
+48. 49.) formaõ huma theoria, ou systema de doutrina, com a qual se
+podem explicar todos os phenomenos das Cores.
+
+67. Estes phenomenos saõ de duas sortes, porque ou se manifestaõ na Luz
+colorida, ou nas superficies dos Corpos naturaes. Eu vou explicar hum
+phenomeno de cadahuma destas especies, que servirá de norma para a
+intelligencia de todos os outros.
+
+68. Dos phenomenos da Luz colorida, o mais bello e magestoso, he sem
+duvida, o Arco Celeste, que nos tempos mais antigos fez a admiraçaõ dos
+homens, e tem sido cantado, com o nome de Iris, pelos mais famosos
+Poetas. Este phenomeno, comtudo naõ he outra cousa, que hum grande, mas
+identico resultado, á o da experiencia (n. 40.) feita, com huma Luz
+mediana, em huma camara obscura.
+
+69. O sol, na vasta camara do Universo, tem lugar do rayo da sua Luz, em
+huma pequena camara. As gotas de agoa, de huma nuvem desfeita, ou de
+huma nevoa pouco densa, saõ o grande Prisma, em que se refracte, e
+modifica, a Luz do Sol. E a parte do Ceo coberta de nuvens, que fica
+opposta ao Sol, he o immenso cartaõ, onde se mostraõ as Cores; que saõ
+mais distinctas, ou mais confuzas, e mais ou menos em numero, segundo a
+obliquidade da Luz do Sol, sobre o grande Prisma por onde passa: da
+mesma sorte que na camara obscura, recebendo o rayo da Luz do Sol
+perpendicularmente sobre a face do Prisma, naõ forma no cartaõ, que
+quatro ou cinco Cores; e recebendo-o obliquamente, forma muitas mais.
+
+70. Quanto á curvatura do Arco, ella procede, de que passando a Lux do
+Sol por hum grande angulo, qual he o das gotas de agoa, que formaõ o
+Prisma Celeste, se produz aquela curva da mesma sorte, que o angulo de
+hum Prisma de 90 gráos, reduz á curvas todas as linhas direitas (n.
+22.).
+
+71. Os phenomenos das Cores, que nos presentaõ as superficies dos corpos
+naturaes, se explicaõ da mesma sorte. Todos os Corpos saõ compostos de
+partes taõ subtis, como fica provado (n. 10. 11. 12. 13. 14.). E como
+naõ ha Corpo, por mais compacto que seja, que reduzido a minutissimas
+partes, se naõ faça diaphano; segue-se que, a respeito da Luz, que he
+muito mais subtil, que as minutissimas partes, de que os Corpos se
+compoem, se devem reputar diaphanas, e transparentes as suas
+superficies. Ora, como a Luz, no reflectir-se dos Corpos, tem ja passado
+por este meyo mais denso, e menos diaphano, que o ar; segue-se que deve
+ter sofrido huma, ou mais refracçoens (n. 7.) e que deve
+necessariamente, fazer-nos ver colorida a imagem dos objectos (44. 45.).
+
+72. Naõ paressa extraordinario, que as superficies dos Corpos, e ainda
+dos mais densos, sirvaõ de Prisma à os rayos da Luz, para se formarem as
+Cores. Todos os Corpos naturaes saõ compostos de dous simplez elementos,
+que saõ a materia vitrea, e calcarea, combinadas de mil modos
+differentes (§. 3.). Se a todos os Corpos se faz soffrer a analysis do
+fogo mais intenso, elles se reduzem outra vez a estas duas elementares
+sustancias, e a huma grande quantidade de vapor, que exhalaõ no tempo da
+operaçaõ. Ora, a materia vitrea, e calcarea saõ indisputavelmente
+transparentes, ainda a os nossos olhos, quando estaõ reduzidas a partes
+de huma certa grandeza: com muita mayor razaõ o devem ser sempre, a
+respeito das subtilissimas partes, de que a Luz se compoem.
+
+73. Daqui se ve claramente, que a Cor Vermelha do Rubim, se forma pela
+concorrencia das mesmas circunstancias, que fazem parecer vermelha
+ametade de huma Estrella (n. 24.), ametade das velas de huma embarcaçaõ
+(n. 32.), ou ametade da peripheria dos circulos (n. 35.); e que o Verde
+da Esmeralda, se forma pela concorrencia das circumstancias, que fazem
+apparecer verde a outra ametade daqueles objectos: e assim a respeito de
+todas as mais Cores. Mas qual he o intrinseco mechanismo, que produz taõ
+admiraveis effeitos, e para que serve tanta variedade de Cores: quando
+no Rubim, e na Esmeralda, naõ vemos que huma mera crystalisaçaõ; e para
+as outras experiencias naõ concorre, que hum pedaço de vidro, pelo qual
+observamos, ou hum Ponto lucido em hum ambiente escuro, ou hum Ponto
+escuro em hum ambiente lucido (n. 20.); e quando a mayor parte dos
+Corpos naturaes nos seriaõ igualmente uteis, sendo, ou naõ,
+coloridos?--Esta he huma daquellas Questoens, de que eu já fallei no
+Tratado (§. 4.); e da qual a decisaõ depende de conhecimentos
+superiores, e á força dos nossos sentidos, e mesmo á efficaz penetraçaõ
+das nossas intellectuaes faculdades. Limitemo-nos prudentemente à os
+factos, e ás verdades que a imparcial, e continua observaçaõ sobre
+elles, nos podem procurar; e deixemos de escrutar as causas primarias e
+ultimas, que só podem comprehender-se, pela illimitada Sabedoria de hum
+SER SUPREMO.
+
+
+_Succinta comparação das Proposiçoens de Newton, com os Principios, que
+presenta este Tratado._
+
+74. A doutrina de Newton sobre as Cores, se contem nas cinco
+Proposiçoens seguintes; que transcrevo na lingoa original, em que foraõ
+escriptas, para evitar qualquer iquivoco, que poderia recrescer, ainda
+da mais fiel traducçaõ.
+
+_PROPOSITIO I._
+
+_Radiis diverse refrangibilibus diversi competunt Colores._
+
+_PROPOSITIO II._
+
+_Radiorum formæ, sive dispositiones colorificæ non sunt refractione
+mutabiles._
+
+_PROPOSITIO III._
+
+_Colores albi & nigri, cum cinereis sive fuseis intermediis unius
+cujusque speciei, confusè mistis, generantur._
+
+_PROPOSITIO IV._
+
+_Primitivi Colores per compositionem Colorum sibimet utrinque confinium
+exhiberi possunt._
+
+_PROPOSITIO V._
+
+_Corporum naturalium Colores a genere radiorum derivantur, quos maximè
+reflectunt._
+
+
+QUANTO á PROPOSIÇAÕ I.
+
+75. Para que esta Proposiçaõ fosse evidente, seria necessario, que
+Newton provasse: Que a differente refrangibilidade dos rayos da Luz, que
+attraveçaõ o angullo de hum Prisma, provem das diversas Cores destes
+rayos; ou que a diversa Cor dos rayos da Luz, saõ a causa da sua
+refrangibilidade: o que este philosopho naõ fez certo de forma alguma.
+Elle vio, que os rayos da Luz, que passaõ pelo Prisma, se refrangem huns
+mais que os outros; e que a Cor vermelha, nas suas experiencias,
+corresponde à os rayos menos refrangiveis, e a Cor de purpura à os que
+se refrangem mais: e desta observaçaõ concluio; que a os rayos mais
+refrangiveis competia a Cor de purpura, è a os menos refrangiveis a Cor
+vermelha; e a os que ficaõ entre estes dous extremos, todas as outras
+Cores[A].
+
+[Nota A: _Maxime refragibilibus purpura, sive violarum Color competit, &
+rubor minime refrangibilibus, atque mediocribus viriditas vel potius
+confinium viridis, & viresentis c[oe]rulei. Adeoque radii prout sunt plus
+plusque refrangibiles apti sunt ad hos ordine colores, rubrum, flavum,
+viridem, c[oe]ruleum, & violaceum generandos una cum omnibus eorum
+successivis gradibus & coloribus intermediis._ Newt. Opt. Part. II.
+Sect. I.]
+
+76. Mas, como póde huma similhante asserçaõ concordar-se com a
+experiencia (n. 35.) que nos mostra, que aquellas duas Cores taõ
+oppostas, competem á mesma refracçaõ. Aquelles dous circulos saõ da
+mesma grandeza, e estaõ entre duas parallelas; vendo-os pelo Prisma, naõ
+se póde duvidar, que as refracçoens, que correspondem à cadahuma destas
+parallelas, sejaõ as mesmas. Ora, sobre cadahuma destas parallelas se
+ve, ao mesmo tempo, a Cor vermelha, e amarella, no circulo branco; e a
+verde, azul, e purpura no circulo negro: logo naõ se póde dizer, que a
+os rayos menos refrangiveis compete a Cor vermelha; e à os que soffrem
+mayor refracçaõ, a Cor de purpura; visto que de baixo da mesma linha, e
+da mesma refrangibilidade, vemos estas duas oppostas Cores.
+
+77. A diversa refrangibilidade da Luz, que passa por hum Prisma,
+procedera, tal vez, de outra causa. O rayo de Luz do Sol, que attraveça
+hum Prisma, tem sempre dentro delle a figura de hum sylindro obliquo.
+Ora imaginando, que o lugar, que occupa este sylindro, he composto de
+milhoens de subtilissimos filamentos, alinhados a o comprido, elles
+devem ser todos de grandezas differentes; e consequentemente os
+subtilissimos rayos da Luz, á o attraveçallos, haõ-de achar mayor, ou
+menor resistencia. Póde ser que esta seja a causa, porque, á o sahir do
+Prisma, se refractem huns mais, que os outros: sem que isto tenha mais
+rellaçaõ com as Cores, que huma bala de artilheria, que attraveça os
+dous bordos de huma fragata, e se refrange passando o primeiro de hum
+navio.
+
+78. A formaçaõ das Cores depende, tal vez, de outro mechanismo. As duas
+Cores primitivas se manifestaõ, por meyo da refracçaõ (n. 44. 45.); mas
+a formaçaõ das outras Cores depende de mais circunstancias. Da mesma
+experiencia (n. 35.), se prova esta asserçaõ. Se aquelles dous circulos,
+se observaõ, à o mesmo tempo, de dous pontos oppostos, então parecem a
+hum observador, azues ou purpureas as Cores, que à o outro observador
+parecem vermelhas, e amarellas; o que naõ póde nascer das refracçoens,
+mas sim da opposiçaõ, da Cor negra, e branca, combinadas com as que
+resultaõ da refracçaõ do Prisma.
+
+
+QUANTO á PROPOSIÇAÕ II.
+
+79. Se Newton pretende persuadir, nesta Proposiçaõ, que qualquer Cor,
+conciderada na Luz, ou nos corpos naturaes, depois que he formada, se
+naõ muda com a refracçaõ do Prisma, neste caso nada se oppoem a os
+Principios deste Tratado. Mas se Newton pretende persuadir, que por isso
+que saõ inalteraveis, se devem reputar primitivas; sejame entaõ licito
+fazer a seguinte reflexão. Se observamos por hum Prisma duas
+superficies, das quaes huma seja vermelha, e a outra de qualquer Cor das
+que se naõ tem por primitivas, taõ inalteravel vemos a Cor primitiva
+como aquella que o naõ he: e consequentemente o dizer, que algumas das
+Cores Prismaticas saõ primitivas, porque se naõ mudaõ com a refracçaõ,
+naõ tem a menor concludencia.
+
+
+QUANTO á PROPOSIÇAÕ III.
+
+80. Esta Proposiçaõ concorda inteiramente com os Principios, Primeiro, e
+Segundo (§ 20. 21.); e com o Oitavo, e Nono (n. 58. 60.); que saõ
+identicos, ainda que dedusidos de experiencias diversas. O Negro, e o
+Branco, contem todas as Cores; aquelle, intimamente unidas (§ 20. 22. n.
+58. 59.); e este extremamente, divididas (§ 19. 21. n. 60. 61.): donde
+se ve, que a differença destas duas Cores, e de todo o claro-escuro,
+consiste só nas quantidades das Cores componentes, a respeito de huma
+certa massa de Luz, ou originaria, ou reflectida dos Corpos, com mais ou
+menos modificaçoens.
+
+
+QUANTO á PROPOSIÇAÕ IIII.
+
+81. O sentido desta Proposiçaõ, he dificil de comprehender, muito mais
+dizendo Newton, que as Cores primitivas, saõ Cores simplez. Como se póde
+imaginar, que sendo as Cores primitivas, elementos simplez, como o
+mesmo Newton as caracterisa,[B] se componhaõ das que lhes ficaõ
+visinhas? Parece, que este philosopho naõ chegou a formar huma idea
+clara das Cores primitivas; porque quando as compara com o canon
+armonico[C] ou escala da Musica, deixa entender, que ellas saõ sete.
+Quando diz, que naõ entende por Cores primitivas só as cinco Vermelho,
+Amarello, Verde, Azul e Purpura, mas todas as que se formaõ desta
+sorte,[D] deixa em duvida o numero daquellas Cores. E quando diz,
+finalmente, que ellas saõ simplez, e elementares, deixa entender, que se
+naõ podem compor de outras Cores.
+
+[Nota B: _Simplices sive primitivi Colores._ Newton Opt. Par. II. Sect.
+I. Prop. II.]
+
+[Nota C: _Partes imaginis, quas colores occupant, proporcionales essent
+chordæ sic divisæ, ut singulos gradus in octava resonare faciat._ Newt.
+Part. II. Sect. II.]
+
+[Nota D: _Per colores autem Primitivos non tantum quinque prædictos
+intelligo, sed & quoslibet alios quibus exibendis aptum datur aliquod
+radiorum genus._ Newt. Opt. Par. II. Sect. I.]
+
+82. Seria preciso ser outro que Newton, para aclarar as suas ideas, se
+ellas saõ confusas. Mas quem reflectir, que o seu systema he fundado em
+huma mera conjectura, à que deu lugar a imagem oblonga, que hum rayo de
+luz do Sol, tendo passado pelo Prisma, faz ver na camara obscura, se
+convenserá facilmente, que de taes Principios se naõ podiaõ deduzir mui
+claros resultados. Aquella figura, pelo que ja fica dito, naõ he a pedra
+de toque para conhecer o metal das Cores primitivas. (n. 37. 38.)
+
+83. Se, sobre o porphyro, se mixtura com agoa, e em certas proporçoens,
+Carmin, e Verde-distillado, forma-se a Cor de Purpura. Se se junta hum
+pouco mais de Verde, resulta huma especie de Azul, mui similhante à o
+que faz ver o Prisma. Se este Azul, e Purpura se estendem com o pincel
+sobre hum papel branco, e depois se tocaõ com hum pincel banhado em agoa
+pura, desaparecem estas duas Cores resolvendo-se em hum vermelho mais
+escuro, que o Carmin. Se qualquer planta, de hum bello verde, deixa de
+ser regada, a sua Cor natural se converte em Amarello; mas acudindo-lhe,
+à tempo, com agoa, recupera a sua Cor verde, desapparecendo
+absolutamente a amarella.
+
+84. Se a Cor de purpura, e azul se formaõ, e se destroem, como fica
+dito (n. 83.); se a amarella se faz nascer do Verde, e se converte outra
+vez nelle; (_Nota XVI._) Como se póde crer, que estas tres Cores sejaõ
+simplez, e primitivas?
+
+85. As outras duas especies de Azul, e Amarello, que pretendem ver-se no
+Prisma, naõ podem ser, que meyas tintas das suas similhantes; por que
+seria contrario à o poder, e á simplicidade da Natureza, que, para
+formar as Cores naturaes, duplicasse os elementos da mesma especie;
+quando a Arte, que he mais composta e menos poderosa, que a Natureza,
+forma todas as Cores de huma especie, com hum so elemento, analogo a
+essa mesma especie, modificado com o claro-escuro, e com as outras Cores
+(§. 76. 77.)
+
+86. Excluidas, assim, das Cores chamadas primitivas, as duas especies de
+Azul, e Amarello, e a Cor de purpura; segue-se, que só o Vermelho, e
+Verde, se pódem ter por Cores elementares, simplez, e primitivas.
+
+87. Ja que fallei da comparaçaõ dos intervallos dos sons, e das Cores
+(n. 81.), naõ devo omittir, que ella se funda em calculos meramente
+hypotheticos. Os intervallos das Cores prismaticas naõ se podem
+exactamente medir, como o mesmo Newton confessa[E], servindo-se ainda,
+da palavra Grega {akribeia}, para dár huma justa idea da diligencia, que
+inutilmente empregou nesta operaçaõ. E os rapportos geometricos dos sons
+intermedios da oitava, tem taõ pouca similhança com os sons naturaes,
+como he notorio á todos os Proffessores da Sciencia da Musica, e a todos
+os Geometras[F] (§ 5.). Donde se ve a inconcludencia, de tudo quanto se
+tem escripto, neste concernente.
+
+[Nota E: _Cum isthæc quanta potui diligentia observassem, non proprio
+tantum sensu consisus, sed (propter summam difficultatem præcise
+distinguendi confinia Colorum) aliorum judiciis fretus imaginis
+dimentiones juxta inventa deliniavi._ New. Opt. Part. II. Sect. II.]
+
+[Nota F: _En qualité de Géometre, je crois avoir quelque droit de
+protester ici (s'il m'est permis de m'exprimer de la sorte) contre cet
+abus ridicule de la Géométrie dans la Musique. Je le puis avec d'autant
+plus de raison, qu'en cette matierie les fondemens des calculs sont
+hypothétiques jusqu'à un certain point, & ne peuvent même être
+qu'hypothétiques. Le rapport de l'octave comme 1 à 2, celui de la quinte
+comme 2 à 3, celui de la tierce majeure comme 4 à 5, &c. ne sont
+peut-être par les vrais rapports de la nature; mais seulement des
+rapports approchés . . . ._ M. D'Alembert, Elémen. de Music. Disc.
+Prelim. pag. XXX. J. J. Rousseau Diccion. de Mus. na palavra
+_Tempérement_.]
+
+
+QUANTO á PROPOSIÇAÕ V.
+
+88. Nesta Proposiçaon diz Newton, que as Cores dos Corpos naturaes
+provem, de que huns reflectem huma parte dos rayos da Luz, que suppoem
+diversamente coloridos, e os outros outra; e que assim, o Corpo, que
+reflecte os rayos vermelhos, apparesse vermelho; e o que reflecte os
+purpureos, apparesse de Cor de purpura. Se Newton tivesse provado, que
+na Luz existem todas as Cores, que vemos nos Corpos naturaes; e depois
+fizesse certa a absorbencia de huns dos seus rayos, e o reflexo de
+outros, teria neste caso, toda a razaõ: Mas Newton naõ prova nenhum
+destes antecedentes.
+
+89. Naõ prova o primeiro, porque logo, que faz differença de Cores
+primitivas à derivadas ou compostas, naõ tem lugar esta Doutrina: e
+quanto à o segundo, pretende provalho _a posteriore_, o que naõ conclue,
+tendo em contrario os factos de huma absoluta evidencia, ja refferidos
+(n. 35.).
+
+90. Naõ se tenha, por huma refutaçaõ da Doutrina de Newton, o que digo a
+respeito de cadahuma das suas Proposiçoens; mas sim por huma resposta
+necessaria ás objecçoens, que se poderiaõ fazer contra os Principios,
+que presenta este Tratado, apoyadas na recebida theoria daquelle
+incomparavel philosopho. Eu ja dei a razaõ, porque me affastei da sua
+brilhante, e plausivel hypothesis; (§. 9.) e me parece, que sem
+temeridade, antepuz hum systema simplez, e natural, à outro que o naõ he
+tanto, e que se funda em huma mera conjectura[G].
+
+[Nota G: _Newton ayant repété plusieurs fois avec beaucoup de soin,
+l'experiencie,_ (falla da experiencia, n. 26. 27. 36. 37.), _trouva que
+les résultats en étoient très-constants; & après y avoir bien réfléchi,
+il assaya de les expliquez par les conjectures suivantes. Il lui vint en
+pensée, que la lumiere pourroit être un fluide composé de parties
+essentiellement différentes: premiérement, par le degré de
+réfrangibilité; secondement, par la propriété d'exciter en nous le
+sentiment de certaines couleurs. En effet en supposant ces deux points,
+il est aisé de rendre raison &c._ M. Nollet Phys. Experim. Leç. XVII.]
+
+91. Quanto he mais conforme á sabia economia, com que a Natureza procede
+em todas as suas operaçoens, o estabelecer sobre reiteradas, e decisivas
+experiencias, e sobre convincentes analogias; que na Luz residem só
+duas Cores simplez, e primitivas, que saõ o Vermelho, e Verde (§. 24.
+n. 51.); que da sua intima uniaõ se forma o Negro (§. 20. n. 58.); que
+da sua extrema divisaõ nasce o Branco (§. 21. n. 60.); que das mesmas
+duas Cores simplez emana o Azul, e Amarello (§. 28. 30.); e que em fim
+destas seis Cores, tomadas como elementos, se podem artificialmente
+formar todas as que vemos nos Corpos naturaes (n. 51. e seg. §. 68. e
+seg.): quanto he mais conforme, digo, á sabia economia da Natureza este
+systema, do que o dizer; que as Cores compostas, ou derivadas nascem da
+combinaçaõ de sete elementos, ou de sete Cores simplez, e que estas
+residem na Luz, com o poder de imprimir à os seus rayos differentes
+gráos de refrangibilidade.
+
+92. Se era hum dogma constante, que os Corpos naturaes procediaõ de
+quatro elementos (§. 4); e se huma analysis mais rigorosa os reduz a
+duas unicas substancias simplez e primitivas (n. 72.); como se póde
+crer, sem ser mais que provado, que as Cores, que naõ saõ que meros
+accidentes destes Corpos (§. 2.), dependaõ, para a sua formaçaõ, de
+sete differentes elementos?
+
+93. Os Amadores das Sciencias naturaes, à quem offereço a parte
+theoretica deste Tratado, se se acharem perplexos entre a novidade da
+Doutrina, que elle-lhe presenta, e as oppiniones recebidas, e firmadas
+sobre respeitaveis authoridades, e estipadas com a sancçaõ de tempo: os
+exhorto a por de parte toda a preocupaçaõ da authoridade, e de procurar
+a evidencia, que dezejaõ, na mesma Natureza, por meyo da experiencia, e
+de huma profunda meditaçaõ sobre os factos, que ella lhes suggerir.
+
+
+NOTA VIII. §. 13.
+
+Antes de passar á Parte Analytica, convirá muito de ler hum par de vezes
+os §§. 55. athe 63. nos quaes se explica o uzo das Taboas illuminadas,
+de que se começa a fallar logo no principio da dita Primeira Parte.
+
+
+NOTA IX. §. 14.
+
+LUIS DE CAMOENS no seu incomparavel Poema, OS LUSIADAS, descrevendo a
+vista da Ilha Namorada, que Venus presentou a os seus Heroes, pinta o
+mais bello quadro, que se póde ver sobre a Terra.
+
+  _LIII._
+
+    _  . . . . . . . . .
+  Para lá logo a proa o mar abrio;
+  Onde a costa fazia huma enceáda
+  Curva, e quieta, cuja branca arèa,
+  Pintou de ruivas conchas Cytherèa._
+
+  _LIIII._
+
+    _Tres fermosos outeiros se mostravão
+  Erguidos com soberba graciosa,
+  Que de gramineo esmalte se adornavão
+  Na formosa Ilha alegre, e deleitosa:
+  Claras fontes e liquidas manávaõ
+  Do cume, que a verdura tem viçosa;
+  Por entre pedras alvas se diriva,
+  A sonorosa lympha fugitiva._
+
+  _LV._
+
+    _Num valle ameno, que os outeiro fende,
+  Vinhaõ as claras agoas ajuntarse,
+  Onde huma mesa fazem, que se estende
+  Tão bella, quanto póde imaginarse:
+  Arvoredo gentil sobre ella pende,
+  Como que prompto está para enfeitar-se,
+  Vendo-se no cristal resplandecente,
+  Que em fim o está pintãdo propriamente._
+
+  _LVI._
+
+    _Mil arvores estaõ ao Ceo subindo
+  Com pomos odoriferos, e bellos,
+  A larangeira tem no fruto lindo
+  A Cor, que tinha Daphne nos cabellos:
+  Encostase no chaõ, que estâ cahindo
+  A cidreira cos pesos amarellos,
+  Os fermosos limo[~e]s, alli cheirando,
+  Estaõ virgineas tetas imitando._
+
+  _LVII._
+
+    _As arvores agrestes, que os outeiros
+  Tem com frondente coma ennobrecidos,
+  Alamos saõ de Alcides, e os loureiros
+  Do louro Deos amados, e queridos:
+  Mirtos de Cytherêa cos pinheiros
+  De Cybele, por outro amor vencidos,
+  Está apontando o agudo cypariso
+  Para onde he posto o eterno Paraiso._
+
+  _LVIII._
+
+    _Os doens, que dá Pomòna, alli Natura
+  Produze differentes nos sabores,
+  Sem ter necessidade de cultura,
+  Que sem ella se daõ muito melhores:
+  As cerejas purpureas na pintura,
+  As amoras, que o nome tem de amores,
+  O pomo, que da patria Persia veyo,
+  Melhor tornando no terreno alheyo._
+
+  _LIX._
+
+    _Abre a Romãa, mostrando a rubicunda
+  Cor, com que tu Ruby teu preço perdes,
+  Entre os braços do ulmeiro estâ a jucunda
+  Vide c[~u]s cachos roxos, e outros verdes:
+  E vós se na vossa arvore fecunda,
+  Peras piramidais, viver quiserdes,
+  Entregaivos ao dano, que cos bicos
+  Em vós fazem os passaros iniquos._
+
+  _LX._
+
+    _Pois a tapessaria bella e fina,
+  Com que se cobre o rustico terreno,
+  Faz ser a de Achemenia menos dina,
+  Mas o sombrio valle mais ameno:
+  Alli a cabeça a flor Cefisia inclina,
+  Sobolo tanque lucido, e sereno,
+  Florece o filho, e neto de Cyniras,
+  Porquem tu Deosa Pafia, inda suspiras._
+
+  _LXI._
+
+    _Para julgar dificil cousa fora,
+  No Ceo v[~e]do, e na terra as mesmas Cores
+  Se dava às flores cor a bella Aurora,
+  Ou se lha daõ a ella as bellas flores:
+  Pintando estava alli Zefiro e Flora
+  As violas da Cor dos amadores,
+  O lirio roxo, a fresca rosa bella,
+  Qual reluze nas faces da donzella._
+
+  _LXII._
+
+    _A candida Cecem das matutinas
+  Lagrimas rociada, e a Manjarona;
+  Vem se as letras nas flores Hyacintinas,
+  Taõ queridas do filho de Latona:
+  Bem se enxerga nos pomos e boninas,
+  Que competia Cloris com Pomona;
+  Pois se as aves no ar cantando voaõ,
+  Alegres animaes o chaõ povoão._
+
+  _LXIII._
+
+    _Ao longo da agoa o niveo Cisne canta,
+  Responde lhe do ramo Filomella,
+  Da sombra de seus cornos naõ se espanta,
+  Acteon n'agoa cristalina, e bella:
+  Aqui a fugace Lebre se levanta
+  Da espessa mata, ou timida Gazella,
+  Alli no bico traz ao caro ninho
+  O mantimento o leve passarinho._
+
+  _Canto 9._
+
+
+NOTA X. §. 16. 17.
+
+Aindaque a Cor, que resulta da mixtura do Vermelho, Azul, Verde, e
+Amarelo, combinados em partes iguaes, ou somente da mixtura do Vermelho,
+e Verde, combinados nas proporçoens das Tab. VI. n. 3. VIII. 3. X. 3.
+XII. 3. naõ seja huma Cor taõ escura, como o negro mais carregado, que
+se pode formar; naõ deixa com tudo de ser huma Cor composta de claro
+escuro, similhante à Cor de chumbo, ou Cor de cinza, que se compoem de
+Negro, e Branco, sem que nella domine alguma das Cores, de que se
+compoem. Isto he quanto basta, para ter lugar o argumento, que se forma
+sobre esta experiencia; e para ser bem fundada a inducçaõ que della se
+tira. O mesmo Newton comvinha em que a Cor branca, a Cor de cinza, e a
+Cor negra eraõ a mesma cousa, e só differiaõ entre si, em ter huma mais
+luz que as outras.
+
+
+NOTA XI. § 21.
+
+Veja-se a Tab. XIIII., e a sua explicaçaõ § 62.
+
+
+NOTA XII. §. 22.
+
+Esta experiencia prova com toda a evidencia, que as Cores primitivas, e
+originarias saõ unicamente duas, a saber, o Vermelho, e o Verde. Por
+quanto, se da mixtura destas duas Cores resulta a mesma Cor, que provem
+do Vermelho, Azul, Verde e Amarello (naõ fallo do Negro, e Branco,
+porque estas só contribuem para o claro escuro) seguesse, que o Azul, e
+o Amarello se contem no Vermelho, e Verde, pois que na mixtura destas
+quatro Cores, naõ tem o Azul, e Amarello influencia alguma: o, que
+tambem se acha comprovado com as mais naturaes analogias.
+
+
+NOTA XIII. §. 25.
+
+OPITZ, fallando do Homem, diz:
+
+  _Die Welt, das grosse Buch, aus deren Thun und Wesen.
+  Er von demselben kann auf allen Blaettern lesen._
+
+                                        _Vesuv._
+
+
+NOTA XIIII. §. 27.
+
+Quanto mais obliquamente cahem os rayos da luz sobre a superficie de
+algum meyo, tanto mais forte, e mayor he a sua refracçaõ. Daqui vem que
+a Luz de Sol entrando obliquamente na atmosphera da terra, quando
+aquelle luminar coincide com o horizonte, padece huma refracçaõ mais
+sensivel, que faz ver huma Cor, em que domina o Vermelho, a qual se
+desvanece à proporção, que o Sol se eleva sobre o horizonte, e se
+deminue a obliquidade da luz. Por hum similhante mechanismo se formaõ
+todas as mais Cores. A Azul de que se trata neste §., bem se vè, que he
+produsida da mera refracçaõ da Cor da Aurora.
+
+HOMERO caracterisa admiravelmente esta decantada Cor nos seguintes
+versos.
+
+    {Êus men krokopeplos ap Ôkeanoio roaôn Ôrnuth, in athanatoisi phoôs
+    pheroi êde brotoisin}. _Iliad. liv. XIX. v. I_.
+
+O Licor alkalino phlogisticado, de que se compoem o Azul de Prussia, se
+prepara com o sangue dos animaes; e unindo-se ou mixturando-se com
+vetriolo de Marte, produz a Cor azul. Naõ he só no reyno animal, que o
+ferro produz este effeito. O páo do Brasil, que em agoa natural, larga
+huma Cor vermelha, metendo-o de infusaõ em agoa ferrea, dá huma Cor
+azul, como a de Anil. O Dr. SEHORT falla munto desta experiencia; e eu
+a fiz algumas vezes analysando agoas mineraes. A affinidade destas duas
+Cores, Vermelho, e Azul, se prova ainda, em rasaõ inversa, do constante
+facto, que o Azul dos vegetaes se muda em Vermelho, por meyo dos ácidos
+mineraes, e vegetaes.
+
+
+NOTA XV. §. 29.
+
+MILTON, no Liv. VII. do _Paraiso Perdido_, nos presenta todos os
+Vegetaes, sahindo da maõ do CREADOR, ornados da agradavel Cor de Verde,
+que nelles geralmente domina:
+
+  _He scarce had said, when the bare earth, till then
+  Desert and bare, unsightly, unadorn'd,
+  Brought forth the tender grass, whose verdure clad
+  Her universal face with pleasant green,
+  Then herbs of every leaf, that sudden flour'd
+  Op'ning their various colours, and made gay
+  Her bosom smelling sweet: and these scarce blown,
+  Forth flourish't thick the clustring vine, forth crept
+  The smelling gourd, up stood the cornie reed
+  Embattell'd in her field: and the humble shrub
+  And bush with frizl'd hair implicit: last
+  Rose as in dance the stately trees, and spred
+  Their branches hung with copious fruit; or gemm'd
+  Their blossoms: with high woods the hills were crown'd
+  With tufts the vallies and each fountain side,
+  With borders long the rivers. That eart now
+  Seem'd like to heav'n, a seat where Gods might dwell,
+  Or wander with delight, and love to haunt
+  Her sacred shades . . . . . . ._
+
+
+NOTA XVI. §. 30.
+
+Os mesmos Vegetaes, no estado da sua decadencia, passaõ da Cor verde á
+amarela. Assim no-los-pinta o Author do Poema, _Les Saisons_, que naõ he
+menos habil Physico, que bom Poeta.
+
+    _L'Automne a des couleurs qui manquoient à l'été
+    Dans ces champs variés, l'or, le pourpre & l'opale
+    Sur un fond vert encor brillent par intervalle,
+    Et couvrent la forêt qui borde ces vallons
+    D'un vaste amphithéatre étendu sur les monts.
+    L'arbre de Cerasonte au gazon des prairies
+    Oppose l'incarnat de ses branches flétries.
+    Quelles riches couleurs, quels fruits délicieux
+    Ces champs & ces vergers présentent à vos yeux!
+    Voyez, par les zéphirs la pommone balancée,
+    Echapper mollement à la branche affaissée
+    Le poirier, en buisson courbé sous son trésor,
+    Sur le gazon jauni rouler des globes d'or,
+    Et de ces lambris verts attachés au treillage
+    La pêche succulente entraîner le branchage.
+    Les voilà donc ces fruits qu'ont annoncé les fleurs,
+    Et que l'été brûlant mûrit par ses chaleurs!_
+
+                                        _L'Autom._
+
+O Verde, que geralmente domina em todos os vegetaes, he indestructivel:
+e assim o Amarello, que delle nasce, he huma Cor apparente que, com a
+mayor facilidade, se converte outra vez em Verde. (Nota VII. n. 83.) As
+experiencias de M. MACQUER provaõ concludentemente esta asserçaõ. Elle
+se explica desta sorte: _L'expériencie prouve que la couleur verte des
+plantes s'altere facilment, & même se change en un fauvebrun . . . .
+quoique cette couleur verte se change & disparoisse même ainsi
+totalement, elle n'est pourtant point détruite pour cela, & qu'on peut,
+par le moyen des menstrues, séparer & extraire la partie verte des
+plantes seches qui n'ont plus la moindre apparence de verd._
+
+          _Dicc. de Chym. V. Fecules des plantes._
+
+
+NOTA XVII. §. 35.
+
+HOME. _Element. de Crit. Introduc._
+
+
+NOTA XVIII. §. 42.
+
+EULER _Carta_ 133., e 134.
+
+
+NOTA XIX. §. 44.
+
+M. L'ABBÉ NOLLET, _Leç. de Phys. expériment. Leç. XX. Proposit. 2. &
+Leç. XXI_.
+
+
+NOTA XX. § 45.
+
+A respeito da força do Rayo, nada se póde ler mais emphatico, que os
+seguintes versos de KLOPSTOCK
+
+  _So, wenn auf unerstiegnen Gebirgen ein nahes Gewitter
+  Furchtbar sich lagert, so reisst sich eine der naechtlichsten Wolken,
+  Mit den mersten Donnern bewaffnet, entstammt zum Verderben,
+  Einsam hervor. Wenn andre den Wipfel der Zeder nur fassen,
+  Wird sie von einem Himmel zum andern waldichte Berge,
+  Wird hochthuermende meilenlange Koenigs-staedte
+  Tausendmal donnernd entzuenden, und sie in Truemmern begraben._
+
+                              _O Mess. Cant. IIII._
+
+Naõ se pode descrever mais energicamente o horroroso phenomeno de huma
+Errupçaõ Vulcanica, doque o faz _OPITZ_ nos seguintes Versos.
+
+  . . . . _Der Naechte Mittag macht
+  Die Wiesen nie so schwarz, wann des Gestirnes Pracht
+  Im dicken Nebel steckt, als dieser Dampf sich zeiget,
+  Der, wie ein Fichtenbaum, hoch von der Wurzel steiget
+  Mit dicken Aesten aus, dieweil der Asche Last
+  Sich in die Breite giebt. Bald koemmt ein solches Krachen,
+  Als wann der Jupiter mit Donner in die Sachen
+  Der schnoeden Menschen schlaegt, dass aller Grund der Welt
+  Erzittert, oder auch, im Fall ein kuehner Held,
+  Der vor die Freyheit steht, und seine grosse Thaten
+  Auf gute Sache pflanzt mit feurigen Granaten
+  Ergrimmet um sich wirft, und zwinget eine Stadt,
+  Die noch an Billigkeit der Waffen Zweifel hat,
+  Zu glauben, was ihr dient. Die Hitze bricht zusammen
+  Durch eine rauhe Bahn mit ihren wilden Flammen,
+  Wirft schreklicher Gestalt des Berges Glieder aus,
+  Und jaget mit Geschrey bis an des Himmels Haus
+  Den stinkigten Morast von dessen schwarzen Sande,
+  Der Pech und Schwefel haelt, kein Ort im ganzen Land
+  Sich frey und sicher weiss. Es springet auch ein Fluss
+  Des Feuers aus der Kluft, dem alles wrichen muss,
+  Indem er seinen Lauf in sieben Stroeme the ilet,
+  Und dem Gestade zu mit heissem Rauschen eilet,
+  Dass Thal und Hugel brennt; der Acker wird verheert,
+  Das Vieh, so weiden will, von Flammen selbst verzehrt,
+  Die Graeser Heu gemacht, die schattenreihen Waelder
+  Vom Grunde fortgefuehrt, und die Phlegraeerfelder
+  Sind nichts als lauter Glut; das alt Herculan
+  Das lustige Castell, genannt Octavian,
+  Viel Flecken voller Frucht und Doerfer stehn in Brand,
+  Die Wasser fuerchten sich, und fliehen von dem Lande,
+  Das Volk, so nicht erstickt und gar wird fortgerafft,
+  Kommt Athemloss daher, beraubet aller Kraft,
+  Lahm, nackend und halb todt, und fuellt mit Weh und Zagen
+  Den ganzen Himmel an, der gleichsam mit ihm klagen,
+  Und auch sich kuemmern muss._
+
+
+NOTA XXI. §. 47.
+
+As diversas Cores, que a luz do Sol faz ver nas nuvens, quando as
+illumina obliquamente, estando vesinho a o horizonte, se achaõ
+bellamente descriptas nos seguintes versos:
+
+  _Mais les sombres vapeurs qui retardoient l'aurore
+  S'entr'ouvrent aux rayons du Soleil qui les dore;
+  L'astre victorieux perce le voile obscur
+  Qui nous cachoit son disque & le celeste azur;
+  Il se peint sur les mers; il enflamme les nues;
+  Les grouppes variés de ces eaux suspendues,
+  Emportés par les vents, entassés dans les cieux,
+  Y forment au hasard un chaos radieux._
+
+                              _Les Sais. Prin._
+
+
+NOTA XXII. §. 49.
+
+Os Poetas mais famosos fallaraõ todos, do admiravel, e bello phenomeno
+do Arco Celeste, nas suas metricas composiçoens. Homero lhe atribue a
+Cor de ouro:
+
+  {Irin dotrune chrusopteron angeleousan},
+
+                    _Iliad. liv. XI. 185._
+
+_VERGILIO_ lhe atribue mil Cores:
+
+  _Mile trahit varios adverso Sole Colores._
+
+                    _Eneid._
+
+_MILTON_ lhe da só tres Cores:
+
+  . . . . _and in the cloud a bow
+  Conspicuous, with three listed Colours gay,_
+
+                         _Paris. Perd. Liv. XI._
+
+O Pescoço da Pomba, e a Cauda do Pavaõ, saõ bellos objectos, que
+igualmente merceraõ de ser cantados pelos melhores Poetas. _LUCRECIO_ os
+pinta no seguinte modo:
+
+  _Pluma Columbarum quo pacto in Sole videtur:
+  Quae sita cervices circum, collum que coronat:
+  Namque aliàs fit uti rubro sit clara Pyropo:
+  Interdum quodam sensu fit, uti videatur
+  Inter caeruleum virideis miscere smaragdos.
+  Cauda que Pavonis, larga cum luce repleta est,
+  Consimili mutat ratione obversa Colores.
+  Qui, quoniam quodam gignuntur luminis ictu,
+  Scilicet id sine eo fieri non posse putandum est._
+
+                         _Lib. II. de Rer. Nat._
+
+_TASSO_, imitando talvez este bello original, pinta os mesmos phenomenos
+no seguinte modo:
+
+  _Così piuma talor, che di gentile
+  Amorosa Colomba, il collo cinge,
+  Mai non si scorge a se stessa simile,
+  Ma in diversi Colori al Sol si tinge,
+  Or d'accesi rubin sembra un monile;
+  Or di verdi smeraldi il lume finge;
+  Or insieme gli mesce: e varia, e vage
+  In cento modi i riguardanti appaga._
+
+              _Gerusal. Liberat. Cant. XV. 5._
+
+  _Nè 'l superbo pavon sì vago in mostra
+  Spiega la pompa dell'occhiute piume,
+  Nè l'Iride si bella indora, e inostra
+  Il curvo grembo, e rugiadoso al lume:_
+
+                    _Canto XVI. 24._
+
+
+NOTA XXIII. §. 66.
+
+Este methodo he applicavel à todo o genero de Pintura, e o será mesmo às
+Manufacturas, e Tinturarias de Algudaõ, e Seda &c.
+
+Para a Miniatura, e para Lavar Planos, se preparaõ as Cores na forma do
+§. 15. e de que se junta no Vocabulario à respeito de cada huma destas
+Cores: e a o Carmin, se deve juntar alguma gomma, para o unir melhor.
+
+Na Pintura a Oleo, à Cola, e a Fresco, se devem empregar Cores de mais
+corpo, e relativas a cada hum destes generos.
+
+Na Pintura à Pastel se pode trabalhar só com as seis Cores elementares;
+mas para compor os Lapis de differentes Cores, naõ he preciso outra
+cousa, que fazer seis maças ou bolos das Cores elementares, e com estas
+compor, nas respectivas proporçoens, os Lapis que se quiserem.
+
+Nas Tinturarias se devem preparar cinco tintas elementares em
+caldeiroens diversos, e depois fazer as mixturas na proporçaõ das
+Taboas. N. B. Deve advertir-se que o Linho, Algudaõ &c. sejaõ bem
+exprugados antes de se lhe dar a tinta; porque de outra sorte as Cores
+se alterariaõ consideravelmente.
+
+Em todos estes generos se devem ter presentes as Taboas de combinaçaõ; e
+deve tambem ter-se o mayor cuidado, em que as Cores elementares sejaõ do
+mesmo gráo, e força, para que os resultados conrespondaõ sempre a o que
+se dezeja.
+
+N. B. Por Cores elementares da Pintura, se devem entender sempre o
+Vermelho, o Azul, o Verde, o Amarelo, o Negro, e o Branco, que saõ os
+elementos de todas as Cores materiaes, que se empregaõ nos trabalhos
+Coloridos. E por Cores primitivas, e originarias, se devem ter sómente o
+Vermelho, e o Verde.
+
+FIM.
+
+
+
+
+CORRECÇOENS.
+
+
+                   ESTÁ ESCRITO.        DEVE LER-SE.
+
+  Pag.   7. §. 10. *                    Este sinal he de mais.
+
+  Pag.  12. §. 15. disolvi em cinco     dissolvi em cinco conchas
+                   conchas as           as seguintes Cores: (Nota
+                   seguintes Cores:     XXIII.)
+
+  Pag.  34. §. 60. Amarela,             Amarello,
+
+  Pag.  78. n. 10. gráo                 graõ
+
+  Pag.  99. n. 45. E como a Luz         E como as Cores nascem,
+                   nasce e augmenta     e augmentaõ
+
+  Pag. 110. n. 64. das duas primeiras   das duas primitivas Negro,
+                   Vermelho, e Verde:   e Branco;
+
+  Pag. 115. n. 73. quando os            quando a mayor parte dos
+                   corpos naturaes      corpos naturaes
+
+  Pag. 120. n. 77. os rayos da luz,     os subtilissimos rayos da luz,
+
+  Pag. 125. n. 84. (_Nota XII._)        (_Nota XVI._)
+
+  Pag. 138. Nota XIII. _Blattrn_        _Blattern_
+
+  Pag. 142.        he inalteravel:      he indestructivel:
+
+No Vocabolario faltaõ as Cores, BRANCO-DE-CHUMBO, PURPURA, e
+ULTRAMARINO. Quanto á primeira destas Cores, ella he o mesmo que
+Alvaiade, V. ALVAIADE. A segunda he huma Cor especifica do Vermelho, V.
+Tab. V. VII. IX. XI. 1. A terceira finalmente, que se faz de _lapis
+lazuli_, se acha discripta na Cor, AZUL, e AZUL DE PRUSSIA, onde se póde
+ver.
+
+
+[Ilustração: Tábua I]
+
+[Ilustração: Tábua II]
+
+[Ilustração: Tábua III]
+
+[Ilustração: Tábua IIII]
+
+[Ilustração: Tábua V]
+
+[Ilustração: Tábua VI]
+
+[Ilustração: Tábua VII]
+
+[Ilustração: Tábua VIII]
+
+[Ilustração: Tábua VIIII]
+
+[Ilustração: Tábua X]
+
+[Ilustração: Tábua XI]
+
+[Ilustração: Tábua XII]
+
+[Ilustração: Tábua XIII]
+
+[Ilustração: Tábua XIIII]
+
+[Ilustração: Tábua A]
+
+[Ilustração: Tábua B]
+
+[Ilustração: Tábua C]
+
+[Ilustração: Tábua D]
+
+
+
+***END OF THE PROJECT GUTENBERG EBOOK TRATADO DAS CORES***
+
+
+******* This file should be named 31190-8.txt or 31190-8.zip *******
+
+
+This and all associated files of various formats will be found in:
+http://www.gutenberg.org/dirs/3/1/1/9/31190
+
+
+
+Updated editions will replace the previous one--the old editions
+will be renamed.
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+http://www.gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH F3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at http://www.gutenberg.org/fundraising/pglaf.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at http://www.gutenberg.org/about/contact
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit http://www.gutenberg.org/fundraising/donate
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including checks, online payments and credit card donations.
+To donate, please visit:
+http://www.gutenberg.org/fundraising/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart is the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

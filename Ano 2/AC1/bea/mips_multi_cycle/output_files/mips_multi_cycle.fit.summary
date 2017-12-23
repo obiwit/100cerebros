@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Dec 19 17:22:12 2017
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : mips_multi_cycle
+Top-level Entity Name : mips_multi_cycle
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 5,505 / 114,480 ( 5 % )
+    Total combinational functions : 4,778 / 114,480 ( 4 % )
+    Dedicated logic registers : 3,579 / 114,480 ( 3 % )
+Total registers : 3579
+Total pins : 80 / 529 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

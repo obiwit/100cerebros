@@ -1,0 +1,15 @@
+
+State Machine - |mips_multi_cycle|ControlUnit:ctrlUnit|CS
+Name CS.E11 CS.E10 CS.E9 CS.E8 CS.E7 CS.E6 CS.E5 CS.E4 CS.E3 CS.E2 CS.E1 CS.E0 
+CS.E0 0 0 0 0 0 0 0 0 0 0 0 0 
+CS.E1 0 0 0 0 0 0 0 0 0 0 1 1 
+CS.E2 0 0 0 0 0 0 0 0 0 1 0 1 
+CS.E3 0 0 0 0 0 0 0 0 1 0 0 1 
+CS.E4 0 0 0 0 0 0 0 1 0 0 0 1 
+CS.E5 0 0 0 0 0 0 1 0 0 0 0 1 
+CS.E6 0 0 0 0 0 1 0 0 0 0 0 1 
+CS.E7 0 0 0 0 1 0 0 0 0 0 0 1 
+CS.E8 0 0 0 1 0 0 0 0 0 0 0 1 
+CS.E9 0 0 1 0 0 0 0 0 0 0 0 1 
+CS.E10 0 1 0 0 0 0 0 0 0 0 0 1 
+CS.E11 1 0 0 0 0 0 0 0 0 0 0 1 

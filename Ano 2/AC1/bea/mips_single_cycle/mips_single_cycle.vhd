@@ -17,7 +17,7 @@ entity mips_single_cycle is
 			HEX4 : out std_logic_vector(6 downto 0); 
 			HEX5 : out std_logic_vector(6 downto 0); 
 			HEX6 : out std_logic_vector(6 downto 0); 
-			HEX7 : out std_logic_vector(6 downto 0) );
+			HEX7 : out std_logic_vector(6 downto 0));
 end mips_single_cycle;
 
 architecture Structural of mips_single_cycle is 
@@ -50,9 +50,9 @@ begin
 
 	-- Debouncer
 	debnc: entity work.DebounceUnit(Behavioral)
-	generic map( mSecMinInWidth =>200, 
-					 inPolarity => '0', 
-					 outPolarity => '1')
+	generic map( mSecMinInWidth => 200, 
+					 inPolarity     => '0', 
+					 outPolarity    => '1')
 	port map( refClk    => CLOCK_50,
 				 dirtyIn   => KEY(0),
 				 pulsedOut => s_clk);

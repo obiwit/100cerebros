@@ -8,6 +8,12 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 - **MPEI** (Métodos Probabilísticos para Engenharia Informática)
 - <del>**MCE** (Mecânica e Campos Electromagnéticos)</del>
 
+### 2º Semestre
+- **AC2** (Arquitetura de Computadores 2)
+- <del>**AlgC** (Algoritmos e Complexidade)</del>
+- <del>**SE** (Sistemas Eletrónicos)</del>
+- <del>**LFA** (Linguagens Formais e Autómatos)</del>
+
 ## Ano 1
 ### 1º Semestre
 - <del>**P1** (Programação 1)</del>

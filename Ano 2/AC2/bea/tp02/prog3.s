@@ -11,8 +11,9 @@
 		.equ READ_CORE_TIMER, 11 
 		.equ RESET_CORE_TIMER, 12
 
-		.equ READ_FREQUENCY_Hz, 2
-		.equ TARGET_CORE_VAL, 20000000/READ_FREQUENCY_Hz
+#		.equ READ_FREQUENCY_Hz, 2								# -- nevermind --
+#		.equ TARGET_CORE_VAL, 20000000/READ_FREQUENCY_Hz		# -- nevermind --
+		.equ TARGET_CORE_VAL, 20000
 
 		.data
 
@@ -24,9 +25,9 @@ main: 	addu $sp, $sp, -4
 
 while:	lui $t1,0xBF88					# while(1) {
 		lw $t2,0x6050($t1)				# // read switch value
-
+		andi $t2, $t2, 0x0000000F		# ignore everything but the switch value
 		# for testing purposes
-		# li $t2, 14
+		# li $t2, 4
 
 		move $a0, $t2
 		li $a1, 0x00040002
@@ -37,8 +38,10 @@ while:	lui $t1,0xBF88					# while(1) {
 		li $v0, PUT_CHAR 				#
 		syscall							#  putChar('\n');
 
-		li $t1, 20000000				#
-		div $a0, $t1, $t2				# target core value for delay is 20000000/$t2
+		addi $t2, $t2, 1				#
+		# li $t1, 20000000				# -- nevermind --
+		li $t1, 1000					#
+		div $a0, $t1, $t2				# -- nevermind -- target core value for delay is 20000000/$t2
 		jal delay						# delay(target_val);
 
 		j while							# }
@@ -49,21 +52,40 @@ while:	lui $t1,0xBF88					# while(1) {
         jr $ra                 		 	# return 0;
 
 
+
+
+delay:
+whiled: beq $a0, $0, endw						# while(ms > 0) {
+
+		li $v0, RESET_CORE_TIMER				#
+		syscall 								#   resetCoreTimer();
+
+wait:	li $v0, READ_CORE_TIMER 				#
+		syscall 								#
+		blt $v0, TARGET_CORE_VAL, wait 			#   while(readCoreTimer() < 20000);
+ 
+		addi $a0, $a0, -1						#   ms--;
+		j whiled								# }
+
+endw:	jr $ra
+
+
+												# -- nevermind (below) -- 
 # *****************************************************************
 # void delay(target_val) {
 #   resetCoreTimer();
 #   while(readCoreTimer() < target_val);
 # }
 
-delay: 	
-		li $v0, RESET_CORE_TIMER				#
-		syscall 								#   resetCoreTimer();
+# delay: 	
+# 		li $v0, RESET_CORE_TIMER				#
+# 		syscall 								#   resetCoreTimer();
 
-wait:	li $v0, READ_CORE_TIMER 				#
-		syscall 								#
-		blt $v0, $a0, wait 						#   while(readCoreTimer() < target_val);
+# wait:	li $v0, READ_CORE_TIMER 				#
+# 		syscall 								#
+# 		blt $v0, $a0, wait 						#   while(readCoreTimer() < target_val);
 
-		jr $ra
+# 		jr $ra
 
 
 

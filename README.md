@@ -12,7 +12,7 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 - **AC2** (Arquitetura de Computadores 2)
 - **AlgC** (Algoritmos e Complexidade)
 - <del>**SE** (Sistemas Eletrónicos)</del>
-- <del>**LFA** (Linguagens Formais e Autómatos)</del>
+- **LFA** (Linguagens Formais e Autómatos)
 
 ## Ano 1
 ### 1º Semestre

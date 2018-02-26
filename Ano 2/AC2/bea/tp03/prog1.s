@@ -24,7 +24,6 @@ main:	lui $t1, SFR_BASE_HI 			#
 		ori $t2, $t2, 0x000F 			# MODIFY (bit0 to bit3=1 (1 means INPUT))
 		sw $t2, TRISB($t1)				# WRITE (Write TRISE register)
 
-		lw $t2, LATB($t1)				# READ LATB register
 		lw $t0, PORTB($t1)				# READ PORTB value
 		andi $t0, $t0, 0x000F			# READ only bits 3 to 0
 

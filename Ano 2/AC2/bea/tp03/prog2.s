@@ -52,14 +52,14 @@ while:									# while(1) {
 
 		xori $s0, $s0, 0x0001			# v ^= 1;  // complementa o bit 0 de v (v = v xor 1)
 
-		move $a0, $s0
-		li $a1, 0x00040002
-		li $v0, PRINT_INT
-		syscall	
+		move $a0, $s0					#
+		li $a1, 0x00040002				#
+		li $v0, PRINT_INT				#
+		syscall							#
 
 		li $a0, '\n' 					# 
 		li $v0, PUT_CHAR 				#
-		syscall							#  putChar('\n');
+		syscall							#  print the values from the DIP switch
 
 		j while 						# 	  } 
 

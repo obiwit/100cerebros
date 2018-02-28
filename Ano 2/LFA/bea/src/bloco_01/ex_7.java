@@ -23,6 +23,7 @@ public class ex_7 {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 }
@@ -37,12 +38,12 @@ class ExpressionTree {
 	 * @param expression
 	 */
 	public ExpressionTree(String expression) {
+		if (expression.trim().isEmpty()) return;
 		populate(expression);
 	}
 	private ExpressionTree() {}
-	private String populate(String exp) {
-		if (exp.trim().isEmpty()) return "";
-		
+	private String populate(String exp) { // can be simplified
+		// assert !exp.isEmpty();
 		String[] expParts = exp.split(" ", 2);
 		if(expParts[0].matches("[-+*/]")) { // operation
 			// check at least two operands remain, otherwise throw an exception

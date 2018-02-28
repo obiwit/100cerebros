@@ -19,7 +19,16 @@ public class ex_5 {
 		
 		while(true) {
 			System.out.print(" -> ");
-			String[] in = sc.nextLine().split(" ");
+			String[] in = sc.nextLine().split("[ ]+");
+			
+			// handle variable name
+			if (in.length == 1 && variables.containsKey(in[0])) {
+				prevResult = variables.get(in[0]);
+				System.out.println(">> " + prevResult);
+				continue;
+			}
+			
+			// handle expressions
 			try {
 				String operator = in[1];
 				switch(operator) {
@@ -31,9 +40,15 @@ public class ex_5 {
 					System.out.println(">> " + prevResult);
 					break;
 				case "=":
-					prevResult = parseAssignment(in);
-					variables.put(in[0], prevResult);
-					System.out.println(">> " + in[0] + " = " + prevResult);
+					// guarantee variable is a number
+					try { 
+						Double.parseDouble(in[0]);
+						System.out.println("Illegal left value!");
+					} catch(Exception e) {
+						prevResult = parseAssignment(in);
+						variables.put(in[0], prevResult);
+						System.out.println(">> " + in[0] + " = " + prevResult);
+					}
 					break;
 				default:
 					System.err.println("Wrong usage - unsupported format.");
@@ -67,15 +82,21 @@ public class ex_5 {
 	 */
 	public static double simpleCalculator(String[] line) {
 		String operator = line[1];
+		double operandOne = getOperand(line[0]);
+		double operandTwo = getOperand(line[line.length-1]);
+		if (line.length > 3) {
+			operandOne = simpleCalculator(Arrays.copyOfRange(line, 0, line.length - 2));
+			operator = line[line.length-2];
+		}
 		switch(operator) {
 		case "+":
-			return getOperand(line[0]) + getOperand(line[2]);
+			return operandOne + operandTwo;
 		case "-":
-			return getOperand(line[0]) - getOperand(line[2]);
+			return operandOne - operandTwo;
 		case "/":
-			return getOperand(line[0]) / getOperand(line[2]);
+			return operandOne / operandTwo;
 		case "*":
-			return getOperand(line[0]) * getOperand(line[2]);
+			return operandOne * operandTwo;
 		default:
 			System.err.println("Wrong usage - unsupported format.");
 			return Double.NaN;

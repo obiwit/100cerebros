@@ -24,15 +24,17 @@ main:	lui $t1, SFR_BASE_HI 			#
 		ori $t2, $t2, 0x000F 			# MODIFY (bit0 to bit3=1 (1 means INPUT))
 		sw $t2, TRISB($t1)				# WRITE (Write TRISE register)
 
-		lw $t0, PORTB($t1)				# READ PORTB value
+while:	lw $t0, PORTB($t1)				# READ PORTB value
 		andi $t0, $t0, 0x000F			# READ only bits 3 to 0
+
+		xori $t0, 0x0009				# invert bits 0 and 3
 
 		lw $t2, LATE($t1) 				# READ (Read LATE register)
 		andi $t2, $t2, 0xFFF0 			# MODIFY bits 3 to 0
 		or $t2, $t2, $t0				# 
 		sw $t2, LATE($t1)				# WRITE (Write LATE register)
 
-		move $a0, $t2
+		move $a0, $t0
 		li $a1, 0x00040002
 		li $v0, PRINT_INT
 		syscall	
@@ -42,7 +44,7 @@ main:	lui $t1, SFR_BASE_HI 			#
 		syscall							#  putChar('\n');
 
 
-		j main
+		j while
 
 
 

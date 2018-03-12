@@ -6,7 +6,7 @@ int count_elements(int* a, int len) {
 	int counter = 0;
 	for(int i = 1; i < len; i++) {
 		COMP_NUM++;
-		if (a[i-1] == a[i])
+		if (a[i-1] != a[i])
 			counter++;
 	}
 	return counter;

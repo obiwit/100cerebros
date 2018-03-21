@@ -1,6 +1,8 @@
 grammar Calculator;
 
-main: (expr NEWLINE | NEWLINE)* EOF;
+main: (stat | NEWLINE)* EOF;
+
+stat: expr NEWLINE;
 
 expr: expr op=('*' | '/') expr 		#MulDiv
 	| expr op=('+' | '-') expr 		#AddSub

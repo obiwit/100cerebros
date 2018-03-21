@@ -1,0 +1,58 @@
+#### Grammar name
+
+GRAMMAR = # The grammar name
+
+#### Visitors and Listeners (if any)
+
+MY_LISTENER = # My Listener class name
+MY_VISITOR = # My Visitor class name
+
+#### Uncomment the next lines if using listeners, visitors or a main function
+
+LISTENERS = # $(GRAMMAR)Listener $(GRAMMAR)BaseListener $(MY_LISTENER)
+VISITORS = # $(GRAMMAR)Visitor $(GRAMMAR)BaseVisitor $(MY_VISITOR)
+MAIN = # $(GRAMMAR)Main
+
+# Main target
+
+all: $(CLASS_FILES)
+	@make $(CLASS_FILES)
+
+clean:
+	-rm *.class
+	-rm *.tokens
+	-rm *.interp
+	-rm $(LISTENER_SRC) $(VISITOR_SRC) $(BASE_SRC)
+
+# Don't edit the following lines!!! unless you know what you're doing!
+
+GRAMMAR_FILE = $(GRAMMAR).g4
+BASE_NAMES = $(GRAMMAR)Lexer $(GRAMMAR)Parser
+
+BASE_SRC = $(foreach name,$(BASE_NAMES),$(name).java)
+LISTENER_SRC = $(foreach name,$(LISTENERS),$(name).java)
+VISITOR_SRC = $(foreach name,$(VISITORS),$(name).java)
+MAIN_SRC = $(MAIN).java
+
+BASE_CLASSES = $(foreach name,$(BASE_NAMES),$(name).class)
+LISTENER_CLASSES = $(foreach name,$(LISTENERS),$(name).class)
+VISITOR_CLASSES = $(foreach name,$(VISITORS),$(name).class)
+MAIN_CLASSES = $(foreach name,$(MAIN),$(name).class)
+
+CLASS_FILES = \
+	$(BASE_CLASSES) \
+	$(LISTENER_CLASSES) \
+	$(VISITOR_CLASSES) \
+	$(MAIN_CLASSES)
+
+%.class: %.java
+	javac $^ -Xlint
+
+$(BASE_SRC) $(LISTENER_SRC): $(GRAMMAR_FILE)
+	antlr4 $^
+
+$(VISITOR_SRC): $(GRAMMAR_FILE)
+	antlr4 $^ -visitor
+
+$(MAIN_SRC): 
+	@echo "Run the antlr4-main program for grammar" $(GRAMMAR)

@@ -17,6 +17,16 @@ public interface CalculatorListener extends ParseTreeListener {
 	 */
 	void exitMain(CalculatorParser.MainContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CalculatorParser#stat}.
+	 * @param ctx the parse tree
+	 */
+	void enterStat(CalculatorParser.StatContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculatorParser#stat}.
+	 * @param ctx the parse tree
+	 */
+	void exitStat(CalculatorParser.StatContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code MulDiv}
 	 * labeled alternative in {@link CalculatorParser#expr}.
 	 * @param ctx the parse tree

@@ -31,9 +31,7 @@ void main(void)
 	IPC6bits.AD1IP = 2; 	// configure priority of A/D interrupts
 	IEC1bits.AD1IE = 1; 	// enable A/D interrupts
 	IFS1bits.AD1IF = 0; 	// clear A/D interrupt flag
- 	
-	// Configure interrupt system
-	IFS1bits.AD1IF = 0;		// Reset AD1IF flag
+	
 	EnableInterrupts();		// Global Interrupt Enable
 
 	// Start A/D conversion
@@ -47,9 +45,6 @@ void main(void)
 void _int_(27) isr_adc(void) {
 
 	LATBbits.LATB6 = 0;				// Reset LATB6
-
-	// Start conversion
-	AD1CON1bits.ASAM = 1; 
 
 	// Print ADC1BUF0 value		// Hexadecimal (3 digits format)
 	printInt(ADC1BUF0, 16 | 3 << 16);

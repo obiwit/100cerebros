@@ -53,9 +53,6 @@ void main(void)
     AD1PCFGbits.PCFG6 = 1;    // RB6 set as digital port
     AD1PCFGbits.PCFG4 = 0;    // RB4 configured as analog input (AN4)
 
-    TRISBbits.TRISB6 = 0;       // RB6 digital output disconnected 
-    AD1PCFGbits.PCFG6 = 0;      // RB6 configured as analog input (AN4)
-
     AD1CON1bits.SSRC = 7;       // Conversion trigger selection bits: in this 
                                 // mode an internal counter ends sampling and 
                                 // starts conversion 

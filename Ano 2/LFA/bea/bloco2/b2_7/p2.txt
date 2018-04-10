@@ -1,0 +1,2 @@
+-- did you get greedy?
+C = {1,2,3}

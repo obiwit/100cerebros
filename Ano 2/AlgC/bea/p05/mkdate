@@ -1,0 +1,20 @@
+# makefile para a data
+CC = gcc
+CFLAGS = -Wall
+
+OBJM = date.o
+HEADERS = date.h
+
+OBJECTS = $(OBJM) simdate.o
+EXES = sdate
+
+sdate:	simdate.o $(OBJM)
+	$(CC) $(CFLAGS) simdate.o $(OBJM) -o sdate
+
+$(OBJM):	$(HEADERS)
+
+clean:
+	rm -f $(OBJECTS) *~
+
+cleanall:	clean
+	rm -f $(EXES)

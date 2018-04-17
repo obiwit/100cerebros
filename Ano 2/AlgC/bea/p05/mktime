@@ -1,0 +1,20 @@
+# makefile para o tempo
+CC = gcc
+CFLAGS = -Wall
+
+OBJM = time.o
+HEADERS = time.h
+
+OBJECTS = $(OBJM) simtime.o
+EXES = stime
+
+stime:	simtime.o $(OBJM)
+	$(CC) $(CFLAGS) simtime.o $(OBJM) -o stime
+
+$(OBJM):	$(HEADERS)
+
+clean:
+	rm -f $(OBJECTS) *~
+
+cleanall:	clean
+	rm -f $(EXES)

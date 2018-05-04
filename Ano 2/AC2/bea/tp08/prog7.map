@@ -1,13 +1,43 @@
+Archive member included because of file (symbol)
+
+/opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+                              prog7.o (xprintf)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__adddf3)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_mul_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__muldf3)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_div_df.o)
+                              prog7.o (__divdf3)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_eq_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__eqdf2)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_gt_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__gtdf2)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_ge_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__gedf2)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_lt_df.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__ltdf2)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_si_to_df.o)
+                              prog7.o (__floatsidf)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_df_to_si.o)
+                              /opt/pic32mx/lib/libdetpic32.a(xprintf.o) (__fixdfsi)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_thenan_df.o)
+                              /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o) (__thenan_df)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_pack_df.o)
+                              /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o) (__pack_d)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_unpack_df.o)
+                              /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o) (__unpack_d)
+/opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_fpcmp_parts_df.o)
+                              /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_eq_df.o) (__fpcmp_parts_d)
 
 Microchip PIC32 Memory-Usage Report
 
 kseg0 Program-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.text                   0x9d001400          0x9d4        2516  Application's executable code 
-.rodata                 0x9d001dd4           0x28          40  Read-only constant data 
-.sdata                  0x9d001dfc            0x8           8  Small data-initialization template 
-      Total kseg0_program_mem used  :       0xa04        2564  0.5% of 0x7ec00
+.text                   0x9d001400         0x283c       10300  Application's executable code 
+.rodata                 0x9d003c40          0x120         288  Read-only constant data 
+.sdata                  0x9d003d60            0xc          12  Small data-initialization template 
+      Total kseg0_program_mem used  :      0x2968       10600  2.0% of 0x7ec00
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -21,27 +51,28 @@ section                    address  length [bytes]      (dec)  Description
 .app_excpt              0x9d000180           0x14          20  General-Exception handler 
 .vector_4               0x9d000280            0x8           8  Interrupt Vector 4 
 .vector_12              0x9d000380            0x8           8  Interrupt Vector 12 
+.vector_24              0x9d000500            0x8           8  Interrupt Vector 24 
 .vector_27              0x9d000560            0x8           8  Interrupt Vector 27 
-          Total exception_mem used  :        0x2c          44  1.1% of 0x1000
+          Total exception_mem used  :        0x34          52  1.3% of 0x1000
 
 kseg1 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
          Total kseg1_boot_mem used  :           0           0  <1% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :       0xce0        3296  0.6% of 0x80480
+         Total Program Memory used  :      0x2c4c       11340  2.2% of 0x80480
         --------------------------------------------------------------------------
 
 
 kseg1 Data-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.sdata                  0xa0000000            0x8           8  Small initialized data 
-.sbss                   0xa0000008            0xc          12  Small uninitialized data 
-.stack                  0xa0000018         0x2000        8192  Minimum space reserved for stack 
-         Total kseg1_data_mem used  :      0x2014        8212  6.3% of 0x20000
+.sdata                  0xa0000000            0xc          12  Small initialized data 
+.sbss                   0xa000000c           0x10          16  Small uninitialized data 
+.stack                  0xa0000020         0x2000        8192  Minimum space reserved for stack 
+         Total kseg1_data_mem used  :      0x201c        8220  6.3% of 0x20000
         --------------------------------------------------------------------------
-            Total Data Memory used  :      0x2014        8212  6.3% of 0x20000
+            Total Data Memory used  :      0x201c        8220  6.3% of 0x20000
         --------------------------------------------------------------------------
 
 Memory Configuration
@@ -212,8 +243,9 @@ LOAD /opt/pic32mx/lib/startup.o
  *(.vector_23)
                 0x0000000000000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_23) <= (_vector_spacing << 0x5))), function at exception vector 23 too large)
 
-.vector_24      0x000000009d000500        0x0
+.vector_24      0x000000009d000500        0x8
  *(.vector_24)
+ .vector_24     0x000000009d000500        0x8 prog7.o
                 0x0000000000000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_24) <= (_vector_spacing << 0x5))), function at exception vector 24 too large)
 
 .vector_25      0x000000009d000520        0x0
@@ -373,53 +405,95 @@ LOAD /opt/pic32mx/lib/startup.o
  *(.vector_63)
                 0x0000000000000001                ASSERT (((_vector_spacing == 0x0) || (SIZEOF (.vector_63) <= (_vector_spacing << 0x5))), function at exception vector 63 too large)
 
-.text           0x000000009d001400      0x9d4
+.text           0x000000009d001400     0x283c
                 0x000000009d001400                _text_begin = .
  *(.text .stub .text.* .gnu.linkonce.t.*)
- .text          0x000000009d001400      0x924 prog7.o
-                0x000000009d001a00                isr_T3
-                0x000000009d001638                configUART
-                0x000000009d00177c                send2displays
-                0x000000009d001ba4                isr_adc
-                0x000000009d00193c                isr_T1
-                0x000000009d0018a0                main
+ .text          0x000000009d001400      0xbd8 prog7.o
+                0x000000009d001a1c                isr_T3
+                0x000000009d001654                configUART
+                0x000000009d001798                send2displays
+                0x000000009d001bb8                isr_uart1
+                0x000000009d001e2c                isr_adc
+                0x000000009d001958                isr_T1
+                0x000000009d0018bc                main
                 0x000000009d001400                configIO
-                0x000000009d001848                setPWM
-                0x000000009d001874                put1char
- .text          0x000000009d001d24       0xb0 /opt/pic32mx/lib/startup.o
-                0x000000009d001d94                printStr
-                0x000000009d001d74                printInt
-                0x000000009d001d54                readInt
-                0x000000009d001dcc                resetCoreTimer
-                0x000000009d001d44                putChar
-                0x000000009d001da4                readStr
-                0x000000009d001d84                printInt10
-                0x000000009d001d24                inkey
-                0x000000009d001db4                exit
-                0x000000009d001d34                getChar
-                0x000000009d001d64                readInt10
-                0x000000009d001dc4                readCoreTimer
+                0x000000009d001864                setPWM
+                0x000000009d001890                put1char
+ .text          0x000000009d001fd8      0x9b0 /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+                0x000000009d002000                xprintf
+ .text          0x000000009d002988      0x3e0 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o)
+                0x000000009d002c9c                __adddf3
+                0x000000009d002cfc                __subdf3
+ .text          0x000000009d002d68      0x358 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_mul_df.o)
+                0x000000009d002d68                __muldf3
+ .text          0x000000009d0030c0      0x238 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_div_df.o)
+                0x000000009d0030c0                __divdf3
+ .text          0x000000009d0032f8       0x90 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_eq_df.o)
+                0x000000009d0032f8                __eqdf2
+ .text          0x000000009d003388       0x90 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_gt_df.o)
+                0x000000009d003388                __gtdf2
+ .text          0x000000009d003418       0x90 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_ge_df.o)
+                0x000000009d003418                __gedf2
+ .text          0x000000009d0034a8       0x90 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_lt_df.o)
+                0x000000009d0034a8                __ltdf2
+ .text          0x000000009d003538       0xc8 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_si_to_df.o)
+                0x000000009d003538                __floatsidf
+ .text          0x000000009d003600       0xd4 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_df_to_si.o)
+                0x000000009d003600                __fixdfsi
+ .text          0x000000009d0036d4      0x234 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_pack_df.o)
+                0x000000009d0036d4                __pack_d
+ .text          0x000000009d003908      0x11c /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_unpack_df.o)
+                0x000000009d003908                __unpack_d
+ .text          0x000000009d003a24      0x168 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_fpcmp_parts_df.o)
+                0x000000009d003a24                __fpcmp_parts_d
+ .text          0x000000009d003b8c       0xb0 /opt/pic32mx/lib/startup.o
+                0x000000009d003bfc                printStr
+                0x000000009d003bdc                printInt
+                0x000000009d003bbc                readInt
+                0x000000009d003c34                resetCoreTimer
+                0x000000009d003bac                putChar
+                0x000000009d003c0c                readStr
+                0x000000009d003bec                printInt10
+                0x000000009d003b8c                inkey
+                0x000000009d003c1c                exit
+                0x000000009d003b9c                getChar
+                0x000000009d003bcc                readInt10
+                0x000000009d003c2c                readCoreTimer
  *(.text.*personality*)
  *(.gnu.warning)
  *(.mips16.fn.*)
  *(.mips16.call.*)
-                0x000000009d001dd4                _text_end = .
+                0x000000009d003c3c                _text_end = .
 
-.rodata         0x000000009d001dd4       0x28
+.rodata         0x000000009d003c40      0x120
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x000000009d001dd4       0x10 prog7.o
- .rodata        0x000000009d001de4       0x15 /opt/pic32mx/lib/startup.o
+ .rodata        0x000000009d003c40       0x10 prog7.o
+ .rodata.str1.4
+                0x000000009d003c50       0x18 prog7.o
+ .rodata.cst8   0x000000009d003c68        0x8 prog7.o
+ .rodata.str1.4
+                0x000000009d003c70       0x11 /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+                                         0x14 (size before relaxing)
+ *fill*         0x000000009d003c81        0x7 00
+ .rodata.cst8   0x000000009d003c88       0x18 /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+                                         0x20 (size before relaxing)
+ .rodata        0x000000009d003ca0       0x84 /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+ *fill*         0x000000009d003d24        0x4 00
+ .rodata.cst8   0x000000009d003d28        0x8 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_si_to_df.o)
+ .rodata        0x000000009d003d30       0x18 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_thenan_df.o)
+                0x000000009d003d30                __thenan_df
+ .rodata        0x000000009d003d48       0x15 /opt/pic32mx/lib/startup.o
  *(.rodata1)
-                0x000000009d001dfc                . = ALIGN (0x4)
- *fill*         0x000000009d001df9        0x3 00
+                0x000000009d003d60                . = ALIGN (0x4)
+ *fill*         0x000000009d003d5d        0x3 00
 
-.sdata2         0x000000009d001dfc        0x0
+.sdata2         0x000000009d003d60        0x0
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x000000009d001dfc                . = ALIGN (0x4)
+                0x000000009d003d60                . = ALIGN (0x4)
 
-.sbss2          0x000000009d001dfc        0x0
+.sbss2          0x000000009d003d60        0x0
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
-                0x000000009d001dfc                . = ALIGN (0x4)
+                0x000000009d003d60                . = ALIGN (0x4)
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -430,12 +504,12 @@ LOAD /opt/pic32mx/lib/startup.o
 .dbg_data       0x00000000a0000000        0x0
                 0x00000000a0000000                . = (. + DEFINED (_DEBUGGER)?0x200:0x0)
 
-.data           0x00000000a0000000        0x0 load address 0x000000009d001dfc
+.data           0x00000000a0000000        0x0 load address 0x000000009d003d60
                 0x00000000a0000000                _data_begin = .
  *(.data .data.* .gnu.linkonce.d.*)
  *(.gnu.linkonce.d.*personality*)
  *(.data1)
-                0x000000009d001dfc                _data_image_begin = LOADADDR (.data)
+                0x000000009d003d60                _data_image_begin = LOADADDR (.data)
 
 .eh_frame
  *(.eh_frame)
@@ -445,60 +519,61 @@ LOAD /opt/pic32mx/lib/startup.o
  *(.got.plt)
  *(.got)
 
-.sdata          0x00000000a0000000        0x8 load address 0x000000009d001dfc
+.sdata          0x00000000a0000000        0xc load address 0x000000009d003d60
                 0x00000000a0000000                _sdata_begin = .
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x00000000a0000000        0x8 prog7.o
-                0x00000000a0000008                _sdata_end = .
+ .sdata         0x00000000a0000000        0xc prog7.o
+                0x00000000a0000000                voltMin
+                0x00000000a000000c                _sdata_end = .
 
 .lit8
  *(.lit8)
 
 .lit4
  *(.lit4)
-                0x00000000a0000008                . = ALIGN (0x4)
-                0x00000000a0000008                _data_end = .
-                0x00000000a0000008                _bss_begin = .
+                0x00000000a000000c                . = ALIGN (0x4)
+                0x00000000a000000c                _data_end = .
+                0x00000000a000000c                _bss_begin = .
 
-.sbss           0x00000000a0000008        0xc
-                0x00000000a0000008                _sbss_begin = .
+.sbss           0x00000000a000000c       0x10
+                0x00000000a000000c                _sbss_begin = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x00000000a0000008        0xc prog7.o
-                0x00000000a0000008                aux
-                0x00000000a000000c                voltage
+ .sbss          0x00000000a000000c       0x10 prog7.o
+                0x00000000a000000c                voltMax
+                0x00000000a0000010                voltage
  *(.scommon)
-                0x00000000a0000014                _sbss_end = .
+                0x00000000a000001c                _sbss_end = .
 
-.bss            0x00000000a0000014        0x0
+.bss            0x00000000a000001c        0x0
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
  *(COMMON)
-                0x00000000a0000014                . = ALIGN (0x4)
-                0x00000000a0000014                . = ALIGN (0x4)
-                0x00000000a0000014                _end = .
-                0x00000000a0000014                _bss_end = .
+                0x00000000a000001c                . = ALIGN (0x4)
+                0x00000000a000001c                . = ALIGN (0x4)
+                0x00000000a000001c                _end = .
+                0x00000000a000001c                _bss_end = .
 
-.persist        0x00000000a0000014        0x0
+.persist        0x00000000a000001c        0x0
  *(.persist)
-                0x00000000a0000014                . = ALIGN (0x4)
+                0x00000000a000001c                . = ALIGN (0x4)
 
-.heap           0x00000000a0000014        0x0
-                0x00000000a0000014                _heap = .
-                0x00000000a0000014                . = (. + _min_heap_size)
+.heap           0x00000000a000001c        0x0
+                0x00000000a000001c                _heap = .
+                0x00000000a000001c                . = (. + _min_heap_size)
 
-.stack          0x00000000a0000018     0x2000
-                0x00000000a0000018                _splim = .
-                0x00000000a0000018                _SPLIM = .
-                0x00000000a0002018                . = (. + _min_stack_size)
- *fill*         0x00000000a0000018     0x2000 00
+.stack          0x00000000a0000020     0x2000
+                0x00000000a0000020                _splim = .
+                0x00000000a0000020                _SPLIM = .
+                0x00000000a0002020                . = (. + _min_stack_size)
+ *fill*         0x00000000a0000020     0x2000 00
 
-.ramfunc        0x00000000a0002800        0x0 load address 0x000000009d001e04
+.ramfunc        0x00000000a0002800        0x0 load address 0x000000009d003d6c
                 0x00000000a0002800                _ramfunc_begin = .
  *(.ramfunc .ramfunc.*)
                 0x00000000a0002800                . = ALIGN (0x4)
                 0x00000000a0002800                _ramfunc_end = .
-                0x000000009d001e04                _ramfunc_image_begin = LOADADDR (.ramfunc)
+                0x000000009d003d6c                _ramfunc_image_begin = LOADADDR (.ramfunc)
                 0x0000000000000000                _ramfunc_length = SIZEOF (.ramfunc)
                 0x0000000000002800                _bmxdkpba_address = (_ramfunc_begin - 0xa0000000)
                 0x0000000000020000                _bmxdudba_address = 0x20000
@@ -506,9 +581,22 @@ LOAD /opt/pic32mx/lib/startup.o
                 0x00000000a0020000                _stack = (_ramfunc_length > 0x0)?(_ramfunc_begin - 0x4):0xa0020000
                 0x0000000000000001                ASSERT (((_min_stack_size + _min_heap_size) <= (_stack - _heap)), Not enough space to allocate both stack and heap.  Reduce heap and/or stack size.)
 
-.pdr            0x0000000000000000      0x180
+.pdr            0x0000000000000000      0x3c0
  *(.pdr)
- .pdr           0x0000000000000000      0x180 prog7.o
+ .pdr           0x0000000000000000      0x1c0 prog7.o
+ .pdr           0x00000000000001c0       0x40 /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+ .pdr           0x0000000000000200       0x60 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o)
+ .pdr           0x0000000000000260       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_mul_df.o)
+ .pdr           0x0000000000000280       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_div_df.o)
+ .pdr           0x00000000000002a0       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_eq_df.o)
+ .pdr           0x00000000000002c0       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_gt_df.o)
+ .pdr           0x00000000000002e0       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_ge_df.o)
+ .pdr           0x0000000000000300       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_lt_df.o)
+ .pdr           0x0000000000000320       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_si_to_df.o)
+ .pdr           0x0000000000000340       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_df_to_si.o)
+ .pdr           0x0000000000000360       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_pack_df.o)
+ .pdr           0x0000000000000380       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_unpack_df.o)
+ .pdr           0x00000000000003a0       0x20 /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_fpcmp_parts_df.o)
 
 .reginfo        0x0000000000000000       0x18
  *(.reginfo)
@@ -532,9 +620,23 @@ LOAD /opt/pic32mx/lib/startup.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000       0x4d
+.comment        0x0000000000000000      0x483
  *(.comment)
  .comment       0x0000000000000000       0x4d prog7.o
+ .comment       0x000000000000004d       0x4d /opt/pic32mx/lib/libdetpic32.a(xprintf.o)
+ .comment       0x000000000000009a       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_addsub_df.o)
+ .comment       0x00000000000000e7       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_mul_df.o)
+ .comment       0x0000000000000134       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_div_df.o)
+ .comment       0x0000000000000181       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_eq_df.o)
+ .comment       0x00000000000001ce       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_gt_df.o)
+ .comment       0x000000000000021b       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_ge_df.o)
+ .comment       0x0000000000000268       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_lt_df.o)
+ .comment       0x00000000000002b5       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_si_to_df.o)
+ .comment       0x0000000000000302       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_df_to_si.o)
+ .comment       0x000000000000034f       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_thenan_df.o)
+ .comment       0x000000000000039c       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_pack_df.o)
+ .comment       0x00000000000003e9       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_unpack_df.o)
+ .comment       0x0000000000000436       0x4d /opt/pic32mx/lib/gcc/pic32mx/3.4.4/libgcc.a(_fpcmp_parts_df.o)
 
 .debug
  *(.debug)
@@ -591,4 +693,4 @@ LOAD /opt/pic32mx/lib/startup.o
  *(.note.GNU-stack)
 OUTPUT(prog7.elf elf32-tradlittlemips)
 
-.mdebug.abi32   0x000000009d001e04        0x0
+.mdebug.abi32   0x000000009d003d6c        0x0

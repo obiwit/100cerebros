@@ -41,8 +41,10 @@ void configIO()
 
 	// UART1
 	IPC6bits.U1IP = 2;		// configure priority of interrupts
-	IFS0bits.U1RXIF = 0;	// clear interrupt flag 
-	IEC0bits.U1RXIE = 1;	// enable interrupts
+	IFS0bits.U1RXIF = 0;	// clear interrupt flag (receive)
+	IFS0bits.U1EIF = 0; 	// clear interrupt flag (error)
+	IEC0bits.U1RXIE = 1;	// enable interrupts (receive)
+	IEC0bits.U1EIE = 1;		// enable interrupts (error)
 
 	// Configure the A/D module and port RB4 as analog input
 	TRISBbits.TRISB4 = 1;	  			// RB4 digital output disconnected
@@ -198,7 +200,38 @@ void _int_(12) isr_T3(void) // timer T3
 	IFS0bits.T3IF = 0;
 }
 
-// Interrupt Handler
+// GetChar
+void _int_(24) isr_uart1(void) {
+	// handle errors 
+
+	// If U1EIF set then
+	if (IFS0bits.U1EIF == 1) {
+	    //    if overrun error then clear OERR flag
+	    if (U1STAbits.OERR == 1) {
+	    	U1STAbits.OERR = 0;
+	    }
+	    else {
+	    	//    else read U1RXREG to a dummy variable
+	    	char c = U1RXREG;
+	    }
+
+	    //    clear UART1 error interrupt flag
+	    IFS0bits.U1EIF = 0;
+	}
+
+	// Else it's U1RXIF
+	char c = U1RXREG;
+    put1char(c);
+
+    if(c == 'L') {
+    	printf("\nV min = %f\nV max = %f\n", voltMin/10.0, voltMax/10.0);
+    }
+
+    // Clear UART1 rx interrupt flag
+    IFS0bits.U1RXIF = 0;
+}
+
+// ADC Interrupt Handler
 void _int_(27) isr_adc(void) {
 
 	// Calculate buffer average (8 samples)
@@ -217,7 +250,10 @@ void _int_(27) isr_adc(void) {
     int V = (volt*33+511)/1023;
 
     // Update variables "voltMin" and "voltMax"
-    if (voltMin )
+    if (voltMin > V)
+    	voltMin = V;
+    else if (voltMax < V)
+    	voltMax = V;
 
     int whole_part =  V / 10;
     int decimal_part = V % 10;

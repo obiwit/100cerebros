@@ -41,3 +41,4 @@ char i2c1_receive(char ack_bit)
 
 	return I2C1RCV;
 }
+

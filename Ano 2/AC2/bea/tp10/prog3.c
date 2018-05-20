@@ -5,6 +5,7 @@ volatile int voltage = 0; 	 // Global variable
 static int sample_num = 8;	 // Number of samples ADC takes
 static int K3 = 49999;		 // controls K value for Timer 3
 volatile int temperature;
+volatile int showTemperature = 0;
 
 void configIO() 
 {
@@ -81,7 +82,7 @@ void send2displays(unsigned char value)
     {
         LATDbits.LATD5 = 0; LATDbits.LATD6 = 1;
         LATB = (LATB & 0x00FF) | ((int)display7Scodes[digit_high] << 8);
-        LATBbits.LATB15 = 1;
+        LATBbits.LATB15 = (showTemperature)? 0 : 1;
     }
     // toggle "displayFlag" variable
     displayFlag = !displayFlag;
@@ -128,29 +129,39 @@ void main(void)
 	configIO();
 	EnableInterrupts(); // Global Interrupt Enable 
 
+	// for temperature sensor
+	i2c1_init(TC74_CLK_FREQ);
+
 	while(1)
-	{
+	{		
 		// Read RB1, RB0 to the variable "portVal"
 		unsigned char portVal = PORTB & 0x0003;
 		switch(portVal)
 		{
 		 case 0:  	// Measure input voltage
+			showTemperature = 0;
 		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
 		    setPWM(0);  		// LED OFF
 		    break;
 
 		case 1: 	// Freeze
+			showTemperature = 0;
 			IEC0bits.T1IE = 0;	// Disable T1 interrupts
 			setPWM(100);		// LED ON (maximum bright) 
 			break;
-		case 3:		// Print Temperature
-			send2displays(temperature);
-	 	default: 	// LED brigthness control
+			
+	 	case 2: 	// LED brigthness control
+			showTemperature = 0;
 		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
 		    dutyCycle = voltage * 3;
 		    setPWM(dutyCycle);
 			break; 
 		}
+
+		case 3:		// Print Temperature
+			showTemperature = 1;
+		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
+			break;
 	} 
 }
 
@@ -168,8 +179,10 @@ void _int_(4) isr_T1(void) // timer T1
 
 void _int_(12) isr_T3(void) // timer T3
 {
-	// Send "voltage" global variable to displays
-	send2displays(voltage);
+	if (showTemperature)
+		send2displays(((temperature/10) & 0x000F) << 4 | ((temperature%10) & 0x000F));
+	else
+		send2displays(voltage);
 
 	// Reset T3 interrupt flag
 	IFS0bits.T3IF = 0;
@@ -184,11 +197,11 @@ void _int_(27) isr_adc(void) {
  	int *p = (int *)(&ADC1BUF0); 
 	int i;
 	for(i = 0; i < sample_num; i++) {
-		printInt(p[i*4], 10); 
+	//	printInt(p[i*4], 10); 
 		volt += p[i*4];
-		putChar(' ');
+	//	putChar(' ');
 	}
-	putChar('\n');
+	// putChar('\n');
 
     // Calculate voltage amplitude
     volt /= sample_num;

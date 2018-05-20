@@ -39,7 +39,7 @@ int main(void)
 	i2c1_init(TC74_CLK_FREQ);
 	while(1)
 	{
-		if(getTemperature(&temperature) == 0) break;
+		if(getTemperature(&temperature) != 0) return 1;
 
 		// Print "temperature" variable (syscall printInt10)
 		printStr("Temperature = ");
@@ -52,8 +52,6 @@ int main(void)
 
 	return 0;
 }
-
-
 
 void delay (int ms)
 {

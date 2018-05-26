@@ -5,7 +5,8 @@ volatile int voltage = 0; 	 // Global variable
 static int sample_num = 8;	 // Number of samples ADC takes
 static int K3 = 49999;		 // controls K value for Timer 3
 volatile int temperature;
-volatile int showTemperature = 0;
+volatile char showTemperature = 0;
+volatile char can_get = 0;
 
 void configIO() 
 {
@@ -136,39 +137,42 @@ void main(void)
 	{		
 		// Read RB1, RB0 to the variable "portVal"
 		unsigned char portVal = PORTB & 0x0003;
+		showTemperature = (portVal == 0x03);
+		putChar(showTemperature+0x30);
 		switch(portVal)
 		{
 		 case 0:  	// Measure input voltage
-			showTemperature = 0;
 		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
 		    setPWM(0);  		// LED OFF
 		    break;
 
 		case 1: 	// Freeze
-			showTemperature = 0;
 			IEC0bits.T1IE = 0;	// Disable T1 interrupts
 			setPWM(100);		// LED ON (maximum bright) 
 			break;
 			
 	 	case 2: 	// LED brigthness control
-			showTemperature = 0;
 		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
 		    dutyCycle = voltage * 3;
 		    setPWM(dutyCycle);
 			break; 
-		}
 
 		case 3:		// Print Temperature
-			showTemperature = 1;
 		    IEC0bits.T1IE = 1; 	// Enable T1 interrupts
+		    if (can_get) 
+		    {
+				// Get Temperature from sensor
+				getTemperature(&temperature);
+				can_get = 0;
+		    }
 			break;
+		}
 	} 
 }
 
 void _int_(4) isr_T1(void) // timer T1 
 {
-	// Get Temperature from sensor
-	getTemperature(&temperature);
+	can_get = 1;
 
 	// Start A/D conversion
 	AD1CON1bits.ASAM = 1;

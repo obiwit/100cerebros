@@ -1,0 +1,28 @@
+# makefile para a arvore ABP (Arvore Binaria de Pesquisa)
+CC = gcc
+CFLAGS = -Wall
+
+OBJM = queue.o stack.o abp.o
+HEADERS = queue.h stack.h abp.h
+
+OBJECTS = $(OBJM) testabp.o simabp.o trababp.o
+EXES = tabp sabp trab
+
+all:	$(EXES)
+
+tabp:	testabp.o $(OBJM)
+	$(CC) $(CFLAGS) testabp.o $(OBJM) -o tabp
+
+sabp:	simabp.o $(OBJM)
+	$(CC) $(CFLAGS) simabp.o $(OBJM) -o sabp
+
+trab:	trababp.o $(OBJM)
+	$(CC) $(CFLAGS) trababp.o $(OBJM) -o trab
+
+$(OBJM):	$(HEADERS)
+
+clean:
+	rm -f $(OBJECTS) *~
+
+cleanall:	clean
+	rm -f $(EXES)

@@ -1,0 +1,142 @@
+------------------------------------------------------------------------------------
+Arvore vazia! - Empty tree!
+---------------------- Testar o DeleteMin ------------------------------------------
+Erro = arvore vazia
+---------------------- Testar o DeleteMax ------------------------------------------
+Erro = arvore vazia
+---------------------- Testar o FloorValue -----------------------------------------
+Erro = arvore vazia
+---------------------- Testar o CeilValue ------------------------------------------
+Erro = arvore vazia
+---------------------- Testar o Elements -------------------------------------------
+Erro = arvore vazia
+---------------------- Testar o Rank -----------------------------------------------
+Erro = arvore vazia
+---------------------- Testar o EvenOdd --------------------------------------------
+Erro = arvore vazia
+------------------------------------------------------------------------------------
+				*
+			65
+				*
+		60
+				*
+			55
+				*
+	50
+				*
+			45
+				*
+		30
+				*
+			25
+				*
+------------------------------------------------------------------------------------
+Numero de nos da arvore (number of nodes) = 7
+Altura da arvore (tree height) = 3
+------------------------------------------------------------------------------------
+---------------------- Testar o DeleteMin ------------------------------------------
+Arvore listada em ordem (inorder traversal) 0 -> 25 30 45 50 55 60 65 
+Arvore listada em ordem (inorder traversal) 1 -> 30 45 50 55 60 65 
+Arvore listada em ordem (inorder traversal) 2 -> 45 50 55 60 65 
+Arvore listada em ordem (inorder traversal) 3 -> 50 55 60 65 
+Arvore listada em ordem (inorder traversal) 4 -> 55 60 65 
+Arvore listada em ordem (inorder traversal) 5 -> 60 65 
+Arvore listada em ordem (inorder traversal) 6 -> 65 
+Arvore listada em ordem (inorder traversal) 7 -> 
+------------------------------------------------------------------------------------
+Arvore vazia! - Empty tree!
+------------------------------------------------------------------------------------
+				*
+			65
+				*
+		60
+				*
+			55
+				*
+	50
+				*
+			45
+				*
+		30
+				*
+			25
+				*
+------------------------------------------------------------------------------------
+Numero de nos da arvore (number of nodes) = 7
+Altura da arvore (tree height) = 3
+------------------------------------------------------------------------------------
+---------------------- Testar o DeleteMax ------------------------------------------
+Arvore listada em ordem (inorder traversal) 0 -> 25 30 45 50 55 60 65 
+Arvore listada em ordem (inorder traversal) 1 -> 25 30 45 50 55 60 
+Arvore listada em ordem (inorder traversal) 2 -> 25 30 45 50 55 
+Arvore listada em ordem (inorder traversal) 3 -> 25 30 45 50 
+Arvore listada em ordem (inorder traversal) 4 -> 25 30 45 
+Arvore listada em ordem (inorder traversal) 5 -> 25 30 
+Arvore listada em ordem (inorder traversal) 6 -> 25 
+Arvore listada em ordem (inorder traversal) 7 -> 
+------------------------------------------------------------------------------------
+Arvore vazia! - Empty tree!
+------------------------------------------------------------------------------------
+				*
+			65
+				*
+		60
+				*
+			55
+				*
+	50
+				*
+			45
+				*
+		30
+				*
+			25
+				*
+------------------------------------------------------------------------------------
+Numero de nos da arvore (number of nodes) = 7
+Altura da arvore (tree height) = 3
+------------------------------------------------------------------------------------
+---------------------- Testar o FloorValue -----------------------------------------
+Floor do 57 = 55
+Floor do 60 = 60
+Floor do 32 = 30
+Floor do 15 Erro = arvore vazia (ou elemento inexistente)
+---------------------- Testar o CeilValue ------------------------------------------
+Ceil do 57 = 60
+Ceil do 30 = 30
+Ceil do 32 = 45
+Ceil do 70 Erro = arvore vazia (ou elemento inexistente)
+---------------------- Testar o Elements -------------------------------------------
+Elementos entre 25 e 65 -> 25 30 45 50 55 60 65 
+Elementos entre 0 e 25 -> 25 
+Elementos entre 65 e 90 -> 65 
+Elementos entre 32 e 57 -> 45 50 55 
+------------------------------------------------------------------------------------
+---------------------- Testar o Rank -----------------------------------------------
+7 elementos menores do que 70
+3 elementos menores do que 50
+0 elementos menores do que 20
+---------------------- Testar o EvenOdd --------------------------------------------
+Arvore composta por pares e impares alternadamente
+------------------------------------------------------------------------------------
+				*
+			65
+				*
+		60
+			*
+	55
+				*
+			45
+				*
+		30
+				*
+			25
+				*
+------------------------------------------------------------------------------------
+Numero de nos da arvore (number of nodes) = 6
+Altura da arvore (tree height) = 3
+------------------------------------------------------------------------------------
+---------------------- Testar o EvenOdd --------------------------------------------
+Arvore nao composta por pares e impares alternadamente
+------------------------------------------------------------------------------------
+

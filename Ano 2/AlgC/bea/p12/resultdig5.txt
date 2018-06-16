@@ -1,0 +1,41 @@
+---------------------- Apresentar Digrafo ---------------------
+Digrafo lido do ficheiro digrafo5.txt
+V = 5 / A = 6
+Vertice  1 >  2 ( 1)  3 ( 5)  4 ( 3) 
+Vertice  2 >  3 ( 6)  4 ( 2) 
+Vertice  3 >  4 ( 4) 
+Vertice  4 > 
+Vertice  5 > 
+---------------------------------------------------------------
+vertice 1 fonte
+vertice 2 normal
+vertice 3 normal
+vertice 4 sumidouro
+vertice 5 desconexo
+---------------------------------------------------------------
+Centralidade do vertice 1 = 0.750000
+Centralidade do vertice 2 = 0.500000
+Centralidade do vertice 3 = 0.250000
+Centralidade do vertice 4 = 0.000000
+Centralidade do vertice 5 = 0.000000
+---------------------------------------------------------------
+Maxima centralidade vertice 1 = 0.750000
+---------------------------------------------------------------
+Media de sucessores dos sucessores do vertice 1 = 1.000000
+Media de sucessores dos sucessores do vertice 2 = 0.500000
+Media de sucessores dos sucessores do vertice 3 = 0.000000
+Media de sucessores -> Aresta inexistente
+Media de sucessores -> Aresta inexistente
+---------------------------------------------------------------
+Vertices desconexos 5 
+---------------------------------------------------------------
+Vertices predecessores do vertice 1 -> nenhum
+Vertices predecessores do vertice 2 -> 1 
+Vertices predecessores do vertice 3 -> 1 2 
+Vertices predecessores do vertice 4 -> 1 2 3 
+Vertices predecessores do vertice 5 -> nenhum
+---------------------------------------------------------------
+Arestas inexistentes (1 - 5) (2 - 1) (2 - 5) (3 - 1) (3 - 2) (3 - 5) (4 - 1) (4 - 2) (4 - 3) (4 - 5) (5 - 1) (5 - 2) (5 - 3) (5 - 4) 
+---------------------------------------------------------------
+
+Prima uma tecla para continuar 

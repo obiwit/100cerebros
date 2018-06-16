@@ -1,0 +1,41 @@
+---------------------- Apresentar Digrafo ---------------------
+Digrafo lido do ficheiro digcomp.txt
+V = 5 / A = 20
+Vertice  1 >  2 ( 1)  3 ( 1)  4 ( 1)  5 ( 1) 
+Vertice  2 >  1 ( 1)  3 ( 1)  4 ( 1)  5 ( 1) 
+Vertice  3 >  1 ( 1)  2 ( 1)  4 ( 1)  5 ( 1) 
+Vertice  4 >  1 ( 1)  2 ( 1)  3 ( 1)  5 ( 1) 
+Vertice  5 >  1 ( 1)  2 ( 1)  3 ( 1)  4 ( 1) 
+---------------------------------------------------------------
+vertice 1 normal
+vertice 2 normal
+vertice 3 normal
+vertice 4 normal
+vertice 5 normal
+---------------------------------------------------------------
+Centralidade do vertice 1 = 1.000000
+Centralidade do vertice 2 = 1.000000
+Centralidade do vertice 3 = 1.000000
+Centralidade do vertice 4 = 1.000000
+Centralidade do vertice 5 = 1.000000
+---------------------------------------------------------------
+Maxima centralidade vertice 1 = 1.000000
+---------------------------------------------------------------
+Media de sucessores dos sucessores do vertice 1 = 4.000000
+Media de sucessores dos sucessores do vertice 2 = 4.000000
+Media de sucessores dos sucessores do vertice 3 = 4.000000
+Media de sucessores dos sucessores do vertice 4 = 4.000000
+Media de sucessores dos sucessores do vertice 5 = 4.000000
+---------------------------------------------------------------
+Nao existem vertices desconexos
+---------------------------------------------------------------
+Vertices predecessores do vertice 1 -> 2 3 4 5 
+Vertices predecessores do vertice 2 -> 1 3 4 5 
+Vertices predecessores do vertice 3 -> 1 2 4 5 
+Vertices predecessores do vertice 4 -> 1 2 3 5 
+Vertices predecessores do vertice 5 -> 1 2 3 4 
+---------------------------------------------------------------
+Nao faltam arestas no digrafo
+---------------------------------------------------------------
+
+Prima uma tecla para continuar 

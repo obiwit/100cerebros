@@ -1,0 +1,61 @@
+1 <- digrafo
+5 <- numero de vertices
+6 <- numero de arestas
+-
+1|
+2|
+3 -- indicadores dos vertices (ordenados)
+4|
+5|
+-
+---------
+1	2	1|
+1	3	5|
+1	4	3 --arestas - triplets do tipo (Vinicial, Vfinal, Custo)
+2	3	6|
+2	4	2|
+3	4	4|
+---------
+
+
+
+--//--
+
+Ponteiros genericos; usar cast para converter no tipo PtVertex ou PtEdge (senao compilador vai-se queixar)
+
+--//--
+
+VertexType nao tem cotacao atribuida (aka vale 0).
+
+--//--
+
+/* vertices aos quais pv esta ligado (por arcos que "saem", hence out degree) / v-1 */
+
+--//--
+
+/* se 1 sair logo; ter ciclo proprio */
+
+--//--
+	
+/* media dos numeros de arcos que saem dos vertices para os quais pv aponta / numero de vertices para os quais pv aponta */
+/* valor medio dos "amigos" dos meus "amigos" */
+/* NO_EDGE = pv nao aponta para ninguem (ver OutDegree), nao faz sentido calcular valor medio => dividir por 0 */
+
+--//--
+
+/* fila vazia se nao ha nenhum */
+/* testar erros de memoria pela queue, etc; (criar queue) */
+
+--//--
+
+/* nao esta disponivel diretamente; comecar por verificar numero de arcos incidentes; 
+		se = a v-1, sao todos; 
+		se = 0, nao e nehum
+		senao, varrer listas de adjacencias*/
+
+--//--
+
+/* lista de arestas que faltam para formar grafo completo;
+		numero de arestas disponiveis em pdig; 
+		numero de arestas que faltam e diferenca entre v(v-1) e numero arestas
+		informacao vai aos pares (Vi, Vf) */

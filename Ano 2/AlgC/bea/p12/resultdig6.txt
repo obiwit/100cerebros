@@ -1,0 +1,46 @@
+---------------------- Apresentar Digrafo ---------------------
+Digrafo lido do ficheiro digrafo6.txt
+V = 6 / A = 7
+Vertice  1 >  2 ( 1) 
+Vertice  2 >  3 ( 3)  4 ( 1) 
+Vertice  3 > 
+Vertice  4 >  3 ( 3) 
+Vertice  5 >  1 ( 2)  2 ( 4)  3 ( 6) 
+Vertice  6 > 
+---------------------------------------------------------------
+vertice 1 normal
+vertice 2 normal
+vertice 3 sumidouro
+vertice 4 normal
+vertice 5 fonte
+vertice 6 desconexo
+---------------------------------------------------------------
+Centralidade do vertice 1 = 0.200000
+Centralidade do vertice 2 = 0.400000
+Centralidade do vertice 3 = 0.000000
+Centralidade do vertice 4 = 0.200000
+Centralidade do vertice 5 = 0.600000
+Centralidade do vertice 6 = 0.000000
+---------------------------------------------------------------
+Maxima centralidade vertice 5 = 0.600000
+---------------------------------------------------------------
+Media de sucessores dos sucessores do vertice 1 = 2.000000
+Media de sucessores dos sucessores do vertice 2 = 0.500000
+Media de sucessores -> Aresta inexistente
+Media de sucessores dos sucessores do vertice 4 = 0.000000
+Media de sucessores dos sucessores do vertice 5 = 1.000000
+Media de sucessores -> Aresta inexistente
+---------------------------------------------------------------
+Vertices desconexos 6 
+---------------------------------------------------------------
+Vertices predecessores do vertice 1 -> 5 
+Vertices predecessores do vertice 2 -> 1 5 
+Vertices predecessores do vertice 3 -> 2 4 5 
+Vertices predecessores do vertice 4 -> 2 
+Vertices predecessores do vertice 5 -> nenhum
+Vertices predecessores do vertice 6 -> nenhum
+---------------------------------------------------------------
+Arestas inexistentes (1 - 3) (1 - 4) (1 - 5) (1 - 6) (2 - 1) (2 - 5) (2 - 6) (3 - 1) (3 - 2) (3 - 4) (3 - 5) (3 - 6) (4 - 1) (4 - 2) (4 - 5) (4 - 6) (5 - 4) (5 - 6) (6 - 1) (6 - 2) (6 - 3) (6 - 4) (6 - 5) 
+---------------------------------------------------------------
+
+Prima uma tecla para continuar 

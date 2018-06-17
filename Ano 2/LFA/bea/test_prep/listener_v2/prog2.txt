@@ -1,0 +1,6 @@
+t1: "Miguel"
+print t1
+t2: input("Nome: ")
+print t1+" "+t2
+
+print ("dia"/"i"/"iii")

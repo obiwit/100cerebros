@@ -1,6 +1,13 @@
 # 100cerebros
 Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 
+## Ano 3
+### 1º Semestre
+- **AMS** (Análise e Modelação de Sistemas)
+- **IIA** (Introdução a Inteligência Artificial)
+- **SO** (Sistemas de Operação)
+- <del>**FR** (Fundamentos de Redes)</del>
+
 ## Ano 2
 ### 1º Semestre
 - **P3** (Programação 3)

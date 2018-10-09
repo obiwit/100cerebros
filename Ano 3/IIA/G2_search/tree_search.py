@@ -58,14 +58,11 @@ class SearchProblem:
 
 # Nos de uma arvore de pesquisa
 class SearchNode:
-    def __init__(self,state,parent,depth):
+    def __init__(self, state, parent, depth, cost):
         self.state = state
         self.parent = parent
         self.depth = depth
-        self.children = []
-
-    def addChildren(self, childs):
-        self.children += childs
+        self.cost = cost
 
     def inParent(self, state):
         if self.parent == None:
@@ -86,12 +83,14 @@ class SearchTree:
     # construtor
     def __init__(self,problem, strategy='breadth'):
         self.problem = problem
-        root = SearchNode(problem.initial, None, 0)
+        root = SearchNode(problem.initial, None, 0, 0)
         self.open_nodes = [root]
         self.strategy = strategy
-        # count expanded and non-expanded nodes
-        # true: folhas das arvores = destino + parents (nos abertos)
-        # temos que adiconar campo de children aos nodes
+
+        self.solCost = 0
+
+        self.nodes = 0
+        self.leafs = 1
 
     # obter o caminho (sequencia de estados) da raiz ate um no
     def get_path(self,node):
@@ -106,18 +105,26 @@ class SearchTree:
         while self.open_nodes != []:
             node = self.open_nodes.pop(0)
             if self.problem.goal_test(node.state):
-                return self.get_path(node), node.depth #self.transitions
+                self.solCost = node.cost
+                self.average_branching = self.leafs/self.nodes
+                return self.get_path(node), node.depth, self.nodes-self.leafs, self.leafs, node.cost
+
             lnewnodes = []
+            self.leafs -= 1
+
             for a in self.problem.domain.actions(node.state):
                 newstate = self.problem.domain.result(node.state,a)
-                lnewnodes += [SearchNode(newstate,node, node.depth+1)]
+                lnewnodes += [SearchNode(newstate,node, node.depth+1, node.cost + self.problem.domain.cost(node.state, a))]
+                self.leafs += 1
+                self.nodes += 1
 
-            childs = [new_n for new_n in lnewnodes if
+            self.add_to_open(new_n for new_n in lnewnodes if
                              not node.inParent(new_n.state)
-                             and (new_n.depth < limit if limit else True)]
-            node.addChildren(childs)
-            self.add_to_open(childs)
-        return None
+                             and (new_n.depth < limit if limit else True))
+
+        self.solCost = None
+        self.average_branching = self.leafs/self.nodes
+        return None, None, self.nodes-self.leafs, self.leafs, None
 
     # juntar novos nos a lista de nos abertos de acordo com a estrategia
     def add_to_open(self,lnewnodes):

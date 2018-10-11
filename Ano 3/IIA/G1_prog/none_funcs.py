@@ -1,17 +1,17 @@
 # Dada uma lista, retornar o elemento que esta a cabeca (ou seja, na posicao 0).
-def first_elem(list):
-	if list == []:
+def first_elem(lst):
+	if lst == []:
 		return None
 
-	return list[0]
+	return lst[0]
 
 # Dada uma lista, retornar a sua cauda (ou seja, todos os elementos
 # a excepcao do primeiro).
-def list_tail(list):
-	if len(list) < 2:
+def list_tail(lst):
+	if len(lst) < 2:
 		return None
 
-	return list[1:]
+	return lst[1:]
 
 # Dado um par de listas com igual comprimento, produzir uma lista dos
 # pares dos elementos homologos.

@@ -138,17 +138,17 @@ print("""({} + {}) * ({} - {}) is {}.
 		  	lambda a,b : a * b)(x,y,z)))
 
 
-list = [1, 2, 3, 4, 5]
+lst = [1, 2, 3, 4, 5]
 print("""Are all elements of the list even? {}.    
 Are all elements of the list positive? {}.
-	  """.format(true_for_all(list, even), true_for_all(list, positive)))
+	  """.format(true_for_all(lst, even), true_for_all(lst, positive)))
 
 print("""Smallest element in {} is {}. The biggest one is {}.
-	   """.format(list, 
-	  		smallest_elem(list, lambda x,y: x < y), 
-	  		smallest_elem(list, lambda x,y: x > y)))
+	   """.format(lst, 
+	  		smallest_elem(lst, lambda x,y: x < y), 
+	  		smallest_elem(lst, lambda x,y: x > y)))
 
-smallest1, rest1 = smallest_and_rest(list, lambda x,y: x < y)
-smallest2, rest2 = smallest_and_rest(list, lambda x,y: x > y)
+smallest1, rest1 = smallest_and_rest(lst, lambda x,y: x < y)
+smallest2, rest2 = smallest_and_rest(lst, lambda x,y: x > y)
 print("""Smallest element in {} is {}, and the remaining elements are {}. The biggest element is {}, and the remaining elements are {}.
-	  """.format(list, smallest1, rest1, smallest2, rest2))
+	  """.format(lst, smallest1, rest1, smallest2, rest2))

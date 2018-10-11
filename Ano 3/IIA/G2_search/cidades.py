@@ -7,7 +7,7 @@
 # (c) Luis Seabra Lopes, Introducao a Inteligencia Artificial, 2012/2013
 #
 
-
+import math
 from tree_search import *
 
 class Cidades(SearchDomain):
@@ -23,21 +23,24 @@ class Cidades(SearchDomain):
                actlist += [(C2,C1)]
         return actlist
     def result(self, cidade, action):
-        (C1,C2) = action
+        C1, C2 = action
         if C1==cidade:
             return C2
-    def cost(self, cidade, action):
-        (C1,C2) = action
-        list = [None]
+    def cost(self, state, action):
+        orig, dest = action
 
-        # TODO confirm its supposed to be "sentido duplo"
-        if C1==cidade or C2==cidade:
-            list = [ d for x, y, d in self.connections if (x==C1 and y==C2) or  (x==C2 and y==C1) ]
+        if orig == state:
+            for (C1, C2, D) in self.connections:
+                if (C1==orig and C2 ==dest) or (C2==orig and C1==dest):
+                   return D
 
-        return list[0]
+        return None
 
-    def heuristic(self, cidade, goal_state):
-        pass
+    def heuristic(self, state, goal_state):
+        # compute euclidian distance between the 2 cities
+        x_orig, y_orig = self.coordinates[state]
+        x_dest, y_dest = self.coordinates[goal_state]
+        return math.sqrt((x_orig - x_dest)**2 + (y_orig - y_dest)**2)
 
 cidades_portugal = Cidades(
                     # Ligacoes por estrada
@@ -104,9 +107,12 @@ cidades_portugal = Cidades(
 
 
 
+# print(cidades_portugal.cost('Aveiro', ('Aveiro', 'Porto')))
+# print(cidades_portugal.cost('Agueda', ('Agueda', 'Porto')))
+# print(cidades_portugal.cost('Lisboa', ('Aveiro', 'Porto')))
 
-p = SearchProblem(cidades_portugal,'Braga','Aveiro')
-t = SearchTree(p,'depth')
+p = SearchProblem(cidades_portugal,'Braga','Faro')
+t = SearchTree(p,'breadth')
 
 # Atalho para obter caminho de c1 para c2 usando strategy:
 def search_path(c1,c2,strategy):
@@ -115,4 +121,4 @@ def search_path(c1,c2,strategy):
     my_tree.strategy = strategy
     return my_tree.search()
 
-print(t.search(limit=4))
+print(t.search()) # limit=4

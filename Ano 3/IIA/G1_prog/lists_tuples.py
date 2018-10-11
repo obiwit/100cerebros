@@ -25,27 +25,27 @@ def pair_grouping(pair_list):
 # Exemplo:
 # >>> removeeconta ( [ 1 , 6 , 2 , 5 , 5 , 2 , 5 , 2 ] , 2 )
 # ( [ 1 , 6 , 5 , 5 , 5 ] , 3 )
-def remove_count_elem(list, elem):
-	if list == []:
+def remove_count_elem(lst, elem):
+	if lst == []:
 		return ([], 0)
 
-	rest_list, rest_count = remove_count_elem(list[1:], elem)
+	rest_list, rest_count = remove_count_elem(lst[1:], elem)
 
-	if list[0] == elem:
+	if lst[0] == elem:
 		return rest_list, 1 + rest_count
 	else:
-		return [list[0]] + rest_list, rest_count
+		return [lst[0]] + rest_list, rest_count
 
 
 # Dada uma lista, retorna o numero de ocorrencias de cada elemento,
 # na forma de uma lista de pares (elemento,contagem).
-def count_elems(list):
-	if list == []:
+def count_elems(lst):
+	if lst == []:
 		return []
 
-	rest_list, count = remove_count_elem(list, list[0])
+	rest_list, count = remove_count_elem(lst, lst[0])
 
-	return [(list[0], count)] + count_elems(rest_list)
+	return [(lst[0], count)] + count_elems(rest_list)
 
 
 

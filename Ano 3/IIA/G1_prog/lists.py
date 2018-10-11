@@ -1,26 +1,26 @@
 # Dada uma lista, retorna o seu comprimento.
-def list_length(list):
-	if list == []:
+def list_length(lst):
+	if lst == []:
 		return 0
 
-	return 1 + list_length(list[1:])
+	return 1 + list_length(lst[1:])
 
 # Dada uma lista de numeros, retorna a respectiva soma.
-def list_sum(list):
-	if list == []:
+def list_sum(lst):
+	if lst == []:
 		return 0
 
-	return list[0] + list_sum(list[1:])
+	return lst[0] + list_sum(lst[1:])
 
 # Dada uma lista e um elemento, verifica se o elemento ocorre na lista.
 # Retorna um valor booleano.
-def in_list(list, elem):
-	if list == []: 
+def in_list(lst, elem):
+	if lst == []: 
 		return False
-	elif list[0] == elem:
+	elif lst[0] == elem:
 		return True
 
-	return in_list(list[1:], elem)
+	return in_list(lst[1:], elem)
 
 # Dadas duas listas, retorna a sua concatenacao.
 def list_concat(list1, list2):
@@ -31,35 +31,35 @@ def list_concat(list1, list2):
 
 # Dada uma lista, retorna a sua inversa.
 
-# def list_reverse(list):
-# 	return list_reverse_n(list, len(list))
-# def list_reverse_n(list, n):
+# def list_reverse(lst):
+# 	return list_reverse_n(lst, len(lst))
+# def list_reverse_n(lst, n):
 # 	if n == 0:
-# 		return list
-# 	temp = list[-1:] + list_reverse_n(list[:-1], n-1)
+# 		return lst
+# 	temp = lst[-1:] + list_reverse_n(lst[:-1], n-1)
 # 	return temp
 
-# def list_reverse_v2(list, l_aux=[]):
-# 	if list == []:
+# def list_reverse_v2(lst, l_aux=[]):
+# 	if lst == []:
 # 		return l_aux
-# 	l_aux = list[:1] + l_aux
-# 	return list_reverse_v2(list[1:], l_aux)
+# 	l_aux = lst[:1] + l_aux
+# 	return list_reverse_v2(lst[1:], l_aux)
 
-def list_reverse_v3(list):
-	if list == []:
+def list_reverse_v3(lst):
+	if lst == []:
 		return []
-	return list_reverse_v3(list[1:]) + [list[0]]
+	return list_reverse_v3(lst[1:]) + [lst[0]]
 
 # Dada uma lista, verifica se forma uma capicua, ou seja, se,
 # quer se leia da esquerda para a direita ou vice-versa, se obtem
 # a mesma sequencia de elementos.
-def is_palindrome(list):
-	if len(list) < 2:
+def is_palindrome(lst):
+	if len(lst) < 2:
 		return True
-	elif list[0] != list[-1]:
+	elif lst[0] != lst[-1]:
 		return False
 
-	return is_palindrome(list[1:-1])
+	return is_palindrome(lst[1:-1])
 
 
 # Dada uma lista de listas, retorna a concatenacao dessas listas.
@@ -80,15 +80,15 @@ def concat_lists(lists):
 # Dada uma lista, um elemento x e outro elemento y, retorna uma lista
 # similar a lista de entrada, na qual x e substituido por y em todas
 # as ocorrencias de x.
-def list_replace(list, x, y):
-	if list == []:
-		return list
+def list_replace(lst, x, y):
+	if lst == []:
+		return lst
 
-	current_val = list[0]
+	current_val = lst[0]
 	if current_val == x:
 		current_val = y
 
-	return [current_val] + list_replace(list[1:], x, y)
+	return [current_val] + list_replace(lst[1:], x, y)
 
 # Dadas duas listas ordenadas de numeros, calcular a uniao ordenada
 # mantendo eventuais repeticoes.
@@ -107,11 +107,11 @@ def list_merge(list1, list2):
 
 # Dado um conjunto, na forma de uma lista, retorna uma lista de listas
 # que representa o conjunto de todos os subconjuntos do conjunto dado.
-# def list_partitions(list):
-# 	if list == []:
+# def list_partitions(lst):
+# 	if lst == []:
 # 		return []
 
-# 	return [ [list[0]]+ list_partitions(list[1:]) ] + list_partitions(list[1:])
+# 	return [ [lst[0]]+ list_partitions(lst[1:]) ] + list_partitions(lst[1:])
 
 
 l5 = [1, 2, 3, 4, 5]

@@ -87,6 +87,7 @@ class SearchTree:
         root = SearchNode(problem.initial, None, 0, 0, problem.domain.heuristic(problem.initial, problem.goal))
         self.open_nodes = [root]
         self.strategy = strategy
+        self.highest_cost_nodes = [root]
 
         self.solCost = 0
 
@@ -105,11 +106,20 @@ class SearchTree:
     def search(self, limit=None):
         while self.open_nodes != []:
             node = self.open_nodes.pop(0)
+
+            # check if highest costing node so far
+            if (node.cost > self.highest_cost_nodes[0].cost):
+                self.highest_cost_nodes = [node]
+            elif (node.cost == self.highest_cost_nodes[0].cost):
+                self.highest_cost_nodes.append(node)
+
+            # check if problem solved
             if self.problem.goal_test(node.state):
                 self.solCost = node.cost
                 self.average_branching = self.leafs/self.nodes
                 return self.get_path(node), node.depth, self.nodes-self.leafs, self.leafs, node.cost
 
+            # expand node
             lnewnodes = []
             self.leafs -= 1
 
@@ -123,10 +133,13 @@ class SearchTree:
 
 
             # print("[{}], ({})".format(node, lnewnodes))
+
+            # add node's children to nodes to possibly explore
             self.add_to_open(new_n for new_n in lnewnodes if
                              not node.inParent(new_n.state)
                              and (new_n.depth < limit if limit else True))
 
+        # no more nodes to explore, no solution found
         self.solCost = None
         self.average_branching = self.leafs/self.nodes
         return None, None, self.nodes-self.leafs, self.leafs, None
@@ -138,7 +151,11 @@ class SearchTree:
         elif self.strategy == 'depth':
             self.open_nodes[:0] = lnewnodes
         elif self.strategy == 'uniform':
-            self.open_nodes.extend(lnewnodes)
-
             # sort nodes by cost
-            self.open_nodes = sorted(self.open_nodes, key=lambda n: n.cost)
+            self.open_nodes = sorted(self.open_nodes+list(lnewnodes), key=lambda n: n.cost)
+        elif self.strategy == 'greedy':
+            # sort nodes by heuristic
+            self.open_nodes = sorted(self.open_nodes+list(lnewnodes), key=lambda n: n.heuristic)
+        elif self.strategy == 'astar':
+            # sort nodes by cost to node + heuristic from node to goal
+            self.open_nodes = sorted(self.open_nodes+list(lnewnodes), key=lambda n: n.cost + n.heuristic)

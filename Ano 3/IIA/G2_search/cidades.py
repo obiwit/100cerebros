@@ -111,9 +111,6 @@ cidades_portugal = Cidades(
 # print(cidades_portugal.cost('Agueda', ('Agueda', 'Porto')))
 # print(cidades_portugal.cost('Lisboa', ('Aveiro', 'Porto')))
 
-p = SearchProblem(cidades_portugal,'Braga','Faro')
-t = SearchTree(p,'breadth')
-
 # Atalho para obter caminho de c1 para c2 usando strategy:
 def search_path(c1,c2,strategy):
     my_prob = SearchProblem(cidades_portugal,c1,c2)
@@ -121,4 +118,9 @@ def search_path(c1,c2,strategy):
     my_tree.strategy = strategy
     return my_tree.search()
 
-print(t.search()) # limit=4
+p = SearchProblem(cidades_portugal,'Braga','Faro')
+
+search_types = ['breadth', 'depth', 'uniform', 'greedy', 'astar']
+for search_type in search_types:
+    t = SearchTree(p,search_type)
+    print("{} search: {}\n".format(search_type, t.search())) # limit=4

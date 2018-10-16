@@ -1,0 +1,55 @@
+N1 (FBLT) + N2 (DZ [incluindo o bloco da Root Directory]) = DISK_BLOCKS - IT - SB - FILT
+&&
+N1 >= N2/128
+
+-> caso limite #1:
+	N1 * 128 = N2, mas sobra 1 block; block vai para IT, a nao ser:
+
+	-> caso limite #2:
+		1 block ir para IT (dar mais 8 inodes) forçaria FILT a mudar o tamanho por 1 block tbm; nesse caso, o block vai para Root Directory, que e inicializada com 2 blocks em vez de apenas 1
+
+--------------
+
+3 tipos de ficheiros:
+	- regulares  (quadrados)
+	- diretorios (bolas)
+	- atalhos    (triangulos) - ficheiro cujo conteudo é o caminho para um outro ficheiro
+
+Diretorios = tabelas com o header:
+
+	-------------------------------------------------------
+	| nome do ficheiro | inode que aponta para o ficheiro |
+	-------------------------------------------------------
+
+Isto permite que o mesmo ficheiro tenha nomes diferentes (nao copias, o mesmo ficheiro!) [a.k.a. hard links]
+
+Para destruir um ficheiro, removem-se todas as referencias a ele (i.e. apagam-se todos os seus "nomes")
+
+--------------
+
+uint8_t block[BlockSize];
+soWriteBlock(0, block); // enche root directory's first block with zeros
+
+--
+
+SOSuperBlock sb;
+uint32_t ref[ReferencesPerBlock];
+SOInode inodes[InodesPerBlock];
+SODirEntry dir[DirEntriesPerBlock];
+
+--------------
+
+alloc - so chama refill se ifree != 0
+
+refill - enche a (retrieval) cache ate 20, mas so a partir de um bloco portanto pode encher menos (i.e. se um bloco ja so tinha 1 reference, so enche a cache com essa unica reference)
+	head = (head + num_references_added_to_cache) % ReferencePerBlock
+
+deplete - enche num bloco so, portanto podem sobrar referencias na (insertion) cache
+
+funcoes devem chamar a versao global de sub-funcoes (i.e. sofs18::functionName )
+
+--------------
+
+.testtool /tmp/zzz/
+
+--------------

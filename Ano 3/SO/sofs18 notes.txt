@@ -53,3 +53,20 @@ funcoes devem chamar a versao global de sub-funcoes (i.e. sofs18::functionName )
 .testtool /tmp/zzz/
 
 --------------
+
+para lidar com erros:
+
+if (...)
+	throw SOException(err, __FUNCTION__);
+
+ENOSPC=no space left on device
+--------------
+
+A cada inode estao varios blocos de discos associados (sequencialmente!)
+
+fbn = numero do bloco, da perspetiva do ficheiro
+
+Um ficheiro pode ter buracos: é possivel alocar o bloco 300 de um ficheiro sem ele ter um bloco 200, por exemplo (estes 'buracos' são na verdade blocos cheios de 0s).
+Se um ficheiro contem um bloco so com 0s, usa-se NullReference para indicar esse bloco. Ref=NullReference não indica necessariamente que um bloco não existe (depende do valor de size).
+
+soFreeFileBlocks "apaga" todos os blocos a partir de um dado block number (da perspetiva do ficheiro). Tem que ter inteligência para dar saltos se uma entrada de i1 e/ou i2 está Null.

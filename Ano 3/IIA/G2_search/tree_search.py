@@ -87,7 +87,9 @@ class SearchTree:
         root = SearchNode(problem.initial, None, 0, 0, problem.domain.heuristic(problem.initial, problem.goal))
         self.open_nodes = [root]
         self.strategy = strategy
+
         self.highest_cost_nodes = [root]
+        self.average_node_depth = 0
 
         self.solCost = 0
 
@@ -104,6 +106,7 @@ class SearchTree:
 
     # procurar a solucao
     def search(self, limit=None):
+        total_node_depth = 0
         while self.open_nodes != []:
             node = self.open_nodes.pop(0)
 
@@ -117,7 +120,8 @@ class SearchTree:
             if self.problem.goal_test(node.state):
                 self.solCost = node.cost
                 self.average_branching = self.leafs/self.nodes
-                return self.get_path(node), node.depth, self.nodes-self.leafs, self.leafs, node.cost
+                self.average_node_depth = total_node_depth/self.nodes
+                return self.get_path(node), node.depth, self.nodes-self.leafs, self.leafs, node.cost, self.average_node_depth
 
             # expand node
             lnewnodes = []
@@ -130,6 +134,7 @@ class SearchTree:
                               self.problem.domain.heuristic(newstate, self.problem.goal))]
                 self.leafs += 1
                 self.nodes += 1
+                total_node_depth += node.depth+1
 
 
             # print("[{}], ({})".format(node, lnewnodes))
@@ -142,7 +147,8 @@ class SearchTree:
         # no more nodes to explore, no solution found
         self.solCost = None
         self.average_branching = self.leafs/self.nodes
-        return None, None, self.nodes-self.leafs, self.leafs, None
+        self.average_node_depth = total_node_depth/self.nodes
+        return None, None, self.nodes-self.leafs, self.leafs, None, self.average_node_depth
 
     # juntar novos nos a lista de nos abertos de acordo com a estrategia
     def add_to_open(self,lnewnodes):

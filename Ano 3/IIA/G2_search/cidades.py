@@ -40,7 +40,8 @@ class Cidades(SearchDomain):
         # compute euclidian distance between the 2 cities
         x_orig, y_orig = self.coordinates[state]
         x_dest, y_dest = self.coordinates[goal_state]
-        return math.sqrt((x_orig - x_dest)**2 + (y_orig - y_dest)**2)
+        #return math.sqrt((x_orig - x_dest)**2 + (y_orig - y_dest)**2)
+        return math.hypot(x_orig - x_dest, y_orig - y_dest)
 
 cidades_portugal = Cidades(
                     # Ligacoes por estrada
@@ -110,6 +111,7 @@ cidades_portugal = Cidades(
 # print(cidades_portugal.cost('Aveiro', ('Aveiro', 'Porto')))
 # print(cidades_portugal.cost('Agueda', ('Agueda', 'Porto')))
 # print(cidades_portugal.cost('Lisboa', ('Aveiro', 'Porto')))
+# print(cidades_portugal.heuristic('Aveiro', 'Porto')) # 57.14017850864661
 
 # Atalho para obter caminho de c1 para c2 usando strategy:
 def search_path(c1,c2,strategy):
@@ -123,4 +125,11 @@ p = SearchProblem(cidades_portugal,'Braga','Faro')
 search_types = ['breadth', 'depth', 'uniform', 'greedy', 'astar']
 for search_type in search_types:
     t = SearchTree(p,search_type)
-    print("{} search: {}\n".format(search_type, t.search())) # limit=4
+    path, depth, non_terminals, terminals, total_cost, average_node_depth = t.search()
+    print("""{} search:
+          \tPath: {}
+          \tDepth: {}
+          \tNumber of non-terminal nodes: {}
+          \tNumber of terminal nodes: {}
+          \tTotal cost: {}
+          \tAverage node depth: {}\n""".format(search_type, path, depth, non_terminals, terminals, total_cost, average_node_depth)) # limit=4

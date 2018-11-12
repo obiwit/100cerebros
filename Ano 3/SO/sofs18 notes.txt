@@ -70,3 +70,30 @@ Um ficheiro pode ter buracos: é possivel alocar o bloco 300 de um ficheiro sem 
 Se um ficheiro contem um bloco so com 0s, usa-se NullReference para indicar esse bloco. Ref=NullReference não indica necessariamente que um bloco não existe (depende do valor de size).
 
 soFreeFileBlocks "apaga" todos os blocos a partir de um dado block number (da perspetiva do ficheiro). Tem que ter inteligência para dar saltos se uma entrada de i1 e/ou i2 está Null.
+
+--------------
+soTraversePath
+	Na traducaio de caminhos absolutos para inode numbers, ignoramos atalhos
+	O caminho tem que existir, e temos que ter permissoes adequadas para percorrer o caminho ('x' no caso de diretórios para os podermos atravessar (sem 'r/w' não conseguimos ver os seus conteúdos)) - é preciso confirmar que temos a esta permissão 'x' para cada diretório no path, e ter 'r' no último diretório (usar função checkInodeAccess [permissões: owner | group | other] ).
+	Para obter o caminho, 2 opções: 
+		- split on "/", reduce multiple "/" seguidas to apenas 1 split - usar strtok várias vezes
+		- usar recurrência até ter só uma "/" (que é igual a 0) (usar libgen c library, dirname e basename)
+
+soGetDirEntry
+	Percorrer tudo até encontrar, se chegar ao fim sem encontrar não existe. Vai ter que se ir fazendo a pesquisa bloco a bloco. Se não encontrar, devolve NullReference.
+	pih = Parent Inode Handler
+
+soAddDirEntry
+	Insert no primeiro "buraco" do diretorio cujo inode handler é pih.
+	Tem que garantir que o nome da nova entrada ainda não existe (tem que varrer o diretório todo para o fazer, e neste processo regista logo qual é o "index" do primeiro buraco).
+	Não usar soGetDirEntry.
+	Se não houver buracos, tem que alocar um novo bloco - primeiro formatar e depois chamar writeFileBlock. Neste caso, terá também que atualizar o size ( += BlockSize ) do diretório.
+
+soDeleteDirEntry
+	Tem que garantir que o nome existe varrendo o diretório até o encontrar, e substitui essa entrada por NR + nome = '\0'
+
+soRenameDirEntry
+	Encontrar um entrada e mudar o seu nome 
+
+soCheckDirEntry
+	Varrer o diretório, confirmar que só existem as duas primeiras entradas (. e ..)

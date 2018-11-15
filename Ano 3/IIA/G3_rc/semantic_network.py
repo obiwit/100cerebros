@@ -99,7 +99,6 @@ class SemanticNetwork:
     def get_assoc_names(self):
         # decls = list(set(self.query_local()) - set(self.query_local(rel="member")) - set(self.query_local(rel="subtype")))
         # return list(set([d.relation.name for d in decls]))
-
         return list(set([d.relation.name for d in self.query_local() if d.relation.name not in ["member", "subtype"]]))
 
     def get_objects(self):
@@ -125,12 +124,43 @@ class SemanticNetwork:
     #get_num_user_assocs
     def get_user_decl_number(self, user):
         return len(set([d.relation.name for d in self.query_local(user=user)
-                            if d.relation.name not in ["member", "subtype"]])))
+                            if d.relation.name not in ["member", "subtype"]]))
 
     def get_entity_assocs_tuples(self, entity):
         return list(set([(d.relation.name, d.user) for d in self.query_local()
                          if d.relation.name not in ["member", "subtype"]
                          and (d.relation.entity1 == entity or d.relation.entity2 == entity)]))
+
+    def predecessor(self, super_entity, sub_entity):
+        local_predecessor = [d.relation.entity2 for d in self.query_local()
+                if d.relation.name in ["member", "subtype"]
+                and d.relation.entity1 == sub_entity]
+        if super_entity in local_predecessor:
+            return True
+        return any([self.predecessor(super_entity, p) for p in local_predecessor])
+
+    def predecessor_path(self, super_entity, sub_entity):
+        local_predecessor = [d.relation.entity2 for d in self.query_local()
+                if d.relation.name in ["member", "subtype"]
+                and d.relation.entity1 == sub_entity]
+        if local_predecessor is None:
+            return None
+        if super_entity in local_predecessor:
+            return [super_entity, sub_entity]
+        path = [pred_path + [sub_entity] for pred_path in
+                [self.predecessor_path(super_entity, p) for p in local_predecessor]
+                if pred_path != None]
+        return path[0] if len(path) else None # ou if path != [] else None
+
+    def query(self, e1, rel):
+        ll = [self.query(d.relation.entity2, rel) for d in self.declarations
+              if d.relation.name in ["member", "subtype"] and d.relation.entity1 == e1])
+
+        return [item for sublist in ll for item in sublist] + \
+                [d for d in self.declarations
+                 if d.relation.entity1 == e1 and d.relation.name == rel]
+        # [item for sublist in ll for item in sublist] extrai elementos de listas de listas (fica tudo numa so lista)
+
 
 # Funcao auxiliar para converter para cadeias de caracteres
 # listas cujos elementos sejam convertiveis para

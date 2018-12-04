@@ -1,0 +1,80 @@
+
+z.predecessor(mammal,antonio):  True
+
+z.predecessor(cat,faceState):  False
+
+z.get_entity_events():  [('antonio', 35), ('carlos', 50), ('teresa', 45), ('joana', 40), ('marta', 55)]
+
+z.get_occurrencs(..,..,..):  {'hasWorkLoad': 'highLoad', 'hasEmailState': 'acumulated'}
+
+z.abstract_from_descendents(tareco): [('eats', 'sardine', 1)]
+
+z.abstract_from_descendents(micas): [('eats', 'sardine', 1), ('drinks', 'milk', 1)]
+
+z.abstract_from_descendents(cat): [('drinks', 'milk', 1), ('eats', 'sardine', 2)]
+
+z.abstract_from_descendents(antonio): [('eats', 'sardine', 1), ('eats', 'cabbage', 1), ('drinks', 'milk', 1), ('eats', 'cow', 1)]
+
+z.abstract_from_descendents(human): [('drinks', 'milk', 3), ('eats', 'fruit', 2), ('eats', 'meat', 2), ('eats', 'vegetable', 2), ('eats', 'fish', 2)]
+
+z.abstract_from_descendents(mammal): [('eats', 'food', 10), ('drinks', 'milk', 4)]
+
+('exageratedUsing', 'computerMouse') :
+    [(('needsHelp', 'yes'), True), (('using', 'SOF2019-PAL'), False)]-->1.0
+    [(('needsHelp', 'yes'), True), (('using', 'SOF2019-PAL'), True)]-->0.5
+    [(('needsHelp', 'yes'), False), (('using', 'SOF2019-PAL'), False)]-->0.5
+    [(('needsHelp', 'yes'), False), (('using', 'SOF2019-PAL'), True)]-->0.0
+('hasEmailState', 'acumulated') :
+    [(('hasWorkLoad', 'highLoad'), False)]-->0.0
+    [(('hasWorkLoad', 'highLoad'), True)]-->0.6666666666666666
+('hasFaceState', 'worried') :
+    [(('hasWorkLoad', 'highLoad'), False), (('needsHelp', 'yes'), True)]-->0.5
+    [(('hasWorkLoad', 'highLoad'), True), (('needsHelp', 'yes'), False)]-->1.0
+    [(('hasWorkLoad', 'highLoad'), False), (('needsHelp', 'yes'), False)]-->0.5
+    [(('hasWorkLoad', 'highLoad'), True), (('needsHelp', 'yes'), True)]-->1.0
+('needsHelp', 'yes') :
+    [(('using', 'SOF2019-PAL'), False)]-->1.0
+    [(('using', 'SOF2019-PAL'), True)]-->0.5
+
+MORE TESTS =======================================
+
+z.predecessor(mammal,antonio):  True
+
+z.predecessor(cat,faceState):  False
+
+z.get_entity_events():  [('teresa', 45), ('joana', 40), ('carlos', 50), ('marta', 55), ('antonio', 65), ('antonio', 35)]
+
+z.get_occurrencs(..,..,..):  {'hasWorkLoad': 'highLoad', 'hasEmailState': 'acumulated'}
+
+z.abstract_from_descendents(tareco): [('eats', 'sardine', 2)]
+
+z.abstract_from_descendents(micas): [('eats', 'sardine', 1), ('drinks', 'milk', 2)]
+
+z.abstract_from_descendents(cat): [('drinks', 'milk', 2), ('eats', 'sardine', 3)]
+
+z.abstract_from_descendents(antonio): [('eats', 'sardine', 1), ('eats', 'cabbage', 1), ('drinks', 'milk', 1), ('eats', 'cow', 1)]
+
+z.abstract_from_descendents(human): [('drinks', 'milk', 5), ('eats', 'fruit', 3), ('eats', 'meat', 3), ('eats', 'vegetable', 3), ('eats', 'fish', 2), ('eats', 'apple', 1)]
+
+z.abstract_from_descendents(mammal): [('eats', 'food', 15), ('drinks', 'milk', 7)]
+
+('exageratedUsing', 'computerMouse') :
+    [(('needsHelp', 'yes'), True), (('using', 'SOF2019-PAL'), False)]-->1.0
+    [(('needsHelp', 'yes'), True), (('using', 'SOF2019-PAL'), True)]-->0.6666666666666666
+    [(('needsHelp', 'yes'), False), (('using', 'SOF2019-PAL'), False)]-->0.5
+    [(('needsHelp', 'yes'), False), (('using', 'SOF2019-PAL'), True)]-->0.5
+('hasEmailState', 'acumulated') :
+    [(('hasWorkLoad', 'highLoad'), False)]-->0.0
+    [(('hasWorkLoad', 'highLoad'), True)]-->0.5
+('hasFaceState', 'worried') :
+    [(('hasWorkLoad', 'highLoad'), False), (('needsHelp', 'yes'), True)]-->0.5
+    [(('hasWorkLoad', 'highLoad'), True), (('needsHelp', 'yes'), False)]-->1.0
+    [(('hasWorkLoad', 'highLoad'), False), (('needsHelp', 'yes'), False)]-->0.5
+    [(('hasWorkLoad', 'highLoad'), True), (('needsHelp', 'yes'), True)]-->1.0
+('hasWorkLoad', 'highLoad') :
+    []-->0.6666666666666666
+('needsHelp', 'yes') :
+    [(('using', 'SOF2019-PAL'), False)]-->1.0
+    [(('using', 'SOF2019-PAL'), True)]-->0.6
+('using', 'SOF2019-PAL') :
+    []-->0.8333333333333334

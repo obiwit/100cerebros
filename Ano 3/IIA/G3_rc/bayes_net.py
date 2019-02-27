@@ -14,7 +14,7 @@ class BayesNet:
     def add(self,var,mothers,prob):
         self.dependencies.setdefault(var,{})[frozenset(mothers)] = prob
 
-    # Probabilidade conjunta de uma dada conjuncao 
+    # Probabilidade conjunta de uma dada conjuncao
     # de valores de todas as variaveis da rede
     def jointProb(self,conjunction):
         prob = 1.0
@@ -24,6 +24,9 @@ class BayesNet:
                     prob*=(p if val else 1-p)
         return prob
 
+    def individualProb(self):
+        pass
+
 
 # Footnote 1:
 # Default arguments are evaluated on function definition,
@@ -31,4 +34,3 @@ class BayesNet:
 # This creates surprising behaviour when the default argument is mutable.
 # See:
 # http://docs.python-guide.org/en/latest/writing/gotchas/#mutable-default-arguments
-

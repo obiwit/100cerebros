@@ -1,0 +1,13 @@
+Na espera,
+
+	while (cond) {
+		wait(vcond, mutex);
+	}
+
+	i.e.
+	while (fifoEmpty()) {
+        pthread_cond_wait(&fifoNotEmpty, &accessCR); 
+    }
+
+    pthread_cond_t só são "ouvidos" se estamos à espera/escuta deles.
+    O while é necessário, porque depois de acordado o processo ainda pode ter de esperar antes de executar; outro processo podia estar à escuta do mesmo e já ter voltado a impedir a execução do primeiro.

@@ -1,0 +1,10 @@
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\bin\Debug\BD_P1_E3.exe.config
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\bin\Debug\BD_P1_E3.exe
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\bin\Debug\BD_P1_E3.pdb
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.csprojAssemblyReference.cache
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.Form1.resources
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.Properties.Resources.resources
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.csproj.GenerateResource.cache
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.csproj.CoreCompileInputs.cache
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.exe
+C:\Users\bea\source\repos\BD_P1_E3\BD_P1_E3\obj\Debug\BD_P1_E3.pdb

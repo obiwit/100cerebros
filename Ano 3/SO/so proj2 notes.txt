@@ -1,0 +1,68 @@
+Coisas onde mexer:
+	simulation.cpp -- lancar a simulacao
+	barber-shop  (sitio onde por variaveis adicionais)
+	client
+	barber
+
+1ra iteracao
+	1 barbeiro, 1 cliente, lavar cabelo apenas
+2nda iteracao
+	1 barbeiro, 1 cliente, cortar cabelo
+3ra iteracao
+	1 barbeiro, 2 clientes, cortar cabelo
+4rta iteracao
+	2 barbeiros, 1 cliente, cortar cabelo
+
+Notas gerais
+	Nunca ter busy waiting a partir do ponto que um client "entra" na barber-shop (senta-se na Waiting Room)
+
+
+Funções identificadas a fazer (deadlock prevention pode talvez requerir mexer em mais coisas)
+	simulation.cpp
+		~ go
+		~ finish
+		~ init_simulation
+
+	barbershop.cpp
+		reserve_random_empty_barber_chair
+		reserve_random_empty_washbasin
+		wait_service_from_barber
+		inform_client_on_service
+		client_done
+		enter_barber_shop
+		leave_barber_shop
+		receive_and_greet_client
+		greet_barber
+		~ other non-static fuctions
+
+	client.cpp
+		~ notify_client_birth
+		~ notify_client_death
+		wandering_outside
+		vacancy_in_barber_shop
+		select_requests
+		wait_its_turn
+		rise_from_client_benches
+		wait_all_services_done
+
+	barber.cpp
+		sit_in_barber_bench
+		wait_for_client
+		work_available
+		rise_from_barber_bench
+		process_resquests_from_client
+		release_client
+		done
+		process_haircut_request
+		! process_wash_request
+		! process_shave_request
+		
+
+
+
+	threads
+		while( cond )
+			wait (vcond, mutex)
+
+	processos (semaforos)
+		down(...)

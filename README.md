@@ -6,7 +6,13 @@ Resoluções de exercícios e guiões de diversas disciplinas de MIECT, na UA
 - **AMS** (Análise e Modelação de Sistemas)
 - **IIA** (Introdução a Inteligência Artificial)
 - **SO** (Sistemas de Operação)
-- <del>**FR** (Fundamentos de Redes)</del>
+- **FR** (Fundamentos de Redes)
+
+### 2º Semestre
+- <del>**IHC** (Interação Humano-Computador)</del>
+- **AR** (Arquitetura de Redes)
+- **BD** (Bases de Dados)
+- <del>**PEI** (Projecto de Engenharia Informática)</del>
 
 ## Ano 2
 ### 1º Semestre

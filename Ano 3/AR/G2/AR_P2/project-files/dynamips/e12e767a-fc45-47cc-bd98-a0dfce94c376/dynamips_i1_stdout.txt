@@ -1,0 +1,26 @@
+Cisco Router Simulation Platform (version 0.2.18-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Apr  3 2018 09:35:00
+
+Log file: writing to dynamips_i1_log.txt
+Hypervisor TCP control server started (IP 127.0.0.1 port 43234).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+C3725 instance 'ESW2' (id 2):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  NVRAM size : 256 Kb
+  IOS image  : /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image
+
+Loading ELF file '/home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C3725 'ESW2': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+NIO udp-df9675cb-d946-4f0a-b9c5-97c692457252: capturing to file '/home/parallels/GNS3/projects/AR_P2/tmp/captures/ESW2_FastEthernet18_to_ESW3_FastEthernet114.pcap'
+
+C3725 'ESW2': stopping simulation.
+NIO udp-df9675cb-d946-4f0a-b9c5-97c692457252: ending packet capture.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

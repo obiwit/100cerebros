@@ -1,0 +1,13 @@
+Mar 07 15:06:03.567 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Mar 07 15:06:03.567 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35624.
+Mar 07 15:06:03.576 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 07 15:06:03.577 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/P3.2/project-files/dynamips 
+Mar 07 15:06:03.577 GENERAL: working_dir=/home/parallels/GNS3/projects/P3.2/project-files/dynamips
+Mar 07 15:06:03.577 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-2 
+Mar 07 15:06:03.940 HYPERVISOR: exec_cmd: nio create_udp udp-c53d9be6-f62f-4df5-b131-7991cec7d75d 10011 127.0.0.1 10010 
+Mar 07 15:06:03.940 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-c53d9be6-f62f-4df5-b131-7991cec7d75d 
+Mar 07 15:06:03.948 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-c53d9be6-f62f-4df5-b131-7991cec7d75d 1 
+Mar 07 15:58:34.672 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-2 
+Mar 07 15:58:34.706 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 07 15:58:34.890 HYPERVISOR: Stopped.
+Mar 07 15:58:34.890 GENERAL: reset done.

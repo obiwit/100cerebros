@@ -1,0 +1,23 @@
+Mar 21 16:31:01.247 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Mar 21 16:31:01.247 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54368.
+Mar 21 16:31:01.251 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 21 16:31:01.251 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/P4.3/project-files/dynamips 
+Mar 21 16:31:01.252 GENERAL: working_dir=/home/parallels/GNS3/projects/P4.3/project-files/dynamips
+Mar 21 16:31:01.252 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-2 
+Mar 21 16:31:02.198 HYPERVISOR: exec_cmd: nio create_udp udp-28bff78e-772e-4e84-8cec-7552cae3819d 10015 127.0.0.1 10014 
+Mar 21 16:31:02.198 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-28bff78e-772e-4e84-8cec-7552cae3819d 
+Mar 21 16:31:02.213 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-28bff78e-772e-4e84-8cec-7552cae3819d 1 
+Mar 21 16:31:02.289 HYPERVISOR: exec_cmd: nio create_udp udp-26f861ce-092b-4a04-9ce9-9907cb8ee50d 10019 127.0.0.1 10018 
+Mar 21 16:31:02.289 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-26f861ce-092b-4a04-9ce9-9907cb8ee50d 
+Mar 21 16:31:02.294 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-26f861ce-092b-4a04-9ce9-9907cb8ee50d 1 
+Mar 21 16:31:02.350 HYPERVISOR: exec_cmd: nio create_udp udp-a4c554c7-d7ab-4396-87e8-ff68274558bd 10023 127.0.0.1 10022 
+Mar 21 16:31:02.351 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-a4c554c7-d7ab-4396-87e8-ff68274558bd 
+Mar 21 16:31:02.354 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-a4c554c7-d7ab-4396-87e8-ff68274558bd 1 
+Mar 21 16:50:10.706 HYPERVISOR: exec_cmd: nio bind_filter udp-26f861ce-092b-4a04-9ce9-9907cb8ee50d 2 capture 
+Mar 21 16:50:10.707 HYPERVISOR: exec_cmd: nio setup_filter udp-26f861ce-092b-4a04-9ce9-9907cb8ee50d 2 en10mb /home/parallels/GNS3/projects/P4.3/tmp/captures/R1_FastEthernet00_to_Ethernetswitch-2_Ethernet0.pcap 
+Mar 21 16:51:15.636 HYPERVISOR: exec_cmd: nio bind_filter udp-28bff78e-772e-4e84-8cec-7552cae3819d 2 capture 
+Mar 21 16:51:15.636 HYPERVISOR: exec_cmd: nio setup_filter udp-28bff78e-772e-4e84-8cec-7552cae3819d 2 en10mb /home/parallels/GNS3/projects/P4.3/tmp/captures/R3_FastEthernet00_to_Ethernetswitch-2_Ethernet2.pcap 
+Mar 21 16:59:19.296 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-2 
+Mar 21 16:59:19.344 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 21 16:59:19.621 HYPERVISOR: Stopped.
+Mar 21 16:59:19.621 GENERAL: reset done.

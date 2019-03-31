@@ -1,0 +1,230 @@
+vlan database
+vlan 1
+vlan 2
+vlan 3
+exit
+configure terminal
+no ip routing
+interface f1/1
+switchport mode access
+switchport access vlan 1
+interface f1/2
+switchport mode access
+switchport access vlan 1
+interface range fastEthernet 1/3 - 4
+switchport mode access
+switchport access vlan 2
+interface range fastEthernet 1/5 - 6
+switchport mode access
+switchport access vlan 3
+interface range fastEthernet 1/7 - 8
+switchport mode trunk
+switchport trunk encapsulation dot1
+end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+interface FastEthernet0/0
+no shutdown
+interface FastEthernet0/0.1
+encapsulation dot1Q 1 native
+ip address 10.1.1.254 255.255.255.0
+
+interface FastEthernet0/0.2
+encapsulation dot1Q 2
+ip address 10.2.2.254 255.255.255.0
+
+interface FastEthernet0/0.3
+encapsulation dot1Q 3
+ip address 10.3.3.254 255.255.255.0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+4.
+
+!!!! SW3 A !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+vlan database
+	vlan 1
+	vlan 21
+	vlan 31
+exit
+
+conf t
+	ip routing
+
+	interface Vlan 1
+	ip address 10.1.1.254 255.255.255.0
+	no shut
+	no autostate
+	interface Vlan 21
+	ip address 10.21.21.254 255.255.255.0
+	no autostate
+	interface Vlan 31
+	ip address 10.31.31.254 255.255.255.0
+	no autostate
+
+	interface range f1/1 - 2
+	switchport mode access
+	switchport access vlan 1
+	interface range  f1/3 - 4
+	switchport mode access
+	switchport access vlan 21
+	interface range f1/5 - 6
+	switchport mode access
+	switchport access vlan 31
+
+	int f0/0
+	ip address 10.0.1.254 255.255.255.0
+	no shut
+
+	interface range FastEthernet 1/14 - 15
+	switchport mode trunk
+	switchport trunk allowed vlan 1,1002-1005
+
+	router rip
+ 	version 2
+ 	network 10.0.0.0
+
+end
+write
+
+!!!! SW3 B !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+vlan database
+vlan 1
+exit
+
+conf t
+
+	interface Vlan 1
+	ip address 10.1.1.253 255.255.255.0
+	no shut
+	no autostate
+	
+	interface range f1/1 - 2
+	switchport mode access
+	switchport access vlan 1
+
+	int f0/0
+	ip address 10.0.2.254 255.255.255.0
+	no shut
+	int f0/1
+	ip address 10.0.1.253 255.255.255.0
+	no shut
+
+	interface range FastEthernet 1/14 - 15
+	switchport mode trunk
+	switchport trunk allowed vlan 1,1002-1005
+
+	router rip
+ 	version 2
+ 	network 10.0.0.0
+
+end
+write
+
+!!!! SW3 C !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+vlan database
+vlan 1
+vlan 22
+vlan 32
+exit
+
+conf t
+	ip routing
+
+	interface Vlan 1
+	ip address 10.1.1.252 255.255.255.0
+	no shut
+	no autostate
+	interface Vlan 22
+	ip address 10.22.22.254 255.255.255.0
+	no autostate
+	interface Vlan 32
+	ip address 10.32.32.254 255.255.255.0
+	no autostate
+
+	interface range f1/1 - 2
+	switchport mode access
+	switchport access vlan 1
+	interface range  f1/3 - 4
+	switchport mode access
+	switchport access vlan 22
+	interface range f1/5 - 6
+	switchport mode access
+	switchport access vlan 32
+
+	int f0/1
+	ip address 10.0.2.253 255.255.255.0
+	no shut
+
+	interface range FastEthernet 1/14 - 15
+	switchport mode trunk
+	switchport trunk allowed vlan 1,1002-1005
+
+	router rip
+ 	version 2
+ 	network 10.0.0.0
+
+end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+5.
+
+conf t
+	router rip
+		passive-interface vlan 1
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ip 10.1.1.1/24 10.1.1.254
+save
+
+vlan database
+vlan 101
+exit
+
+conf t
+interface Vlan 101
+ip address 10.1.0.253 255.255.255.0
+no shut
+no autostate
+
+interface range FastEthernet 1/14 - 15
+switchport trunk allowed vlan 1,101,1002-1005
+end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+conf t
+interface f1/0
+switchport mode access
+switchport access vlan 1
+interface range FastEthernet 1/1 - 8
+switchport mode access
+switchport access vlan 2
+interface range FastEthernet 1/9 - 12
+switchport mode access
+switchport access vlan 3
+interface range FastEthernet 1/13 - 15
+switchport mode trunk
+switchport trunk encapsulation dot1q
+
+interface Vlan 1
+ip address 10.1.1.254 255.255.255.0
+no autostate
+no shut
+interface Vlan 2
+ip address 10.2.2.254 255.255.255.0
+no autostate
+interface Vlan 3
+ip address 10.3.3.254 255.255.255.0
+no autostate

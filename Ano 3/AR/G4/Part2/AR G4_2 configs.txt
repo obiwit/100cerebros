@@ -1,0 +1,213 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 1.
+
+! Router 1
+conf t
+	router ospf 1
+
+	int f0/0
+		ip address 200.1.0.1 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 192.168.1.1 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+
+	interface loopback 0
+		ip address 200.0.0.1 255.255.255.255
+		ip ospf 1 area 0
+
+	end
+write
+
+! Router 2
+conf t
+	
+	int f0/0
+		ip address 200.1.0.2 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 192.168.2.2 255.255.255.0
+		ip address 192.168.2.22 255.255.255.0 secondary
+		ip ospf 1 area 0
+		no shut
+
+	interface loopback 0
+		ip address 200.0.0.2 255.255.255.255
+		ip ospf 1 area 0
+	
+	end
+write
+
+! Router 3
+conf t
+	
+	int f0/0
+		ip address 200.1.0.3 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 192.168.3.3 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+
+	interface loopback 0
+		ip address 200.0.0.3 255.255.255.255
+		ip ospf 1 area 0
+	
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 2.
+
+!Router 1
+conf t
+	access-list 101 permit ip any 192.168.2.0 0.0.0.255
+	route-map ForceRouting permit 10
+		match ip address 101
+		set ip next-hop 200.1.0.3
+
+	interface f0/1
+		ip policy route-map ForceRouting
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 3.
+
+!Router 1
+conf t
+	access-list 102 permit ip any host 192.168.2.22
+	route-map ForceRouting2 permit 20
+		match ip address 102
+		set ip next-hop 200.1.0.2
+
+	interface f0/1
+		ip policy route-map ForceRouting2
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 4.
+
+!Router 1
+conf t
+	no route-map ForceRouting2 permit 20
+	route-map ForceRouting3 permit 5
+		match ip address 102
+		set ip next-hop 200.1.0.2
+
+	interface f0/1
+		ip policy route-map ForceRouting3
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 5.
+
+!Router 1
+conf t
+	ipv6 unicast-routing
+	router ospf 1
+
+	int f0/0
+		ip address 200.1.1.1 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 192.168.1.1 255.255.255.0
+		ipv6 address 2001:1:1::1/64
+		ip ospf 1 area 0
+		no shut
+
+	interface loopback 0
+		ip address 200.0.0.1 255.255.255.255
+		ip ospf 1 area 0
+
+
+	interface Tunnel1
+		ip address 10.1.1.1 255.255.255.252 
+		ipv6 address 2001::1/64
+		tunnel source Loopback0
+		tunnel destination 200.0.0.2
+		tunnel mode gre ip
+
+
+	ipv6 access-list L101
+		sequence 20 permit ipv6 2001:1:1::/64 2001:2:2::/64
+	access-list 100 permit ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255 !
+	
+	route-map routeT1 permit 10
+		match ip address 100
+		set ip next-hop 10.1.1.2
+	route-map route6T1 permit 10
+		match ipv6 address L101
+		set ipv6 next-hop 2001::2
+
+	interface f0/1
+		ip policy route-map routeT1
+		ipv6 policy route-map route6T1
+
+	end
+write
+
+!Router 2
+conf t
+	ipv6 unicast-routing
+	router ospf 1
+
+	int f0/0
+		ip address 200.2.2.2 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 192.168.2.2 255.255.255.0
+		ipv6 address 2001:2:2::2/64
+		ip ospf 1 area 0
+		no shut
+
+	interface loopback 0
+		ip address 200.0.0.2 255.255.255.255
+		ip ospf 1 area 0
+
+
+	interface Tunnel1
+		ip address 10.1.1.2 255.255.255.252 
+		ipv6 address 2001::2/64
+		tunnel source Loopback0
+		tunnel destination 200.0.0.1
+		tunnel mode gre ip
+
+	ipv6 access-list L101
+		sequence 20 permit ipv6 2001:2:2::/64 2001:1:1::/64
+	access-list 100 permit ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255 !
+	
+	route-map routeT1 permit 10
+		match ip address 100
+		set ip next-hop 10.1.1.1
+	route-map route6T1 permit 10
+		match ipv6 address L101
+		set ipv6 next-hop 2001::1
+
+	interface f0/1
+		ip policy route-map routeT1
+		ipv6 policy route-map route6T1
+
+	end
+write
+
+!Router A
+conf t
+	ipv6 unicast-routing
+	router ospf 1
+
+	int f0/0
+		ip address 200.1.1.10 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	int f0/1
+		ip address 200.2.2.10 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+
+	end
+write
+

@@ -1,0 +1,18 @@
+Cisco Router Simulation Platform (version 0.2.18-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Apr  3 2018 09:35:00
+
+Log file: writing to dynamips_i1_log.txt
+Hypervisor TCP control server started (IP 127.0.0.1 port 57833).
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: capturing to file '/home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap'
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: ending packet capture.
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: capturing to file '/home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap'
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: ending packet capture.
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: capturing to file '/home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap'
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: ending packet capture.
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: capturing to file '/home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap'
+NIO udp-813b0942-56f5-424d-b629-1721ad56d147: ending packet capture.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

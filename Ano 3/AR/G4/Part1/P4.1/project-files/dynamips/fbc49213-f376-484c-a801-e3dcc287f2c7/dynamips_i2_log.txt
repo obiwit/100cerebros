@@ -1,0 +1,14 @@
+Mar 21 14:12:09.802 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Mar 21 14:12:09.802 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33514.
+Mar 21 14:12:09.812 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 21 14:12:09.812 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/P4.1/project-files/dynamips 
+Mar 21 14:12:09.812 GENERAL: working_dir=/home/parallels/GNS3/projects/P4.1/project-files/dynamips
+Mar 21 14:12:09.812 HYPERVISOR: exec_cmd: nio_bridge create Ethernethub-2 
+Mar 21 14:12:10.282 HYPERVISOR: exec_cmd: nio create_udp udp-2d5219ae-abfe-46ef-959f-f8c3d77dd21d 10013 127.0.0.1 10012 
+Mar 21 14:12:10.283 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-2 udp-2d5219ae-abfe-46ef-959f-f8c3d77dd21d 
+Mar 21 14:12:10.380 HYPERVISOR: exec_cmd: nio create_udp udp-2cb90f1d-cb68-4377-a5b2-0fdce2cb207f 10020 127.0.0.1 10021 
+Mar 21 14:12:10.381 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-2 udp-2cb90f1d-cb68-4377-a5b2-0fdce2cb207f 
+Mar 21 14:39:25.658 HYPERVISOR: exec_cmd: nio_bridge delete Ethernethub-2 
+Mar 21 14:39:25.692 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 21 14:39:25.927 HYPERVISOR: Stopped.
+Mar 21 14:39:25.927 GENERAL: reset done.

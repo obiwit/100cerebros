@@ -1,0 +1,242 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 1.
+
+! Router 1
+conf t
+	router ospf 1
+		network 136.192.0.0 0.0.0.255 area 0
+		network 136.192.1.0 0.0.0.255 area 0
+
+	int f0/0
+		ip address 136.192.0.1 255.255.255.0
+		no shut
+	int f0/1
+		ip address 136.192.1.1 255.255.255.0
+		no shut
+	end
+write
+
+! Router 2
+conf t
+	router ospf 1
+		network 136.192.1.0 0.0.0.255 area 0
+		network 136.192.2.0 0.0.0.255 area 0
+	
+	int f0/0
+		ip address 136.192.1.2 255.255.255.0
+		no shut
+	int f0/1
+		ip address 136.192.2.2 255.255.255.0
+		no shut
+	end
+write
+
+! Router 3
+conf t
+	router ospf 1
+		network 136.192.2.0 0.0.0.255 area 0
+		network 136.192.3.0 0.0.0.255 area 0
+	
+	int f0/0
+		ip address 136.192.2.3 255.255.255.0
+		no shut
+	int f0/1
+		ip address 136.192.3.3 255.255.255.0
+		no shut
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 2.
+
+! Router 1
+conf t
+	int Tunnel 0
+		tunnel source 136.192.1.1
+		tunnel destination 136.192.2.3
+		tunnel mode ipip
+		ip address 10.1.1.1 255.255.255.252							! 4.
+
+	ip route 136.192.3.0 255.255.255.0 Tunnel 0 136.192.2.3 		! 3.
+	end
+write
+
+!Router 3
+conf t
+	int Tunnel 0
+		tunnel source 136.192.2.3
+		tunnel destination 136.192.1.1
+		tunnel mode ipip
+		ip address 10.1.1.2 255.255.255.252							! 4.
+
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 5.
+
+!Router 1
+conf t
+	interface Tunnel 0
+		no ip address 10.1.1.1 255.255.255.252
+		ip unnumbered FastEthernet0/0
+
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 6.
+
+!Router 1
+conf t
+	interface Tunnel 0
+		tunnel mode gre ip
+
+	router ospf 1
+		passive-interface Tunnel 0
+	end
+write
+
+!Router 3
+conf t
+	interface Tunnel 0
+		tunnel mode gre ip
+
+	router ospf 1
+		passive-interface Tunnel 0
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 7.
+
+!Router 1
+conf t
+	ipv6 unicast-routing
+	
+	int f0/0
+		ipv6 address 2001:A:1:1::1/64
+		ipv6 address 2001:A:1:2::1/64
+		no shut
+
+	int f0/1
+		ipv6 address 2001:B:1:1::1/64
+		ip address 136.192.1.1 255.255.255.0
+		no shut
+	
+	ipv6 route 2001:C:1:1::/64 2001:B:1:1::2
+	ipv6 route 2001:D:1:1::/64 2001:B:1:1::2
+
+	end
+write
+
+!Router 2
+conf t
+	ipv6 unicast-routing
+	
+	int f0/0
+		ipv6 address 2001:B:1:1::2/64
+		ip address 136.192.1.2 255.255.255.0
+		no shut
+
+	int f0/1
+		ipv6 address 2001:C:1:1::2/64
+		no shut
+	
+	ipv6 route 2001:A:1:1::/64 2001:B:1:1::1
+	ipv6 route 2001:A:1:2::/64 2001:C:1:1::2
+	ipv6 route 2001:D:1:1::/64 2001:C:1:1::3
+
+	end
+write
+
+!Router 3
+conf t
+	ipv6 unicast-routing
+	
+	int f0/0
+		ipv6 address 2001:C:1:1::3/64
+		no shut
+
+	int f0/1
+		ipv6 address 2001:D:1:1::3/64
+		no shut
+	
+	ipv6 route 2001:A:1:1::/64 2001:C:1:1::2
+	ipv6 route 2001:A:1:2::/64 2001:C:1:1::2
+	ipv6 route 2001:B:1:1::/64 2001:C:1:1::2
+
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 8.
+
+!Router 1
+conf t
+	interface Tunnel1
+		ipv6 address 2001:B:100:1::1/64
+		tunnel source f0/1
+		tunnel destination 136.192.1.2
+		tunnel mode ipv6ip
+	end
+write
+
+!Router 2
+conf t
+	interface Tunnel1
+		ipv6 address 2001:B:100:1::2/64
+		tunnel source f0/0
+		tunnel destination 136.192.1.1
+		tunnel mode ipv6ip
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 12.
+
+!Router 1
+conf t
+	interface Tunnel1
+		no tunnel mode ipv6ip
+		tunnel mode gre ip
+	end
+write
+
+!Router 2
+conf t
+	interface Tunnel1
+		no tunnel mode ipv6ip
+		tunnel mode gre ip
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 13.
+
+
+!Router 1
+conf t
+	interface Tunnel1
+		no tunnel mode gre ip
+		no ipv6 address 2001:B:100:1::1/64 
+		no tunnel destination 136.192.1.2
+
+		ipv6 address 2002:88c0:0101::/48 
+		tunnel mode ipv6ip 6to4
+
+		exit
+
+	ipv6 route 2002::/16 Tunnel 1
+	end
+
+	ip route 0.0.0.0 0.0.0.0 136.192.1.2
+write
+
+!Router 2
+conf t
+	interface Tunnel1
+		no tunnel mode gre ip
+		no ipv6 address 2001:B:100:1::2/64 
+		no tunnel destination 136.192.1.1
+
+		ipv6 address 2002:88c0:0102::/48 
+		tunnel mode ipv6ip 6to4
+
+		exit
+
+	ipv6 route 2002::/16 Tunnel 1
+	end
+write

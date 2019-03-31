@@ -1,0 +1,26 @@
+Mar 21 14:12:09.775 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Mar 21 14:12:09.775 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57833.
+Mar 21 14:12:09.785 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 21 14:12:09.786 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/P4.1/project-files/dynamips 
+Mar 21 14:12:09.786 GENERAL: working_dir=/home/parallels/GNS3/projects/P4.1/project-files/dynamips
+Mar 21 14:12:09.786 HYPERVISOR: exec_cmd: nio_bridge create Ethernethub-1 
+Mar 21 14:12:10.119 HYPERVISOR: exec_cmd: nio create_udp udp-b4f08242-5d3a-47ee-8527-9ab664f556bc 10005 127.0.0.1 10004 
+Mar 21 14:12:10.120 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-b4f08242-5d3a-47ee-8527-9ab664f556bc 
+Mar 21 14:12:10.321 HYPERVISOR: exec_cmd: nio create_udp udp-813b0942-56f5-424d-b629-1721ad56d147 10016 127.0.0.1 10017 
+Mar 21 14:12:10.322 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-813b0942-56f5-424d-b629-1721ad56d147 
+Mar 21 14:22:21.542 HYPERVISOR: exec_cmd: nio bind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 capture 
+Mar 21 14:22:21.544 HYPERVISOR: exec_cmd: nio setup_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 en10mb /home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap 
+Mar 21 14:26:31.048 HYPERVISOR: exec_cmd: nio unbind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 
+Mar 21 14:26:34.572 HYPERVISOR: exec_cmd: nio bind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 capture 
+Mar 21 14:26:34.574 HYPERVISOR: exec_cmd: nio setup_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 en10mb /home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap 
+Mar 21 14:34:04.991 HYPERVISOR: exec_cmd: nio unbind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 
+Mar 21 14:34:16.836 HYPERVISOR: exec_cmd: nio bind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 capture 
+Mar 21 14:34:16.836 HYPERVISOR: exec_cmd: nio setup_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 en10mb /home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap 
+Mar 21 14:36:03.122 HYPERVISOR: exec_cmd: nio unbind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 
+Mar 21 14:36:06.878 HYPERVISOR: exec_cmd: nio bind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 capture 
+Mar 21 14:36:06.886 HYPERVISOR: exec_cmd: nio setup_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 en10mb /home/parallels/GNS3/projects/P4.1/tmp/captures/Ethernethub-1_Ethernet0_to_R2_FastEthernet00.pcap 
+Mar 21 14:37:01.036 HYPERVISOR: exec_cmd: nio unbind_filter udp-813b0942-56f5-424d-b629-1721ad56d147 2 
+Mar 21 14:39:25.638 HYPERVISOR: exec_cmd: nio_bridge delete Ethernethub-1 
+Mar 21 14:39:25.682 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 21 14:39:25.923 HYPERVISOR: Stopped.
+Mar 21 14:39:25.923 GENERAL: reset done.

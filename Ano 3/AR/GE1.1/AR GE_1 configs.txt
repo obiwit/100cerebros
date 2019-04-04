@@ -1,0 +1,148 @@
+! Guiao Extra 1 - NAT/PAT & Stateful NAT
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 1.
+
+! Router 1
+conf t
+	router ospf 1
+		network 192.168.1.0 0.0.0.255 area 0
+		network 192.168.2.0 0.0.0.255 area 0
+
+	int f0/0
+		ip address 192.168.2.1 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+
+	int f0/1
+		ip address 192.168.1.1 255.255.255.0
+		ip ospf 1 area 0
+		ip ospf cost 11
+		no shut
+
+	end
+write
+
+! Router 2
+conf t
+	router ospf 1
+		network 192.168.1.0 0.0.0.255 area 0
+		default-information originate always metric 10	
+	ip route 0.0.0.0 0.0.0.0 192.1.1.2
+		
+	
+	int f0/0
+		ip address 192.168.1.2 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+
+	int f0/1
+		ip address 192.1.1.1 255.255.255.252
+		no shut
+	
+	end
+write
+
+! Router 3
+conf t
+	router ospf 1
+		network 192.168.2.0 0.0.0.255 area 0
+		default-information originate always metric 5
+	ip route 0.0.0.0 0.0.0.0 192.2.2.2
+
+	int f0/0
+		ip address 192.2.2.1 255.255.255.252
+		no shut
+
+	int f0/1
+		ip address 192.168.2.3 255.255.255.0
+		ip ospf 1 area 0
+		no shut
+	
+	end
+write
+
+! Router 4
+conf t
+	ip route 193.136.0.0 255.255.255.0 192.1.1.1
+	ip route 193.136.0.0 255.255.255.0 192.2.2.1 10
+	
+	int f0/0
+		ip address 192.1.1.2 255.255.255.252
+		no shut
+	int f0/1
+		ip address 192.2.2.2 255.255.255.252
+		no shut
+
+	interface loopback 0
+		ip address 192.2.3.4 255.255.255.0
+	
+	end
+write
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 2.
+
+Router 4 does not know Router 1 addresses (i.e. there is no 192.168.X.0 or similar entries in its routing table).
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 3.
+
+! Router 2
+conf t
+	access-list 1 permit 192.168.1.0 0.0.0.255
+	access-list 1 permit 192.168.2.0 0.0.0.255
+
+	ip nat pool POOLR 193.136.0.1 193.136.0.128 netmask 255.255.255.0
+	ip nat inside source list 1 pool POOLR overload
+
+	int f0/0
+		ip nat inside
+	int f0/1
+		ip nat outside
+
+end
+write
+
+! Router 3
+conf t
+	access-list 1 permit 192.168.1.0 0.0.0.255
+	access-list 1 permit 192.168.2.0 0.0.0.255
+
+	ip nat pool POOLR 193.136.0.1 193.136.0.128 netmask 255.255.255.0
+	ip nat inside source list 1 pool POOLR overload
+
+	int f0/0
+		ip nat outside
+	int f0/1
+		ip nat inside
+
+end
+write
+
+----
+Router 2 does not know Router 1's NAT/PAT reverse translation (only Router 3 does).
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 4.
+
+! Router 2
+conf t
+	ip nat Stateful id 2
+	backup 192.168.1.2
+	peer 192.168.2.3
+	mapping-id 10
+
+	no ip nat inside source list 1 pool POOLR overload
+	ip nat inside source list 1 pool POOLR mapping-id 10 overload
+end
+write
+
+! Router 3
+conf t	
+	ip nat Stateful id 3
+	primary 192.168.2.3
+	peer 192.168.1.2
+	mapping-id 10
+
+	no ip nat inside source list 1 pool POOLR overload
+	ip nat inside source list 1 pool POOLR mapping-id 10 overload
+
+end
+write

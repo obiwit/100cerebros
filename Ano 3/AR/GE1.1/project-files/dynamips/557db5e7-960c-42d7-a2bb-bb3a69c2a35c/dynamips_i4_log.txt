@@ -1,0 +1,48 @@
+Apr 04 15:03:30.418 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 04 15:03:30.418 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59224.
+Apr 04 15:03:30.422 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 04 15:03:30.422 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/GE1.1/project-files/dynamips 
+Apr 04 15:03:30.422 GENERAL: working_dir=/home/parallels/GNS3/projects/GE1.1/project-files/dynamips
+Apr 04 15:03:30.423 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/GE1.1/project-files/dynamips/557db5e7-960c-42d7-a2bb-bb3a69c2a35c 
+Apr 04 15:03:30.423 GENERAL: working_dir=/home/parallels/GNS3/projects/GE1.1/project-files/dynamips/557db5e7-960c-42d7-a2bb-bb3a69c2a35c
+Apr 04 15:03:30.423 HYPERVISOR: exec_cmd: vm create R4 4 c3725 
+Apr 04 15:03:30.423 VM: VM R4 created.
+Apr 04 15:03:30.424 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Apr 04 15:03:30.425 HYPERVISOR: exec_cmd: c3725 get_mac_addr R4 
+Apr 04 15:03:30.426 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Apr 04 15:03:30.426 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Apr 04 15:03:30.427 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Apr 04 15:03:30.428 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 04 15:03:30.430 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60a68e70 
+Apr 04 15:03:30.431 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 04 15:03:30.431 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Apr 04 15:03:30.432 HYPERVISOR: exec_cmd: vm set_ios R4 /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:03:30.484 HYPERVISOR: exec_cmd: vm set_ios R4 /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:04:03.604 HYPERVISOR: exec_cmd: vm set_ios R4 /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:04:21.342 HYPERVISOR: exec_cmd: nio create_udp udp-fc13aedb-1c96-403a-9f66-c0337d7484d7 10012 127.0.0.1 10013 
+Apr 04 15:04:21.560 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-fc13aedb-1c96-403a-9f66-c0337d7484d7 
+Apr 04 15:04:21.562 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 04 15:04:24.472 HYPERVISOR: exec_cmd: nio create_udp udp-244474dd-5a2d-4147-9b78-5f51e9cedfcc 10016 127.0.0.1 10017 
+Apr 04 15:04:24.475 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-244474dd-5a2d-4147-9b78-5f51e9cedfcc 
+Apr 04 15:04:24.475 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 04 15:04:58.034 HYPERVISOR: exec_cmd: vm set_ios R4 /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:05:00.510 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 04 15:05:00.511 VM: VM Ghost created.
+Apr 04 15:05:00.512 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:05:00.514 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 04 15:05:00.515 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/parallels/GNS3/projects/GE1.1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Apr 04 15:05:00.517 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Apr 04 15:05:00.518 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 04 15:05:00.521 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Apr 04 15:05:00.521 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 04 15:05:01.545 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 04 15:05:01.546 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 04 15:05:01.748 VM: VM Ghost shutdown.
+Apr 04 15:05:01.749 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 04 15:05:01.750 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 04 15:05:01.750 VM: VM Ghost destroyed.
+Apr 04 15:05:01.751 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 04 15:05:01.752 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/parallels/GNS3/projects/GE1.1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Apr 04 15:05:01.752 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 04 15:05:01.753 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 04 15:05:01.753 HYPERVISOR: exec_cmd: vm start R4 

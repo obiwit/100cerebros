@@ -1,0 +1,20 @@
+Apr 04 15:34:37.935 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 04 15:34:37.936 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39000.
+Apr 04 15:34:37.940 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 04 15:34:37.940 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/GE1.1/project-files/dynamips 
+Apr 04 15:34:37.940 GENERAL: working_dir=/home/parallels/GNS3/projects/GE1.1/project-files/dynamips
+Apr 04 15:34:37.941 HYPERVISOR: exec_cmd: nio_bridge create Ethernethub-1 
+Apr 04 15:34:39.371 HYPERVISOR: exec_cmd: nio create_udp udp-865937a8-7821-4353-bb08-c5bd2c98ea6f 10018 127.0.0.1 10019 
+Apr 04 15:34:39.371 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-865937a8-7821-4353-bb08-c5bd2c98ea6f 
+Apr 04 15:34:39.442 HYPERVISOR: exec_cmd: nio create_udp udp-2193d3b4-350c-4f9a-b302-7c142e478eff 10023 127.0.0.1 10022 
+Apr 04 15:34:39.443 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-2193d3b4-350c-4f9a-b302-7c142e478eff 
+Apr 04 15:34:39.513 HYPERVISOR: exec_cmd: nio create_udp udp-8c1095e6-0200-420e-b20b-62b6b4563d08 10027 127.0.0.1 10026 
+Apr 04 15:34:39.513 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-8c1095e6-0200-420e-b20b-62b6b4563d08 
+Apr 04 15:43:28.421 HYPERVISOR: exec_cmd: nio_bridge remove_nio Ethernethub-1 udp-2193d3b4-350c-4f9a-b302-7c142e478eff 
+Apr 04 15:43:28.428 HYPERVISOR: exec_cmd: nio delete udp-2193d3b4-350c-4f9a-b302-7c142e478eff 
+Apr 04 15:43:45.153 HYPERVISOR: exec_cmd: nio create_udp udp-6d175f24-16fd-4e95-a0b5-2109737508b4 10013 127.0.0.1 10012 
+Apr 04 15:43:45.154 HYPERVISOR: exec_cmd: nio_bridge add_nio Ethernethub-1 udp-6d175f24-16fd-4e95-a0b5-2109737508b4 
+Apr 04 16:26:10.537 HYPERVISOR: exec_cmd: nio_bridge delete Ethernethub-1 
+Apr 04 16:26:10.649 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 04 16:26:10.815 HYPERVISOR: Stopped.
+Apr 04 16:26:10.815 GENERAL: reset done.

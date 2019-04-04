@@ -1,0 +1,43 @@
+Cisco Router Simulation Platform (version 0.2.18-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Apr  3 2018 09:35:00
+
+Log file: writing to dynamips_i3_log.txt
+ILT: loaded table "mips64j" from cache.
+ILT: loaded table "mips64e" from cache.
+ILT: loaded table "ppc32j" from cache.
+ILT: loaded table "ppc32e" from cache.
+Hypervisor TCP control server started (IP 127.0.0.1 port 37452).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C3725 instance 'R1' (id 1):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  NVRAM size : 256 Kb
+  IOS image  : /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image
+
+Loading ELF file '/home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C3725 'R1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C3725 'R1': stopping simulation.
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+C3725 instance 'R1' (id 1):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  NVRAM size : 256 Kb
+  IOS image  : /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image
+
+Loading ELF file '/home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C3725 'R1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C3725 'R1': stopping simulation.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

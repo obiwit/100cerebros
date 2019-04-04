@@ -1,0 +1,60 @@
+Apr 04 15:34:37.980 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 04 15:34:37.980 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37452.
+Apr 04 15:34:37.992 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 04 15:34:37.993 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/GE1.1/project-files/dynamips 
+Apr 04 15:34:37.993 GENERAL: working_dir=/home/parallels/GNS3/projects/GE1.1/project-files/dynamips
+Apr 04 15:34:37.993 HYPERVISOR: exec_cmd: hypervisor working_dir /home/parallels/GNS3/projects/GE1.1/project-files/dynamips/6dbcaa38-71f0-45af-bd98-ea7b314c484b 
+Apr 04 15:34:37.993 GENERAL: working_dir=/home/parallels/GNS3/projects/GE1.1/project-files/dynamips/6dbcaa38-71f0-45af-bd98-ea7b314c484b
+Apr 04 15:34:37.994 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Apr 04 15:34:37.995 VM: VM R1 created.
+Apr 04 15:34:37.996 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+Apr 04 15:34:37.996 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Apr 04 15:34:37.997 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Apr 04 15:34:37.998 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+Apr 04 15:34:37.998 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 04 15:34:37.999 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:34:37.999 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Apr 04 15:34:37.999 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:34:38.000 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a68e70 
+Apr 04 15:34:38.000 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 04 15:34:38.001 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.0f50.0000 
+Apr 04 15:34:38.002 HYPERVISOR: exec_cmd: vm set_ios R1 /home/parallels/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 15:34:39.097 HYPERVISOR: exec_cmd: nio create_udp udp-63da0898-3be8-42d1-aae5-97ec4cffafcc 10016 127.0.0.1 10017 
+Apr 04 15:34:39.319 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-63da0898-3be8-42d1-aae5-97ec4cffafcc 
+Apr 04 15:34:39.319 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:34:39.429 HYPERVISOR: exec_cmd: nio create_udp udp-4b363784-b5b4-44d1-bacd-3c7f8282a616 10024 127.0.0.1 10025 
+Apr 04 15:34:39.431 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-4b363784-b5b4-44d1-bacd-3c7f8282a616 
+Apr 04 15:34:39.432 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:35:43.118 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Apr 04 15:35:43.121 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/parallels/GNS3/projects/GE1.1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Apr 04 15:35:43.122 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:35:43.124 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 04 15:35:43.125 HYPERVISOR: exec_cmd: vm start R1 
+Apr 04 15:41:14.458 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:41:14.724 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:42:41.691 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:42:41.695 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 04 15:42:42.361 VM: VM R1 shutdown.
+Apr 04 15:42:42.369 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:42:49.313 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:42:49.313 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:42:49.314 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:42:49.316 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 04 15:42:49.316 HYPERVISOR: exec_cmd: vm start R1 
+Apr 04 15:42:53.732 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:42:53.733 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 04 15:42:57.649 VM: VM R1 shutdown.
+Apr 04 15:42:57.651 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:43:28.290 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:43:28.290 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Apr 04 15:43:28.295 HYPERVISOR: exec_cmd: nio delete udp-63da0898-3be8-42d1-aae5-97ec4cffafcc 
+Apr 04 15:43:28.405 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:43:28.405 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Apr 04 15:43:28.410 HYPERVISOR: exec_cmd: nio delete udp-4b363784-b5b4-44d1-bacd-3c7f8282a616 
+Apr 04 15:43:28.913 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 04 15:43:28.913 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 04 15:43:28.914 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 04 15:43:28.914 VM: VM R1 destroyed.
+Apr 04 15:43:28.926 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 04 15:43:29.400 HYPERVISOR: Stopped.
+Apr 04 15:43:29.404 GENERAL: reset done.

@@ -1,0 +1,10 @@
+-- 5.1
+
+/****************************************************************
+ * i)
+ * Obter os nomes e endereços de todos os funcionários que
+ * trabalham em, pelo menos, um projeto localizado em Aveiro mas
+ * o seu departamento não tem nenhuma localização em Aveiro.
+ ****************************************************************/
+
+π Fname, Minit, Lname, Address ((((employee) ⨝Ssn=Essn (works_on)) ⨝ Pno=Pnumber (σ Plocation='Aveiro' ((project)))) ⨝Dno=Dnumber  (σ Dlocation!='Aveiro' ((department) ⟕ (dept_location))))

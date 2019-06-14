@@ -1,0 +1,3 @@
+-- 5.2
+-- b) Número médio de unidades encomendadas para cada produto:
+γ item.codProd;avg(item.unidades)->avg_unidades (item)

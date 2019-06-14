@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * f)
+ * Para cada departamento, listar o seu nome e o salário médio
+ * dos seus funcionários do sexo feminino.
+ ****************************************************************/
+
+π Dname, avg_Salary ((γ Dno; avg(Salary)->avg_Salary (σ Sex='F' (employee))) ⨝Dno=Dnumber (department))

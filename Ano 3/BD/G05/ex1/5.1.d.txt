@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * d)
+ * Obter o nome de todos os funcionários do departamento 3 que
+ * trabalham mais de 20 horas por semana no projeto ‘Aveiro Digital'.
+ ****************************************************************/
+
+π Fname, Minit, Lname (σ Hours>20 ((σ Dno=3 (employee)) ⨝ Ssn=Essn (works_on)) ⨝ Pno=Pnumber (σ Pname='Aveiro Digital' (project)))

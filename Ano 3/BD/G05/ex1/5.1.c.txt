@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * c)
+ * Para cada projeto, listar o seu nome e o número de horas (por
+ * semana) gastos nesse projeto por todos os funcionários.
+ ****************************************************************/
+
+γ Pname; sum(Hours)->total_hours ((project) ⨝ Pnumber=Pno (works_on))

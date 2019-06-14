@@ -1,0 +1,3 @@
+-- 5.2
+-- d) Lista de produtos (e quantidades) fornecidas por cada fornecedor: 
+π item.codProd,item.unidades,encomenda.fornecedor ((item) ⨝ item.numEnc = encomenda.numero (encomenda))

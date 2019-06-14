@@ -1,0 +1,3 @@
+-- 5.3
+-- a) Lista de pacientes que nunca tiveram uma prescrição
+π numUtente, nome (σ numPresc=null (π numUtente, nome (paciente) ⨝ prescricao))

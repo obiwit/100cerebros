@@ -1,0 +1,4 @@
+-- 5.3
+-- c) Número de prescrições processadas por farmácia
+γ count(prescricao.numPresc) -> num_processadas_por_farmacias (σ prescricao.farmacia!=null prescricao)
+

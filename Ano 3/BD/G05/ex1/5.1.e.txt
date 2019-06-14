@@ -1,0 +1,8 @@
+-- 5.1
+
+/****************************************************************
+ * e)
+ * Nome dos funcionários que não trabalham para projetos.
+ ****************************************************************/
+
+π Fname, Minit, Lname (σ Pno=null ((employee) ⟕ Ssn=Essn (works_on)))

@@ -1,0 +1,2 @@
+-- a)
+SELECT * FROM authors;

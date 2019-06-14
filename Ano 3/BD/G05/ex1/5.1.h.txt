@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * h)
+ * Obtenha uma lista de todos os funcionários gestores de
+ * departamento que não têm dependentes.
+ ****************************************************************/
+
+π Fname, Minit, Lname (σ Num_dependents=0 (γ Fname, Minit, Lname, Ssn; count(Essn)->Num_dependents (((employee) ⨝ Ssn=Mgr_ssn (department)) ⟕ Ssn=Essn (dependent))))

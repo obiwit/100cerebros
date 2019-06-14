@@ -1,0 +1,3 @@
+-- 5.3
+-- e) Pacientes que tiveram prescrições de médicos diferentes
+π numUtente (σ num>1 (π numUtente,num (γ numUtente; count(numUtente) -> num (π numUtente, numMedico, num (γ numUtente, numMedico; count(numUtente) -> num prescricao)))))

@@ -1,0 +1,3 @@
+-- 5.2
+-- c) Número médio de produtos por encomenda (nota: não interessa o número de unidades):
+γ avg(num_occurences)->avg_num_prod (γ item.numEnc; count(item.codProd)->num_occurences (item))

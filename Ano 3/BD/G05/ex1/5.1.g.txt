@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * g)
+ * Obter uma lista de todos os funcionários com mais do que dois
+ * dependentes.
+ ****************************************************************/
+
+π Fname, Minit, Lname (σ Num_dependents>2 (γ Fname, Minit, Lname, Ssn; count(Essn)->Num_dependents ((employee) ⨝ Ssn=Essn (dependent))))

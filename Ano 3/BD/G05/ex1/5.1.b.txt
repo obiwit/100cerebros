@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * b)
+ * Obtenha o nome de todos os funcionários supervisionados por
+ * ‘Carlos D Gomes’.
+ ****************************************************************/
+
+π employee.Fname, employee.Minit, employee.Lname ((employee) ⨝ employee.Super_ssn=man.Ssn (ρ man (σ Fname='Carlos' ∧ Minit='D' ∧ Lname='Gomes' (employee))))

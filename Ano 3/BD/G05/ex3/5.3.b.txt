@@ -1,0 +1,3 @@
+-- 5.3
+-- b) Número de prescrições por especialidade médica
+γ medico.especialidade; count(prescricao.numPresc) -> num_prescricoes (π medico.especialidade,prescricao.numPresc  (prescricao ⨝ numSNS=numMedico medico))

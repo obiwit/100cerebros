@@ -1,0 +1,9 @@
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csprojAssemblyReference.cache
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.Form1.resources
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.Properties.Resources.resources
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.GenerateResource.cache
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.CoreCompileInputs.cache
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\bin\Debug\Contacts.exe
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\bin\Debug\Contacts.pdb
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.exe
+C:\Users\bea\Desktop\Aula8_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.pdb

@@ -1,0 +1,3 @@
+-- 5.3
+-- d) Para a farmacêutica com registo número 906, lista dos seus fármacos nunca prescritos
+π farmaco.nome,farmaco.formula (σ presc_farmaco.numPresc= null (σ farmaco.numRegFarm=906 (farmaco) ⟕ nome=nomeFarmaco presc_farmaco))

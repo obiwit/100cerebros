@@ -1,0 +1,9 @@
+-- 5.1
+
+/****************************************************************
+ * a) 
+ * Obtenha uma lista contendo os projetos e funcionários (ssn e
+ * nome completo) que lá trabalham.
+ ****************************************************************/
+
+π Pname, Pnumber, Plocation, Dnum, Fname, Minit, Lname, Ssn (((project) ⨝ Pnumber=Pno (works_on)) ⨝ Essn = Ssn (employee))

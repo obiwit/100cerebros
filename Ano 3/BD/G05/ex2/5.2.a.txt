@@ -1,0 +1,3 @@
+-- 5.2
+-- a) Tabela dos fornecedores que não têm encomendas:
+(fornecedor) - π nif,fornecedor.nome,fax,endereco,condpag,tipo (((fornecedor) ⨝ fornecedor.nif=encomenda.fornecedor (encomenda)))
